@@ -1,0 +1,1497 @@
+/* 4K */
+@media screen and (max-width: 2561px) {}
+
+/* Laptop G */
+@media screen and (max-width: 1441px) {
+
+    /* Navbar */
+    .header__logo-img {
+        width: 14rem;
+    }
+
+    .header__menu-link {
+        font-size: 1.4rem;
+    }
+
+    /* Início (Hero) */
+    .hero {
+        padding: 15rem 10rem 10rem;
+    }
+
+    .hero__title,
+    .hero__title__subtitle {
+        font-size: 3.5rem;
+    }
+
+    .typewriter {
+        font-size: 1.8rem;
+    }
+
+    .hero__image-container img {
+        width: 35rem;
+    }
+
+    .destaques-news {
+        padding: 1rem 4rem 6rem;
+    }
+
+    .destaques-news__text h2 {
+        font-size: 3.5rem;
+    }
+
+    .destaques-carousel-container {
+        max-width: 900px;
+    }
+
+    .card {
+        width: 300px;
+        height: 400px;
+    }
+
+    .destaques-carousel-control.prev {
+        left: -4%;
+    }
+
+    .destaques-carousel-control.next {
+        right: -4%;
+    }
+
+    #formacao {
+        padding: 5rem 4rem 8rem;
+    }
+
+    .formacao-flex {
+        gap: 2.2rem;
+        max-width: 110rem;
+    }
+
+    .formacao-card {
+        width: 27rem;
+    }
+
+    .card-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .card-info p,
+    .card-details p {
+        font-size: 1.15rem;
+    }
+
+    .card-details strong {
+        font-size: 1.25rem;
+    }
+
+    #formacaoMostrarMaisBtn {
+        font-size: 1.25rem;
+    }
+
+    .projects {
+        padding: 6rem 4rem 8rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(3, 350px);
+        gap: 6rem;
+    }
+    
+    .project-overlay__title {
+        font-size: 2.2rem;
+    }
+
+    #ProjectMostrarMaisProjetosBtn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .skills {
+        padding: 5rem 4rem 8rem;
+    }
+    
+    .skills__text h2 {
+        font-size: 3.5rem;
+    }
+    
+    .skill__card {
+        width: 11rem;
+        height: 10rem;
+    }
+
+    footer {
+        padding: 2rem 8rem;
+        gap: 4rem;
+    }
+    
+    .footer--grid-layout {
+        gap: 4rem;
+    }
+    
+    footer p {
+        font-size: 1.4rem;
+    }
+    
+    footer img {
+        width: 2.4rem;
+    }
+}
+
+/* Laptop */
+@media screen and (max-width: 1025px) {
+
+    /* Navbar */
+    .header {
+        height: 8rem;
+        justify-content: space-around;
+    }
+
+    .header__logo-img {
+        width: 13rem;
+    }
+
+    .header__menu__toggleButton {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    .header__menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--background-color2);
+        position: absolute;
+        align-items: center;
+        padding: 1.7rem 0;
+        top: 80%;
+        left: 65%;
+        transform: translateX(-50%) translateY(-2rem);
+        width: 14rem;
+        border-radius: .5rem;
+        box-shadow: 0 0.4rem .8rem #0000004d;
+        gap: 1.3rem;
+        opacity: 0;
+        transform: translateX(-50%) translateY(-2rem);
+    }
+
+    .header__menu.active {
+        display: flex;
+        animation: slideDown .5s ease forwards;
+    }
+
+    .header__menu.active .header__menu-item {
+        animation: fadeIn .5s ease forwards;
+    }
+
+    .header__menu.active .header__menu-item:nth-child(1) {
+        animation-delay: .1s;
+    }
+
+    .header__menu.active .header__menu-item:nth-child(2) {
+        animation-delay: .2s;
+    }
+
+    .header__menu.active .header__menu-item:nth-child(3) {
+        animation-delay: .3s;
+    }
+
+    .header__menu.active .header__menu-item:nth-child(4) {
+        animation-delay: .4s;
+    }
+
+    .header__menu.active .header__menu-item:nth-child(5) {
+        animation-delay: .5s;
+    }
+
+    .header__menu.active .header__menu-item:nth-child(6) {
+        animation-delay: .6s;
+    }
+
+    .header__menu-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .header__menu-item {
+        margin: 1rem 0;
+        opacity: 0;
+        transform: translateY(-1rem);
+        background-color: transparent;
+
+    }
+
+    .header__menu-link {
+        background-color: transparent;
+        font-size: 1.35rem;
+    }
+
+    .header__menu-toggle span {
+        width: 70%;
+        height: .24rem;
+    }
+
+    /* Início (Hero) */
+    .hero {
+        padding: 12rem 10rem 8rem;
+    }
+
+    .hero__title,
+    .hero__title__subtitle {
+        font-size: 3rem;
+    }
+
+    .typewriter {
+        font-size: 1.6rem;
+    }
+
+    .hero__image-container img {
+        width: 30rem;
+    }
+
+    .hero__button-download,
+    .hero__button-contact {
+        width: 15rem;
+        padding: .9rem 2rem;
+        font-size: 1.3rem;
+        max-width: 30rem;
+    }
+
+    .hero__button-download:hover,
+    .hero__button-contact:hover {
+        width: 17rem;
+        padding: .9rem 3rem;
+        max-width: 40rem;
+    }
+
+    .about {
+        padding: 3rem 7rem 0;
+    }
+
+    .about__container {
+        padding: 3rem;
+        gap: 2rem;
+    }
+
+    .about__image-container {
+        max-width: 230px;
+    }
+
+    .about__text-container h2 {
+        font-size: 2rem;
+    }
+
+    .about__text-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .about__text-container p {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+
+    .about__text-container nav ul li img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .about__text-container nav ul a::after {
+        font-size: 1.1rem;
+    }
+
+    .destaques-news {
+        padding: 1rem 3rem 5rem;
+    }
+
+    .destaques-news__text h2 {
+        font-size: 3rem;
+    }
+
+    .destaques-carousel-container {
+        max-width: 700px;
+    }
+
+    .card {
+        width: 280px;
+        height: 380px;
+    }
+
+    .destaques-carousel-control {
+        width: 45px;
+        height: 45px;
+    }
+
+    .destaques-carousel-control.prev {
+        left: -3%;
+    }
+
+    .destaques-carousel-control.next {
+        right: -3%;
+    }
+
+    #formacao {
+        padding: 4rem 3rem 7rem;
+    }
+
+    #formacao .formacao--container h2 {
+        font-size: 3.5rem;
+    }
+
+    .formacao-flex {
+        gap: 2rem;
+        max-width: 90rem;
+    }
+
+    .formacao-card {
+        width: 26rem;
+        padding: 1.5rem 1.8rem;
+    }
+
+    .card-header img {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    .card-info h3 {
+        font-size: 1.35rem;
+    }
+
+    .card-info p,
+    .card-details p {
+        font-size: 1.1rem;
+    }
+
+    .card-details strong {
+        font-size: 1.2rem;
+    }
+
+    #formacaoMostrarMaisBtn {
+        font-size: 1.15rem;
+    }
+
+    .projects {
+        padding: 5rem 3rem 7rem;
+    }
+    
+    .projeto__text h2 {
+        font-size: 3.5rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 350px);
+        gap: 5rem;
+    }
+    
+    .modal .sessao-modal {
+        flex-direction: column;
+    }
+    
+    .sessao-video,
+    .texto-sessao-modal {
+        max-width: 100%;
+        width: 100%;
+
+    }
+    
+    .titulo-sessao-modal {
+        font-size: 2.5rem;
+    }
+
+    /* Novos ajustes */
+    .project-icons-header {
+        margin: 1.2rem 0;
+    }
+    
+    .botao-footer-modal {
+        padding: 0.6rem 1.3rem;
+        font-size: 1rem;
+    }
+    
+    .botoes-footer {
+        flex-wrap: wrap;
+    }
+
+    .skills {
+        padding: 4rem 3rem 7rem;
+    }
+    
+    .skills__text h2 {
+        font-size: 3rem;
+    }
+    
+    .skills__filter {
+        margin-bottom: 2.5rem;
+    }
+    
+    .skills__flex {
+        gap: 2.5rem;
+    }
+    
+    .skill__card {
+        width: 10rem;
+        height: 9rem;
+    }
+
+    footer {
+        padding: 2rem 6rem;
+        gap: 3.5rem;
+    }
+    
+    .footer--grid-layout {
+        gap: 3.5rem;
+        padding: 0 1.2rem;
+    }
+    
+    footer p {
+        font-size: 1.3rem;
+    }
+    
+    footer img {
+        width: 2.2rem;
+    }
+    
+    footer div {
+        gap: 0.8rem;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 769px) {
+
+    /* Tela de carregamento */
+    .loading-card {
+        padding: 1.5rem;
+    }
+
+    .loader .circle {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    #loading-screen p {
+        font-size: 1.4rem;
+    }
+
+    .toggle-container {
+        width: 3.9rem;
+        height: 1.7rem;
+        border-radius: 1rem;
+    }
+
+    .toggle-switch {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .toggle-container.active .toggle-switch {
+        transform: translateX(20px) translateY(-50%);
+    }
+
+    .tooltip {
+        font-size: 1rem;
+        padding: .1rem .4rem;
+    }
+
+    /* Início (Hero) */
+    .hero {
+        padding: 10rem 5rem 5rem;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero__title,
+    .hero__title__subtitle {
+        font-size: 2.8rem;
+    }
+
+    .typewriter {
+        font-size: 1.5rem;
+    }
+
+    .container--hero {
+        gap: 3rem;
+    }
+
+    .hero__image-container img {
+        width: 25rem;
+        margin-top: 2rem;
+    }
+
+    .hero__buttons {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .hero__button-download,
+    .hero__button-contact {
+        width: 15rem;
+        padding: .9rem 2rem;
+        font-size: 1.3rem;
+        max-width: 30rem;
+    }
+
+    .hero__button-download:hover,
+    .hero__button-contact:hover {
+        width: 17rem;
+        padding: .9rem 3rem;
+        max-width: 40rem;
+    }
+
+    .about {
+        padding: 2rem 5rem 0;
+    }
+
+    .about__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about__image-container {
+        margin-bottom: 1rem;
+    }
+
+    .about__text-container nav ul {
+        justify-content: center;
+    }
+
+    .carrossel-container {
+        margin: 6rem 0 3rem;
+    }
+
+    .carrossel-item {
+        width: 12rem;
+    }
+
+    .carrossel-item img {
+        width: 25%;
+    }
+
+    .destaques-news {
+        padding: 1rem 2rem 4rem;
+    }
+
+    .destaques-news__text h2 {
+        font-size: 2.5rem;
+    }
+
+    .destaques-carousel-container {
+        max-width: 500px;
+    }
+
+    .card {
+        width: 250px;
+        height: 350px;
+    }
+
+    .destaques--card-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .destaques--card-info p {
+        font-size: 1.1rem;
+    }
+
+    .destaques--card-testimonial p {
+        font-size: 1.1rem;
+    }
+
+    .destaques-carousel-control {
+        width: 40px;
+        height: 40px;
+    }
+
+    .destaques-carousel-control.prev {
+        left: -2%;
+    }
+
+    .destaques-carousel-control.next {
+        right: -2%;
+    }
+
+    #formacao {
+        padding: 3.5rem 2rem 6rem;
+    }
+
+    #formacao .formacao--container h2 {
+        font-size: 3rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .formacao-flex {
+        gap: 1.8rem;
+    }
+
+    .formacao-card {
+        width: 25rem;
+        padding: 1.3rem 1.5rem;
+    }
+
+    .card-header {
+        gap: 0.8rem;
+    }
+
+    .card-header img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .formacao-footer {
+        margin-top: 3.5rem;
+    }
+
+    .card-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .card-info p,
+    .card-details p {
+        font-size: 1.05rem;
+    }
+
+    .card-details strong {
+        font-size: 1.15rem;
+    }
+
+    .formacao-footer {
+        margin-top: 3.5rem;
+    }
+
+    #formacaoMostrarMaisBtn {
+        font-size: 1.1rem;
+    }
+
+    .projects {
+        padding: 4rem 2rem 6rem;
+    }
+    
+    .projeto__text h2 {
+        font-size: 3rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 300px);
+        gap: 4rem;
+    }
+    
+    .project-overlay__title {
+        font-size: 2rem;
+    }
+    
+    .project-overlay {
+        gap: 1.5rem;
+    }
+    
+    .titulo-sessao-modal {
+        font-size: 2.2rem;
+    }
+    
+    .paragrafos-sessao-modal,
+    .data-sessao-modal {
+        font-size: 1.2rem;
+    }
+
+    /* Novos ajustes */
+    #ProjectMostrarMaisProjetosBtn {
+        padding: 0.7rem 1.3rem;
+        font-size: 1.1rem;
+    }
+    
+    .project-icons-header img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    
+    .botao-footer-modal {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .skills {
+        padding: 3.5rem 2rem 6rem;
+    }
+    
+    .skills__text h2 {
+        font-size: 2.8rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .skills__filter button {
+        padding: 0.7rem 1.3rem;
+        font-size: 1rem;
+    }
+    
+    .skills__flex {
+        gap: 2rem;
+        padding-top: 1.5rem;
+    }
+    
+    .skill__card {
+        width: 9rem;
+        height: 8.5rem;
+    }
+    
+    .skill__card img {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .skill__card h1 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        padding: 2rem 2rem; /* Reduz o padding em mobile */
+    }
+
+    footer.footer--grid-layout {
+        padding: 2rem;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+      }
+
+    /* Ajustes opcionais para melhor legibilidade */
+    footer p {
+        font-size: 1.2rem;
+        text-align: center; 
+    }
+
+    footer img {
+        width: 2rem; 
+    }
+
+}
+
+/* Smartphone G */
+@media screen and (max-width: 426px) {
+
+    /* Navbar */
+    .header {
+        height: 7rem;
+    }
+
+    .header__logo-img {
+        width: 12rem;
+    }
+
+    .header__menu-link {
+        font-size: 1.3rem;
+    }
+
+    .toggle-container {
+        width: 3.5rem;
+        height: 1.6rem;
+        border-radius: .9rem;
+    }
+
+    .toggle-switch {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    .toggle-container.active .toggle-switch {
+        transform: translateX(1.8rem) translateY(-50%);
+    }
+
+    .tooltip {
+        font-size: .9rem;
+        padding: .1rem .3rem;
+    }
+
+    /* Tela de carregamento */
+    .loading-card {
+        padding: 1rem;
+    }
+
+    .loader .circle {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    #loading-screen p {
+        font-size: 1.2rem;
+    }
+
+    /* Início (Hero) */
+    .hero {
+        padding: 8rem 2rem 2rem;
+    }
+
+    .hero__title,
+    .hero__title__subtitle {
+        font-size: 2.5rem;
+    }
+
+    .typewriter {
+        font-size: 1.3rem;
+    }
+
+    .hero__image-container img {
+        width: 22rem;
+    }
+
+    .hero__buttons {
+        gap: 1rem;
+    }
+
+    .about {
+        padding: 1.5rem 3rem 0;
+    }
+
+    .about__text-container nav ul a::after {
+        font-size: .9rem;
+    }
+
+    .about__image-container {
+        max-width: 220px;
+    }
+
+    .destaques-news {
+        padding: 1rem 1.5rem 3rem;
+    }
+
+    .destaques-news__text h2 {
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .destaques-carousel-container {
+        max-width: 300px;
+    }
+
+    .card {
+        width: 220px;
+        height: 320px;
+    }
+
+    .card__back {
+        padding: 0 15px;
+    }
+
+    .destaques--card-info h2 {
+        font-size: 1.3rem;
+    }
+
+    .destaques--card-info p {
+        font-size: 1rem;
+    }
+
+    .destaques--card-testimonial p {
+        font-size: 1rem;
+    }
+
+    .destaques-carousel-control {
+        width: 35px;
+        height: 35px;
+    }
+
+    .destaques-carousel-control.prev {
+        left: -1%;
+    }
+
+    .destaques-carousel-control.next {
+        right: -1%;
+    }
+
+    #formacao {
+        padding: 3rem 1.5rem 5rem;
+    }
+
+    #formacao .formacao--container h2 {
+        font-size: 2.5rem;
+    }
+
+    .formacao-flex {
+        gap: 1.5rem;
+    }
+
+    .formacao-card {
+        width: 100%;
+        max-width: 24rem;
+        padding: 1.5rem;
+    }
+
+    .card-info h3 {
+        font-size: 1.25rem;
+    }
+
+    .card-info p,
+    .card-details p {
+        font-size: 1rem;
+    }
+
+    .card-details strong {
+        font-size: 1.1rem;
+    }
+
+    #formacaoMostrarMaisBtn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.05rem;
+    }
+
+    .projects {
+        padding: 3rem 1.5rem 5rem;
+    }
+    
+    .projeto__text h2 {
+        font-size: 2.5rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 0 1rem;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    
+    .project-item {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .project-item:hover {
+        transform: scale(1.05);
+    }
+    
+    .project-overlay__title {
+        font-size: 1.8rem;
+    }
+    
+    .projects--github {
+        font-size: 1.3rem;
+    }
+    
+    .titulo-sessao-modal {
+        font-size: 2rem;
+    }
+    
+    .modal-body {
+        padding: 1.5rem;
+    }
+
+    #ProjectMostrarMaisProjetosBtn {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+    
+    #ProjectMostrarMaisProjetosBtn svg {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    
+    .project-icons-header {
+        margin: 1rem 0;
+        justify-content: center;
+    }
+    
+    .project-icons-header img {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: 0 0.3rem;
+    }
+    
+    .botoes-footer {
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .botao-footer-modal {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        width: 60%;
+    }
+
+    .skills {
+        padding: 3rem 1.5rem 5rem;
+    }
+    
+    .skills__text h2 {
+        font-size: 2.5rem;
+    }
+    
+    .skills__filter {
+        margin-bottom: 2rem;
+        gap: 0.8rem;
+    }
+    
+    .skills__flex {
+        gap: 1.5rem;
+    }
+    
+    .skill__card {
+        width: 8rem;
+        height: 7.5rem;
+    }
+    
+    .skill__card img {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .skill__card h1 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        padding: 1.5rem 2rem;
+        gap: 2rem;
+    }
+    
+    .footer--grid-layout {
+        gap: 2rem;
+        padding: 0 0.8rem;
+    }
+    
+    footer p {
+        font-size: 1.1rem;
+    }
+    
+    footer img {
+        width: 1.8rem;
+    }
+    
+    footer div {
+        gap: 0.6rem;
+    }
+}
+
+/* Smartphone M */
+@media screen and (max-width: 376px) {
+
+    /* Navbar */
+    .header__logo-img {
+        width: 11rem;
+    }
+
+    .header__menu-link {
+        font-size: 1.2rem;
+    }
+
+    .header__menu-toggle span {
+        width: 65%;
+        height: .24rem;
+    }
+
+    .header__menu-toggle {
+        gap: .4rem;
+    }
+
+    /* Tela de carregamento */
+    .loader .circle {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    #loading-screen p {
+        font-size: 1.1rem;
+    }
+
+    /* Início (Hero) */
+    .hero__title,
+    .hero__title__subtitle {
+        font-size: 2.2rem;
+    }
+
+    .typewriter {
+        font-size: 1.1rem;
+    }
+
+    .hero__image-container img {
+        width: 21rem;
+    }
+
+    .hero__button-download,
+    .hero__button-contact {
+        width: 15rem;
+        padding: .8rem 2rem;
+        font-size: 1.2rem;
+        max-width: 30rem;
+    }
+
+    .hero__button-download:hover,
+    .hero__button-contact:hover {
+        width: 17rem;
+        padding: .8rem 3rem;
+        max-width: 40rem;
+    }
+
+    .about {
+        padding: 2rem 2rem 0;
+    }
+
+    .about__image-container {
+        max-width: 210px;
+    }
+
+    .about__text-container nav ul li img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .about__text-container nav ul a::after {
+        font-size: .8rem;
+    }
+
+    .destaques-news {
+        padding: 1rem 1rem 2.5rem;
+    }
+
+    .destaques-news__text h2 {
+        font-size: 1.8rem;
+    }
+
+    .destaques-carousel-container {
+        max-width: 280px;
+    }
+
+    .card {
+        width: 200px;
+        height: 300px;
+    }
+
+    .card__back {
+        padding: 0 10px;
+    }
+
+    .destaques--card-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .destaques--card-info p {
+        font-size: 0.9rem;
+    }
+
+    .destaques--card-testimonial p {
+        font-size: 0.9rem;
+    }
+
+    #formacao {
+        padding: 2.5rem 1rem 4.5rem;
+    }
+
+    #formacao .formacao--container h2 {
+        font-size: 2.3rem;
+    }
+
+    .formacao-card {
+        padding: 1.3rem;
+    }
+
+    .card-header img {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .card-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-info p,
+    .card-details p {
+        font-size: 0.95rem;
+    }
+
+    .card-details strong {
+        font-size: 1.05rem;
+    }
+
+    #formacaoMostrarMaisBtn {
+        font-size: 1rem;
+    }
+
+    .projects {
+        padding: 2.5rem 1rem 4rem;
+    }
+    
+    .projeto__text h2 {
+        font-size: 2.2rem;
+    }
+    
+    .project-overlay__title {
+        font-size: 1.6rem;
+    }
+    
+    .project-icons img {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+    
+    .titulo-sessao-modal {
+        font-size: 1.8rem;
+    }
+    
+    .paragrafos-sessao-modal,
+    .data-sessao-modal {
+        font-size: 1.1rem;
+    }
+    
+    .botao-footer-modal {
+        padding: 0.6rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .skills {
+        padding: 2.5rem 1rem 4rem;
+    }
+    
+    .skills__text h2 {
+        font-size: 2.3rem;
+    }
+    
+    .skills__filter button {
+        padding: 0.6rem 1.1rem;
+        font-size: 0.9rem;
+    }
+    
+    .skills__flex {
+        gap: 1.2rem;
+    }
+    
+    .skill__card {
+        width: 7.5rem;
+        height: 7rem;
+    }
+
+    footer {
+        padding: 1.3rem 1.5rem;
+        gap: 1.5rem;
+    }
+    
+    .footer--grid-layout {
+        gap: 1.5rem;
+    }
+    
+    footer p {
+        font-size: 1rem;
+    }
+    
+    footer img {
+        width: 1.6rem;
+    }
+    
+    footer div {
+        gap: 0.5rem;
+    }
+}
+
+/* Smartphone P */
+@media screen and (max-width: 321px) {
+
+    /* Navbar */
+    .header__logo-img {
+        width: 10rem;
+    }
+
+    .header__menu-link {
+        font-size: 1.1rem;
+    }
+
+    /* Tela de carregamento */
+    .loader .circle {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    #loading-screen p {
+        font-size: 1rem;
+    }
+
+    /* Início (Hero) */
+    .hero__title,
+    .hero__title__subtitle {
+        font-size: 2.1rem;
+    }
+
+    .hero__image-container img {
+        width: 20rem;
+    }
+
+    .hero__button-download,
+    .hero__button-contact {
+        width: 15rem;
+        padding: .7rem 2rem;
+        font-size: 1.1rem;
+        max-width: 30rem;
+    }
+
+    .hero__button-download:hover,
+    .hero__button-contact:hover {
+        width: 15rem;
+        padding: .7rem 3rem;
+        max-width: 40rem;
+    }
+
+    .about {
+        padding: 1rem 1.5rem 0;
+    }
+
+    .about__container {
+        padding: 3rem;
+    }
+
+    .about__image-container {
+        max-width: 200px;
+    }
+
+    .about__text-container nav ul li img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .about__text-container nav ul a::after {
+        font-size: .7rem;
+    }
+
+    .destaques-news {
+        padding: 1rem 0.8rem 2rem;
+    }
+
+    .destaques-news__text h2 {
+        font-size: 1.6rem;
+    }
+
+    .destaques-carousel-container {
+        max-width: 250px;
+    }
+
+    .card {
+        width: 180px;
+        height: 280px;
+    }
+
+    .destaques--card-info h2 {
+        font-size: 1.1rem;
+    }
+
+    .destaques--card-info p {
+        font-size: 0.8rem;
+    }
+
+    .destaques--card-testimonial p {
+        font-size: 0.8rem;
+    }
+
+    .destaques-carousel-control {
+        width: 30px;
+        height: 30px;
+    }
+
+    #formacao .formacao--container h2 {
+        font-size: 2.1rem;
+    }
+
+    .card-header {
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .card-info h3 {
+        font-size: 1.15rem;
+    }
+
+    .card-info p,
+    .card-details p {
+        font-size: 0.9rem;
+    }
+
+    .card-details strong {
+        font-size: 1rem;
+    }
+
+    #formacaoMostrarMaisBtn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.95rem;
+    }
+
+    .projeto__text h2 {
+        font-size: 2rem;
+    }
+    
+    .projects-grid {
+        gap: 2.5rem;
+    }
+    
+    .project-overlay {
+        gap: 1rem;
+    }
+    
+    .project-overlay__title {
+        font-size: 1.4rem;
+    }
+    
+    .project-tooltip {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+    
+    .titulo-sessao-modal {
+        font-size: 1.6rem;
+    }
+    
+    .project-icons-header img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    #ProjectMostrarMaisProjetosBtn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .botao-footer-modal {
+        width: 100%; 
+        margin: 0.3rem 0;
+    }
+
+    .skills__text h2 {
+        font-size: 2.1rem;
+    }
+    
+    .skills__filter {
+        gap: 0.6rem;
+    margin-bottom: 1.8rem;
+    }
+    
+    .skills__flex {
+        gap: 1rem;
+    }
+    
+    .skill__card {
+        width: 7rem;
+        height: 6.5rem;
+    }
+    
+    .skill__card img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .skill__card h1 {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 1rem 1rem;
+        gap: 1rem;
+    }
+    
+    .footer--grid-layout {
+        gap: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    footer p {
+        font-size: 0.9rem;
+    }
+    
+    footer img {
+        width: 1.4rem;
+    }
+    
+    footer div {
+        gap: 0.4rem;
+    }
+}

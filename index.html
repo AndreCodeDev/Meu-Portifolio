@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tech Portfolio | <andrecode/></title>
+    <meta
+      name="description"
+      content="Portfólio de André Vitor, desenvolvedor de software, especialista em sistemas e entusiasta da tecnologia. Conheça meus projetos e habilidades."
+    />
+    <meta
+      name="keywords"
+      content="Desenvolvedor, Software, Sistemas, Programação, Portfólio, André Vitor, TI"
+    />
+    <meta name="author" content="André Vitor" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      property="og:title"
+      content="André Vitor | Desenvolvedor de Software e Sistemas"
+    />
+    <meta
+      property="og:description"
+      content="Portfólio de André Vitor, especialista em software e TI."
+    />
+    <meta property="og:url" content="https://andrecode.dev.br" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="img/logoGuia.svg" type="image/svg" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/responsiveness.css" />
+  </head>
+
+  <body>
+    <!-- Tela de Carregamento -->
+    <section id="loading-screen">
+      <div class="loading-card">
+        <div class="loader">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+        <p>Carregando...</p>
+      </div>
+    </section>
+
+    <main>
+      <!-- navbar -->
+      <header class="header" id="menu">
+        <a href="index.html">
+          <img
+            id="headerLogo"
+            src="img/logoNavbarBranca.png"
+            class="header__logo-img"
+          />
+        </a>
+
+        <div class="header__menu__toggleButton">
+          <nav>
+            <div class="header__menu-toggle" id="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <ul class="header__menu" id="header__menu">
+              <li class="header__menu-item">
+                <a
+                  id="header__menu-link-int"
+                  href="index.html"
+                  class="header__menu-link"
+                  >Início</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a
+                  id="header__menu-link-sobre"
+                  href="#sobre"
+                  class="header__menu-link"
+                  >Sobre</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a
+                  id="header__menu-link-destaques"
+                  href="#destaques"
+                  class="header__menu-link"
+                  >Destaques</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a
+                  id="header__menu-link-formacao"
+                  href="#formacao"
+                  class="header__menu-link"
+                  >Formações</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a
+                  id="header__menu-link-projeto"
+                  href="#projeto"
+                  class="header__menu-link"
+                  >Projetos</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a
+                  id="header__menu-link-habilidades"
+                  href="#habilidades"
+                  class="header__menu-link"
+                  >Habilidades</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <section>
+            <!-- Botão de alternar tema -->
+            <div class="theme-container">
+              <div class="theme-content">
+                <div class="toggle-container" id="themeToggle">
+                  <div class="toggle-switch"></div>
+                  <span id="themeTooltip" class="tooltip">Tema Claro</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </header>
+
+      <!-- hero -->
+      <section id="inicio" class="hero">
+        <div>
+          <div class="container--hero">
+            <div id="container--animacaoText" class="fade-in"></div>
+
+            <section id="inicio" class="hero__buttons fade-in">
+              <a
+                href="curriculo.pdf"
+                download="curriculo.pdf"
+                class="hero__button-download fade-in"
+                >Download CV</a
+              >
+              <a href="#sobre" class="hero__button-contact fade-in"
+                >Entrar em Contato</a
+              >
+
+            </section>
+          </div>
+        </div>
+
+        <div class="hero__image-container fade-in">
+          <img
+            id="heroImage"
+            class="hero__image"
+            src="img/logoHeroPreta.svg"
+            alt="logoHero"
+          />
+        </div>
+      </section>
+
+      <!-- about -->
+      <section id="sobre" class="about fade-in">
+        <div class="teste">
+          <div class="about__container">
+            <div class="about__image-container">
+              <img src="img/imgAbout.png" alt="Foto de André Vitor" />
+            </div>
+            <div class="about__text-container">
+              <div>
+                <h4>Quem sou</h4>
+                <h2>André Vitor</h2>
+                <h3>Desenvolvedor Júnior</h3>
+                <p>
+                  Transformo código em soluções eficientes e escaláveis! Desde
+                  cedo, fui fascinado por tecnologia, o que me levou a estudar
+                  Análise e Desenvolvimento de Sistemas. Sou formado pela ETEC e
+                  graduando na FACENS com bolsa integral pelo ProUni.
+                  <br />Busco aprimorar constantemente minhas habilidades em
+                  lógica de programação, arquitetura de software e boas práticas
+                  de desenvolvimento. Meu foco é criar impacto real por meio de
+                  projetos inovadores, combinando eficiência e escalabilidade.
+                </p>
+                <h5>Meios de contato</h5>
+                <nav>
+                  <ul>
+                    <a
+                      href="https://www.linkedin.com/in/andrecodedev/"
+                      target="_blank"
+                      rel="noopener"
+                      data-tooltip="LinkedIn"
+                    >
+                      <li>
+                        <img
+                          src="img/redes/linkedin.svg"
+                          alt="Ícone do LinkedIn"
+                        />
+                      </li>
+                    </a>
+                    <a
+                      href="https://github.com/AndreCodeDev"
+                      target="_blank"
+                      rel="noopener"
+                      data-tooltip="GitHub"
+                    >
+                      <li>
+                        <img src="img/redes/github.svg" alt="Ícone do GitHub" />
+                      </li>
+                    </a>
+                    <a
+                      href="mailto:contato.andrecodedev@gmail.com"
+                      rel="noopener"
+                      data-tooltip="Email"
+                    >
+                      <li>
+                        <img src="img/redes/email.svg" alt="Ícone de Email" />
+                      </li>
+                    </a>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- carrocel about -->
+      <div class="carrossel-container">
+        <div class="carrossel">
+          <div class="carrossel-item">
+            <img src="img/skills/html.svg" alt="HTML" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/css.svg" alt="CSS" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/java.svg" alt="Java" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/javascript.svg" alt="JavaScript" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/bootstrap.svg" alt="HTML" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/sql.svg" alt="HTML" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/git.svg" alt="HTML" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/vscode.svg" alt="HTML" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/visualstudy.svg" alt="HTML" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/eclipse.svg" alt="HTML" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/agil.svg" alt="HTML" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/figma.svg" alt="HTML" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/trello.svg" alt="HTML" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/jira.svg" alt="HTML" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/canva.svg" alt="HTML" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/office.svg" alt="HTML" />
+          </div>
+        </div>
+      </div>      
+
+      <!-- destaques carrossel -->
+      <section id="destaques" class="destaques-news fade-in">
+        <!-- Título da Seção -->
+        <article class="destaques-news__text fade-in">
+          <h2>Destaques <span>.</span></h2>
+        </article>
+
+        <!-- Container do Carrossel -->
+        <div class="destaques-carousel-container">
+          <!-- Cards do Carrossel -->
+          <div class="destaques-carousel fade-in">
+
+            <!-- Card 1 -->
+            <div class="card active fade-in">
+              <div class="card__front">
+                <div class="ripple-hint"></div>
+                <img src="img/destaqueProuni.jpg" alt="Notícia 1" />
+            </div>
+
+              <div class="card__back">
+                
+              <article class="destaques-card fade-in">
+                <!-- Cabeçalho do Card com logo e informações principais -->
+                <div class="destaques--card-header">
+                  <div class="destaques--card-info">
+                    <h2>Da Superação à Conquista</h2>
+                    <p>Bolsa 100% ProUni - FACENS</p>
+                  </div>
+                </div>
+              
+                <!-- Detalhes do curso -->
+                <div class="destaques--card-details">
+                  <div class="destaques--card-testimonial">
+                    <p>
+                      "Quando vi meu nome na lista de aprovados... foi surreal. Um sonho de anos, desde os 14 de idade, materializado. 
+                      Eu estudava, me preparava, mas nada me preparou para aquele momento.
+                      <br><br>
+                      Meu nome. Ali. O que antes era apenas relato alheio, agora era minha história. O êxtase, 
+                      o alívio, a felicidade que extravasava. E o olhar da minha família? Inestimável. Cada noite 
+                      em claro, cada dúvida - tudo se transformou nisso. Tudo valeu."
+                    </p>
+                  </div>
+
+                </div>
+            
+              </article>
+
+              </div>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card fade-in">
+              <div class="card__front">
+                <div class="ripple-hint"></div>
+                <img src="img/destaque5.jpg" alt="Notícia 1" />
+            </div>
+
+              <div class="card__back">
+
+                <article class="destaques-card fade-in">
+                  <!-- Cabeçalho do Card com logo e informações principais -->
+                  <div class="destaques--card-header">
+                    <div class="destaques--card-info">
+                      <h2>Da Superação à Conquista</h2>
+                      <p>Bolsa 100% ProUni - FACENS</p>
+                    </div>
+                  </div>
+                
+                  <!-- Detalhes do curso -->
+                  <div class="destaques--card-details">
+                    <div class="destaques--card-testimonial">
+                      <p>
+                        "Quando vi meu nome na lista de aprovados... foi surreal. Um sonho de anos, desde os 14 de idade, materializado. 
+                        Eu estudava, me preparava, mas nada me preparou para aquele momento.
+                        <br><br>
+                        Meu nome. Ali. O que antes era apenas relato alheio, agora era minha história. O êxtase, 
+                        o alívio, a felicidade que extravasava. E o olhar da minha família? Inestimável. Cada noite 
+                        em claro, cada dúvida - tudo se transformou nisso. Tudo valeu."
+                      </p>
+                    </div>
+  
+                  </div>
+              
+                </article>
+
+              </div>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card fade-in">
+              <div class="card__front">
+                <div class="ripple-hint"></div>
+                <img src="img/destaque4.jpg" alt="Notícia 1" />
+            </div>
+
+              <div class="card__back">
+
+                <article class="destaques-card fade-in">
+                  <!-- Cabeçalho do Card com logo e informações principais -->
+                  <div class="destaques--card-header">
+                    <div class="destaques--card-info">
+                      <h2>Da Superação à Conquista</h2>
+                      <p>Bolsa 100% ProUni - FACENS</p>
+                    </div>
+                  </div>
+                
+                  <!-- Detalhes do curso -->
+                  <div class="destaques--card-details">
+                    <div class="destaques--card-testimonial">
+                      <p>
+                        "Quando vi meu nome na lista de aprovados... foi surreal. Um sonho de anos, desde os 14 de idade, materializado. 
+                        Eu estudava, me preparava, mas nada me preparou para aquele momento.
+                        <br><br>
+                        Meu nome. Ali. O que antes era apenas relato alheio, agora era minha história. O êxtase, 
+                        o alívio, a felicidade que extravasava. E o olhar da minha família? Inestimável. Cada noite 
+                        em claro, cada dúvida - tudo se transformou nisso. Tudo valeu."
+                      </p>
+                    </div>
+  
+                  </div>
+              
+                </article>
+
+              </div>
+
+            </div>
+
+          <!-- Controles do Carrossel -->
+          <button class="destaques-carousel-control prev" type="button">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden fade-in">Anterior</span>
+          </button>
+          <button class="destaques-carousel-control next" type="button">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden fade-in">Próximo</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- formação -->
+      <section id="formacao">
+      <div class="formacao--container">
+
+      <article class="formacao__text fade-in">
+        <h2>Formações <span>.</span></h2>
+      </article>
+
+      <div class="formacao-flex fade-in">
+
+      <!-- Cards Visíveis Inicialmente -->
+        <article class="formacao-card fade-in">
+          <div class="card-header">
+            <img src="img/redes/facens.svg" alt="Facens" class="icon" />
+            <div class="card-info">
+              <h3>Bacharelando em ADS</h3>
+              <p>Universidade de Engenharia e Tecnologia - FACENS</p>
+            </div>
+          </div>
+          <div class="card-details">
+            <p><strong>Status:</strong> Cursando (2º Semestre)</p>
+            <p><strong>Data de início:</strong> 01/08/2024</p>
+            <p><strong>Conclusão prevista:</strong> 31/12/2026</p>
+          </div>
+        </article>
+
+        <article class="formacao-card fade-in">
+          <div class="card-header">
+            <img src="img/redes/oneBitCode.svg" alt="OneBitCode" class="icon" />
+            <div class="card-info">
+              <h3>Full Stack JavaScript</h3>
+              <p>Infinity PRO OneBitCode</p>
+            </div>
+          </div>
+          <div class="card-details">
+            <p><strong>Status:</strong> Cursando</p>
+            <p><strong>Data de início:</strong> 01/01/2025</p>
+            <p><strong>Conclusão prevista:</strong> Acesso Vitalício</p>
+          </div>
+        </article>
+
+        <article class="formacao-card fade-in">
+          <div class="card-header">
+            <img src="img/redes/oracleNextEducation.svg" alt="Oracle Next Education" class="icon" />
+            <div class="card-info">
+              <h3>Turma 8 ONE - Oracle Next Education</h3>
+              <p>Alura + Oracle</p>
+            </div>
+          </div>
+          <div class="card-details">
+            <p><strong>Status:</strong> Cursando</p>
+            <p><strong>Data de início:</strong> 01/02/2025</p>
+            <p><strong>Conclusão prevista:</strong> 30/08/2025</p>
+          </div>
+        </article>
+
+        <article class="formacao-card fade-in">
+          <div class="card-header">
+            <img src="img/redes/ccbeu.svg" alt="CCBEU" class="icon" />
+            <div class="card-info">
+              <h3>Inglês como Segunda Língua (ESL)</h3>
+                <p>CCBEU - Centro Cultural Brasil-Estados Unidos</p>
+            </div>
+          </div>
+          <div class="card-details">
+            <p><strong>Status:</strong> Cursando</p>
+            <p><strong>Data de início:</strong> 01/10/2024</p>
+            <p><strong>Conclusão prevista:</strong> 30/10/2025</p>
+          </div>
+        </article>
+
+
+        
+
+        <!-- Cards Ocultos Inicialmente -->
+
+        <article class="formacao-card hidden fade-in">
+          <div class="card-header">
+            <img src="img/redes/etec.svg" alt="ETEC" class="icon" />
+            <div class="card-info">
+              <h3>Técnico em ADS</h3>
+              <p>Escola Técnica Estadual - ETEC</p>
+            </div>
+          </div>
+          <div class="card-details">
+            <p><strong>Status:</strong> Concluído</p>
+            <p><strong>Data de início:</strong> 01/08/2022</p>
+            <p><strong>Data de conclusão:</strong> 31/12/2023</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Botão para Mostrar Mais Cards -->
+      <footer class="formacao-footer fade-in">
+              <button id="formacaoMostrarMaisBtn">
+                <span id="formacaoTextoBotao">Ver mais formações</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+              </button>
+      </footer>
+
+      </div>
+      </section>
+
+      <!-- project -->    
+      <section id="projeto" class="projects">
+
+      <article class="projeto__text fade-in">
+        <h2>Projetos <span>.</span></h2>
+      </article>
+
+      <div class="projects-grid">
+
+      <!--visivel-->
+
+      <!-- Projeto 1 -->
+      <div class="project-item">
+            <a href="#exampleModal1" data-bs-toggle="modal" data-bs-target="#exampleModal1" aria-label="Ver detalhes do projeto Clone da Netflix Web">
+                <!-- Imagem do projeto -->
+                <img class="project-image fade-in" src="img/project/imagemProjetos/netflixSite.jpg" alt="Clone da Netflix">
+                <!-- Overlay do projeto -->
+                <div class="project-overlay">
+                  <h3 class="project-overlay__title fade-in">Clone da Netflix Web</h3>
+                  <div class="project-icons fade-in" role="list">
+                      <img src="img/skills/html.svg" alt="html" role="listitem">
+                      <img src="img/skills/css.svg" alt="css" role="listitem">
+                      <img src="img/skills/javascript.svg" alt="javascript" role="listitem">
+                      <img src="img/skills/bootstrap.svg" alt="bootstrap" role="listitem">
+                      <img src="img/skills/vscode.svg" alt="vscode" role="listitem">
+                      <img src="img/skills/git.svg" alt="git" role="listitem">
+                      <img src="img/skills/figma.svg" alt="figma" role="listitem">
+                      <img src="img/skills/canva.svg" alt="canva" role="listitem">
+                  </div>
+              </div>
+            </a>
+        
+            <div class="project-item">              
+              <div class="project-tooltip" href="#exampleModal1" data-bs-toggle="modal" data-bs-target="#exampleModal1" aria-label="Ver detalhes do projeto Clone da Netflix Web">
+                  <p class="project-tooltip__date">02 Março de 2020</p>
+                  <a class="project-tooltip__link">Ver mais</a>
+              </div>
+          </div>
+            
+            
+      </div>
+      <!-- Modal 1 -->
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <!-- Body -->
+                <div class="modal-body">
+                    <section class="sessao-modal">
+                        <div class="sessao-video">
+                            <video src="img/project/videoProjetos/amigoSecreto.mp4" class="projeto-video" controls autoplay></video>
+                        </div>
+                        <div class="texto-sessao-modal">
+                            <h1 class="titulo-sessao-modal">PetLife</h1>
+                            <p class="paragrafos-sessao-modal">
+                                O site PetLife foi desenvolvido como parte de um projeto introdutório na OneBitCode, 
+                                utilizando HTML, CSS, JavaScript, Figma e Visual Studio Code. O objetivo principal era aprender os conceitos fundamentais 
+                                dessas ferramentas de forma prática e introdutória na área de desenvolvimento web. <br><br>O projeto consiste em um site simples 
+                                para um pet shop, contendo algumas seções com informações sobre o comércio, organizadas de forma clara e acessível. Esse 
+                                trabalho proporcionou uma base sólida para entender o processo de criação e estruturação de um site, desde o design inicial 
+                                no Figma até a implementação com código.
+                            </p>
+                            <h1 class="data-sessao-modal">02 Março de 2020</h1>
+
+                            <div class="project-icons-header">
+                              <ul>
+                                  <li data-tooltip="HTML5">
+                                      <img src="img/skills/html.svg" alt="html" role="listitem">
+                                  </li>
+                                  <li data-tooltip="CSS3">
+                                      <img src="img/skills/css.svg" alt="css" role="listitem">
+                                  </li>
+                                  <li data-tooltip="JavaScript">
+                                      <img src="img/skills/javascript.svg" alt="javascript" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Bootstrap">
+                                      <img src="img/skills/bootstrap.svg" alt="bootstrap" role="listitem">
+                                  </li>
+                                  <li data-tooltip="VS Code">
+                                      <img src="img/skills/vscode.svg" alt="vscode" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Git">
+                                      <img src="img/skills/git.svg" alt="git" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Figma">
+                                      <img src="img/skills/figma.svg" alt="figma" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Canva">
+                                      <img src="img/skills/canva.svg" alt="canva" role="listitem">
+                                  </li>
+                              </ul>
+                          </div>
+                        </div>
+                    </section>
+                </div>
+    
+                <!-- Footer -->
+                <div class="footer-modal">
+                    <div class="botoes-footer">
+                        <a href="#"><button class="botao-footer-modal" target="_blank">Acessar projeto</button></a>
+                        <a href="#"><button class="botao-footer-modal" target="_blank">Acessar repertório GitHub</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="project-item">
+            <a href="#exampleModal2" data-bs-toggle="modal" data-bs-target="#exampleModal2" aria-label="Ver detalhes do projeto Clone da Netflix Web">
+                <!-- Imagem do projeto -->
+                <img class="project-image fade-in" src="img/project/imagemProjetos/netflixSite.jpg" alt="Clone da Netflix">
+                <!-- Overlay do projeto -->
+                <div class="project-overlay">
+                  <h3 class="project-overlay__title fade-in">Clone da Netflix Web</h3>
+                  <div class="project-icons fade-in" role="list">
+                      <img src="img/skills/html.svg" alt="html" role="listitem">
+                      <img src="img/skills/css.svg" alt="css" role="listitem">
+                      <img src="img/skills/javascript.svg" alt="javascript" role="listitem">
+                      <img src="img/skills/bootstrap.svg" alt="bootstrap" role="listitem">
+                      <img src="img/skills/vscode.svg" alt="vscode" role="listitem">
+                      <img src="img/skills/git.svg" alt="git" role="listitem">
+                      <img src="img/skills/figma.svg" alt="figma" role="listitem">
+                      <img src="img/skills/canva.svg" alt="canva" role="listitem">
+                  </div>
+              </div>
+            </a>
+        
+            <!-- Tooltip sutil na parte inferior -->
+            <div class="project-item">              
+              <div class="project-tooltip" href="#exampleModal1" data-bs-toggle="modal" data-bs-target="#exampleModal1" aria-label="Ver detalhes do projeto Clone da Netflix Web">
+                  <p class="project-tooltip__date">02 Março de 2020</p>
+                  <a class="project-tooltip__link">Ver mais</a>
+              </div>
+          </div>
+            
+      </div>
+      <!-- Modal 2 -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <!-- Body -->
+                <div class="modal-body">
+                    <section class="sessao-modal">
+                        <div class="sessao-video">
+                            <video src="img/project/videoProjetos/amigoSecreto.mp4" class="projeto-video" controls autoplay></video>
+                        </div>
+                        <div class="texto-sessao-modal">
+                            <h1 class="titulo-sessao-modal">PetLife</h1>
+                            <p class="paragrafos-sessao-modal">
+                                O site PetLife foi desenvolvido como parte de um projeto introdutório na OneBitCode, 
+                                utilizando HTML, CSS, JavaScript, Figma e Visual Studio Code. O objetivo principal era aprender os conceitos fundamentais 
+                                dessas ferramentas de forma prática e introdutória na área de desenvolvimento web. <br><br>O projeto consiste em um site simples 
+                                para um pet shop, contendo algumas seções com informações sobre o comércio, organizadas de forma clara e acessível. Esse 
+                                trabalho proporcionou uma base sólida para entender o processo de criação e estruturação de um site, desde o design inicial 
+                                no Figma até a implementação com código.
+                            </p>
+                            <h1 class="data-sessao-modal">02 Março de 2020</h1>
+
+                            <div class="project-icons-header">
+                              <ul>
+                                  <li data-tooltip="HTML5">
+                                      <img src="img/skills/html.svg" alt="html" role="listitem">
+                                  </li>
+                                  <li data-tooltip="CSS3">
+                                      <img src="img/skills/css.svg" alt="css" role="listitem">
+                                  </li>
+                                  <li data-tooltip="JavaScript">
+                                      <img src="img/skills/javascript.svg" alt="javascript" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Bootstrap">
+                                      <img src="img/skills/bootstrap.svg" alt="bootstrap" role="listitem">
+                                  </li>
+                                  <li data-tooltip="VS Code">
+                                      <img src="img/skills/vscode.svg" alt="vscode" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Git">
+                                      <img src="img/skills/git.svg" alt="git" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Figma">
+                                      <img src="img/skills/figma.svg" alt="figma" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Canva">
+                                      <img src="img/skills/canva.svg" alt="canva" role="listitem">
+                                  </li>
+                              </ul>
+                          </div>
+                        </div>
+                    </section>
+                </div>
+    
+                <!-- Footer -->
+                <div class="footer-modal">
+                    <div class="botoes-footer">
+                        <a href="#"><button class="botao-footer-modal" target="_blank">Acessar projeto</button></a>
+                        <a href="#"><button class="botao-footer-modal" target="_blank">Acessar repertório GitHub</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Projeto 3 -->
+      <div class="project-item">
+            <a href="#exampleModal3" data-bs-toggle="modal" data-bs-target="#exampleModal3" aria-label="Ver detalhes do projeto Clone da Netflix Web">
+                <!-- Imagem do projeto -->
+                <img class="project-image fade-in" src="img/project/imagemProjetos/netflixSite.jpg" alt="Clone da Netflix">
+                <!-- Overlay do projeto -->
+                <div class="project-overlay">
+                  <h3 class="project-overlay__title fade-in">Clone da Netflix Web</h3>
+                  <div class="project-icons fade-in" role="list">
+                      <img src="img/skills/html.svg" alt="html" role="listitem">
+                      <img src="img/skills/css.svg" alt="css" role="listitem">
+                      <img src="img/skills/javascript.svg" alt="javascript" role="listitem">
+                      <img src="img/skills/bootstrap.svg" alt="bootstrap" role="listitem">
+                      <img src="img/skills/vscode.svg" alt="vscode" role="listitem">
+                      <img src="img/skills/git.svg" alt="git" role="listitem">
+                      <img src="img/skills/figma.svg" alt="figma" role="listitem">
+                      <img src="img/skills/canva.svg" alt="canva" role="listitem">
+                  </div>
+              </div>
+            </a>
+        
+            <!-- Tooltip sutil na parte inferior -->
+            <div class="project-item">              
+              <div class="project-tooltip" href="#exampleModal1" data-bs-toggle="modal" data-bs-target="#exampleModal1" aria-label="Ver detalhes do projeto Clone da Netflix Web">
+                  <p class="project-tooltip__date">02 Março de 2020</p>
+                  <a class="project-tooltip__link">Ver mais</a>
+              </div>
+          </div>
+            
+      </div>
+      <!-- Modal 3 -->
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <!-- Body -->
+                <div class="modal-body">
+                    <section class="sessao-modal">
+                        <div class="sessao-video">
+                            <video src="img/project/videoProjetos/amigoSecreto.mp4" class="projeto-video" controls autoplay></video>
+                        </div>
+                        <div class="texto-sessao-modal">
+                            <h1 class="titulo-sessao-modal">PetLife</h1>
+                            <p class="paragrafos-sessao-modal">
+                                O site PetLife foi desenvolvido como parte de um projeto introdutório na OneBitCode, 
+                                utilizando HTML, CSS, JavaScript, Figma e Visual Studio Code. O objetivo principal era aprender os conceitos fundamentais 
+                                dessas ferramentas de forma prática e introdutória na área de desenvolvimento web. <br><br>O projeto consiste em um site simples 
+                                para um pet shop, contendo algumas seções com informações sobre o comércio, organizadas de forma clara e acessível. Esse 
+                                trabalho proporcionou uma base sólida para entender o processo de criação e estruturação de um site, desde o design inicial 
+                                no Figma até a implementação com código.
+                            </p>
+                            <h1 class="data-sessao-modal">02 Março de 2020</h1>
+
+                            <div class="project-icons-header">
+                              <ul>
+                                  <li data-tooltip="HTML5">
+                                      <img src="img/skills/html.svg" alt="html" role="listitem">
+                                  </li>
+                                  <li data-tooltip="CSS3">
+                                      <img src="img/skills/css.svg" alt="css" role="listitem">
+                                  </li>
+                                  <li data-tooltip="JavaScript">
+                                      <img src="img/skills/javascript.svg" alt="javascript" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Bootstrap">
+                                      <img src="img/skills/bootstrap.svg" alt="bootstrap" role="listitem">
+                                  </li>
+                                  <li data-tooltip="VS Code">
+                                      <img src="img/skills/vscode.svg" alt="vscode" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Git">
+                                      <img src="img/skills/git.svg" alt="git" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Figma">
+                                      <img src="img/skills/figma.svg" alt="figma" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Canva">
+                                      <img src="img/skills/canva.svg" alt="canva" role="listitem">
+                                  </li>
+                              </ul>
+                          </div>
+                        </div>
+                    </section>
+                </div>
+    
+                <!-- Footer -->
+                <div class="footer-modal">
+                    <div class="botoes-footer">
+                        <a href="#"><button class="botao-footer-modal" target="_blank">Acessar projeto</button></a>
+                        <a href="#"><button class="botao-footer-modal" target="_blank">Acessar repertório GitHub</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!--nao visivel-->
+
+      <!-- Projeto 4 -->
+      <div class="project-item hidden">
+            <a href="#exampleModal4" data-bs-toggle="modal" data-bs-target="#exampleModal4" aria-label="Ver detalhes do projeto Clone da Netflix Web">
+                <!-- Imagem do projeto -->
+                <img class="project-image fade-in" src="img/project/imagemProjetos/netflixSite.jpg" alt="Clone da Netflix">
+                <!-- Overlay do projeto -->
+                <div class="project-overlay">
+                  <h3 class="project-overlay__title fade-in">Clone da Netflix Web</h3>
+                  <div class="project-icons fade-in" role="list">
+                      <img src="img/skills/html.svg" alt="html" role="listitem">
+                      <img src="img/skills/css.svg" alt="css" role="listitem">
+                      <img src="img/skills/javascript.svg" alt="javascript" role="listitem">
+                      <img src="img/skills/bootstrap.svg" alt="bootstrap" role="listitem">
+                      <img src="img/skills/vscode.svg" alt="vscode" role="listitem">
+                      <img src="img/skills/git.svg" alt="git" role="listitem">
+                      <img src="img/skills/figma.svg" alt="figma" role="listitem">
+                      <img src="img/skills/canva.svg" alt="canva" role="listitem">
+                  </div>
+              </div>
+            </a>
+        
+            <!-- Tooltip sutil na parte inferior -->
+            <div class="project-item">              
+              <div class="project-tooltip" href="#exampleModal1" data-bs-toggle="modal" data-bs-target="#exampleModal1" aria-label="Ver detalhes do projeto Clone da Netflix Web">
+                  <p class="project-tooltip__date">02 Março de 2020</p>
+                  <a class="project-tooltip__link">Ver mais</a>
+              </div>
+          </div>
+            
+      </div>
+      <!-- Modal 4 -->
+      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <!-- Body -->
+                <div class="modal-body">
+                    <section class="sessao-modal">
+                        <div class="sessao-video">
+                            <video src="img/project/videoProjetos/amigoSecreto.mp4" class="projeto-video" controls autoplay></video>
+                        </div>
+                        <div class="texto-sessao-modal">
+                            <h1 class="titulo-sessao-modal">PetLife</h1>
+                            <p class="paragrafos-sessao-modal">
+                                O site PetLife foi desenvolvido como parte de um projeto introdutório na OneBitCode, 
+                                utilizando HTML, CSS, JavaScript, Figma e Visual Studio Code. O objetivo principal era aprender os conceitos fundamentais 
+                                dessas ferramentas de forma prática e introdutória na área de desenvolvimento web. <br><br>O projeto consiste em um site simples 
+                                para um pet shop, contendo algumas seções com informações sobre o comércio, organizadas de forma clara e acessível. Esse 
+                                trabalho proporcionou uma base sólida para entender o processo de criação e estruturação de um site, desde o design inicial 
+                                no Figma até a implementação com código.
+                            </p>
+                            <h1 class="data-sessao-modal">02 Março de 2020</h1>
+
+                            <div class="project-icons-header">
+                              <ul>
+                                  <li data-tooltip="HTML5">
+                                      <img src="img/skills/html.svg" alt="html" role="listitem">
+                                  </li>
+                                  <li data-tooltip="CSS3">
+                                      <img src="img/skills/css.svg" alt="css" role="listitem">
+                                  </li>
+                                  <li data-tooltip="JavaScript">
+                                      <img src="img/skills/javascript.svg" alt="javascript" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Bootstrap">
+                                      <img src="img/skills/bootstrap.svg" alt="bootstrap" role="listitem">
+                                  </li>
+                                  <li data-tooltip="VS Code">
+                                      <img src="img/skills/vscode.svg" alt="vscode" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Git">
+                                      <img src="img/skills/git.svg" alt="git" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Figma">
+                                      <img src="img/skills/figma.svg" alt="figma" role="listitem">
+                                  </li>
+                                  <li data-tooltip="Canva">
+                                      <img src="img/skills/canva.svg" alt="canva" role="listitem">
+                                  </li>
+                              </ul>
+                          </div>
+                        </div>
+                    </section>
+                </div>
+    
+                <!-- Footer -->
+                <div class="footer-modal">
+                    <div class="botoes-footer">
+                        <a href="#"><button class="botao-footer-modal" target="_blank">Acessar projeto</button></a>
+                        <a href="#"><button class="botao-footer-modal" target="_blank">Acessar repertório GitHub</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="fade-in">
+        <footer class="project-footer fade-in">
+          <button id="ProjectMostrarMaisProjetosBtn">
+            <span id="ProjectTextoBotaoProjetos">Ver mais projetos</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <a href="https://github.com/AndreCodeDev" rel="noopener" target="_blank" class="projects--github">
+            Ver todos os repositórios no GitHub
+          </a>
+        </footer>
+      </div>
+
+      </section>
+
+      <!-- skills -->    
+      <section id="habilidades" class="skills">
+        <div class="skills__container">
+
+            <article class="skills__text fade-in">
+                <h2>Habilidades <span>.</span></h2>
+            </article>
+
+            <!-- Botões para filtrar as habilidades -->
+            <div class="skills__filter fade-in ">
+                <button onclick="filterSkills('all', event)">Todas</button>
+                <button onclick="filterSkills('linguagens', event)">Linguagens</button>
+                <button onclick="filterSkills('ferramentas', event)">Ferramentas</button>
+                <button onclick="filterSkills('ides', event)">IDEs</button>
+                <button onclick="filterSkills('metodologias', event)">Metodologias</button>
+                <button onclick="filterSkills('frameworks', event)">Frameworks</button>
+                <button onclick="filterSkills('banco-dados', event)">Banco de Dados</button>
+            </div>
+
+            <!-- Cards de habilidades -->
+            <div class="skills__flex fade-in">
+                <!-- Linguagens de Programação -->
+                <div class="skill__card fade-in linguagens">
+                    <img src="img/skills/html.svg" alt="Ícone do HTML" />
+                    <h1>HTML5</h1>
+                </div>
+                <div class="skill__card fade-in linguagens">
+                    <img src="img/skills/css.svg" alt="Ícone do CSS" />
+                    <h1>CSS3</h1>
+                </div>
+                <div class="skill__card fade-in linguagens">
+                    <img src="img/skills/javascript.svg" alt="Ícone do JavaScript" />
+                    <h1>JavaScript</h1>
+                </div>
+                <div class="skill__card fade-in linguagens">
+                    <img src="img/skills/java.svg" alt="Ícone do Java" />
+                    <h1>Java</h1>
+                </div>
+
+                <!-- Ferramentas -->
+                <div class="skill__card fade-in ferramentas">
+                    <img src="img/skills/git.svg" alt="Ícone do Git" />
+                    <h1>Git</h1>
+                </div>
+                <div class="skill__card fade-in ferramentas">
+                    <img src="img/skills/figma.svg" alt="Ícone do Figma" />
+                   <h1>Figma</h1>
+                </div>
+                <div class="skill__card fade-in ferramentas">
+                    <img src="img/skills/trello.svg" alt="Ícone do Trello" />
+                    <h1>Trello</h1>
+                </div>
+                <div class="skill__card fade-in ferramentas">
+                    <img src="img/skills/jira.svg" alt="Ícone do Jira" />
+                    <h1>Jira</h1>
+                </div>
+                <div class="skill__card fade-in ferramentas">
+                    <img src="img/skills/office.svg" alt="Ícone do Office" />
+                    <h1>Pacote Office</h1>
+                </div>
+                <div class="skill__card fade-in ferramentas">
+                    <img src="img/skills/canva.svg" alt="Ícone do Canva" />
+                    <h1>Canva</h1>
+                </div>
+
+                <!-- Metodologias -->
+                <div class="skill__card fade-in metodologias">
+                    <img src="img/skills/agil.svg" alt="Ícone do Agil" />
+                    <h1>Scrum e Kanban</h1>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skill__card fade-in frameworks">
+                    <img src="img/skills/bootstrap.svg" alt="Ícone do BootStrap" />
+                    <h1>BootStrap</h1>
+                </div>
+
+                <!-- Banco de Dados -->
+                <div class="skill__card fade-in banco-dados">
+                    <img src="img/skills/sql.svg" alt="Ícone do SQL" />
+                    <h1>Banco SQL</h1>
+                </div>
+
+                <!-- IDEs -->
+                <div class="skill__card fade-in ides">
+                    <img src="img/skills/VScode.svg" alt="Ícone do VScode" />
+                    <h1>VScode</h1>
+                </div>
+                <div class="skill__card fade-in ides">
+                    <img src="img/skills/visualstudy.svg" alt="Ícone do VisualStudio" />
+                    <h1>Visual Studio</h1>
+                </div>
+
+            </div>
+
+        </div>
+      </section>
+
+      <!-- footer -->    
+      <footer class="footer--grid-layout">
+        <div class="footer-group">
+          <p>
+            Copyright © 2025
+            <a href="index.html" rel="noopener">andrecode.dev.br</a>
+            <br> Todos os direitos reservados.
+          </p>
+        </div>
+      
+        <div class="footer-group">
+          <p>
+            Construído com
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="#00a2ff"
+              stroke="#00a2ff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            por André Vitor
+          </p>
+          <img src="img/logoGuia.svg" alt="Logo" />
+        </div>
+      </footer>
+       
+    </main>
+
+    <script src="/js/index.js" defer></script>
+    <script src="/js/traducao.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
