@@ -512,7 +512,7 @@
     }
 
     .hero__image-container img {
-        width: 25rem;
+        width: 35rem;
         margin-top: 2rem;
     }
 
@@ -523,7 +523,7 @@
 
     .hero__button-download,
     .hero__button-contact {
-        width: 15rem;
+        width: 20rem;
         padding: .9rem 2rem;
         font-size: 1.3rem;
         max-width: 30rem;
@@ -531,7 +531,7 @@
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 17rem;
+        width: 22rem;
         padding: .9rem 3rem;
         max-width: 40rem;
     }
@@ -828,11 +828,26 @@
     }
 
     .hero__image-container img {
-        width: 22rem;
+        width: 30rem;
     }
 
     .hero__buttons {
         gap: 1rem;
+    }
+
+    .hero__button-download,
+    .hero__button-contact {
+        width: 18rem;
+        padding: .9rem 2rem;
+        font-size: 1.3rem;
+        max-width: 30rem;
+    }
+
+    .hero__button-download:hover,
+    .hero__button-contact:hover {
+        width: 20rem;
+        padding: .9rem 3rem;
+        max-width: 40rem;
     }
 
     .about {
@@ -1100,12 +1115,12 @@
     }
 
     .hero__image-container img {
-        width: 21rem;
+        width: 28rem;
     }
 
     .hero__button-download,
     .hero__button-contact {
-        width: 15rem;
+        width: 16rem;
         padding: .8rem 2rem;
         font-size: 1.2rem;
         max-width: 30rem;
@@ -1113,7 +1128,7 @@
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 17rem;
+        width: 18rem;
         padding: .8rem 3rem;
         max-width: 40rem;
     }
@@ -1306,12 +1321,12 @@
     }
 
     .hero__image-container img {
-        width: 20rem;
+        width: 26rem;
     }
 
     .hero__button-download,
     .hero__button-contact {
-        width: 15rem;
+        width: 14rem;
         padding: .7rem 2rem;
         font-size: 1.1rem;
         max-width: 30rem;
@@ -1319,7 +1334,7 @@
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 15rem;
+        width: 16rem;
         padding: .7rem 3rem;
         max-width: 40rem;
     }
