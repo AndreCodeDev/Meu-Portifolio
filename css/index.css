@@ -540,7 +540,6 @@ html {
     height: 100%;
     animation: glowing 10s linear infinite;
     animation-play-state: var(--glowing-animation-state, paused);
-    /* Inicia congelada */
     opacity: 1;
     transition: opacity .3s ease-in-out;
     border-radius: .8rem;
