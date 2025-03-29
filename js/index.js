@@ -6,128 +6,98 @@ window.onload = function () {
 
 
 // Configurações globais para o loader
-(function() {
-    // Configurações básicas
-    const settings = {
-        minSpeed: 1,          // Velocidade mínima em Mbps
-        slowLoadTime: 3000,   // Tempo em ms para considerar lento
-        checkInterval: 2000   // Intervalo para verificar se a página carregou
-    };
+const APP_SETTINGS = {
+    loader: {
+        fadeOutDelay: 500,
+        hideDelay: 1000
+    }
+};
 
-    // Variável para controlar o aviso
-    let warningShown = false;
-    let pageFullyLoaded = false;
+// Variável para controlar se a página já carregou
+let pageLoaded = false;
 
-    // Mostra o aviso de conexão lenta
-    function showWarning() {
-        if (warningShown) return;
-        warningShown = true;
+window.addEventListener('load', () => {
+    pageLoaded = true; // Marca a página como carregada
+    initLoader();
+});
+
+function initLoader() {
+    const loadingScreen = document.getElementById('loading-screen');
+    if (!loadingScreen) return;
+
+    setTimeout(() => {
+        const circles = loadingScreen.querySelectorAll('.loader .circle');
+        const text = loadingScreen.querySelector('p');
         
-        const warning = document.createElement('div');
-        warning.id = 'slow-connection-warning';
-        warning.innerHTML = `
-            <div style="
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-                background: #fff3cd;
-                border-left: 5px solid #ffc107;
-                padding: 15px;
-                border-radius: 4px;
-                max-width: 300px;
-                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-                animation: fadeIn 0.5s;
-                z-index: 9999;
-            ">
-                <p style="margin: 0 0 10px 0; color: #856404;">
-                    ⚠️ Sua conexão está lenta. O carregamento pode demorar.
-                </p>
-                <button style="
-                    background: #ffc107;
-                    border: none;
-                    padding: 5px 10px;
-                    border-radius: 3px;
-                    cursor: pointer;
-                " onclick="removeWarning()">OK</button>
-            </div>
-        `;
-        
-        document.body.appendChild(warning);
+        circles.forEach(c => c.style.animation = 'none');
+        if (text) text.style.opacity = '0';
+        loadingScreen.style.opacity = '0';
 
-        // Verifica periodicamente se a página carregou
-        const checkLoad = setInterval(function() {
-            if (pageFullyLoaded) {
-                removeWarning();
-                clearInterval(checkLoad);
-            }
-        }, settings.checkInterval);
-    }
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+            document.documentElement.style.overflow = 'auto';
+            document.dispatchEvent(new Event('loadingScreenHidden'));
+        }, APP_SETTINGS.loader.hideDelay - APP_SETTINGS.loader.fadeOutDelay);
+    }, APP_SETTINGS.loader.fadeOutDelay);
+}
 
-    // Remove o aviso
-    window.removeWarning = function() {
-        const warning = document.getElementById('slow-connection-warning');
-        if (warning) warning.remove();
-    }
+document.addEventListener('loadingScreenHidden', typeMessage);
 
-    // Verifica a conexão quando a página começa a carregar
-    if (navigator.connection) {
-        const conn = navigator.connection;
-        if (conn.effectiveType === 'slow-2g' || conn.effectiveType === '2g' || 
-            (conn.downlink && conn.downlink < settings.minSpeed)) {
-            showWarning();
-        }
-    }
-
-    // Fallback: Verifica pelo tempo de carregamento
-    setTimeout(function() {
-        if (!pageFullyLoaded) {
-            showWarning();
-        }
-    }, settings.slowLoadTime);
-
-    // Marca a página como carregada quando o evento load ocorrer
-    window.addEventListener('load', function() {
-        pageFullyLoaded = true;
-    });
-
-    // Adiciona a animação do fadeIn globalmente se não existir
-    if (!document.getElementById('fadeIn-style')) {
-        const style = document.createElement('style');
-        style.id = 'fadeIn-style';
-        style.textContent = `
-            @keyframes fadeIn {
-                from { opacity: 0; transform: translateY(20px); }
-                to { opacity: 1; transform: translateY(0); }
-            }
-        `;
-        document.head.appendChild(style);
-    }
-})();
 //--------------------------------------------------------------------------
 
 // fade-in (animação de aparição) 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('.fade-in');
+    
+    // Verifica se há elementos para observar
+    if (sections.length === 0) return;
 
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1 // Reduzido para que a animação comece mais cedo
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry, index) => {
+    // Configuração otimizada do IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Reduz o atraso progressivo para que as seções apareçam mais rapidamente
-                entry.target.style.transitionDelay = `${index * 0.1}s`; // Atraso reduzido
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
+                // Usa setTimeout para evitar bloqueio de renderização
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }, 10); // Pequeno delay para aliviar a thread principal
             }
         });
-    }, observerOptions);
+    }, {
+        threshold: 0.1, // Aumentado para melhor performance
+        rootMargin: '50px' // Carrega um pouco antes de aparecer na tela
+    });
 
-    sections.forEach(section => {
-        observer.observe(section);
+    // Observa cada seção com um pequeno delay entre elas
+    let delay = 0;
+    sections.forEach((section, index) => {
+        setTimeout(() => {
+            observer.observe(section);
+        }, delay);
+        
+        // Aumenta o delay a cada 3 elementos para evitar congestionamento
+        if ((index + 1) % 3 === 0) {
+            delay += 50;
+        }
+    });
+
+    // Limpeza para evitar memory leaks
+    window.addEventListener('beforeunload', () => {
+        sections.forEach(section => {
+            observer.unobserve(section);
+        });
+    });
+
+    // Debounce para o evento scroll (opcional)
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                // Aqui você pode adicionar lógica adicional se necessário
+                ticking = false;
+            });
+            ticking = true;
+        }
     });
 });
 
