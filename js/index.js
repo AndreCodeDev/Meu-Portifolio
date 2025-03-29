@@ -4,7 +4,6 @@ window.onload = function () {
 
 //--------------------------------------------------------------------------
 
-
 // Configurações globais para o loader
 const APP_SETTINGS = {
     loader: {
