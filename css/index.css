@@ -1474,7 +1474,6 @@ body.light-mode .carousel-control-next-icon {
     background-color: var(--primary-color);
     color: var(--text-color2);
     font-size: 1.2rem;
-    /* Aumentei o tamanho do texto dos botões */
     border-radius: 0.5rem;
     border: none;
     cursor: pointer;
@@ -1651,8 +1650,8 @@ body.light-mode .carousel-control-next-icon {
     border: .1rem solid var(--primary-border);
     border-radius: .6rem;
     text-align: center;
-    width: 12rem;
-    height: 11rem;
+    width: 11rem;
+    height: 10rem;
     position: relative;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 .4rem .6rem rgba(0, 0, 0, 0.1);
@@ -1672,7 +1671,7 @@ body.light-mode .carousel-control-next-icon {
 .skill__card img {
     width: 3.5rem;
     height: 3.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     object-fit: contain;
     transition: transform 0.3s ease;
     user-select: none;

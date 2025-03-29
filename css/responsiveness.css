@@ -717,11 +717,11 @@
     .skill__card img {
         width: 3.5rem;
         height: 3.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: .8rem;
     }
     
     .skill__card h1 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     footer {
@@ -766,8 +766,8 @@
     }
 
     .toggle-switch {
-        width: 1.6rem;
-        height: 1.6rem;
+        width: 1.4rem;
+        height: 1.4rem;
     }
 
     .toggle-container.active .toggle-switch {
@@ -984,6 +984,10 @@
         height: 2.2rem;
         margin: 0 0.5rem;
     }
+
+    .footer-modal {
+        padding-top: 3rem;
+    }    
     
     .botoes-footer {
         justify-content: center;
@@ -1021,11 +1025,11 @@
     .skill__card img {
         width: 3.5rem;
         height: 3.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: .8rem;
     }
     
     .skill__card h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     footer {
@@ -1426,7 +1430,11 @@
         padding: 0.9rem 1.5rem;
         font-size: 1.2rem;
     }
-    
+
+    .footer-modal {
+        padding-top: 2rem;
+    } 
+
     .botao-footer-modal {
         width: 100%; 
         margin: 0.5rem 0;
@@ -1456,7 +1464,7 @@
     }
     
     .skill__card h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     footer {
