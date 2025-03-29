@@ -850,6 +850,13 @@ html {
     text-align: justify;
 }
 
+/* Efeito de inclinação para a classe hover-effect */
+.card.hover-effect .card__front {
+    transform: rotateY(17deg);
+    box-shadow: .5rem .8rem .8rem rgba(0, 0, 0, 0.08);
+    transition: transform 0.5s ease-in-out;
+}
+
 /* Cards adjacentes */
 .card.prev,
 .card.next {

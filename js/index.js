@@ -272,12 +272,12 @@ function updateCarousel() {
     cards.forEach((card, index) => {
         // Oculta todos os cards inicialmente
         card.style.display = 'none';
-        card.classList.remove('active', 'prev', 'next', 'flipped'); // Remove a classe 'flipped'
+        card.classList.remove('active', 'prev', 'next', 'flipped', 'hover-effect'); // Remove as classes
 
         // Define o card ativo
         if (index === currentIndex) {
             card.style.display = 'block';
-            card.classList.add('active');
+            card.classList.add('active', 'hover-effect'); // Adiciona a classe para efeito de hover
             // Faz o flip automático para a imagem (frente)
             card.classList.remove('flipped');
         }
@@ -294,16 +294,28 @@ function updateCarousel() {
     });
 }
 
-// Navega para o card anterior
+// Navega para o card anterior com efeito
 prevButton.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + cards.length) % cards.length;
     updateCarousel();
+    // Adiciona temporariamente o efeito de inclinação
+    const activeCard = document.querySelector('.card.active');
+    activeCard.classList.add('hover-effect');
+    setTimeout(() => {
+        activeCard.classList.remove('hover-effect');
+    }, 500); // Remove após 0.5s (tempo da transição)
 });
 
-// Navega para o próximo card
+// Navega para o próximo card com efeito
 nextButton.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % cards.length;
     updateCarousel();
+    // Adiciona temporariamente o efeito de inclinação
+    const activeCard = document.querySelector('.card.active');
+    activeCard.classList.add('hover-effect');
+    setTimeout(() => {
+        activeCard.classList.remove('hover-effect');
+    }, 500); // Remove após 0.5s (tempo da transição)
 });
 
 // Efeito de flip ao clicar no card
