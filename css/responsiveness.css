@@ -3,14 +3,10 @@
 
 /* Laptop G */
 @media screen and (max-width: 1441px) {
-
-    /* Navbar */
-
     .header__menu-link {
         font-size: 1.4rem;
     }
 
-    /* Início (Hero) */
     .hero {
         padding: 15rem 10rem 10rem;
     }
@@ -134,8 +130,6 @@
 
 /* Laptop */
 @media screen and (max-width: 1025px) {
-
-    /* Navbar */
     .header {
         height: 8rem;
         justify-content: space-around;
@@ -144,7 +138,6 @@
     .header-logo__text h2 {
         font-size: 1.9rem;
     }
-
 
     .header__menu__toggleButton {
         display: flex;
@@ -215,7 +208,6 @@
         opacity: 0;
         transform: translateY(-1rem);
         background-color: transparent;
-
     }
 
     .header__menu-link {
@@ -228,7 +220,6 @@
         height: .24rem;
     }
 
-    /* Início (Hero) */
     .hero {
         padding: 12rem 10rem 8rem;
     }
@@ -387,14 +378,12 @@
     .texto-sessao-modal {
         max-width: 100%;
         width: 100%;
-
     }
     
     .titulo-sessao-modal {
         font-size: 2.5rem;
     }
 
-    /* Novos ajustes */
     .project-icons-header {
         margin: 1.2rem 0;
     }
@@ -454,8 +443,6 @@
 
 /* Tablet */
 @media screen and (max-width: 769px) {
-
-    /* Tela de carregamento */
     .loading-card {
         padding: 1.5rem;
     }
@@ -489,7 +476,6 @@
         padding: .1rem .4rem;
     }
 
-    /* Início (Hero) */
     .hero {
         padding: 10rem 5rem 5rem;
         flex-direction: column-reverse;
@@ -688,7 +674,6 @@
         font-size: 1.2rem;
     }
 
-    /* Novos ajustes */
     #ProjectMostrarMaisProjetosBtn {
         padding: 0.7rem 1.3rem;
         font-size: 1.1rem;
@@ -739,7 +724,7 @@
     }
 
     footer {
-        padding: 2rem 2rem; /* Reduz o padding em mobile */
+        padding: 2rem 2rem;
     }
 
     footer.footer--grid-layout {
@@ -747,9 +732,8 @@
         flex-direction: column;
         gap: 2rem;
         text-align: center;
-      }
+    }
 
-    /* Ajustes opcionais para melhor legibilidade */
     footer p {
         font-size: 1.2rem;
         text-align: center; 
@@ -758,13 +742,10 @@
     footer img {
         width: 2rem; 
     }
-
 }
 
 /* Smartphone G */
 @media screen and (max-width: 426px) {
-
-    /* Navbar */
     .header {
         height: 7rem;
     }
@@ -774,7 +755,7 @@
     }
 
     .header__menu-link {
-        font-size: 1.4rem; /* Aumentado de 1.3rem */
+        font-size: 1.4rem;
     }
 
     .toggle-container {
@@ -797,7 +778,6 @@
         padding: .1rem .3rem;
     }
 
-    /* Tela de carregamento */
     .loading-card {
         padding: 1rem;
     }
@@ -808,21 +788,20 @@
     }
 
     #loading-screen p {
-        font-size: 1.3rem; /* Aumentado de 1.2rem */
+        font-size: 1.3rem;
     }
 
-    /* Início (Hero) */
     .hero {
         padding: 8rem 2rem 2rem;
     }
 
     .hero__title,
     .hero__title__subtitle {
-        font-size: 3.2rem; /* Aumentado de 2.9rem */
+        font-size: 3.2rem;
     }
 
     .typewriter {
-        font-size: 1.7rem; /* Aumentado de 1.5rem */
+        font-size: 1.7rem;
     }
 
     .hero__image-container img {
@@ -835,15 +814,15 @@
 
     .hero__button-download,
     .hero__button-contact {
-        width: 18rem;
+        width: 22rem;
         padding: .9rem 2rem;
-        font-size: 1.4rem; /* Aumentado de 1.3rem */
+        font-size: 1.4rem;
         max-width: 30rem;
     }
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 20rem;
+        width: 23rem;
         padding: .9rem 3rem;
         max-width: 40rem;
     }
@@ -853,7 +832,7 @@
     }
 
     .about__text-container nav ul a::after {
-        font-size: 1rem; /* Aumentado de .9rem */
+        font-size: 1rem;
     }
 
     .about__image-container {
@@ -865,7 +844,7 @@
     }
 
     .destaques-news__text h2 {
-        font-size: 2.3rem; /* Aumentado de 2rem */
+        font-size: 2.3rem;
         padding-bottom: 1.5rem;
     }
 
@@ -883,15 +862,15 @@
     }
 
     .destaques--card-info h2 {
-        font-size: 1.4rem; /* Aumentado de 1.3rem */
+        font-size: 1.4rem;
     }
 
     .destaques--card-info p {
-        font-size: 1.1rem; /* Aumentado de 1rem */
+        font-size: 1.1rem;
     }
 
     .destaques--card-testimonial p {
-        font-size: 1.1rem; /* Aumentado de 1rem */
+        font-size: 1.1rem;
     }
 
     .destaques-carousel-control {
@@ -912,7 +891,7 @@
     }
 
     #formacao .formacao--container h2 {
-        font-size: 2.8rem; /* Aumentado de 2.5rem */
+        font-size: 2.8rem;
     }
 
     .formacao-flex {
@@ -926,21 +905,21 @@
     }
 
     .card-info h3 {
-        font-size: 1.35rem; /* Aumentado de 1.25rem */
+        font-size: 1.35rem;
     }
 
     .card-info p,
     .card-details p {
-        font-size: 1.1rem; /* Aumentado de 1rem */
+        font-size: 1.1rem;
     }
 
     .card-details strong {
-        font-size: 1.2rem; /* Aumentado de 1.1rem */
+        font-size: 1.2rem;
     }
 
     #formacaoMostrarMaisBtn {
         padding: 0.8rem 1.5rem;
-        font-size: 1.15rem; /* Aumentado de 1.05rem */
+        font-size: 1.15rem;
     }
 
     .projects {
@@ -948,7 +927,7 @@
     }
     
     .projeto__text h2 {
-        font-size: 2.8rem; /* Aumentado de 2.5rem */
+        font-size: 2.8rem;
     }
     
     .projects-grid {
@@ -969,15 +948,15 @@
     }
     
     .project-overlay__title {
-        font-size: 2rem; /* Aumentado de 1.8rem */
+        font-size: 2rem;
     }
     
     .projects--github {
-        font-size: 1.4rem; /* Aumentado de 1.3rem */
+        font-size: 1.4rem;
     }
     
     .titulo-sessao-modal {
-        font-size: 2.2rem; /* Aumentado de 2rem */
+        font-size: 2.2rem;
     }
     
     .modal-body {
@@ -986,7 +965,7 @@
 
     #ProjectMostrarMaisProjetosBtn {
         padding: 0.7rem 1.3rem;
-        font-size: 1.2rem; /* Aumentado de 1rem */
+        font-size: 1.2rem;
     }
     
     #ProjectMostrarMaisProjetosBtn svg {
@@ -1000,8 +979,8 @@
     }
     
     .project-icons-header img {
-        width: 1.8rem; /* Aumentado de 1.6rem */
-        height: 1.8rem; /* Aumentado de 1.6rem */
+        width: 1.8rem;
+        height: 1.8rem;
         margin: 0 0.3rem;
     }
     
@@ -1012,7 +991,7 @@
     
     .botao-footer-modal {
         padding: 0.6rem 1rem;
-        font-size: 1rem; /* Aumentado de 0.85rem */
+        font-size: 1rem;
         width: 60%;
     }
 
@@ -1021,7 +1000,7 @@
     }
     
     .skills__text h2 {
-        font-size: 2.8rem; /* Aumentado de 2.5rem */
+        font-size: 2.8rem;
     }
     
     .skills__filter {
@@ -1034,18 +1013,18 @@
     }
     
     .skill__card {
-        width: 9rem; /* Aumentado de 8rem */
-        height: 8.5rem; /* Aumentado de 7.5rem */
+        width: 9rem;
+        height: 8.5rem;
     }
     
     .skill__card img {
-        width: 3rem; /* Aumentado de 2.8rem */
-        height: 3rem; /* Aumentado de 2.8rem */
+        width: 3rem;
+        height: 3rem;
         margin-bottom: 1.2rem;
     }
     
     .skill__card h1 {
-        font-size: 1.3rem; /* Aumentado de 1.1rem */
+        font-size: 1.3rem;
     }
 
     footer {
@@ -1059,28 +1038,26 @@
     }
     
     footer p {
-        font-size: 1.3rem; /* Aumentado de 1.1rem */
+        font-size: 1.3rem;
     }
     
     footer img {
-        width: 2.2rem; /* Aumentado de 1.8rem */
+        width: 2.2rem;
     }
     
     footer div {
-        gap: 0.8rem; /* Aumentado de 0.6rem */
+        gap: 0.8rem;
     }
 }
 
 /* Smartphone M */
 @media screen and (max-width: 376px) {
-
-    /* Navbar */
     .header-logo__text h2 {
-        font-size: 1.8rem; /* Aumentado de 1.7rem */
+        font-size: 1.8rem;
     }
 
     .header__menu-link {
-        font-size: 1.3rem; /* Aumentado de 1.2rem */
+        font-size: 1.3rem;
     }
 
     .header__menu-toggle span {
@@ -1092,24 +1069,22 @@
         gap: .4rem;
     }
 
-    /* Tela de carregamento */
     .loader .circle {
-        width: 1.4rem; /* Aumentado de 1.3rem */
-        height: 1.4rem; /* Aumentado de 1.3rem */
+        width: 1.4rem;
+        height: 1.4rem;
     }
 
     #loading-screen p {
-        font-size: 1.2rem; /* Aumentado de 1.1rem */
+        font-size: 1.2rem;
     }
 
-    /* Início (Hero) */
     .hero__title,
     .hero__title__subtitle {
-        font-size: 3rem; /* Aumentado de 2.8rem */
+        font-size: 3rem;
     }
 
     .typewriter {
-        font-size: 1.6rem; /* Aumentado de 1.4rem */
+        font-size: 1.6rem;
     }
 
     .hero__image-container img {
@@ -1118,15 +1093,15 @@
 
     .hero__button-download,
     .hero__button-contact {
-        width: 17rem; /* Aumentado de 16rem */
+        width: 21rem;
         padding: .9rem 2rem;
-        font-size: 1.3rem; /* Aumentado de 1.2rem */
+        font-size: 1.3rem;
         max-width: 30rem;
     }
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 19rem; /* Aumentado de 18rem */
+        width: 22rem;
         padding: .9rem 3rem;
         max-width: 40rem;
     }
@@ -1140,12 +1115,12 @@
     }
 
     .about__text-container nav ul li img {
-        width: 2.2rem; /* Aumentado de 2rem */
-        height: 2.2rem; /* Aumentado de 2rem */
+        width: 2.2rem;
+        height: 2.2rem;
     }
 
     .about__text-container nav ul a::after {
-        font-size: 1rem; /* Aumentado de .8rem */
+        font-size: 1rem;
     }
 
     .destaques-news {
@@ -1153,7 +1128,7 @@
     }
 
     .destaques-news__text h2 {
-        font-size: 2rem; /* Aumentado de 1.8rem */
+        font-size: 2rem;
     }
 
     .destaques-carousel-container {
@@ -1170,15 +1145,15 @@
     }
 
     .destaques--card-info h2 {
-        font-size: 1.3rem; /* Aumentado de 1.2rem */
+        font-size: 1.3rem;
     }
 
     .destaques--card-info p {
-        font-size: 1rem; /* Aumentado de 0.9rem */
+        font-size: 1rem;
     }
 
     .destaques--card-testimonial p {
-        font-size: 1rem; /* Aumentado de 0.9rem */
+        font-size: 1rem;
     }
 
     #formacao {
@@ -1186,7 +1161,7 @@
     }
 
     #formacao .formacao--container h2 {
-        font-size: 2.5rem; /* Aumentado de 2.3rem */
+        font-size: 2.5rem;
     }
 
     .formacao-card {
@@ -1194,25 +1169,25 @@
     }
 
     .card-header img {
-        width: 4.8rem; /* Aumentado de 4.5rem */
-        height: 4.8rem; /* Aumentado de 4.5rem */
+        width: 4.8rem;
+        height: 4.8rem;
     }
 
     .card-info h3 {
-        font-size: 1.3rem; /* Aumentado de 1.2rem */
+        font-size: 1.3rem;
     }
 
     .card-info p,
     .card-details p {
-        font-size: 1.05rem; /* Aumentado de 0.95rem */
+        font-size: 1.05rem;
     }
 
     .card-details strong {
-        font-size: 1.15rem; /* Aumentado de 1.05rem */
+        font-size: 1.15rem;
     }
 
     #formacaoMostrarMaisBtn {
-        font-size: 1.1rem; /* Aumentado de 1rem */
+        font-size: 1.1rem;
     }
 
     .projects {
@@ -1220,30 +1195,30 @@
     }
     
     .projeto__text h2 {
-        font-size: 2.5rem; /* Aumentado de 2.2rem */
+        font-size: 2.5rem;
     }
     
     .project-overlay__title {
-        font-size: 1.8rem; /* Aumentado de 1.6rem */
+        font-size: 1.8rem;
     }
     
     .project-icons img {
-        width: 1.8rem; /* Aumentado de 1.6rem */
-        height: 1.8rem; /* Aumentado de 1.6rem */
+        width: 1.8rem;
+        height: 1.8rem;
     }
     
     .titulo-sessao-modal {
-        font-size: 2rem; /* Aumentado de 1.8rem */
+        font-size: 2rem;
     }
     
     .paragrafos-sessao-modal,
     .data-sessao-modal {
-        font-size: 1.2rem; /* Aumentado de 1.1rem */
+        font-size: 1.2rem;
     }
     
     .botao-footer-modal {
         padding: 0.7rem 1.5rem;
-        font-size: 1.2rem; /* Aumentado de 1.1rem */
+        font-size: 1.2rem;
     }
 
     .skills {
@@ -1251,68 +1226,64 @@
     }
     
     .skills__text h2 {
-        font-size: 2.5rem; /* Aumentado de 2.3rem */
+        font-size: 2.5rem;
     }
     
     .skills__filter button {
         padding: 0.7rem 1.1rem;
-        font-size: 1rem; /* Aumentado de 0.9rem */
+        font-size: 1rem;
     }
     
     .skills__flex {
-        gap: 1.5rem; /* Aumentado de 1.2rem */
+        gap: 1.5rem;
     }
     
     .skill__card {
-        width: 8rem; /* Aumentado de 7.5rem */
-        height: 7.5rem; /* Aumentado de 7rem */
+        width: 8rem;
+        height: 7.5rem;
     }
 
     footer {
-        padding: 1.5rem 1.5rem; /* Aumentado de 1.3rem */
-        gap: 1.8rem; /* Aumentado de 1.5rem */
+        padding: 1.5rem 1.5rem;
+        gap: 1.8rem;
     }
     
     .footer--grid-layout {
-        gap: 1.8rem; /* Aumentado de 1.5rem */
+        gap: 1.8rem;
     }
     
     footer p {
-        font-size: 1.2rem; /* Aumentado de 1rem */
+        font-size: 1.2rem;
     }
     
     footer img {
-        width: 1.8rem; /* Aumentado de 1.6rem */
+        width: 1.8rem;
     }
     
     footer div {
-        gap: 0.7rem; /* Aumentado de 0.5rem */
+        gap: 0.7rem;
     }
 }
 
 /* Smartphone P */
 @media screen and (max-width: 321px) {
-
-    /* Navbar */
     .header-logo__text h2 {
-        font-size: 1.7rem; 
+        font-size: 1.7rem;
     }
 
     .header__menu-link {
         font-size: 1.2rem;
     }
 
-    /* Tela de carregamento */
     .loader .circle {
         width: 1.3rem;
         height: 1.3rem;
     }
 
     #loading-screen p {
-        font-size: 1.1rem; 
+        font-size: 1.1rem;
     }
 
-    /* Início (Hero) */
     .hero__title,
     .hero__title__subtitle {
         font-size: 2.8rem;
@@ -1324,21 +1295,21 @@
 
     .hero__button-download,
     .hero__button-contact {
-        width: 15rem; 
+        width: 20rem;
         padding: .8rem 2rem;
-        font-size: 1.2rem; 
+        font-size: 1.2rem;
         max-width: 30rem;
     }
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 17rem; 
+        width: 21rem;
         padding: .8rem 3rem;
         max-width: 40rem;
     }
 
     .about {
-        padding: 1.5rem 1.5rem 0; 
+        padding: 1.5rem 1.5rem 0;
     }
 
     .about__container {
@@ -1350,12 +1321,12 @@
     }
 
     .about__text-container nav ul li img {
-        width: 2rem; 
+        width: 2rem;
         height: 2rem;
     }
 
     .about__text-container nav ul a::after {
-        font-size: .9rem; 
+        font-size: .9rem;
     }
 
     .destaques-news {
@@ -1376,7 +1347,7 @@
     }
 
     .destaques--card-info h2 {
-        font-size: 1.2rem; 
+        font-size: 1.2rem;
     }
 
     .destaques--card-info p {
@@ -1393,7 +1364,7 @@
     }
 
     #formacao .formacao--container h2 {
-        font-size: 2.3rem; 
+        font-size: 2.3rem;
     }
 
     .card-header {
@@ -1402,109 +1373,109 @@
     }
 
     .card-info h3 {
-        font-size: 1.2rem; 
+        font-size: 1.2rem;
     }
 
     .card-info p,
     .card-details p {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 
     .card-details strong {
-        font-size: 1.1rem; 
+        font-size: 1.1rem;
     }
 
     #formacaoMostrarMaisBtn {
         padding: 0.8rem 1.2rem;
-        font-size: 1.05rem; 
+        font-size: 1.05rem;
     }
 
     .projeto__text h2 {
-        font-size: 2.2rem; /* Aumentado de 2rem */
+        font-size: 2.2rem;
     }
     
     .projects-grid {
-        gap: 2.8rem; /* Aumentado de 2.5rem */
+        gap: 2.8rem;
     }
     
     .project-overlay {
-        gap: 1.2rem; /* Aumentado de 1rem */
+        gap: 1.2rem;
     }
     
     .project-overlay__title {
-        font-size: 1.6rem; /* Aumentado de 1.4rem */
+        font-size: 1.6rem;
     }
     
     .project-tooltip {
         width: 80%;
-        font-size: 1rem; /* Aumentado de 0.9rem */
+        font-size: 1rem;
     }
     
     .titulo-sessao-modal {
-        font-size: 1.8rem; /* Aumentado de 1.6rem */
+        font-size: 1.8rem;
     }
     
     .project-icons-header img {
-        width: 1.6rem; /* Aumentado de 1.5rem */
-        height: 1.6rem; /* Aumentado de 1.5rem */
+        width: 1.6rem;
+        height: 1.6rem;
     }
 
     #ProjectMostrarMaisProjetosBtn {
         padding: 0.6rem 1rem;
-        font-size: 1rem; /* Aumentado de 0.9rem */
+        font-size: 1rem;
     }
     
     .botao-footer-modal {
         width: 100%; 
-        margin: 0.4rem 0; /* Aumentado de 0.3rem */
+        margin: 0.4rem 0;
     }
 
     .skills__text h2 {
-        font-size: 2.3rem; /* Aumentado de 2.1rem */
+        font-size: 2.3rem;
     }
     
     .skills__filter {
-        gap: 0.7rem; /* Aumentado de 0.6rem */
-        margin-bottom: 2rem; /* Aumentado de 1.8rem */
+        gap: 0.7rem;
+        margin-bottom: 2rem;
     }
     
     .skills__flex {
-        gap: 1.2rem; /* Aumentado de 1rem */
+        gap: 1.2rem;
     }
     
     .skill__card {
-        width: 7.5rem; /* Aumentado de 7rem */
-        height: 7rem; /* Aumentado de 6.5rem */
+        width: 7.5rem;
+        height: 7rem;
     }
     
     .skill__card img {
-        width: 2.8rem; /* Aumentado de 2.5rem */
-        height: 2.8rem; /* Aumentado de 2.5rem */
+        width: 2.8rem;
+        height: 2.8rem;
     }
     
     .skill__card h1 {
-        font-size: 1.1rem; /* Aumentado de 1rem */
+        font-size: 1.1rem;
     }
 
     footer {
-        padding: 1.2rem 1rem; /* Aumentado de 1rem */
-        gap: 1.2rem; /* Aumentado de 1rem */
+        padding: 1.2rem 1rem;
+        gap: 1.2rem;
     }
     
     .footer--grid-layout {
-        gap: 1.2rem; /* Aumentado de 1rem */
-        padding: 0 0.7rem; /* Aumentado de 0.5rem */
+        gap: 1.2rem;
+        padding: 0 0.7rem;
     }
     
     footer p {
-        font-size: 1.1rem; /* Aumentado de 0.9rem */
+        font-size: 1.1rem;
     }
     
     footer img {
-        width: 1.6rem; /* Aumentado de 1.4rem */
+        width: 1.6rem;
     }
     
     footer div {
-        gap: 0.6rem; /* Aumentado de 0.4rem */
+        gap: 0.6rem;
     }
 }
