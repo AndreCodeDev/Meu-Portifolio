@@ -1438,7 +1438,7 @@ body.light-mode .carousel-control-next-icon {
 .sessao-modal {
     display: flex;
     gap: 2rem;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .sessao-video {
