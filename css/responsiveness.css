@@ -774,7 +774,7 @@
     }
 
     .header__menu-link {
-        font-size: 1.3rem;
+        font-size: 1.4rem; /* Aumentado de 1.3rem */
     }
 
     .toggle-container {
@@ -808,7 +808,7 @@
     }
 
     #loading-screen p {
-        font-size: 1.2rem;
+        font-size: 1.3rem; /* Aumentado de 1.2rem */
     }
 
     /* Início (Hero) */
@@ -818,11 +818,11 @@
 
     .hero__title,
     .hero__title__subtitle {
-        font-size: 2.9rem;
+        font-size: 3.2rem; /* Aumentado de 2.9rem */
     }
 
     .typewriter {
-        font-size: 1.5rem;
+        font-size: 1.7rem; /* Aumentado de 1.5rem */
     }
 
     .hero__image-container img {
@@ -837,7 +837,7 @@
     .hero__button-contact {
         width: 18rem;
         padding: .9rem 2rem;
-        font-size: 1.3rem;
+        font-size: 1.4rem; /* Aumentado de 1.3rem */
         max-width: 30rem;
     }
 
@@ -853,7 +853,7 @@
     }
 
     .about__text-container nav ul a::after {
-        font-size: .9rem;
+        font-size: 1rem; /* Aumentado de .9rem */
     }
 
     .about__image-container {
@@ -865,7 +865,7 @@
     }
 
     .destaques-news__text h2 {
-        font-size: 2rem;
+        font-size: 2.3rem; /* Aumentado de 2rem */
         padding-bottom: 1.5rem;
     }
 
@@ -883,15 +883,15 @@
     }
 
     .destaques--card-info h2 {
-        font-size: 1.3rem;
+        font-size: 1.4rem; /* Aumentado de 1.3rem */
     }
 
     .destaques--card-info p {
-        font-size: 1rem;
+        font-size: 1.1rem; /* Aumentado de 1rem */
     }
 
     .destaques--card-testimonial p {
-        font-size: 1rem;
+        font-size: 1.1rem; /* Aumentado de 1rem */
     }
 
     .destaques-carousel-control {
@@ -912,7 +912,7 @@
     }
 
     #formacao .formacao--container h2 {
-        font-size: 2.5rem;
+        font-size: 2.8rem; /* Aumentado de 2.5rem */
     }
 
     .formacao-flex {
@@ -926,21 +926,21 @@
     }
 
     .card-info h3 {
-        font-size: 1.25rem;
+        font-size: 1.35rem; /* Aumentado de 1.25rem */
     }
 
     .card-info p,
     .card-details p {
-        font-size: 1rem;
+        font-size: 1.1rem; /* Aumentado de 1rem */
     }
 
     .card-details strong {
-        font-size: 1.1rem;
+        font-size: 1.2rem; /* Aumentado de 1.1rem */
     }
 
     #formacaoMostrarMaisBtn {
         padding: 0.8rem 1.5rem;
-        font-size: 1.05rem;
+        font-size: 1.15rem; /* Aumentado de 1.05rem */
     }
 
     .projects {
@@ -948,7 +948,7 @@
     }
     
     .projeto__text h2 {
-        font-size: 2.5rem;
+        font-size: 2.8rem; /* Aumentado de 2.5rem */
     }
     
     .projects-grid {
@@ -969,15 +969,15 @@
     }
     
     .project-overlay__title {
-        font-size: 1.8rem;
+        font-size: 2rem; /* Aumentado de 1.8rem */
     }
     
     .projects--github {
-        font-size: 1.3rem;
+        font-size: 1.4rem; /* Aumentado de 1.3rem */
     }
     
     .titulo-sessao-modal {
-        font-size: 2rem;
+        font-size: 2.2rem; /* Aumentado de 2rem */
     }
     
     .modal-body {
@@ -985,8 +985,8 @@
     }
 
     #ProjectMostrarMaisProjetosBtn {
-        padding: 0.6rem 1.2rem;
-        font-size: 1rem;
+        padding: 0.7rem 1.3rem;
+        font-size: 1.2rem; /* Aumentado de 1rem */
     }
     
     #ProjectMostrarMaisProjetosBtn svg {
@@ -1000,8 +1000,8 @@
     }
     
     .project-icons-header img {
-        width: 1.6rem;
-        height: 1.6rem;
+        width: 1.8rem; /* Aumentado de 1.6rem */
+        height: 1.8rem; /* Aumentado de 1.6rem */
         margin: 0 0.3rem;
     }
     
@@ -1011,8 +1011,8 @@
     }
     
     .botao-footer-modal {
-        padding: 0.5rem 1rem;
-        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
+        font-size: 1rem; /* Aumentado de 0.85rem */
         width: 60%;
     }
 
@@ -1021,7 +1021,7 @@
     }
     
     .skills__text h2 {
-        font-size: 2.5rem;
+        font-size: 2.8rem; /* Aumentado de 2.5rem */
     }
     
     .skills__filter {
@@ -1034,18 +1034,18 @@
     }
     
     .skill__card {
-        width: 8rem;
-        height: 7.5rem;
+        width: 9rem; /* Aumentado de 8rem */
+        height: 8.5rem; /* Aumentado de 7.5rem */
     }
     
     .skill__card img {
-        width: 2.8rem;
-        height: 2.8rem;
-        margin-bottom: 1rem;
+        width: 3rem; /* Aumentado de 2.8rem */
+        height: 3rem; /* Aumentado de 2.8rem */
+        margin-bottom: 1.2rem;
     }
     
     .skill__card h1 {
-        font-size: 1.1rem;
+        font-size: 1.3rem; /* Aumentado de 1.1rem */
     }
 
     footer {
@@ -1059,15 +1059,15 @@
     }
     
     footer p {
-        font-size: 1.1rem;
+        font-size: 1.3rem; /* Aumentado de 1.1rem */
     }
     
     footer img {
-        width: 1.8rem;
+        width: 2.2rem; /* Aumentado de 1.8rem */
     }
     
     footer div {
-        gap: 0.6rem;
+        gap: 0.8rem; /* Aumentado de 0.6rem */
     }
 }
 
@@ -1076,11 +1076,11 @@
 
     /* Navbar */
     .header-logo__text h2 {
-        font-size: 1.7rem;
+        font-size: 1.8rem; /* Aumentado de 1.7rem */
     }
 
     .header__menu-link {
-        font-size: 1.2rem;
+        font-size: 1.3rem; /* Aumentado de 1.2rem */
     }
 
     .header__menu-toggle span {
@@ -1094,22 +1094,22 @@
 
     /* Tela de carregamento */
     .loader .circle {
-        width: 1.3rem;
-        height: 1.3rem;
+        width: 1.4rem; /* Aumentado de 1.3rem */
+        height: 1.4rem; /* Aumentado de 1.3rem */
     }
 
     #loading-screen p {
-        font-size: 1.1rem;
+        font-size: 1.2rem; /* Aumentado de 1.1rem */
     }
 
     /* Início (Hero) */
     .hero__title,
     .hero__title__subtitle {
-        font-size: 2.8rem;
+        font-size: 3rem; /* Aumentado de 2.8rem */
     }
 
     .typewriter {
-        font-size: 1.4rem;
+        font-size: 1.6rem; /* Aumentado de 1.4rem */
     }
 
     .hero__image-container img {
@@ -1118,16 +1118,16 @@
 
     .hero__button-download,
     .hero__button-contact {
-        width: 16rem;
-        padding: .8rem 2rem;
-        font-size: 1.2rem;
+        width: 17rem; /* Aumentado de 16rem */
+        padding: .9rem 2rem;
+        font-size: 1.3rem; /* Aumentado de 1.2rem */
         max-width: 30rem;
     }
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 18rem;
-        padding: .8rem 3rem;
+        width: 19rem; /* Aumentado de 18rem */
+        padding: .9rem 3rem;
         max-width: 40rem;
     }
 
@@ -1140,12 +1140,12 @@
     }
 
     .about__text-container nav ul li img {
-        width: 2rem;
-        height: 2rem;
+        width: 2.2rem; /* Aumentado de 2rem */
+        height: 2.2rem; /* Aumentado de 2rem */
     }
 
     .about__text-container nav ul a::after {
-        font-size: .8rem;
+        font-size: 1rem; /* Aumentado de .8rem */
     }
 
     .destaques-news {
@@ -1153,7 +1153,7 @@
     }
 
     .destaques-news__text h2 {
-        font-size: 1.8rem;
+        font-size: 2rem; /* Aumentado de 1.8rem */
     }
 
     .destaques-carousel-container {
@@ -1170,15 +1170,15 @@
     }
 
     .destaques--card-info h2 {
-        font-size: 1.2rem;
+        font-size: 1.3rem; /* Aumentado de 1.2rem */
     }
 
     .destaques--card-info p {
-        font-size: 0.9rem;
+        font-size: 1rem; /* Aumentado de 0.9rem */
     }
 
     .destaques--card-testimonial p {
-        font-size: 0.9rem;
+        font-size: 1rem; /* Aumentado de 0.9rem */
     }
 
     #formacao {
@@ -1186,7 +1186,7 @@
     }
 
     #formacao .formacao--container h2 {
-        font-size: 2.3rem;
+        font-size: 2.5rem; /* Aumentado de 2.3rem */
     }
 
     .formacao-card {
@@ -1194,25 +1194,25 @@
     }
 
     .card-header img {
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 4.8rem; /* Aumentado de 4.5rem */
+        height: 4.8rem; /* Aumentado de 4.5rem */
     }
 
     .card-info h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem; /* Aumentado de 1.2rem */
     }
 
     .card-info p,
     .card-details p {
-        font-size: 0.95rem;
+        font-size: 1.05rem; /* Aumentado de 0.95rem */
     }
 
     .card-details strong {
-        font-size: 1.05rem;
+        font-size: 1.15rem; /* Aumentado de 1.05rem */
     }
 
     #formacaoMostrarMaisBtn {
-        font-size: 1rem;
+        font-size: 1.1rem; /* Aumentado de 1rem */
     }
 
     .projects {
@@ -1220,30 +1220,30 @@
     }
     
     .projeto__text h2 {
-        font-size: 2.2rem;
+        font-size: 2.5rem; /* Aumentado de 2.2rem */
     }
     
     .project-overlay__title {
-        font-size: 1.6rem;
+        font-size: 1.8rem; /* Aumentado de 1.6rem */
     }
     
     .project-icons img {
-        width: 1.6rem;
-        height: 1.6rem;
+        width: 1.8rem; /* Aumentado de 1.6rem */
+        height: 1.8rem; /* Aumentado de 1.6rem */
     }
     
     .titulo-sessao-modal {
-        font-size: 1.8rem;
+        font-size: 2rem; /* Aumentado de 1.8rem */
     }
     
     .paragrafos-sessao-modal,
     .data-sessao-modal {
-        font-size: 1.1rem;
+        font-size: 1.2rem; /* Aumentado de 1.1rem */
     }
     
     .botao-footer-modal {
-        padding: 0.6rem 1.5rem;
-        font-size: 1.1rem;
+        padding: 0.7rem 1.5rem;
+        font-size: 1.2rem; /* Aumentado de 1.1rem */
     }
 
     .skills {
@@ -1251,42 +1251,42 @@
     }
     
     .skills__text h2 {
-        font-size: 2.3rem;
+        font-size: 2.5rem; /* Aumentado de 2.3rem */
     }
     
     .skills__filter button {
-        padding: 0.6rem 1.1rem;
-        font-size: 0.9rem;
+        padding: 0.7rem 1.1rem;
+        font-size: 1rem; /* Aumentado de 0.9rem */
     }
     
     .skills__flex {
-        gap: 1.2rem;
+        gap: 1.5rem; /* Aumentado de 1.2rem */
     }
     
     .skill__card {
-        width: 7.5rem;
-        height: 7rem;
+        width: 8rem; /* Aumentado de 7.5rem */
+        height: 7.5rem; /* Aumentado de 7rem */
     }
 
     footer {
-        padding: 1.3rem 1.5rem;
-        gap: 1.5rem;
+        padding: 1.5rem 1.5rem; /* Aumentado de 1.3rem */
+        gap: 1.8rem; /* Aumentado de 1.5rem */
     }
     
     .footer--grid-layout {
-        gap: 1.5rem;
+        gap: 1.8rem; /* Aumentado de 1.5rem */
     }
     
     footer p {
-        font-size: 1rem;
+        font-size: 1.2rem; /* Aumentado de 1rem */
     }
     
     footer img {
-        width: 1.6rem;
+        width: 1.8rem; /* Aumentado de 1.6rem */
     }
     
     footer div {
-        gap: 0.5rem;
+        gap: 0.7rem; /* Aumentado de 0.5rem */
     }
 }
 
@@ -1295,27 +1295,27 @@
 
     /* Navbar */
     .header-logo__text h2 {
-        font-size: 1.6rem;
+        font-size: 1.7rem; /* Aumentado de 1.6rem */
     }
 
     .header__menu-link {
-        font-size: 1.1rem;
+        font-size: 1.2rem; /* Aumentado de 1.1rem */
     }
 
     /* Tela de carregamento */
     .loader .circle {
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 1.3rem;
+        height: 1.3rem;
     }
 
     #loading-screen p {
-        font-size: 1rem;
+        font-size: 1.1rem; /* Aumentado de 1rem */
     }
 
     /* Início (Hero) */
     .hero__title,
     .hero__title__subtitle {
-        font-size: 2.7rem;
+        font-size: 2.8rem; /* Aumentado de 2.7rem */
     }
 
     .hero__image-container img {
@@ -1324,21 +1324,21 @@
 
     .hero__button-download,
     .hero__button-contact {
-        width: 14rem;
-        padding: .7rem 2rem;
-        font-size: 1.1rem;
+        width: 15rem; /* Aumentado de 14rem */
+        padding: .8rem 2rem;
+        font-size: 1.2rem; /* Aumentado de 1.1rem */
         max-width: 30rem;
     }
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 16rem;
-        padding: .7rem 3rem;
+        width: 17rem; /* Aumentado de 16rem */
+        padding: .8rem 3rem;
         max-width: 40rem;
     }
 
     .about {
-        padding: 1rem 1.5rem 0;
+        padding: 1.5rem 1.5rem 0; /* Aumentado de 1rem */
     }
 
     .about__container {
@@ -1350,12 +1350,12 @@
     }
 
     .about__text-container nav ul li img {
-        width: 1.8rem;
-        height: 1.8rem;
+        width: 2rem; /* Aumentado de 1.8rem */
+        height: 2rem; /* Aumentado de 1.8rem */
     }
 
     .about__text-container nav ul a::after {
-        font-size: .7rem;
+        font-size: .9rem; /* Aumentado de .7rem */
     }
 
     .destaques-news {
@@ -1363,7 +1363,7 @@
     }
 
     .destaques-news__text h2 {
-        font-size: 1.6rem;
+        font-size: 1.8rem; /* Aumentado de 1.6rem */
     }
 
     .destaques-carousel-container {
@@ -1376,15 +1376,15 @@
     }
 
     .destaques--card-info h2 {
-        font-size: 1.1rem;
+        font-size: 1.2rem; /* Aumentado de 1.1rem */
     }
 
     .destaques--card-info p {
-        font-size: 0.8rem;
+        font-size: 0.9rem; /* Aumentado de 0.8rem */
     }
 
     .destaques--card-testimonial p {
-        font-size: 0.8rem;
+        font-size: 0.9rem; /* Aumentado de 0.8rem */
     }
 
     .destaques-carousel-control {
@@ -1393,7 +1393,7 @@
     }
 
     #formacao .formacao--container h2 {
-        font-size: 2.1rem;
+        font-size: 2.3rem; /* Aumentado de 2.1rem */
     }
 
     .card-header {
@@ -1402,109 +1402,109 @@
     }
 
     .card-info h3 {
-        font-size: 1.15rem;
+        font-size: 1.2rem; /* Aumentado de 1.15rem */
     }
 
     .card-info p,
     .card-details p {
-        font-size: 0.9rem;
+        font-size: 1rem; /* Aumentado de 0.9rem */
     }
 
     .card-details strong {
-        font-size: 1rem;
+        font-size: 1.1rem; /* Aumentado de 1rem */
     }
 
     #formacaoMostrarMaisBtn {
-        padding: 0.7rem 1.2rem;
-        font-size: 0.95rem;
+        padding: 0.8rem 1.2rem;
+        font-size: 1.05rem; /* Aumentado de 0.95rem */
     }
 
     .projeto__text h2 {
-        font-size: 2rem;
+        font-size: 2.2rem; /* Aumentado de 2rem */
     }
     
     .projects-grid {
-        gap: 2.5rem;
+        gap: 2.8rem; /* Aumentado de 2.5rem */
     }
     
     .project-overlay {
-        gap: 1rem;
+        gap: 1.2rem; /* Aumentado de 1rem */
     }
     
     .project-overlay__title {
-        font-size: 1.4rem;
+        font-size: 1.6rem; /* Aumentado de 1.4rem */
     }
     
     .project-tooltip {
         width: 80%;
-        font-size: 0.9rem;
+        font-size: 1rem; /* Aumentado de 0.9rem */
     }
     
     .titulo-sessao-modal {
-        font-size: 1.6rem;
+        font-size: 1.8rem; /* Aumentado de 1.6rem */
     }
     
     .project-icons-header img {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1.6rem; /* Aumentado de 1.5rem */
+        height: 1.6rem; /* Aumentado de 1.5rem */
     }
 
     #ProjectMostrarMaisProjetosBtn {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+        font-size: 1rem; /* Aumentado de 0.9rem */
     }
     
     .botao-footer-modal {
         width: 100%; 
-        margin: 0.3rem 0;
+        margin: 0.4rem 0; /* Aumentado de 0.3rem */
     }
 
     .skills__text h2 {
-        font-size: 2.1rem;
+        font-size: 2.3rem; /* Aumentado de 2.1rem */
     }
     
     .skills__filter {
-        gap: 0.6rem;
-    margin-bottom: 1.8rem;
+        gap: 0.7rem; /* Aumentado de 0.6rem */
+        margin-bottom: 2rem; /* Aumentado de 1.8rem */
     }
     
     .skills__flex {
-        gap: 1rem;
+        gap: 1.2rem; /* Aumentado de 1rem */
     }
     
     .skill__card {
-        width: 7rem;
-        height: 6.5rem;
+        width: 7.5rem; /* Aumentado de 7rem */
+        height: 7rem; /* Aumentado de 6.5rem */
     }
     
     .skill__card img {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.8rem; /* Aumentado de 2.5rem */
+        height: 2.8rem; /* Aumentado de 2.5rem */
     }
     
     .skill__card h1 {
-        font-size: 1rem;
+        font-size: 1.1rem; /* Aumentado de 1rem */
     }
 
     footer {
-        padding: 1rem 1rem;
-        gap: 1rem;
+        padding: 1.2rem 1rem; /* Aumentado de 1rem */
+        gap: 1.2rem; /* Aumentado de 1rem */
     }
     
     .footer--grid-layout {
-        gap: 1rem;
-        padding: 0 0.5rem;
+        gap: 1.2rem; /* Aumentado de 1rem */
+        padding: 0 0.7rem; /* Aumentado de 0.5rem */
     }
     
     footer p {
-        font-size: 0.9rem;
+        font-size: 1.1rem; /* Aumentado de 0.9rem */
     }
     
     footer img {
-        width: 1.4rem;
+        width: 1.6rem; /* Aumentado de 1.4rem */
     }
     
     footer div {
-        gap: 0.4rem;
+        gap: 0.6rem; /* Aumentado de 0.4rem */
     }
 }
