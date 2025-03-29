@@ -6,52 +6,103 @@ window.onload = function () {
 
 
 // Configurações globais para o loader
-const LOADER_SETTINGS = {
-    fadeOutDelay: 500, // Tempo antes de iniciar o fade-out (em milissegundos)
-    hideDelay: 1000,   // Tempo antes de esconder completamente o loader (em milissegundos)
-};
+(function() {
+    // Configurações básicas
+    const settings = {
+        minSpeed: 1,          // Velocidade mínima em Mbps
+        slowLoadTime: 3000,   // Tempo em ms para considerar lento
+        checkInterval: 2000   // Intervalo para verificar se a página carregou
+    };
 
-// Função para inicializar o loader
-function initLoader() {
-    const loadingScreen = document.getElementById('loading-screen');
-    const circles = document.querySelectorAll('.loader .circle');
-    const text = document.querySelector('#loading-screen p');
+    // Variável para controlar o aviso
+    let warningShown = false;
+    let pageFullyLoaded = false;
 
-    // Verifica se os elementos do loader existem
-    if (!loadingScreen || !circles.length || !text) {
-        console.error('Elementos do loader não encontrados!');
-        return;
+    // Mostra o aviso de conexão lenta
+    function showWarning() {
+        if (warningShown) return;
+        warningShown = true;
+        
+        const warning = document.createElement('div');
+        warning.id = 'slow-connection-warning';
+        warning.innerHTML = `
+            <div style="
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: #fff3cd;
+                border-left: 5px solid #ffc107;
+                padding: 15px;
+                border-radius: 4px;
+                max-width: 300px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                animation: fadeIn 0.5s;
+                z-index: 9999;
+            ">
+                <p style="margin: 0 0 10px 0; color: #856404;">
+                    ⚠️ Sua conexão está lenta. O carregamento pode demorar.
+                </p>
+                <button style="
+                    background: #ffc107;
+                    border: none;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                " onclick="removeWarning()">OK</button>
+            </div>
+        `;
+        
+        document.body.appendChild(warning);
+
+        // Verifica periodicamente se a página carregou
+        const checkLoad = setInterval(function() {
+            if (pageFullyLoaded) {
+                removeWarning();
+                clearInterval(checkLoad);
+            }
+        }, settings.checkInterval);
     }
 
-    // Quando a página terminar de carregar, inicia o fade-out
-    setTimeout(() => {
-        // Remove a animação dos círculos
-        circles.forEach(circle => circle.style.animation = 'none');
+    // Remove o aviso
+    window.removeWarning = function() {
+        const warning = document.getElementById('slow-connection-warning');
+        if (warning) warning.remove();
+    }
 
-        // Aplica opacidade 0 ao texto
-        text.style.opacity = '0';
+    // Verifica a conexão quando a página começa a carregar
+    if (navigator.connection) {
+        const conn = navigator.connection;
+        if (conn.effectiveType === 'slow-2g' || conn.effectiveType === '2g' || 
+            (conn.downlink && conn.downlink < settings.minSpeed)) {
+            showWarning();
+        }
+    }
 
-        // Aplica opacidade 0 à tela de carregamento
-        loadingScreen.style.opacity = '0';
-    }, LOADER_SETTINGS.fadeOutDelay);
+    // Fallback: Verifica pelo tempo de carregamento
+    setTimeout(function() {
+        if (!pageFullyLoaded) {
+            showWarning();
+        }
+    }, settings.slowLoadTime);
 
-    // Remove a tela de carregamento após a transição de opacidade
-    setTimeout(() => {
-        loadingScreen.style.display = 'none';
-        document.documentElement.style.overflow = 'auto'; // Restaura o overflow
+    // Marca a página como carregada quando o evento load ocorrer
+    window.addEventListener('load', function() {
+        pageFullyLoaded = true;
+    });
 
-        // Dispara um evento personalizado quando o loading-screen é completamente removido
-        const event = new Event('loadingScreenHidden');
-        document.dispatchEvent(event);
-    }, LOADER_SETTINGS.hideDelay);
-}
-
-// Inicializa o loader quando a página é carregada
-window.addEventListener('load', initLoader);
-
-// Escuta o evento personalizado para iniciar a animação de texto
-document.addEventListener('loadingScreenHidden', typeMessage);
-
+    // Adiciona a animação do fadeIn globalmente se não existir
+    if (!document.getElementById('fadeIn-style')) {
+        const style = document.createElement('style');
+        style.id = 'fadeIn-style';
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+})();
 //--------------------------------------------------------------------------
 
 // fade-in (animação de aparição) 
