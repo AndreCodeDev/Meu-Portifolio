@@ -5,9 +5,6 @@
 @media screen and (max-width: 1441px) {
 
     /* Navbar */
-    .header__logo-img {
-        width: 14rem;
-    }
 
     .header__menu-link {
         font-size: 1.4rem;
@@ -144,9 +141,10 @@
         justify-content: space-around;
     }
 
-    .header__logo-img {
-        width: 13rem;
+    .header-logo__text h2 {
+        font-size: 1.9rem;
     }
+
 
     .header__menu__toggleButton {
         display: flex;
@@ -771,8 +769,8 @@
         height: 7rem;
     }
 
-    .header__logo-img {
-        width: 12rem;
+    .header-logo__text h2 {
+        font-size: 1.8rem;
     }
 
     .header__menu-link {
@@ -1077,8 +1075,8 @@
 @media screen and (max-width: 376px) {
 
     /* Navbar */
-    .header__logo-img {
-        width: 11rem;
+    .header-logo__text h2 {
+        font-size: 1.7rem;
     }
 
     .header__menu-link {
@@ -1296,8 +1294,8 @@
 @media screen and (max-width: 321px) {
 
     /* Navbar */
-    .header__logo-img {
-        width: 10rem;
+    .header-logo__text h2 {
+        font-size: 1.6rem;
     }
 
     .header__menu-link {
