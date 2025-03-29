@@ -120,6 +120,30 @@ document.addEventListener('scroll', () => {
 //--------------------------------------------------------------------------
 
 // Função para alternar o tema
+// Pré-carregamento agressivo das imagens
+const themeImages = {
+    dark: {
+        logoNav: 'img/logoNavbarBranca.png',
+        hero: 'img/logoHeroPreta.svg'
+    },
+    light: {
+        logoNav: 'img/logoNavbarPreta.png',
+        hero: 'img/logoHeroBranca.svg'
+    }
+};
+
+// Carrega todas as imagens imediatamente ao iniciar
+function preloadAllThemeImages() {
+    Object.values(themeImages).forEach(theme => {
+        new Image().src = theme.logoNav;
+        new Image().src = theme.hero;
+    });
+}
+
+// Variável para controle do tema atual
+let currentTheme = document.body.classList.contains('light-mode') ? 'light' : 'dark';
+
+// Função otimizada para troca instantânea
 function toggleTheme() {
     const body = document.body;
     const toggleContainer = document.getElementById('themeToggle');
@@ -127,63 +151,32 @@ function toggleTheme() {
     const headerLogo = document.getElementById('headerLogo');
     const heroImage = document.getElementById('heroImage');
 
-    // Adiciona classe de loading para feedback visual
-    body.classList.add('theme-changing');
-    
-    // Alterna o tema imediatamente
-    if (body.classList.contains('light-mode')) {
+    // Troca imediata sem esperar carregamento
+    if (currentTheme === 'light') {
         body.classList.remove('light-mode');
         toggleContainer.classList.remove('active');
         themeTooltip.textContent = 'Tema Claro';
-        
-        // Altera as imagens com callbacks para remover o loading
-        changeImage(headerLogo, 'img/logoNavbarBranca.png', () => {
-            changeImage(heroImage, 'img/logoHeroPreta.svg', () => {
-                body.classList.remove('theme-changing');
-            });
-        });
+        headerLogo.src = themeImages.dark.logoNav;
+        heroImage.src = themeImages.dark.hero;
+        currentTheme = 'dark';
     } else {
         body.classList.add('light-mode');
         toggleContainer.classList.add('active');
         themeTooltip.textContent = 'Tema Escuro';
-        
-        changeImage(headerLogo, 'img/logoNavbarPreta.png', () => {
-            changeImage(heroImage, 'img/logoHeroBranca.svg', () => {
-                body.classList.remove('theme-changing');
-            });
-        });
+        headerLogo.src = themeImages.light.logoNav;
+        heroImage.src = themeImages.light.hero;
+        currentTheme = 'light';
     }
 }
 
-// Função auxiliar para trocar imagens com callback
-function changeImage(element, newSrc, callback) {
-    const img = new Image();
-    img.onload = function() {
-        element.src = newSrc;
-        if (callback) callback();
-    };
-    img.onerror = function() {
-        console.error('Erro ao carregar imagem:', newSrc);
-        if (callback) callback();
-    };
-    img.src = newSrc;
-}
+// Disparar o pré-carregamento assim que possível
+document.addEventListener('DOMContentLoaded', preloadAllThemeImages);
 
-// Pré-carrega as imagens
-window.addEventListener('load', function() {
-    const images = [
-        'img/logoNavbarBranca.png',
-        'img/logoHeroPreta.svg',
-        'img/logoNavbarPreta.png',
-        'img/logoHeroBranca.svg'
-    ];
-    
-    images.forEach(img => {
-        new Image().src = img;
-    });
+// Adiciona o evento de clique otimizado
+document.getElementById('themeToggle').addEventListener('click', function(e) {
+    e.preventDefault();
+    toggleTheme();
 });
-
-document.getElementById('themeToggle').addEventListener('click', toggleTheme);
 
 //--------------------------------------------------------------------------
 
