@@ -1295,11 +1295,11 @@
 
     /* Navbar */
     .header-logo__text h2 {
-        font-size: 1.7rem; /* Aumentado de 1.6rem */
+        font-size: 1.7rem; 
     }
 
     .header__menu-link {
-        font-size: 1.2rem; /* Aumentado de 1.1rem */
+        font-size: 1.2rem;
     }
 
     /* Tela de carregamento */
@@ -1309,13 +1309,13 @@
     }
 
     #loading-screen p {
-        font-size: 1.1rem; /* Aumentado de 1rem */
+        font-size: 1.1rem; 
     }
 
     /* Início (Hero) */
     .hero__title,
     .hero__title__subtitle {
-        font-size: 2.8rem; /* Aumentado de 2.7rem */
+        font-size: 2.8rem;
     }
 
     .hero__image-container img {
@@ -1324,21 +1324,21 @@
 
     .hero__button-download,
     .hero__button-contact {
-        width: 15rem; /* Aumentado de 14rem */
+        width: 15rem; 
         padding: .8rem 2rem;
-        font-size: 1.2rem; /* Aumentado de 1.1rem */
+        font-size: 1.2rem; 
         max-width: 30rem;
     }
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 17rem; /* Aumentado de 16rem */
+        width: 17rem; 
         padding: .8rem 3rem;
         max-width: 40rem;
     }
 
     .about {
-        padding: 1.5rem 1.5rem 0; /* Aumentado de 1rem */
+        padding: 1.5rem 1.5rem 0; 
     }
 
     .about__container {
@@ -1350,12 +1350,12 @@
     }
 
     .about__text-container nav ul li img {
-        width: 2rem; /* Aumentado de 1.8rem */
-        height: 2rem; /* Aumentado de 1.8rem */
+        width: 2rem; 
+        height: 2rem;
     }
 
     .about__text-container nav ul a::after {
-        font-size: .9rem; /* Aumentado de .7rem */
+        font-size: .9rem; 
     }
 
     .destaques-news {
@@ -1363,7 +1363,7 @@
     }
 
     .destaques-news__text h2 {
-        font-size: 1.8rem; /* Aumentado de 1.6rem */
+        font-size: 1.8rem;
     }
 
     .destaques-carousel-container {
@@ -1376,15 +1376,15 @@
     }
 
     .destaques--card-info h2 {
-        font-size: 1.2rem; /* Aumentado de 1.1rem */
+        font-size: 1.2rem; 
     }
 
     .destaques--card-info p {
-        font-size: 0.9rem; /* Aumentado de 0.8rem */
+        font-size: 0.9rem;
     }
 
     .destaques--card-testimonial p {
-        font-size: 0.9rem; /* Aumentado de 0.8rem */
+        font-size: 0.9rem;
     }
 
     .destaques-carousel-control {
@@ -1393,7 +1393,7 @@
     }
 
     #formacao .formacao--container h2 {
-        font-size: 2.3rem; /* Aumentado de 2.1rem */
+        font-size: 2.3rem; 
     }
 
     .card-header {
@@ -1402,21 +1402,21 @@
     }
 
     .card-info h3 {
-        font-size: 1.2rem; /* Aumentado de 1.15rem */
+        font-size: 1.2rem; 
     }
 
     .card-info p,
     .card-details p {
-        font-size: 1rem; /* Aumentado de 0.9rem */
+        font-size: 1rem; 
     }
 
     .card-details strong {
-        font-size: 1.1rem; /* Aumentado de 1rem */
+        font-size: 1.1rem; 
     }
 
     #formacaoMostrarMaisBtn {
         padding: 0.8rem 1.2rem;
-        font-size: 1.05rem; /* Aumentado de 0.95rem */
+        font-size: 1.05rem; 
     }
 
     .projeto__text h2 {
