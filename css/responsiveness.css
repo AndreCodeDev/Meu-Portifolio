@@ -453,7 +453,7 @@
     }
 
     #loading-screen p {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .toggle-container {
@@ -472,7 +472,7 @@
     }
 
     .tooltip {
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: .1rem .4rem;
     }
 
@@ -484,11 +484,11 @@
 
     .hero__title,
     .hero__title__subtitle {
-        font-size: 3.2rem;
+        font-size: 2.9rem;
     }
 
     .typewriter {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .container--hero {
@@ -507,16 +507,16 @@
 
     .hero__button-download,
     .hero__button-contact {
-        width: 22rem;
-        padding: 1rem 2rem;
-        font-size: 1.5rem;
+        width: 20rem;
+        padding: .9rem 2rem;
+        font-size: 1.3rem;
         max-width: 30rem;
     }
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 24rem;
-        padding: 1rem 3rem;
+        width: 22rem;
+        padding: .9rem 3rem;
         max-width: 40rem;
     }
 
@@ -554,7 +554,7 @@
     }
 
     .destaques-news__text h2 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 
     .destaques-carousel-container {
@@ -567,15 +567,15 @@
     }
 
     .destaques--card-info h2 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .destaques--card-info p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .destaques--card-testimonial p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .destaques-carousel-control {
@@ -596,7 +596,7 @@
     }
 
     #formacao .formacao--container h2 {
-        font-size: 3.2rem;
+        font-size: 3rem;
         padding-bottom: 1.5rem;
     }
 
@@ -623,16 +623,16 @@
     }
 
     .card-info h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .card-info p,
     .card-details p {
-        font-size: 1.2rem;
+        font-size: 1.05rem;
     }
 
     .card-details strong {
-        font-size: 1.3rem;
+        font-size: 1.15rem;
     }
 
     .formacao-footer {
@@ -640,7 +640,7 @@
     }
 
     #formacaoMostrarMaisBtn {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .projects {
@@ -648,7 +648,7 @@
     }
     
     .projeto__text h2 {
-        font-size: 3.2rem;
+        font-size: 3rem;
         padding-bottom: 1.5rem;
     }
     
@@ -658,7 +658,7 @@
     }
     
     .project-overlay__title {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     
     .project-overlay {
@@ -666,27 +666,27 @@
     }
     
     .titulo-sessao-modal {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
     
     .paragrafos-sessao-modal,
     .data-sessao-modal {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     #ProjectMostrarMaisProjetosBtn {
-        padding: 0.8rem 1.5rem;
-        font-size: 1.3rem;
+        padding: 0.7rem 1.3rem;
+        font-size: 1.1rem;
     }
     
     .project-icons-header img {
-        width: 2rem;
-        height: 2rem;
+        width: 1.8rem;
+        height: 1.8rem;
     }
     
     .botao-footer-modal {
-        padding: 0.6rem 1.3rem;
-        font-size: 1.1rem;
+        padding: 0.5rem 1.2rem;
+        font-size: 0.9rem;
     }
 
     .skills {
@@ -694,13 +694,13 @@
     }
     
     .skills__text h2 {
-        font-size: 3.2rem;
+        font-size: 2.8rem;
         padding-bottom: 1.5rem;
     }
     
     .skills__filter button {
-        padding: 0.8rem 1.5rem;
-        font-size: 1.2rem;
+        padding: 0.7rem 1.3rem;
+        font-size: 1rem;
     }
     
     .skills__flex {
@@ -709,18 +709,18 @@
     }
     
     .skill__card {
-        width: 10rem;
-        height: 9.5rem;
+        width: 9rem;
+        height: 8.5rem;
     }
     
     .skill__card img {
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
         margin-bottom: 1.2rem;
     }
     
     .skill__card h1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     footer {
@@ -735,12 +735,12 @@
     }
 
     footer p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         text-align: center; 
     }
 
     footer img {
-        width: 2.2rem; 
+        width: 2rem; 
     }
 }
 
@@ -751,44 +751,44 @@
     }
 
     .header-logo__text h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .header__menu-link {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .toggle-container {
-        width: 3.8rem;
-        height: 1.8rem;
-        border-radius: 1rem;
+        width: 3.5rem;
+        height: 1.6rem;
+        border-radius: .9rem;
     }
 
     .toggle-switch {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    .toggle-container.active .toggle-switch {
+        transform: translateX(1.8rem) translateY(-50%);
+    }
+
+    .tooltip {
+        font-size: .9rem;
+        padding: .1rem .3rem;
+    }
+
+    .loading-card {
+        padding: 1rem;
+    }
+
+    .loader .circle {
         width: 1.5rem;
         height: 1.5rem;
     }
 
-    .toggle-container.active .toggle-switch {
-        transform: translateX(2.1rem) translateY(-50%);
-    }
-
-    .tooltip {
-        font-size: 1.1rem;
-        padding: .1rem .4rem;
-    }
-
-    .loading-card {
-        padding: 1.2rem;
-    }
-
-    .loader .circle {
-        width: 1.7rem;
-        height: 1.7rem;
-    }
-
     #loading-screen p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .hero {
@@ -797,143 +797,143 @@
 
     .hero__title,
     .hero__title__subtitle {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
     }
 
     .typewriter {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
     }
 
     .hero__image-container img {
-        width: 32rem;
+        width: 30rem;
     }
 
     .hero__buttons {
-        gap: 1.2rem;
+        gap: 1rem;
     }
 
     .hero__button-download,
     .hero__button-contact {
-        width: 24rem;
-        padding: 1.1rem 2rem;
-        font-size: 1.6rem;
+        width: 22rem;
+        padding: .9rem 2rem;
+        font-size: 1.4rem;
         max-width: 30rem;
     }
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 25rem;
-        padding: 1.1rem 3rem;
+        width: 23rem;
+        padding: .9rem 3rem;
         max-width: 40rem;
     }
 
     .about {
-        padding: 1.8rem 3rem 0;
+        padding: 1.5rem 3rem 0;
     }
 
     .about__text-container nav ul a::after {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .about__image-container {
-        max-width: 240px;
+        max-width: 220px;
     }
 
     .destaques-news {
-        padding: 1rem 1.8rem 3.5rem;
+        padding: 1rem 1.5rem 3rem;
     }
 
     .destaques-news__text h2 {
-        font-size: 2.8rem;
-        padding-bottom: 1.8rem;
+        font-size: 2.3rem;
+        padding-bottom: 1.5rem;
     }
 
     .destaques-carousel-container {
-        max-width: 320px;
+        max-width: 300px;
     }
 
     .card {
-        width: 240px;
-        height: 340px;
+        width: 220px;
+        height: 320px;
     }
 
     .card__back {
-        padding: 0 18px;
+        padding: 0 15px;
     }
 
     .destaques--card-info h2 {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
 
     .destaques--card-info p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .destaques--card-testimonial p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .destaques-carousel-control {
-        width: 38px;
-        height: 38px;
+        width: 35px;
+        height: 35px;
     }
 
     .destaques-carousel-control.prev {
-        left: -1.5%;
+        left: -1%;
     }
 
     .destaques-carousel-control.next {
-        right: -1.5%;
+        right: -1%;
     }
 
     #formacao {
-        padding: 3.5rem 1.8rem 5.5rem;
+        padding: 3rem 1.5rem 5rem;
     }
 
     #formacao .formacao--container h2 {
-        font-size: 3.2rem;
+        font-size: 2.8rem;
     }
 
     .formacao-flex {
-        gap: 1.2rem;
+        gap: 1rem;
     }
 
     .formacao-card {
         width: 100%;
-        max-width: 26rem;
-        padding: 1.7rem;
+        max-width: 24rem;
+        padding: 1.5rem;
     }
 
     .card-info h3 {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
     }
 
     .card-info p,
     .card-details p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .card-details strong {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     #formacaoMostrarMaisBtn {
-        padding: 0.9rem 1.7rem;
-        font-size: 1.3rem;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.15rem;
     }
 
     .projects {
-        padding: 3.5rem 1.8rem 5.5rem;
+        padding: 3rem 1.5rem 5rem;
     }
     
     .projeto__text h2 {
-        font-size: 3.2rem;
+        font-size: 2.8rem;
     }
     
     .projects-grid {
         grid-template-columns: 1fr;
-        gap: 3.5rem;
-        padding: 0 1.2rem;
+        gap: 3rem;
+        padding: 0 1rem;
         max-width: 95%;
         margin: 0 auto;
     }
@@ -948,40 +948,40 @@
     }
     
     .project-overlay__title {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     
     .projects--github {
-        font-size: 1.6rem;
-    }
-    
-    .titulo-sessao-modal {
-        font-size: 2.4rem;
-    }
-    
-    .modal-body {
-        padding: 1.8rem;
-    }
-
-    #ProjectMostrarMaisProjetosBtn {
-        padding: 0.8rem 1.5rem;
         font-size: 1.4rem;
     }
     
+    .titulo-sessao-modal {
+        font-size: 2.2rem;
+    }
+    
+    .modal-body {
+        padding: 1.5rem;
+    }
+
+    #ProjectMostrarMaisProjetosBtn {
+        padding: 0.7rem 1.3rem;
+        font-size: 1.2rem;
+    }
+    
     #ProjectMostrarMaisProjetosBtn svg {
-        width: 1.6rem;
-        height: 1.6rem;
+        width: 1.4rem;
+        height: 1.4rem;
     }
     
     .project-icons-header {
-        margin: 1.2rem 0;
+        margin: 1rem 0;
         justify-content: center;
     }
     
     .project-icons-header img {
-        width: 2rem;
-        height: 2rem;
-        margin: 0 0.4rem;
+        width: 1.8rem;
+        height: 1.8rem;
+        margin: 0 0.3rem;
     }
     
     .botoes-footer {
@@ -990,274 +990,59 @@
     }
     
     .botao-footer-modal {
-        padding: 0.7rem 1.2rem;
-        font-size: 1.2rem;
-        width: 65%;
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+        width: 60%;
     }
 
     .skills {
-        padding: 3.5rem 1.8rem 5.5rem;
+        padding: 3rem 1.5rem 5rem;
     }
     
     .skills__text h2 {
-        font-size: 3.2rem;
+        font-size: 2.8rem;
     }
     
     .skills__filter {
-        margin-bottom: 2.2rem;
-        gap: 1rem;
+        margin-bottom: 2rem;
+        gap: 0.8rem;
     }
     
     .skills__flex {
-        gap: 1.8rem;
-    }
-    
-    .skill__card {
-        width: 10rem;
-        height: 9.5rem;
-    }
-    
-    .skill__card img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1.4rem;
-    }
-    
-    .skill__card h1 {
-        font-size: 1.5rem;
-    }
-
-    footer {
-        padding: 2rem 2rem;
-        gap: 2.2rem;
-    }
-    
-    .footer--grid-layout {
-        gap: 2.2rem;
-        padding: 0 1rem;
-    }
-    
-    footer p {
-        font-size: 1.5rem;
-    }
-    
-    footer img {
-        width: 2.4rem;
-    }
-    
-    footer div {
-        gap: 1rem;
-    }
-}
-
-/* Smartphone M */
-@media screen and (max-width: 376px) {
-    .header-logo__text h2 {
-        font-size: 1.9rem;
-    }
-
-    .header__menu-link {
-        font-size: 1.5rem;
-    }
-
-    .header__menu-toggle span {
-        width: 65%;
-        height: .26rem;
-    }
-
-    .header__menu-toggle {
-        gap: .5rem;
-    }
-
-    .loader .circle {
-        width: 1.6rem;
-        height: 1.6rem;
-    }
-
-    #loading-screen p {
-        font-size: 1.4rem;
-    }
-
-    .hero__title,
-    .hero__title__subtitle {
-        font-size: 3.2rem;
-    }
-
-    .typewriter {
-        font-size: 1.8rem;
-    }
-
-    .hero__image-container img {
-        width: 30rem;
-    }
-
-    .hero__button-download,
-    .hero__button-contact {
-        width: 23rem;
-        padding: 1rem 2rem;
-        font-size: 1.5rem;
-        max-width: 30rem;
-    }
-
-    .hero__button-download:hover,
-    .hero__button-contact:hover {
-        width: 24rem;
-        padding: 1rem 3rem;
-        max-width: 40rem;
-    }
-
-    .about {
-        padding: 2rem 2.2rem 0;
-    }
-
-    .about__image-container {
-        max-width: 230px;
-    }
-
-    .about__text-container nav ul li img {
-        width: 2.4rem;
-        height: 2.4rem;
-    }
-
-    .about__text-container nav ul a::after {
-        font-size: 1.2rem;
-    }
-
-    .destaques-news {
-        padding: 1rem 1.2rem 3rem;
-    }
-
-    .destaques-news__text h2 {
-        font-size: 2.5rem;
-    }
-
-    .destaques-carousel-container {
-        max-width: 300px;
-    }
-
-    .card {
-        width: 220px;
-        height: 330px;
-    }
-
-    .card__back {
-        padding: 0 15px;
-    }
-
-    .destaques--card-info h2 {
-        font-size: 1.6rem;
-    }
-
-    .destaques--card-info p {
-        font-size: 1.2rem;
-    }
-
-    .destaques--card-testimonial p {
-        font-size: 1.2rem;
-    }
-
-    #formacao {
-        padding: 3rem 1.2rem 5rem;
-    }
-
-    #formacao .formacao--container h2 {
-        font-size: 2.8rem;
-    }
-
-    .formacao-card {
-        padding: 1.5rem;
-    }
-
-    .card-header img {
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .card-info h3 {
-        font-size: 1.4rem;
-    }
-
-    .card-info p,
-    .card-details p {
-        font-size: 1.15rem;
-    }
-
-    .card-details strong {
-        font-size: 1.25rem;
-    }
-
-    #formacaoMostrarMaisBtn {
-        font-size: 1.3rem;
-    }
-
-    .projects {
-        padding: 3rem 1.2rem 5rem;
-    }
-    
-    .projeto__text h2 {
-        font-size: 2.8rem;
-    }
-    
-    .project-overlay__title {
-        font-size: 2rem;
-    }
-    
-    .project-icons img {
-        width: 2rem;
-        height: 2rem;
-    }
-    
-    .titulo-sessao-modal {
-        font-size: 2.2rem;
-    }
-    
-    .paragrafos-sessao-modal,
-    .data-sessao-modal {
-        font-size: 1.3rem;
-    }
-    
-    .botao-footer-modal {
-        padding: 0.8rem 1.6rem;
-        font-size: 1.3rem;
-    }
-
-    .skills {
-        padding: 3rem 1.2rem 5rem;
-    }
-    
-    .skills__text h2 {
-        font-size: 2.8rem;
-    }
-    
-    .skills__filter button {
-        padding: 0.8rem 1.3rem;
-        font-size: 1.1rem;
-    }
-    
-    .skills__flex {
-        gap: 1.8rem;
+        gap: 1.5rem;
     }
     
     .skill__card {
         width: 9rem;
         height: 8.5rem;
     }
+    
+    .skill__card img {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .skill__card h1 {
+        font-size: 1.3rem;
+    }
 
     footer {
-        padding: 1.8rem 1.8rem;
+        padding: 1.5rem 2rem;
         gap: 2rem;
     }
     
     .footer--grid-layout {
         gap: 2rem;
+        padding: 0 0.8rem;
     }
     
     footer p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     
     footer img {
-        width: 2rem;
+        width: 2.2rem;
     }
     
     footer div {
@@ -1265,28 +1050,41 @@
     }
 }
 
-/* Smartphone P */
-@media screen and (max-width: 321px) {
+/* Smartphone M */
+@media screen and (max-width: 376px) {
     .header-logo__text h2 {
         font-size: 1.8rem;
     }
 
     .header__menu-link {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+    }
+
+    .header__menu-toggle span {
+        width: 65%;
+        height: .24rem;
+    }
+
+    .header__menu-toggle {
+        gap: .4rem;
     }
 
     .loader .circle {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1.4rem;
+        height: 1.4rem;
     }
 
     #loading-screen p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .hero__title,
     .hero__title__subtitle {
         font-size: 3rem;
+    }
+
+    .typewriter {
+        font-size: 1.6rem;
     }
 
     .hero__image-container img {
@@ -1295,29 +1093,25 @@
 
     .hero__button-download,
     .hero__button-contact {
-        width: 22rem;
-        padding: 1rem 2rem;
-        font-size: 1.4rem;
+        width: 21rem;
+        padding: .9rem 2rem;
+        font-size: 1.3rem;
         max-width: 30rem;
     }
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 23rem;
-        padding: 1rem 3rem;
+        width: 22rem;
+        padding: .9rem 3rem;
         max-width: 40rem;
     }
 
     .about {
-        padding: 1.8rem 1.8rem 0;
-    }
-
-    .about__container {
-        padding: 3rem;
+        padding: 2rem 2rem 0;
     }
 
     .about__image-container {
-        max-width: 220px;
+        max-width: 210px;
     }
 
     .about__text-container nav ul li img {
@@ -1326,7 +1120,7 @@
     }
 
     .about__text-container nav ul a::after {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .destaques-news {
@@ -1334,11 +1128,11 @@
     }
 
     .destaques-news__text h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .destaques-carousel-container {
-        max-width: 270px;
+        max-width: 280px;
     }
 
     .card {
@@ -1346,30 +1140,37 @@
         height: 300px;
     }
 
+    .card__back {
+        padding: 0 10px;
+    }
+
     .destaques--card-info h2 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .destaques--card-info p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .destaques--card-testimonial p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
-    .destaques-carousel-control {
-        width: 32px;
-        height: 32px;
+    #formacao {
+        padding: 2.5rem 1rem 4.5rem;
     }
 
     #formacao .formacao--container h2 {
         font-size: 2.5rem;
     }
 
-    .card-header {
-        align-items: flex-start;
-        gap: 0.6rem;
+    .formacao-card {
+        padding: 1.3rem;
+    }
+
+    .card-header img {
+        width: 4.8rem;
+        height: 4.8rem;
     }
 
     .card-info h3 {
@@ -1378,65 +1179,59 @@
 
     .card-info p,
     .card-details p {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 
     .card-details strong {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
     }
 
     #formacaoMostrarMaisBtn {
-        padding: 0.9rem 1.4rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
+    .projects {
+        padding: 2.5rem 1rem 4rem;
+    }
+    
     .projeto__text h2 {
         font-size: 2.5rem;
-    }
-    
-    .projects-grid {
-        gap: 3rem;
-    }
-    
-    .project-overlay {
-        gap: 1.4rem;
     }
     
     .project-overlay__title {
         font-size: 1.8rem;
     }
     
-    .project-tooltip {
-        width: 85%;
-        font-size: 1.1rem;
+    .project-icons img {
+        width: 1.8rem;
+        height: 1.8rem;
     }
     
     .titulo-sessao-modal {
         font-size: 2rem;
     }
     
-    .project-icons-header img {
-        width: 1.8rem;
-        height: 1.8rem;
-    }
-
-    #ProjectMostrarMaisProjetosBtn {
-        padding: 0.7rem 1.2rem;
+    .paragrafos-sessao-modal,
+    .data-sessao-modal {
         font-size: 1.2rem;
     }
     
     .botao-footer-modal {
-        width: 100%; 
-        margin: 0.5rem 0;
+        padding: 0.7rem 1.5rem;
+        font-size: 1.2rem;
     }
 
+    .skills {
+        padding: 2.5rem 1rem 4rem;
+    }
+    
     .skills__text h2 {
         font-size: 2.5rem;
     }
     
-    .skills__filter {
-        gap: 0.8rem;
-        margin-bottom: 2.2rem;
+    .skills__filter button {
+        padding: 0.7rem 1.1rem;
+        font-size: 1rem;
     }
     
     .skills__flex {
@@ -1444,31 +1239,21 @@
     }
     
     .skill__card {
-        width: 8.5rem;
-        height: 8rem;
-    }
-    
-    .skill__card img {
-        width: 3rem;
-        height: 3rem;
-    }
-    
-    .skill__card h1 {
-        font-size: 1.3rem;
+        width: 8rem;
+        height: 7.5rem;
     }
 
     footer {
-        padding: 1.5rem 1.2rem;
-        gap: 1.5rem;
+        padding: 1.5rem 1.5rem;
+        gap: 1.8rem;
     }
     
     .footer--grid-layout {
-        gap: 1.5rem;
-        padding: 0 0.9rem;
+        gap: 1.8rem;
     }
     
     footer p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     footer img {
@@ -1477,5 +1262,220 @@
     
     footer div {
         gap: 0.7rem;
+    }
+}
+
+/* Smartphone P */
+@media screen and (max-width: 321px) {
+    .header-logo__text h2 {
+        font-size: 1.7rem;
+    }
+
+    .header__menu-link {
+        font-size: 1.2rem;
+    }
+
+    .loader .circle {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    #loading-screen p {
+        font-size: 1.1rem;
+    }
+
+    .hero__title,
+    .hero__title__subtitle {
+        font-size: 2.8rem;
+    }
+
+    .hero__image-container img {
+        width: 26rem;
+    }
+
+    .hero__button-download,
+    .hero__button-contact {
+        width: 20rem;
+        padding: .8rem 2rem;
+        font-size: 1.2rem;
+        max-width: 30rem;
+    }
+
+    .hero__button-download:hover,
+    .hero__button-contact:hover {
+        width: 21rem;
+        padding: .8rem 3rem;
+        max-width: 40rem;
+    }
+
+    .about {
+        padding: 1.5rem 1.5rem 0;
+    }
+
+    .about__container {
+        padding: 3rem;
+    }
+
+    .about__image-container {
+        max-width: 200px;
+    }
+
+    .about__text-container nav ul li img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .about__text-container nav ul a::after {
+        font-size: .9rem;
+    }
+
+    .destaques-news {
+        padding: 1rem 0.8rem 2rem;
+    }
+
+    .destaques-news__text h2 {
+        font-size: 1.8rem;
+    }
+
+    .destaques-carousel-container {
+        max-width: 250px;
+    }
+
+    .card {
+        width: 180px;
+        height: 280px;
+    }
+
+    .destaques--card-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .destaques--card-info p {
+        font-size: 0.9rem;
+    }
+
+    .destaques--card-testimonial p {
+        font-size: 0.9rem;
+    }
+
+    .destaques-carousel-control {
+        width: 30px;
+        height: 30px;
+    }
+
+    #formacao .formacao--container h2 {
+        font-size: 2.3rem;
+    }
+
+    .card-header {
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .card-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-info p,
+    .card-details p {
+        font-size: 1rem;
+    }
+
+    .card-details strong {
+        font-size: 1.1rem;
+    }
+
+    #formacaoMostrarMaisBtn {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.05rem;
+    }
+
+    .projeto__text h2 {
+        font-size: 2.2rem;
+    }
+    
+    .projects-grid {
+        gap: 2.8rem;
+    }
+    
+    .project-overlay {
+        gap: 1.2rem;
+    }
+    
+    .project-overlay__title {
+        font-size: 1.6rem;
+    }
+    
+    .project-tooltip {
+        width: 80%;
+        font-size: 1rem;
+    }
+    
+    .titulo-sessao-modal {
+        font-size: 1.8rem;
+    }
+    
+    .project-icons-header img {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    #ProjectMostrarMaisProjetosBtn {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .botao-footer-modal {
+        width: 100%; 
+        margin: 0.4rem 0;
+    }
+
+    .skills__text h2 {
+        font-size: 2.3rem;
+    }
+    
+    .skills__filter {
+        gap: 0.7rem;
+        margin-bottom: 2rem;
+    }
+    
+    .skills__flex {
+        gap: 1.2rem;
+    }
+    
+    .skill__card {
+        width: 7.5rem;
+        height: 7rem;
+    }
+    
+    .skill__card img {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+    
+    .skill__card h1 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        padding: 1.2rem 1rem;
+        gap: 1.2rem;
+    }
+    
+    .footer--grid-layout {
+        gap: 1.2rem;
+        padding: 0 0.7rem;
+    }
+    
+    footer p {
+        font-size: 1.1rem;
+    }
+    
+    footer img {
+        width: 1.6rem;
+    }
+    
+    footer div {
+        gap: 0.6rem;
     }
 }
