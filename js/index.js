@@ -124,30 +124,65 @@ function toggleTheme() {
     const body = document.body;
     const toggleContainer = document.getElementById('themeToggle');
     const themeTooltip = document.getElementById('themeTooltip');
-    const headerLogo = document.getElementById('headerLogo'); // Logo da navbar
-    const heroImage = document.getElementById('heroImage'); // Imagem do hero
+    const headerLogo = document.getElementById('headerLogo');
+    const heroImage = document.getElementById('heroImage');
 
-    // Verifica se o tema atual é o claro
+    // Adiciona classe de loading para feedback visual
+    body.classList.add('theme-changing');
+    
+    // Alterna o tema imediatamente
     if (body.classList.contains('light-mode')) {
         body.classList.remove('light-mode');
-        toggleContainer.classList.remove('active'); // Desativa o toggle
+        toggleContainer.classList.remove('active');
         themeTooltip.textContent = 'Tema Claro';
-
-        // Altera as imagens para o tema escuro
-        headerLogo.src = 'img/logoNavbarBranca.png'; // Logo da navbar para tema escuro
-        heroImage.src = 'img/logoHeroPreta.svg'; // Imagem do hero para tema escuro
+        
+        // Altera as imagens com callbacks para remover o loading
+        changeImage(headerLogo, 'img/logoNavbarBranca.png', () => {
+            changeImage(heroImage, 'img/logoHeroPreta.svg', () => {
+                body.classList.remove('theme-changing');
+            });
+        });
     } else {
         body.classList.add('light-mode');
-        toggleContainer.classList.add('active'); // Ativa o toggle
+        toggleContainer.classList.add('active');
         themeTooltip.textContent = 'Tema Escuro';
-
-        // Altera as imagens para o tema claro
-        headerLogo.src = 'img/logoNavbarPreta.png'; // Logo da navbar para tema claro
-        heroImage.src = 'img/logoHeroBranca.svg'; // Imagem do hero para tema claro
+        
+        changeImage(headerLogo, 'img/logoNavbarPreta.png', () => {
+            changeImage(heroImage, 'img/logoHeroBranca.svg', () => {
+                body.classList.remove('theme-changing');
+            });
+        });
     }
 }
 
-// Adiciona o evento de clique ao botão de alternar tema
+// Função auxiliar para trocar imagens com callback
+function changeImage(element, newSrc, callback) {
+    const img = new Image();
+    img.onload = function() {
+        element.src = newSrc;
+        if (callback) callback();
+    };
+    img.onerror = function() {
+        console.error('Erro ao carregar imagem:', newSrc);
+        if (callback) callback();
+    };
+    img.src = newSrc;
+}
+
+// Pré-carrega as imagens
+window.addEventListener('load', function() {
+    const images = [
+        'img/logoNavbarBranca.png',
+        'img/logoHeroPreta.svg',
+        'img/logoNavbarPreta.png',
+        'img/logoHeroBranca.svg'
+    ];
+    
+    images.forEach(img => {
+        new Image().src = img;
+    });
+});
+
 document.getElementById('themeToggle').addEventListener('click', toggleTheme);
 
 //--------------------------------------------------------------------------
