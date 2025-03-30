@@ -1,5 +1,7 @@
 /* 4K */
-@media screen and (max-width: 2561px) {}
+@media screen and (max-width: 2561px) {
+
+}
 
 /* Laptop G */
 @media screen and (max-width: 1441px) {
@@ -42,11 +44,10 @@
     }
 
     .destaques-carousel-control.prev {
-        left: -4%;
+        left: -6%;
     }
-
     .destaques-carousel-control.next {
-        right: -4%;
+        right: -6%;
     }
 
     #formacao {
@@ -310,11 +311,10 @@
     }
 
     .destaques-carousel-control.prev {
-        left: -3%;
+        left: -7%;
     }
-
     .destaques-carousel-control.next {
-        right: -3%;
+        right: -7%;
     }
 
     #formacao {
@@ -584,11 +584,10 @@
     }
 
     .destaques-carousel-control.prev {
-        left: -2%;
+        left: -8%;
     }
-
     .destaques-carousel-control.next {
-        right: -2%;
+        right: -8%;
     }
 
     #formacao {
@@ -875,16 +874,14 @@
     }
 
     .destaques-carousel-control {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
     }
-
     .destaques-carousel-control.prev {
-        left: -5.5%;
+        left: -10%;
     }
-
     .destaques-carousel-control.next {
-        right: -5.5%;
+        right: -10%;
     }
 
     #formacao {
@@ -1140,6 +1137,13 @@
         max-width: 300px;
     }
 
+    .destaques-carousel-control.prev {
+        left: -9.5%;
+    }
+    .destaques-carousel-control.next {
+        right: -9.5%;
+    }
+
     .card {
         width: 260px;
         height: 360px;
@@ -1367,6 +1371,12 @@
     .destaques-carousel-control {
         width: 30px;
         height: 30px;
+    }
+    .destaques-carousel-control.prev {
+        left: -5.5%;
+    }
+    .destaques-carousel-control.next {
+        right: -5.5%;
     }
 
     #formacao .formacao--container h2 {
