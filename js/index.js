@@ -266,6 +266,9 @@ const prevButton = document.querySelector('.destaques-carousel-control.prev');
 const nextButton = document.querySelector('.destaques-carousel-control.next');
 
 let currentIndex = 0;
+let touchStartX = 0;
+let touchEndX = 0;
+const SWIPE_THRESHOLD = 50; // Distância mínima para considerar um swipe
 
 // Atualiza a exibição dos cards
 function updateCarousel() {
@@ -295,16 +298,44 @@ function updateCarousel() {
 }
 
 // Navega para o card anterior
-prevButton.addEventListener('click', () => {
+function goToPrevCard() {
     currentIndex = (currentIndex - 1 + cards.length) % cards.length;
     updateCarousel();
-});
+}
 
 // Navega para o próximo card
-nextButton.addEventListener('click', () => {
+function goToNextCard() {
     currentIndex = (currentIndex + 1) % cards.length;
     updateCarousel();
-});
+}
+
+// Event listeners para os botões
+prevButton.addEventListener('click', goToPrevCard);
+nextButton.addEventListener('click', goToNextCard);
+
+// Event listeners para touch/swipe
+destaquesCarousel.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+}, { passive: true });
+
+destaquesCarousel.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+}, { passive: true });
+
+// Função para tratar o gesto de swipe
+function handleSwipe() {
+    const difference = touchStartX - touchEndX;
+
+    // Swipe para a direita (avançar)
+    if (difference > SWIPE_THRESHOLD) {
+        goToNextCard();
+    }
+    // Swipe para a esquerda (voltar)
+    else if (difference < -SWIPE_THRESHOLD) {
+        goToPrevCard();
+    }
+}
 
 // Efeito de flip ao clicar no card
 destaquesCarousel.addEventListener('click', (event) => {
