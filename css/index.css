@@ -470,7 +470,7 @@ html {
 .hero__button-download:hover,
 .hero__button-contact:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 10px #00a2ffd2;
+    box-shadow: 0 0 4px var(--primary-color);
 }
 
 .hero__button-download:hover::before,
@@ -708,7 +708,7 @@ html {
     height: 430px;
     position: relative;
     cursor: pointer;
-    background-color: transparent;
+    background-color: var(--background-color);
     border: none;
     perspective: 1200px;
     flex-shrink: 0;
@@ -764,13 +764,25 @@ html {
     animation: ripple 1s ease-out;
 }
 
+.flip-hint {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .flip-hint {
+    opacity: 0.8;
+}
+
 @keyframes ripple {
     0% {
         width: 0;
         height: 0;
         opacity: 0.5;
     }
-
     100% {
         width: 200px;
         height: 200px;
@@ -848,13 +860,6 @@ html {
     text-align: center;
     margin: 0;
     text-align: justify;
-}
-
-/* Efeito de inclinação para a classe hover-effect */
-.card.hover-effect .card__front {
-    transform: rotateY(17deg);
-    box-shadow: .5rem .8rem .8rem rgba(0, 0, 0, 0.08);
-    transition: transform 0.5s ease-in-out;
 }
 
 /* Cards adjacentes */
@@ -1707,6 +1712,7 @@ footer.footer--grid-layout {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .footer-group {

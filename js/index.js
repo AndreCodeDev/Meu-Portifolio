@@ -27,7 +27,7 @@ function initLoader() {
     setTimeout(() => {
         const circles = loadingScreen.querySelectorAll('.loader .circle');
         const text = loadingScreen.querySelector('p');
-        
+
         circles.forEach(c => c.style.animation = 'none');
         if (text) text.style.opacity = '0';
         loadingScreen.style.opacity = '0';
@@ -45,9 +45,9 @@ document.addEventListener('loadingScreenHidden', typeMessage);
 //--------------------------------------------------------------------------
 
 // fade-in (animação de aparição) 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.fade-in');
-    
+
     // Verifica se há elementos para observar
     if (sections.length === 0) return;
 
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             observer.observe(section);
         }, delay);
-        
+
         // Aumenta o delay a cada 3 elementos para evitar congestionamento
         if ((index + 1) % 3 === 0) {
             delay += 50;
@@ -89,9 +89,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Debounce para o evento scroll (opcional)
     let ticking = false;
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (!ticking) {
-            window.requestAnimationFrame(function() {
+            window.requestAnimationFrame(function () {
                 // Aqui você pode adicionar lógica adicional se necessário
                 ticking = false;
             });
@@ -164,7 +164,7 @@ function toggleTheme() {
 }
 
 // Adiciona o evento de clique otimizado
-document.getElementById('themeToggle').addEventListener('click', function(e) {
+document.getElementById('themeToggle').addEventListener('click', function (e) {
     e.preventDefault();
     toggleTheme();
 });
@@ -243,15 +243,15 @@ document.addEventListener("DOMContentLoaded", function () {
 //--------------------------------------------------------------------------
 
 //congela glowing about
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const aboutContainer = document.querySelector('.about__container');
 
-    aboutContainer.addEventListener('mouseenter', function() {
+    aboutContainer.addEventListener('mouseenter', function () {
         // Retoma a animação do pseudo-elemento ::before
         aboutContainer.style.setProperty('--glowing-animation-state', 'running');
     });
 
-    aboutContainer.addEventListener('mouseleave', function() {
+    aboutContainer.addEventListener('mouseleave', function () {
         // Pausa a animação do pseudo-elemento ::before
         aboutContainer.style.setProperty('--glowing-animation-state', 'paused');
     });
@@ -272,12 +272,12 @@ function updateCarousel() {
     cards.forEach((card, index) => {
         // Oculta todos os cards inicialmente
         card.style.display = 'none';
-        card.classList.remove('active', 'prev', 'next', 'flipped', 'hover-effect'); // Remove as classes
+        card.classList.remove('active', 'prev', 'next', 'flipped'); // Remove a classe 'flipped'
 
         // Define o card ativo
         if (index === currentIndex) {
             card.style.display = 'block';
-            card.classList.add('active', 'hover-effect'); // Adiciona a classe para efeito de hover
+            card.classList.add('active');
             // Faz o flip automático para a imagem (frente)
             card.classList.remove('flipped');
         }
@@ -294,28 +294,16 @@ function updateCarousel() {
     });
 }
 
-// Navega para o card anterior com efeito
+// Navega para o card anterior
 prevButton.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + cards.length) % cards.length;
     updateCarousel();
-    // Adiciona temporariamente o efeito de inclinação
-    const activeCard = document.querySelector('.card.active');
-    activeCard.classList.add('hover-effect');
-    setTimeout(() => {
-        activeCard.classList.remove('hover-effect');
-    }, 500); // Remove após 0.5s (tempo da transição)
 });
 
-// Navega para o próximo card com efeito
+// Navega para o próximo card
 nextButton.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % cards.length;
     updateCarousel();
-    // Adiciona temporariamente o efeito de inclinação
-    const activeCard = document.querySelector('.card.active');
-    activeCard.classList.add('hover-effect');
-    setTimeout(() => {
-        activeCard.classList.remove('hover-effect');
-    }, 500); // Remove após 0.5s (tempo da transição)
 });
 
 // Efeito de flip ao clicar no card
@@ -331,7 +319,7 @@ document.addEventListener('click', (event) => {
     const activeCard = document.querySelector('.card.active');
     const isClickInsideCarousel = destaquesCarousel.contains(event.target);
     const isClickOnNavButton = event.target === prevButton || event.target === nextButton;
-    
+
     if (activeCard && !isClickInsideCarousel && !isClickOnNavButton) {
         activeCard.classList.remove('flipped');
     }
@@ -357,7 +345,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Alterar o estado e o texto do botão
         cardsVisiveis = !cardsVisiveis;
         textoBotao.textContent = cardsVisiveis ? "Ver menos formações" : "Ver mais formações";
-        
+
         // Rotacionar a seta (se necessário, mas sem afetar o hover)
         mostrarMaisBtn.classList.toggle("rotated");
     });
@@ -447,7 +435,7 @@ document.querySelectorAll('.skills__filter button').forEach(button => {
             button.style.color = '';
         }
     });
-    
+
     button.addEventListener('mouseleave', () => {
         if (button.classList.contains('active')) {
             button.style.backgroundColor = 'rgba(0, 162, 255, 0.32)';

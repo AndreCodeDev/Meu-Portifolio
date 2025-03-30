@@ -508,7 +508,7 @@
     .hero__button-download,
     .hero__button-contact {
         width: 22rem;
-        padding: 1.2rem 2rem;
+        padding: .9rem 2rem;
         font-size: 1.5rem;
         max-width: 30rem;
     }
@@ -516,7 +516,7 @@
     .hero__button-download:hover,
     .hero__button-contact:hover {
         width: 24rem;
-        padding: 1.2rem 3rem;
+        padding: .9rem 3rem;
         max-width: 40rem;
     }
 
@@ -815,15 +815,15 @@
     .hero__button-download,
     .hero__button-contact {
         width: 25rem;
-        padding: 1.3rem 2rem;
+        padding: 1rem 2rem;
         font-size: 1.6rem;
         max-width: 30rem;
     }
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 27rem;
-        padding: 1.3rem 3rem;
+        width: 26rem;
+        padding: 1rem 3rem;
         max-width: 40rem;
     }
 
@@ -1097,15 +1097,15 @@
     .hero__button-download,
     .hero__button-contact {
         width: 24rem;
-        padding: 1.2rem 2rem;
+        padding: .9rem 2rem;
         font-size: 1.5rem;
         max-width: 30rem;
     }
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 26rem;
-        padding: 1.2rem 3rem;
+        width: 25rem;
+        padding: .9rem 3rem;
         max-width: 40rem;
     }
 
@@ -1312,15 +1312,15 @@
     .hero__button-download,
     .hero__button-contact {
         width: 22rem;
-        padding: 1.1rem 2rem;
+        padding: .8rem 2rem;
         font-size: 1.4rem;
         max-width: 30rem;
     }
 
     .hero__button-download:hover,
     .hero__button-contact:hover {
-        width: 24rem;
-        padding: 1.1rem 3rem;
+        width: 23rem;
+        padding: .8rem 3rem;
         max-width: 40rem;
     }
 
