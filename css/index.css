@@ -1504,32 +1504,25 @@ body.light-mode .carousel-control-next-icon {
 .project-icons-header {
     display: flex;
     justify-content: flex-end;
-    /* Alterado para "flex-end" para alinhar à direita */
     gap: 1.5rem;
-    /* Espaçamento entre os ícones */
     background-color: transparent;
 }
 
 .project-icons-header ul {
     list-style: none;
-    /* Remove os marcadores de lista */
     padding: 0;
     margin: 0;
     display: flex;
     gap: 1.5rem;
-    /* Espaçamento entre os ícones */
 }
 
 .project-icons-header ul li {
     position: relative;
-    /* Necessário para posicionar o tooltip */
 }
 
 .project-icons-header img {
     width: 2.2rem;
-    /* Tamanho dos ícones */
     height: 2.2rem;
-    /* Tamanho dos ícones */
     object-fit: contain;
     transition: transform 0.3s ease, filter 0.3s ease;
     user-select: none;
@@ -1538,7 +1531,6 @@ body.light-mode .carousel-control-next-icon {
 
 .project-icons-header img:hover {
     transform: scale(1.2);
-    /* Efeito de hover mais pronunciado */
     filter: brightness(1.1);
 }
 
@@ -1565,14 +1557,11 @@ body.light-mode .carousel-control-next-icon {
     content: '';
     position: absolute;
     top: 100%;
-    /* Posiciona a seta abaixo do ícone */
     left: 50%;
     transform: translateX(-50%) translateY(0);
-    /* Ajuste para centralizar horizontalmente */
     border-width: 0.4rem;
     border-style: solid;
     border-color: transparent transparent var(--text-color2) transparent;
-    /* Seta apontando para baixo */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;

@@ -1003,7 +1003,8 @@
     }
 
     .project-icons-header {
-        margin: 1.5rem 0;
+        margin-top: 2.5rem;
+        margin-bottom: .5rem;
         justify-content: center;
     }
 
@@ -1025,7 +1026,7 @@
     .botao-footer-modal {
         padding: 1rem 1.5rem;
         font-size: 1.2rem;
-        width: 80%;
+        width: 60%;
     }
 
     .skills {
@@ -1524,7 +1525,7 @@
     }
 
     .botao-footer-modal {
-        width: 100%;
+        width: 70%;
         margin: 0.5rem 0;
     }
 
