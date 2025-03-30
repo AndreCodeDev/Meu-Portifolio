@@ -880,11 +880,11 @@
     }
 
     .destaques-carousel-control.prev {
-        left: -1%;
+        left: -5%;
     }
 
     .destaques-carousel-control.next {
-        right: -1%;
+        right: -5%;
     }
 
     #formacao {
@@ -1365,8 +1365,8 @@
     }
 
     .destaques-carousel-control {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
 
     #formacao .formacao--container h2 {
