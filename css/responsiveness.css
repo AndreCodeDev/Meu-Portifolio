@@ -849,7 +849,7 @@
     }
 
     .destaques-carousel-container {
-        max-width: 320px;
+        max-width: 380px;
     }
 
     .card {
@@ -877,11 +877,12 @@
         width: 40px;
         height: 40px;
     }
+
     .destaques-carousel-control.prev {
-        left: -10%;
+        left: -3.5%;
     }
     .destaques-carousel-control.next {
-        right: -10%;
+        right: -3.5%;
     }
 
     #formacao {
@@ -1134,14 +1135,19 @@
     }
 
     .destaques-carousel-container {
-        max-width: 300px;
+        max-width: 360px;
+    }
+
+    .destaques-carousel-control {
+        width: 30px;
+        height: 30px;
     }
 
     .destaques-carousel-control.prev {
-        left: -9.5%;
+        left: -1.5%;
     }
     .destaques-carousel-control.next {
-        right: -9.5%;
+        right: -1.5%;
     }
 
     .card {
