@@ -880,11 +880,11 @@
     }
 
     .destaques-carousel-control.prev {
-        left: -5%;
+        left: -5.5%;
     }
 
     .destaques-carousel-control.next {
-        right: -5%;
+        right: -5.5%;
     }
 
     #formacao {
