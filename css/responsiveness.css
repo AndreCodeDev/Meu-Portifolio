@@ -1,7 +1,5 @@
 /* 4K */
-@media screen and (max-width: 2561px) {
-
-}
+@media screen and (max-width: 2561px) {}
 
 /* Laptop G */
 @media screen and (max-width: 1441px) {
@@ -46,6 +44,7 @@
     .destaques-carousel-control.prev {
         left: -6%;
     }
+
     .destaques-carousel-control.next {
         right: -6%;
     }
@@ -83,12 +82,12 @@
     .projects {
         padding: 6rem 4rem 8rem;
     }
-    
+
     .projects-grid {
         grid-template-columns: repeat(3, 350px);
         gap: 6rem;
     }
-    
+
     .project-overlay__title {
         font-size: 2.2rem;
     }
@@ -101,11 +100,11 @@
     .skills {
         padding: 5rem 4rem 8rem;
     }
-    
+
     .skills__text h2 {
         font-size: 3.5rem;
     }
-    
+
     .skill__card {
         width: 11rem;
         height: 10rem;
@@ -115,15 +114,15 @@
         padding: 2rem 8rem;
         gap: 4rem;
     }
-    
+
     .footer--grid-layout {
         gap: 4rem;
     }
-    
+
     footer p {
         font-size: 1.4rem;
     }
-    
+
     footer img {
         width: 2.4rem;
     }
@@ -313,6 +312,7 @@
     .destaques-carousel-control.prev {
         left: -7%;
     }
+
     .destaques-carousel-control.next {
         right: -7%;
     }
@@ -360,26 +360,26 @@
     .projects {
         padding: 5rem 3rem 7rem;
     }
-    
+
     .projeto__text h2 {
         font-size: 3.5rem;
     }
-    
+
     .projects-grid {
         grid-template-columns: repeat(2, 350px);
         gap: 5rem;
     }
-    
+
     .modal .sessao-modal {
         flex-direction: column;
     }
-    
+
     .sessao-video,
     .texto-sessao-modal {
         max-width: 100%;
         width: 100%;
     }
-    
+
     .titulo-sessao-modal {
         font-size: 2.5rem;
     }
@@ -387,12 +387,12 @@
     .project-icons-header {
         margin: 1.2rem 0;
     }
-    
+
     .botao-footer-modal {
         padding: 0.6rem 1.3rem;
         font-size: 1rem;
     }
-    
+
     .botoes-footer {
         flex-wrap: wrap;
     }
@@ -400,19 +400,19 @@
     .skills {
         padding: 4rem 3rem 7rem;
     }
-    
+
     .skills__text h2 {
         font-size: 3rem;
     }
-    
+
     .skills__filter {
         margin-bottom: 2.5rem;
     }
-    
+
     .skills__flex {
         gap: 2.5rem;
     }
-    
+
     .skill__card {
         width: 10rem;
         height: 9rem;
@@ -422,20 +422,20 @@
         padding: 2rem 6rem;
         gap: 3.5rem;
     }
-    
+
     .footer--grid-layout {
         gap: 3.5rem;
         padding: 0 1.2rem;
     }
-    
+
     footer p {
         font-size: 1.3rem;
     }
-    
+
     footer img {
         width: 2.2rem;
     }
-    
+
     footer div {
         gap: 0.8rem;
     }
@@ -538,7 +538,7 @@
     }
 
     .carrossel-container {
-        margin: 6rem 0 3rem;
+        margin: 8rem 0 6rem;
     }
 
     .carrossel-item {
@@ -546,7 +546,7 @@
     }
 
     .carrossel-item img {
-        width: 25%;
+        width: 30%;
     }
 
     .destaques-news {
@@ -586,6 +586,7 @@
     .destaques-carousel-control.prev {
         left: -8%;
     }
+
     .destaques-carousel-control.next {
         right: -8%;
     }
@@ -646,29 +647,29 @@
     .projects {
         padding: 4rem 2rem 6rem;
     }
-    
+
     .projeto__text h2 {
         font-size: 3.2rem;
         padding-bottom: 1.5rem;
     }
-    
+
     .projects-grid {
         grid-template-columns: repeat(2, 320px);
         gap: 4rem;
     }
-    
+
     .project-overlay__title {
         font-size: 2.2rem;
     }
-    
+
     .project-overlay {
         gap: 1.5rem;
     }
-    
+
     .titulo-sessao-modal {
         font-size: 2.5rem;
     }
-    
+
     .paragrafos-sessao-modal,
     .data-sessao-modal {
         font-size: 1.3rem;
@@ -678,12 +679,12 @@
         padding: 1rem 1.8rem;
         font-size: 1.3rem;
     }
-    
+
     .project-icons-header img {
         width: 2.2rem;
         height: 2.2rem;
     }
-    
+
     .botao-footer-modal {
         padding: 0.8rem 1.5rem;
         font-size: 1.1rem;
@@ -692,33 +693,33 @@
     .skills {
         padding: 3.5rem 2rem 6rem;
     }
-    
+
     .skills__text h2 {
         font-size: 3.2rem;
         padding-bottom: 1.5rem;
     }
-    
+
     .skills__filter button {
         padding: 0.9rem 1.5rem;
         font-size: 1.2rem;
     }
-    
+
     .skills__flex {
         gap: 2.5rem;
         padding-top: 1.5rem;
     }
-    
+
     .skill__card {
         width: 11rem;
         height: 10rem;
     }
-    
+
     .skill__card img {
         width: 3.5rem;
         height: 3.5rem;
         margin-bottom: .8rem;
     }
-    
+
     .skill__card h1 {
         font-size: 1.3rem;
     }
@@ -736,11 +737,11 @@
 
     footer p {
         font-size: 1.4rem;
-        text-align: center; 
+        text-align: center;
     }
 
     footer img {
-        width: 2.5rem; 
+        width: 2.5rem;
     }
 }
 
@@ -831,6 +832,34 @@
         padding: 2rem 3rem 0;
     }
 
+    .about__text-container h2 {
+        font-size: 2.8rem;
+    }
+
+    .about__text-container h3 {
+        font-size: 1.4rem;
+    }
+
+    .about__text-container h4,
+    .about__text-container h5 {
+        font-size: 1.5rem;
+    }
+
+    .about__text-container p {
+        font-size: 1.3rem;
+    }
+
+    .about__text-container nav ul a {
+        padding: .1rem;
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    .about__text-container nav ul a img {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
     .about__text-container nav ul a::after {
         font-size: 1.2rem;
     }
@@ -881,6 +910,7 @@
     .destaques-carousel-control.prev {
         left: -3.5%;
     }
+
     .destaques-carousel-control.next {
         right: -3.5%;
     }
@@ -924,11 +954,11 @@
     .projects {
         padding: 4rem 1.5rem 6rem;
     }
-    
+
     .projeto__text h2 {
         font-size: 3rem;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 4rem;
@@ -936,28 +966,28 @@
         max-width: 95%;
         margin: 0 auto;
     }
-    
+
     .project-item {
         width: 100%;
         max-width: 100%;
     }
-    
+
     .project-item:hover {
         transform: scale(1.05);
     }
-    
+
     .project-overlay__title {
         font-size: 2.5rem;
     }
-    
+
     .projects--github {
         font-size: 1.6rem;
     }
-    
+
     .titulo-sessao-modal {
         font-size: 2.5rem;
     }
-    
+
     .modal-body {
         padding: 2rem;
     }
@@ -966,17 +996,17 @@
         padding: 1rem 1.8rem;
         font-size: 1.4rem;
     }
-    
+
     #ProjectMostrarMaisProjetosBtn svg {
         width: 1.6rem;
         height: 1.6rem;
     }
-    
+
     .project-icons-header {
         margin: 1.5rem 0;
         justify-content: center;
     }
-    
+
     .project-icons-header img {
         width: 2.2rem;
         height: 2.2rem;
@@ -985,13 +1015,13 @@
 
     .footer-modal {
         padding-top: 3rem;
-    }    
-    
+    }
+
     .botoes-footer {
         justify-content: center;
         flex-direction: column;
     }
-    
+
     .botao-footer-modal {
         padding: 1rem 1.5rem;
         font-size: 1.2rem;
@@ -1001,31 +1031,31 @@
     .skills {
         padding: 4rem 1.5rem 6rem;
     }
-    
+
     .skills__text h2 {
         font-size: 3rem;
     }
-    
+
     .skills__filter {
         margin-bottom: 2.5rem;
         gap: 1rem;
     }
-    
+
     .skills__flex {
         gap: 2rem;
     }
-    
+
     .skill__card {
         width: 11rem;
         height: 10rem;
     }
-    
+
     .skill__card img {
         width: 3.5rem;
         height: 3.5rem;
         margin-bottom: .8rem;
     }
-    
+
     .skill__card h1 {
         font-size: 1.4rem;
     }
@@ -1034,20 +1064,20 @@
         padding: 2rem 2rem;
         gap: 2.5rem;
     }
-    
+
     .footer--grid-layout {
         gap: 2.5rem;
         padding: 0 1rem;
     }
-    
+
     footer p {
         font-size: 1.5rem;
     }
-    
+
     footer img {
         width: 2.5rem;
     }
-    
+
     footer div {
         gap: 1rem;
     }
@@ -1122,6 +1152,17 @@
         height: 2.5rem;
     }
 
+    .about__text-container nav ul a {
+        padding: .1rem;
+        width: 5.4rem;
+        height: 5.4rem;
+    }
+
+    .about__text-container nav ul a img {
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+
     .about__text-container nav ul a::after {
         font-size: 1.2rem;
     }
@@ -1146,6 +1187,7 @@
     .destaques-carousel-control.prev {
         left: -1.5%;
     }
+
     .destaques-carousel-control.next {
         right: -1.5%;
     }
@@ -1209,29 +1251,29 @@
     .projects {
         padding: 3.5rem 1rem 5rem;
     }
-    
+
     .projeto__text h2 {
         font-size: 2.8rem;
     }
-    
+
     .project-overlay__title {
         font-size: 2.2rem;
     }
-    
+
     .project-icons img {
         width: 2rem;
         height: 2rem;
     }
-    
+
     .titulo-sessao-modal {
         font-size: 2.2rem;
     }
-    
+
     .paragrafos-sessao-modal,
     .data-sessao-modal {
         font-size: 1.3rem;
     }
-    
+
     .botao-footer-modal {
         padding: 1rem 1.5rem;
         font-size: 1.2rem;
@@ -1240,20 +1282,20 @@
     .skills {
         padding: 3.5rem 1rem 5rem;
     }
-    
+
     .skills__text h2 {
         font-size: 2.8rem;
     }
-    
+
     .skills__filter button {
         padding: 0.8rem 1.3rem;
         font-size: 1.2rem;
     }
-    
+
     .skills__flex {
         gap: 2rem;
     }
-    
+
     .skill__card {
         width: 10rem;
         height: 9rem;
@@ -1263,19 +1305,19 @@
         padding: 2rem 1.5rem;
         gap: 2rem;
     }
-    
+
     .footer--grid-layout {
         gap: 2rem;
     }
-    
+
     footer p {
         font-size: 1.4rem;
     }
-    
+
     footer img {
         width: 2.2rem;
     }
-    
+
     footer div {
         gap: 0.8rem;
     }
@@ -1336,6 +1378,34 @@
         max-width: 220px;
     }
 
+    .about__text-container h2 {
+        font-size: 2.8rem;
+    }
+
+    .about__text-container h3 {
+        font-size: 1.4rem;
+    }
+
+    .about__text-container h4,
+    .about__text-container h5 {
+        font-size: 1.5rem;
+    }
+
+    .about__text-container p {
+        font-size: 1.3rem;
+    }
+
+    .about__text-container nav ul a {
+        padding: .1rem;
+        width: 5.1rem;
+        height: 5.1rem;
+    }
+
+    .about__text-container nav ul a img {
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+
     .about__text-container nav ul li img {
         width: 2.2rem;
         height: 2.2rem;
@@ -1378,9 +1448,11 @@
         width: 30px;
         height: 30px;
     }
+
     .destaques-carousel-control.prev {
         left: -5.5%;
     }
+
     .destaques-carousel-control.next {
         right: -5.5%;
     }
@@ -1415,28 +1487,28 @@
     .projeto__text h2 {
         font-size: 2.5rem;
     }
-    
+
     .projects-grid {
         gap: 3.5rem;
     }
-    
+
     .project-overlay {
         gap: 1.5rem;
     }
-    
+
     .project-overlay__title {
         font-size: 2rem;
     }
-    
+
     .project-tooltip {
         width: 80%;
         font-size: 1.1rem;
     }
-    
+
     .titulo-sessao-modal {
         font-size: 2rem;
     }
-    
+
     .project-icons-header img {
         width: 2rem;
         height: 2rem;
@@ -1449,36 +1521,36 @@
 
     .footer-modal {
         padding-top: 2rem;
-    } 
+    }
 
     .botao-footer-modal {
-        width: 100%; 
+        width: 100%;
         margin: 0.5rem 0;
     }
 
     .skills__text h2 {
         font-size: 2.5rem;
     }
-    
+
     .skills__filter {
         gap: 0.8rem;
         margin-bottom: 2.5rem;
     }
-    
+
     .skills__flex {
         gap: 1.8rem;
     }
-    
+
     .skill__card {
         width: 9rem;
         height: 8.5rem;
     }
-    
+
     .skill__card img {
         width: 3.2rem;
         height: 3.2rem;
     }
-    
+
     .skill__card h1 {
         font-size: 1.2rem;
     }
@@ -1487,20 +1559,20 @@
         padding: 1.5rem 1rem;
         gap: 1.5rem;
     }
-    
+
     .footer--grid-layout {
         gap: 1.5rem;
         padding: 0 0.8rem;
     }
-    
+
     footer p {
         font-size: 1.3rem;
     }
-    
+
     footer img {
         width: 2rem;
     }
-    
+
     footer div {
         gap: 0.7rem;
     }
