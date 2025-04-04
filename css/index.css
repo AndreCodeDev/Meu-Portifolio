@@ -179,13 +179,6 @@ html {
     }
 }
 
-#loading-screen p {
-    margin-top: 20px;
-    font-size: 18px;
-    color: var(--text-color2);
-    transition: opacity 0.3s ease;
-}
-
 /*---------------------------------------------------------*/
 
 /* Navbar */

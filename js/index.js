@@ -26,10 +26,8 @@ function initLoader() {
 
     setTimeout(() => {
         const circles = loadingScreen.querySelectorAll('.loader .circle');
-        const text = loadingScreen.querySelector('p');
 
         circles.forEach(c => c.style.animation = 'none');
-        if (text) text.style.opacity = '0';
         loadingScreen.style.opacity = '0';
 
         setTimeout(() => {
