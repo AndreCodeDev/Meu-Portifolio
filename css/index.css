@@ -1166,7 +1166,8 @@ body.light-mode .carousel-control-next-icon {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;    background-color: var(--background-colorMantem);
+    height: 100%;    
+    background-color: var(--background-colorMantem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1721,4 +1722,6 @@ footer a {
 footer img {
     width: 2.6rem;
     height: auto;
+    user-select: none;
+
 }
