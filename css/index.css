@@ -7,6 +7,7 @@
     --primary-border: #1f1f1f;
     --text-color: #9ca3af;
     --text-color2: #fff;
+    --text-color3: #fff;
     --selection: #0781c75f;
     --languageActive: #d8d8d825;
     --background-colorMantem: #131313b0;
@@ -15,13 +16,14 @@
 
 body.light-mode {
     --primary-color: #0a86cd;
-    --secund-color: #0080dbb0;
+    --secund-color: #0080dbc3;
     --background-color: #fff;
     --background-color2: #f6f6f6;
     --background-color3: #ffffff89;
-    --primary-border: #1f1f1fb8;
+    --primary-border: #2395d7d0;
     --text-color: #424242;
     --text-color2: #111;
+    --text-color3: #fff;
     --languageActive: #8686865f;
 }
 
@@ -439,7 +441,7 @@ html {
 .hero__button-download,
 .hero__button-contact {
     background-color: var(--secund-color);
-    color: var(--text-color2);
+    color: var(--text-color3);
     padding: .9rem 3rem;
     max-width: 30rem;
     border-radius: .3rem;
@@ -467,7 +469,8 @@ html {
 
 .hero__button-download:hover::before,
 .hero__button-contact:hover::before {
-    animation: shine 1.5s ease-out infinite;
+    animation: shine 1.8s ease-out infinite;
+    z-index: -1;
 }
 
 .hero__button-download::before,
@@ -652,7 +655,7 @@ html {
     width: 25%;
     height: auto;
     display: block;
-    opacity: .6;
+    opacity: .8;
     user-select: none;
 }
 
@@ -1071,7 +1074,7 @@ body.light-mode .carousel-control-next-icon {
 
 #formacaoMostrarMaisBtn {
     background-color: transparent;
-    border: .1rem solid var(--primary-color);
+    border: .1rem solid var(--secund-color);
     color: var(--primary-color);
     padding: 1rem 2rem;
     border-radius: .6rem;
