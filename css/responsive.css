@@ -1,0 +1,203 @@
+/* ===== Header Responsiveness ===== */
+
+/* 2561px - Ajustes para telas muito grandes */
+@media screen and (max-width: 2561px) {
+    .header {
+        justify-content: space-between;
+        padding: 0 var(--spacing-extra-large);
+    }
+}
+
+/* 1441px - Notebooks grandes */
+@media screen and (max-width: 1441px) {
+    .header {
+        padding: 0 var(--spacing-large);
+    }
+    .header__nav {
+        gap: var(--spacing-extra-large);
+    }
+}
+
+/* 1025px - Tablet landscape */
+@media screen and (max-width: 1024px) {
+    /* Estilos do header */
+    .header {
+        justify-content: space-around;
+    }
+
+    .header__nav {
+        gap: var(--spacing-large);
+    }
+
+    /* Menu mobile */
+    .header__menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #0f172a;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        z-index: 999;
+        padding: 120px var(--spacing-large) 0;
+        box-sizing: border-box;
+        opacity: 1;
+        transform: translateY(-100%);
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        gap: var(--spacing-large);
+    }
+
+    .header__menu.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Itens do menu */
+    .header__menu-item {
+        width: 100%;
+        text-align: center;
+        padding: var(--spacing-medium) 0;
+        opacity: 1;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+    }
+
+    .header__menu.active .header__menu-item {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Transições em cascata */
+    .header__menu.active .header__menu-item:nth-child(1) { transition-delay: 0.1s; }
+    .header__menu.active .header__menu-item:nth-child(2) { transition-delay: 0.2s; }
+    .header__menu.active .header__menu-item:nth-child(3) { transition-delay: 0.3s; }
+    .header__menu.active .header__menu-item:nth-child(4) { transition-delay: 0.4s; }
+    .header__menu.active .header__menu-item:nth-child(5) { transition-delay: 0.5s; }
+
+    /* Links do menu */
+    .header__menu-link {
+        font-size: var(--font-size-double-extra-large);
+        color: white;
+        padding: var(--spacing-medium) 0;
+        display: block;
+        transition: color 0.3s ease;
+    }
+
+    .header__menu-link:hover {
+        color: white;
+    }
+
+    /* Botão hamburguer - APENAS MOBILE */
+    .header__menu-toggle {
+        display: flex; /* Visível apenas no mobile */
+    }
+
+    .header__menu-toggle.active {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+    }
+
+    .header__menu-line {
+        background-color: var(--text);
+    }
+
+    .header__menu-toggle.active .header__menu-line {
+        background-color: white;
+    }
+
+    /* Ajustes para o novo tamanho no estado ativo */
+    .header__menu-toggle.active .header__menu-line:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 8px); /* Ajustado para novo tamanho */
+    }
+    
+    .header__menu-toggle.active .header__menu-line:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    
+    .header__menu-toggle.active .header__menu-line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -8px); /* Ajustado para novo tamanho */
+    }
+
+    /* Controle de tema */
+    .header__theme-toggle-desktop {
+        display: none;
+    }
+    
+    .header__theme-toggle-mobile {
+        display: block;
+    }
+
+    /* Ajustes finos */
+    .header__logo {
+        font-size: var(--font-size-double-extra-large);
+    }
+    
+    .header__theme-label {
+        font-size: var(--font-size-extra-large);
+        color: white;
+    }
+
+    /* Posicionamento mobile */
+    .header__menu-toggle.active {
+        top: 25px;
+        right: 25px;
+    }
+}
+
+/* 769px - Tablet portrait */
+@media screen and (max-width: 769px) {
+    .header__logo {
+        font-size: var(--font-size-double-meio-extra-large);
+    }
+    .header__menu-link {
+        font-size: var(--font-size-triple-extra-large);
+    }
+}
+
+/* 426px - Celulares grandes */
+@media screen and (max-width: 426px) {
+    .header {
+        height: 70px;
+        padding: 0 var(--spacing-medium);
+    }
+    .header__logo {
+        font-size: var(--font-size-double-extra-large);
+    }
+    .header__menu-toggle {
+        width: 30px;
+    }
+}
+
+/* 376px - Celulares médios */
+@media screen and (max-width: 376px) {
+    .header {
+        height: 65px;
+    }
+    .header__logo {
+        font-size: var(--font-size-extra-large);
+    }
+    .header__menu-link {
+        font-size: var(--font-size-double-extra-large);
+    }
+}
+
+/* 321px - Celulares pequenos */
+@media screen and (max-width: 321px) {
+    .header {
+        height: 60px;
+        padding: 0 var(--spacing-small);
+    }
+    .header__logo {
+        font-size: var(--font-size-large);
+    }
+    .header__menu-toggle {
+        width: 26px;
+    }
+}
