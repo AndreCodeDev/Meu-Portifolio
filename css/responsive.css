@@ -88,6 +88,10 @@
         transition: color 0.3s ease;
     }
 
+    .header__menu-link::before {
+        background: linear-gradient(270deg, var(--primary) 0%, #0f172a 100%);
+    }
+
     .header__menu-link:hover {
         color: white;
     }
