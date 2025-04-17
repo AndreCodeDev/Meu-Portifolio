@@ -318,7 +318,7 @@ svg {
 
 .header__logo {
     font-size: var(--font-size-double-extra-large);
-    font-weight: 100;
+    font-weight: 700;
     color: var(--text);
     text-decoration: none;
     display: flex;
@@ -330,6 +330,7 @@ svg {
 .header__logo:hover {
     transform: translateY(-2px);
     color: var(--text);
+    font-weight: 500;
 }
 
 .header__logo-bracket {
