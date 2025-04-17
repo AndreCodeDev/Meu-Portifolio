@@ -3,7 +3,7 @@
 /* 2561px - Ajustes para telas muito grandes */
 @media screen and (max-width: 2561px) {
     .header {
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 0 var(--spacing-extra-large);
     }
 }
