@@ -25,50 +25,93 @@
 
   <body>
     <main>
-        <header class="header" id="header">
-            <a href="index.html" class="header__logo">
-                Portfólio Tech
-                <span class="header__logo-bracket">/&gt;</span>
-            </a>
-    
-            <nav class="header__nav">
-                <div class="header__menu-toggle" id="menu-toggle">
-                    <span class="header__menu-line"></span>
-                    <span class="header__menu-line"></span>
-                    <span class="header__menu-line"></span>
-                </div>
-    
-                <ul class="header__menu" id="header__menu">
-                    <li class="header__menu-item">
-                        <a href="index.html" class="header__menu-link">Home</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#about" class="header__menu-link">About</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#highlights" class="header__menu-link">Highlights</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#portfolio" class="header__menu-link">Portfolio</a>
-                    </li>
-                    <li class="header__menu-item header__theme-toggle-mobile">
-                        <div class="header__theme-toggle" id="themeToggleMobile">
-                            <div class="header__theme-switch">
-                                <div class="header__theme-handle"></div>
-                            </div>
-                            <span class="header__theme-label">Modo Escuro</span>
+      <section id="loading-screen">
+        <div class="loading-content">
+            <div class="logo-container">
+                <div class="logo-container">
+                    <div class="logo-animation">
+                        <div class="logo-item">
+                            <img src="img/redes/formacoes.svg" alt="Formações" />
                         </div>
-                    </li>
-                </ul>
-    
-                <div class="header__theme-toggle header__theme-toggle-desktop" id="themeToggleDesktop">
-                    <div class="header__theme-switch">
-                        <div class="header__theme-handle"></div>
-                    </div>
-                    <span class="header__theme-tooltip">Tema Escuro</span>
+                        <div class="logo-item">
+                          <img src="img/redes/projetos.svg" alt="Conquistas" />
+                        </div>
+                        <div class="logo-item">
+                          <img src="img/redes/skills.svg" alt="skills" />
+                        </div>
+                      </div>
+
+          <div class="welcome-message">
+            <div class="welcome-line">
+              <span class="word-animation">Welcome</span>
+              <span class="word-animation">to</span>
+              <span class="word-animation">my</span>
+            </div>
+            <div class="welcome-line">
+                <span class="word-animation-color">Portfolio</span>
+                <span class="word-animation-color">Website</span>
+              </div>
+          </div>
+
+          <div class="loading-progress">
+            <div class="progress-bar-center"></div>
+          </div>
+
+          <div class="url-display">
+            <div class="url-box">
+              <div class="url-text" id="animated-url"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <header class="header" id="header">
+        <a href="index.html" class="header__logo">
+          Portfólio Tech
+          <span class="header__logo-bracket">/&gt;</span>
+        </a>
+
+        <nav class="header__nav">
+          <div class="header__menu-toggle" id="menu-toggle">
+            <span class="header__menu-line"></span>
+            <span class="header__menu-line"></span>
+            <span class="header__menu-line"></span>
+          </div>
+
+          <ul class="header__menu" id="header__menu">
+            <li class="header__menu-item">
+              <a href="#hero" class="header__menu-link">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#about" class="header__menu-link">About</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#highlights" class="header__menu-link">Highlights</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#portfolio" class="header__menu-link">Portfolio</a>
+            </li>
+            <li class="header__menu-item header__theme-toggle-mobile">
+              <div class="header__theme-toggle" id="themeToggleMobile">
+                <div class="header__theme-switch">
+                  <div class="header__theme-handle"></div>
                 </div>
-            </nav>
-        </header>
+                <span class="header__theme-label">Modo Escuro</span>
+              </div>
+            </li>
+          </ul>
+
+          <div
+            class="header__theme-toggle header__theme-toggle-desktop"
+            id="themeToggleDesktop"
+          >
+            <div class="header__theme-switch">
+              <div class="header__theme-handle"></div>
+            </div>
+            <span class="header__theme-tooltip">Tema Escuro</span>
+          </div>
+        </nav>
+      </header>
     </main>
 
     <script src="js/scripts.js"></script>
