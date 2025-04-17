@@ -38,7 +38,7 @@
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: #0f172a;
+        background-color: var(--bg);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         z-index: 999;
@@ -64,7 +64,7 @@
         opacity: 1;
         transform: translateY(20px);
         transition: all 0.3s ease;
-        border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+        border-bottom: 1px solid var(--color-gray-invertida);
     }
 
     .header__menu.active .header__menu-item {
@@ -82,7 +82,7 @@
     /* Links do menu */
     .header__menu-link {
         font-size: var(--font-size-large); /* Reduzido de double-extra-large */
-        color: white;
+        color: var(--text);
         padding: var(--spacing-small) 0;
         display: block;
         transition: color 0.3s ease;
@@ -93,7 +93,7 @@
     }
 
     .header__menu-link:hover {
-        color: white;
+        color: var(--text);
     }
 
     /* Botão hamburguer - APENAS MOBILE (MANTIDO EXATAMENTE IGUAL) */
@@ -112,7 +112,7 @@
     }
 
     .header__menu-toggle.active .header__menu-line {
-        background-color: white;
+        background-color: var(--text);
     }
 
     /* Formato do X mantido exatamente igual */
@@ -145,7 +145,7 @@
     
     .header__theme-label {
         font-size: var(--font-size-extra-large);
-        color: white;
+        color: var(--text);
     }
 }
 
