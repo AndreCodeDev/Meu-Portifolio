@@ -1,4 +1,3 @@
-/* ===== Header Responsiveness ===== */
 
 /* 2561px - Ajustes para telas muito grandes */
 @media screen and (max-width: 2561px) {
@@ -42,12 +41,12 @@
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         z-index: 999;
-        padding: 120px var(--spacing-large) 0;
+        padding: 100px var(--spacing-medium) 0;
         box-sizing: border-box;
         opacity: 1;
         transform: translateY(-100%);
         transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        gap: var(--spacing-large);
+        gap: var(--spacing-medium);
     }
 
     .header__menu.active {
@@ -60,9 +59,9 @@
     .header__menu-item {
         width: 100%;
         text-align: center;
-        padding: var(--spacing-medium) 0;
+        padding: var(--spacing-small) 0;
         opacity: 1;
-        transform: translateY(20px);
+        transform: translateY(15px);
         transition: all 0.3s ease;
         border-bottom: 1px solid rgba(148, 163, 184, 0.1);
     }
@@ -81,9 +80,9 @@
 
     /* Links do menu */
     .header__menu-link {
-        font-size: var(--font-size-double-extra-large);
+        font-size: var(--font-size-extra-large);
         color: white;
-        padding: var(--spacing-medium) 0;
+        padding: var(--spacing-small) 0;
         display: block;
         transition: color 0.3s ease;
     }
@@ -99,8 +98,8 @@
 
     .header__menu-toggle.active {
         position: fixed;
-        top: 30px;
-        right: 30px;
+        top: 25px;
+        right: 25px;
     }
 
     .header__menu-line {
@@ -113,7 +112,7 @@
 
     /* Ajustes para o novo tamanho no estado ativo */
     .header__menu-toggle.active .header__menu-line:nth-child(1) {
-        transform: rotate(45deg) translate(7px, 8px); /* Ajustado para novo tamanho */
+        transform: rotate(45deg) translate(5px, 6px);
     }
     
     .header__menu-toggle.active .header__menu-line:nth-child(2) {
@@ -122,7 +121,7 @@
     }
     
     .header__menu-toggle.active .header__menu-line:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -8px); /* Ajustado para novo tamanho */
+        transform: rotate(-45deg) translate(5px, -6px);
     }
 
     /* Controle de tema */
@@ -140,24 +139,24 @@
     }
     
     .header__theme-label {
-        font-size: var(--font-size-extra-large);
+        font-size: var(--font-size-large);
         color: white;
     }
 
     /* Posicionamento mobile */
     .header__menu-toggle.active {
-        top: 25px;
-        right: 25px;
+        top: 20px;
+        right: 20px;
     }
 }
 
 /* 769px - Tablet portrait */
 @media screen and (max-width: 769px) {
     .header__logo {
-        font-size: var(--font-size-double-meio-extra-large);
+        font-size: var(--font-size-double-extra-large);
     }
     .header__menu-link {
-        font-size: var(--font-size-triple-extra-large);
+        font-size: var(--font-size-double-extra-large);
     }
 }
 
@@ -168,10 +167,13 @@
         padding: 0 var(--spacing-medium);
     }
     .header__logo {
-        font-size: var(--font-size-double-extra-large);
+        font-size: var(--font-size-extra-large);
     }
     .header__menu-toggle {
-        width: 30px;
+        width: 28px;
+    }
+    .header__menu-link {
+        font-size: var(--font-size-large);
     }
 }
 
@@ -181,10 +183,10 @@
         height: 65px;
     }
     .header__logo {
-        font-size: var(--font-size-extra-large);
+        font-size: var(--font-size-large);
     }
     .header__menu-link {
-        font-size: var(--font-size-double-extra-large);
+        font-size: var(--font-size-large);
     }
 }
 
@@ -195,9 +197,12 @@
         padding: 0 var(--spacing-small);
     }
     .header__logo {
-        font-size: var(--font-size-large);
+        font-size: var(--font-size-medium);
     }
     .header__menu-toggle {
-        width: 26px;
+        width: 24px;
+    }
+    .header__menu {
+        padding: 80px var(--spacing-small) 0;
     }
 }
