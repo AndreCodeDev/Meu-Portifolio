@@ -89,7 +89,7 @@
     }
 
     .header__menu-link::before {
-        background: linear-gradient(270deg, var(--primary) 0%, #0f172a 100%);
+        background: linear-gradient(270deg, var(--primary) 0%, var(--bg) 100%);
     }
 
     .header__menu-link:hover {
