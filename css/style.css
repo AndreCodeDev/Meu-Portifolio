@@ -316,7 +316,7 @@ svg {
 
 
 
-/* ===== LOADING SCREEN MODERNO ===== */
+/* ===== LOADING SCREEN ===== */
 #loading-screen {
     position: fixed;
     top: 0;
@@ -350,6 +350,14 @@ svg {
     margin-bottom: var(--spacing-medium);
 }
 
+.logo-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-extra-large);
+    margin-bottom: var(--spacing-medium);
+}
+
 .logo-item {
     width: 3rem;
     height: 3rem;
@@ -363,31 +371,54 @@ svg {
     height: 20rem;
     border-radius: var(--border-radius-full);
     object-fit: contain;
-    animation: pulse 2s infinite ease-in-out, float 3s infinite ease-in-out;
-    filter: brightness(0) invert(1) drop-shadow(0 0 1.2px var(--primary-soft));
+    animation: 
+        emergeFromBeyond 1s ease-out forwards,
+        pulse 2s infinite ease-in-out 1.5s,
+        float 3s infinite ease-in-out 1.5s;
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+    filter: 
+        brightness(0) 
+        invert(1) 
+        drop-shadow(0 0 2px var(--primary-light));
+}
+
+@keyframes emergeFromBeyond {
+    0% {
+        opacity: 0;
+        transform: scale(0.6) translateY(30px);
+        filter: 
+            brightness(0) 
+            invert(1) 
+            drop-shadow(0 0 2px var(--primary-light))
+            blur(2px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        filter: 
+            brightness(0) 
+            invert(1) 
+            drop-shadow(0 0 2px var(--primary-light))
+            blur(0);
+    }
 }
 
 @keyframes pulse {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: scale(1);
         opacity: 1;
     }
-
     50% {
-        transform: scale(0.8);
-        opacity: 0.9;
+        transform: scale(0.95);
+        opacity: 0.95;
     }
 }
 
 @keyframes float {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-8px);
     }
@@ -514,11 +545,6 @@ svg {
     border-radius: var(--border-radius-large);
     box-shadow: var(--shadow-blue-glow);
     transition: all var(--transition-speed-normal) var(--transition-easing);
-}
-
-.url-box:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 20px var(--effect-highlight-blue);
 }
 
 .url-text {

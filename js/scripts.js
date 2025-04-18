@@ -1,19 +1,5 @@
 // =============================================
-// CONTROLE INICIAL DE CARREGAMENTO
-// =============================================
-
-document.documentElement.classList.add('loading-theme');
-
-// Adiciona a classe de loading ao HTML
-new PortfolioLoading();
-
-window.addEventListener('load', function() {
-    window.scrollTo({ top: 0, behavior: 'auto' });
-    document.documentElement.classList.remove('loading-theme');
-});
-
-// =============================================
-// SISTEMA DE LOADING ANIMADO
+// CORE LOADING SYSTEM
 // =============================================
 
 class PortfolioLoading {
@@ -21,22 +7,21 @@ class PortfolioLoading {
         this.loadingScreen = document.getElementById('loading-screen');
         this.animatedUrl = document.getElementById('animated-url');
         this.url = "https://andrecode.dev.br";
-        this.typingSpeed = 120; // Velocidade de digitação (ms por caractere)
+        this.typingSpeed = 120;
         this.startTime = Date.now();
         
-        // Bloqueia scroll durante o loading
-        document.documentElement.style.overflow = 'hidden';
-        
-        this.init();
+        this.initLoading();
     }
 
-    init() {
+    initLoading() {
         if (!this.loadingScreen) return;
         
-        // Inicia animação da URL imediatamente
+        document.documentElement.style.overflow = 'hidden';
+        document.documentElement.classList.add('loading-theme');
+        
         this.typeUrl();
         
-        // Força mostrar o loading por pelo menos 1.5s
+        // Garante que o loading fique visível por pelo menos 1.5s
         setTimeout(() => {
             if (!this.loadingScreen.dataset.complete) {
                 this.loadingScreen.style.transition = 'opacity 0.8s ease-out';
@@ -58,47 +43,58 @@ class PortfolioLoading {
     }
 
     completeLoading() {
-        // Marca como completo para evitar transição duplicada
         this.loadingScreen.dataset.complete = 'true';
         
-        // Adiciona pequeno delay antes de esconder
         setTimeout(() => {
             this.loadingScreen.style.opacity = '0';
             
-            // Remove completamente após a transição
             setTimeout(() => {
                 this.loadingScreen.style.display = 'none';
                 document.documentElement.style.overflow = 'auto';
-                
-                // Dispara evento para outros scripts saberem que o loading terminou
+                document.documentElement.classList.remove('loading-theme');
                 document.dispatchEvent(new CustomEvent('loadingComplete'));
             }, 800);
-        }, 500); // Delay adicional após terminar a digitação
+        }, 500);
     }
 }
 
 // =============================================
-// INICIALIZAÇÃO PRINCIPAL
+// PAGE LOAD HANDLERS
+// =============================================
+
+// Garante que a página comece no topo
+window.addEventListener('load', function() {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+});
+
+// =============================================
+// INITIALIZATION SYSTEM
 // =============================================
 
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. Componentes globais
+    // Initialize core systems
     initThemeSystem();
     initMobileMenu();
     initActiveSectionHighlight();
     
-    // 2. Componentes por seção (condicionais)
-    if (document.querySelector('.hero')) initHero();
-    if (document.querySelector('.portfolio')) initPortfolio();
-    if (document.querySelector('.about')) initAbout();
-    // Adicione novas seções conforme necessário
+    // Initialize section-specific components
+    initSections();
 });
 
+// Wait for both DOM and loading complete
+function whenReady(callback) {
+    if (document.readyState === 'complete') {
+        callback();
+    } else {
+        document.addEventListener('loadingComplete', callback);
+    }
+}
+
 // =============================================
-// MÓDULOS DO SISTEMA
+// CORE MODULES
 // =============================================
 
-/* Sistema de Tema Claro/Escuro */
+/* Theme System (Light/Dark) */
 function initThemeSystem() {
     const themeToggles = document.querySelectorAll('.header__theme-toggle');
     if (!themeToggles.length) return;
@@ -133,7 +129,7 @@ function initThemeSystem() {
     applyTheme(localStorage.getItem('theme') === 'light');
 }
 
-/* Menu Mobile Responsivo */
+/* Mobile Menu System */
 function initMobileMenu() {
     const menuToggle = document.getElementById('menu-toggle');
     const headerMenu = document.getElementById('header__menu');
@@ -158,13 +154,12 @@ function initMobileMenu() {
 
     navLinks.forEach(link => link.addEventListener('click', closeMenu));
     
-    // Fecha menu ao mudar tema
     document.querySelectorAll('.header__theme-toggle').forEach(toggle => {
         toggle.addEventListener('click', () => setTimeout(closeMenu, 500));
     });
 }
 
-/* Destaque de Seção Ativa no Menu */
+/* Active Section Highlight */
 function initActiveSectionHighlight() {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.header__menu-link');
@@ -202,26 +197,39 @@ function initActiveSectionHighlight() {
 }
 
 // =============================================
-// MÓDULOS DE SEÇÕES (ADICIONE SEUS NOVOS MÓDULOS AQUI)
+// SECTION MODULES
 // =============================================
 
-/* Seção Hero (Exemplo) */
+function initSections() {
+    // Hero Section
+    if (document.querySelector('.hero')) initHero();
+    
+    // Portfolio Section
+    if (document.querySelector('.portfolio')) initPortfolio();
+    
+    // About Section
+    if (document.querySelector('.about')) initAbout();
+    
+    // Add more sections as needed
+}
+
 function initHero() {
     console.log('Hero inicializado');
-    // Adicione aqui o código específico do hero
-    // Ex: animações, carrossel, etc.
+    // Hero-specific code here
 }
 
-/* Seção Portfolio (Exemplo) */
 function initPortfolio() {
     console.log('Portfolio inicializado');
-    // Adicione aqui o código específico do portfolio
-    // Ex: filtros, lightbox, etc.
+    // Portfolio-specific code here
 }
 
-/* Seção About (Exemplo) */
 function initAbout() {
     console.log('About inicializado');
-    // Adicione aqui o código específico do about
-    // Ex: timeline, accordion, etc.
+    // About-specific code here
 }
+
+// =============================================
+// INSTANTIATE LOADING SYSTEM
+// =============================================
+
+new PortfolioLoading();
