@@ -4,10 +4,78 @@
 
 document.documentElement.classList.add('loading-theme');
 
+// Adiciona a classe de loading ao HTML
+new PortfolioLoading();
+
 window.addEventListener('load', function() {
     window.scrollTo({ top: 0, behavior: 'auto' });
     document.documentElement.classList.remove('loading-theme');
 });
+
+// =============================================
+// SISTEMA DE LOADING ANIMADO
+// =============================================
+
+class PortfolioLoading {
+    constructor() {
+        this.loadingScreen = document.getElementById('loading-screen');
+        this.animatedUrl = document.getElementById('animated-url');
+        this.url = "https://andrecode.dev.br";
+        this.typingSpeed = 120; // Velocidade de digitação (ms por caractere)
+        this.startTime = Date.now();
+        
+        // Bloqueia scroll durante o loading
+        document.documentElement.style.overflow = 'hidden';
+        
+        this.init();
+    }
+
+    init() {
+        if (!this.loadingScreen) return;
+        
+        // Inicia animação da URL imediatamente
+        this.typeUrl();
+        
+        // Força mostrar o loading por pelo menos 1.5s
+        setTimeout(() => {
+            if (!this.loadingScreen.dataset.complete) {
+                this.loadingScreen.style.transition = 'opacity 0.8s ease-out';
+            }
+        }, 1500);
+    }
+
+    typeUrl() {
+        let i = 0;
+        const typing = setInterval(() => {
+            if (i < this.url.length) {
+                this.animatedUrl.textContent += this.url.charAt(i);
+                i++;
+            } else {
+                clearInterval(typing);
+                this.completeLoading();
+            }
+        }, this.typingSpeed);
+    }
+
+    completeLoading() {
+        // Marca como completo para evitar transição duplicada
+        this.loadingScreen.dataset.complete = 'true';
+        
+        // Adiciona pequeno delay antes de esconder
+        setTimeout(() => {
+            this.loadingScreen.style.opacity = '0';
+            
+            // Remove completamente após a transição
+            setTimeout(() => {
+                this.loadingScreen.style.display = 'none';
+                document.documentElement.style.overflow = 'auto';
+                
+                // Dispara evento para outros scripts saberem que o loading terminou
+                document.dispatchEvent(new CustomEvent('loadingComplete'));
+            }, 800);
+        }, 500); // Delay adicional após terminar a digitação
+    }
+}
 
 // =============================================
 // INICIALIZAÇÃO PRINCIPAL
@@ -157,80 +225,3 @@ function initAbout() {
     // Adicione aqui o código específico do about
     // Ex: timeline, accordion, etc.
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class PortfolioLoading {
-    constructor() {
-      this.loadingScreen = document.getElementById('loading-screen');
-      this.animatedUrl = document.getElementById('animated-url');
-      this.url = "https://andrecode.dev.br";
-      this.typingSpeed = 120; // Velocidade de digitação (ms por caractere)
-      this.startTime = Date.now();
-      
-      // Bloqueia scroll durante o loading
-      document.documentElement.style.overflow = 'hidden';
-      
-      this.init();
-    }
-  
-    init() {
-      if (!this.loadingScreen) return;
-      
-      // Inicia animação da URL imediatamente
-      this.typeUrl();
-      
-      // Força mostrar o loading por pelo menos 1.5s
-      setTimeout(() => {
-        if (!this.loadingScreen.dataset.complete) {
-          this.loadingScreen.style.transition = 'opacity 0.8s ease-out';
-        }
-      }, 1500);
-    }
-  
-    typeUrl() {
-      let i = 0;
-      const typing = setInterval(() => {
-        if (i < this.url.length) {
-          this.animatedUrl.textContent += this.url.charAt(i);
-          i++;
-        } else {
-          clearInterval(typing);
-          this.completeLoading();
-        }
-      }, this.typingSpeed);
-    }
-  
-    completeLoading() {
-      // Marca como completo para evitar transição duplicada
-      this.loadingScreen.dataset.complete = 'true';
-      
-      // Adiciona pequeno delay antes de esconder
-      setTimeout(() => {
-        this.loadingScreen.style.opacity = '0';
-        
-        // Remove completamente após a transição
-        setTimeout(() => {
-          this.loadingScreen.style.display = 'none';
-          document.documentElement.style.overflow = 'auto';
-          
-          // Dispara evento para outros scripts saberem que o loading terminou
-          document.dispatchEvent(new CustomEvent('loadingComplete'));
-        }, 800);
-      }, 500); // Delay adicional após terminar a digitação
-    }
-  }
-  
-  // Inicia imediatamente (não espera DOMContentLoaded)
-  new PortfolioLoading();
