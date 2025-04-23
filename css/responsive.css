@@ -221,6 +221,23 @@
     .hero__social-links {
         margin-top: var(--spacing-small);
     }
+
+    .code-dot {
+        width: 0.55rem;
+        height: 0.55rem;
+    }
+
+    .code-filename {
+        font-size: var(--font-size-extra-small);
+    }
+
+    .code-content {
+        padding: var(--spacing-small);
+    }
+
+    .code-content code {
+        font-size: var(--font-big-extra-small);
+    }
 }
 
 @media screen and (max-width: 376px) {
