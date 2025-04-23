@@ -1,5 +1,5 @@
 // =============================================
-// CORE LOADING SYSTEM
+// CORE LOADING SYSTEM (FIRST TO EXECUTE)
 // =============================================
 
 class PortfolioLoading {
@@ -21,7 +21,6 @@ class PortfolioLoading {
         
         this.typeUrl();
         
-        // Garante que o loading fique visível por pelo menos 1.5s
         setTimeout(() => {
             if (!this.loadingScreen.dataset.complete) {
                 this.loadingScreen.style.transition = 'opacity 0.8s ease-out';
@@ -59,42 +58,22 @@ class PortfolioLoading {
 }
 
 // =============================================
+// INITIALIZE LOADING SYSTEM IMMEDIATELY
+// =============================================
+const loadingSystem = new PortfolioLoading();
+
+// =============================================
 // PAGE LOAD HANDLERS
 // =============================================
 
-// Garante que a página comece no topo
 window.addEventListener('load', function() {
     window.scrollTo({ top: 0, behavior: 'auto' });
 });
 
 // =============================================
-// INITIALIZATION SYSTEM
+// CORE MODULES (AFTER LOADING)
 // =============================================
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize core systems
-    initThemeSystem();
-    initMobileMenu();
-    initActiveSectionHighlight();
-    
-    // Initialize section-specific components
-    initSections();
-});
-
-// Wait for both DOM and loading complete
-function whenReady(callback) {
-    if (document.readyState === 'complete') {
-        callback();
-    } else {
-        document.addEventListener('loadingComplete', callback);
-    }
-}
-
-// =============================================
-// CORE MODULES
-// =============================================
-
-/* Theme System (Light/Dark) */
 function initThemeSystem() {
     const themeToggles = document.querySelectorAll('.header__theme-toggle');
     if (!themeToggles.length) return;
@@ -129,7 +108,6 @@ function initThemeSystem() {
     //applyTheme(localStorage.getItem('theme') === 'light');
 }
 
-/* Mobile Menu System */
 function initMobileMenu() {
     const menuToggle = document.getElementById('menu-toggle');
     const headerMenu = document.getElementById('header__menu');
@@ -159,7 +137,6 @@ function initMobileMenu() {
     });
 }
 
-/* Active Section Highlight */
 function initActiveSectionHighlight() {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.header__menu-link');
@@ -197,39 +174,94 @@ function initActiveSectionHighlight() {
 }
 
 // =============================================
+// TEXT ANIMATION SYSTEM (LAST TO INITIALIZE)
+// =============================================
+
+class TextAnimation {
+    constructor() {
+        this.messages = [
+            { text: "Welcome to my Portfólio", class: "hero__animation" },
+            { text: "My name is André Vitor", class: "hero__animation" },
+        ];
+        this.container = document.getElementById("hero__animacaoText");
+        this.messageIndex = 0;
+        this.charIndex = 0;
+        this.isDeleting = false;
+        this.waitTime = 2000;
+        
+        if (this.container) this.init();
+    }
+
+    init() {
+        this.typeMessage();
+    }
+
+    typeMessage() {
+        const currentMessage = this.messages[this.messageIndex % this.messages.length];
+        
+        if (this.isDeleting) {
+            this.container.textContent = currentMessage.text.substring(0, this.charIndex - 1);
+            this.charIndex--;
+            
+            if (this.charIndex === 0) {
+                this.isDeleting = false;
+                this.messageIndex = (this.messageIndex + 1) % this.messages.length;
+                setTimeout(() => this.typeMessage(), 500);
+            } else {
+                setTimeout(() => this.typeMessage(), 50);
+            }
+        } else {
+            this.container.textContent = currentMessage.text.substring(0, this.charIndex + 1);
+            this.container.className = `hero__typing-text ${currentMessage.class}`;
+            this.charIndex++;
+            
+            if (this.charIndex === currentMessage.text.length) {
+                this.isDeleting = true;
+                setTimeout(() => this.typeMessage(), this.waitTime);
+            } else {
+                setTimeout(() => this.typeMessage(), 100);
+            }
+        }
+    }
+}
+
+// =============================================
+// INITIALIZATION SYSTEM (AFTER LOADING COMPLETE)
+// =============================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize core systems first
+    initThemeSystem();
+    initMobileMenu();
+    initActiveSectionHighlight();
+    
+    // Then initialize sections
+    initSections();
+});
+
+// Initialize text animation only after everything is ready
+document.addEventListener('loadingComplete', function() {
+    new TextAnimation();
+});
+
+// =============================================
 // SECTION MODULES
 // =============================================
 
 function initSections() {
-    // Hero Section
     if (document.querySelector('.hero')) initHero();
-    
-    // Portfolio Section
     if (document.querySelector('.portfolio')) initPortfolio();
-    
-    // About Section
     if (document.querySelector('.about')) initAbout();
-    
-    // Add more sections as needed
 }
 
 function initHero() {
     console.log('Hero inicializado');
-    // Hero-specific code here
 }
 
 function initPortfolio() {
     console.log('Portfolio inicializado');
-    // Portfolio-specific code here
 }
 
 function initAbout() {
     console.log('About inicializado');
-    // About-specific code here
 }
-
-// =============================================
-// INSTANTIATE LOADING SYSTEM
-// =============================================
-
-new PortfolioLoading();
