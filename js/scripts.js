@@ -126,7 +126,7 @@ function initThemeSystem() {
         });
     });
 
-    applyTheme(localStorage.getItem('theme') === 'light');
+    //applyTheme(localStorage.getItem('theme') === 'light');
 }
 
 /* Mobile Menu System */

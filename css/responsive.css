@@ -1,35 +1,13 @@
-/* ===== Header Responsiveness ===== */
-
-/* 2561px - Ajustes para telas muito grandes */
 @media screen and (max-width: 2561px) {
-    .header {
-        justify-content: space-around;
-        padding: 0 var(--spacing-extra-large);
-    }
+
 }
 
-/* 1441px - Notebooks grandes */
 @media screen and (max-width: 1441px) {
-    .header {
-        padding: 0 var(--spacing-large);
-    }
-    .header__nav {
-        gap: var(--spacing-extra-large);
-    }
+
 }
 
-/* 1025px - Tablet landscape */
 @media screen and (max-width: 1024px) {
-    /* Estilos do header */
-    .header {
-        justify-content: space-around;
-    }
-
-    .header__nav {
-        gap: var(--spacing-large);
-    }
-
-    /* Menu mobile */
+    
     .header__menu {
         display: none;
         flex-direction: column;
@@ -47,7 +25,7 @@
         opacity: 1;
         transform: translateY(-100%);
         transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        gap: var(--spacing-medium);
+        gap: var(--spacing-large);
     }
 
     .header__menu.active {
@@ -56,7 +34,6 @@
         transform: translateY(0);
     }
 
-    /* Itens do menu */
     .header__menu-item {
         width: 100%;
         text-align: center;
@@ -81,7 +58,7 @@
 
     /* Links do menu */
     .header__menu-link {
-        font-size: var(--font-size-large); /* Reduzido de double-extra-large */
+        font-size: var(--font-size-large);
         color: var(--text);
         padding: var(--spacing-small) 0;
         display: block;
@@ -149,17 +126,15 @@
     }
 }
 
-/* 769px - Tablet portrait */
 @media screen and (max-width: 769px) {
     .header__logo {
         font-size: var(--font-size-double-meio-extra-large);
     }
     .header__menu-link {
-        font-size: var(--font-size-extra-large); /* Reduzido de triple-extra-large */
+        font-size: var(--font-size-double-extra-large);
     }
 }
 
-/* 426px - Celulares grandes */
 @media screen and (max-width: 426px) {
     .header {
         height: 70px;
@@ -176,7 +151,6 @@
     }
 }
 
-/* 376px - Celulares médios */
 @media screen and (max-width: 376px) {
     .header {
         height: 65px;
@@ -189,7 +163,6 @@
     }
 }
 
-/* 321px - Celulares pequenos */
 @media screen and (max-width: 321px) {
     .header {
         height: 60px;
