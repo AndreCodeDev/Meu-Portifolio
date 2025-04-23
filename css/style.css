@@ -43,6 +43,16 @@
     --color-gray-900: #0f172a;
     --color-gray-invertida: #f8fafc17;
 
+    /* Cores Semânticas */
+    --color-success: #10b981;
+    --color-success-light: #a7f3d0;
+    --color-warning: #f59e0b;
+    --color-warning-light: #fde68a;
+    --color-error: #ef4444;
+    --color-error-light: #fecaca;
+    --color-info: #3b82f6;
+    --color-info-light: #bfdbfe;
+
     /* Efeitos Visuais */
     --effect-glass-dark: rgba(15, 23, 42, 0.85);
     --effect-glass-light: rgba(255, 255, 255, 0.85);
@@ -818,8 +828,7 @@ svg {
 
 
 
-
-/* ===== Radical Hero Redesign ===== */
+/* ===== Hero Design - Versão Final Ajustada ===== */
 .hero {
     min-height: 100vh;
     color: var(--text);
@@ -829,10 +838,10 @@ svg {
 
 .hero__container {
     width: 100%;
-    padding: var(--spacing-quadruple-extra-large) var(--spacing-triple-extra-large) 0;
+    padding: var(--spacing-double-extra-large) var(--spacing-extra-large) 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-quadruple-extra-large);
+    gap: var(--spacing-extra-large);
     position: relative;
     z-index: 1;
 }
@@ -842,18 +851,18 @@ svg {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding-left: var(--spacing-quadruple-extra-large);
+    padding-left: var(--spacing-double-extra-large);
 }
 
 .hero__badge {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-base);
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--primary);
-    margin-bottom: var(--spacing-medium);
+    margin-bottom: var(--spacing-small);
     display: inline-block;
-    padding: var(--spacing-extra-small) var(--spacing-small);
+    padding: 0.25rem var(--spacing-small);
     background-color: var(--effect-highlight-blue);
     border-radius: var(--border-radius-full);
     border: 1px solid var(--effect-border-blue);
@@ -863,44 +872,44 @@ svg {
 .hero__main-headline {
     display: flex;
     flex-direction: column;
-    margin-bottom: var(--spacing-medium);
+    margin-bottom: var(--spacing-small);
 }
 
 .hero__name {
-    font-size: var(--font-size-sextuple-extra-large-big);
+    font-size: var(--font-size-quintuple-extra-large);
     font-weight: 800;
     line-height: 1.1;
     background: var(--gradient-text-primary);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.015em;
 }
 
 .hero__title {
-    font-size: var(--font-size-sextuple-extra-large);
+    font-size: var(--font-size-triple-extra-large);
     font-weight: 600;
     color: var(--text-secondary);
-    margin-top: var(--spacing-extra-small);
+    margin-top: 0;
 }
 
 .hero__typing-container {
-    min-height: var(--spacing-double-extra-large);
-    margin: var(--spacing-medium) 0;
+    min-height: var(--spacing-large);
+    margin: var(--spacing-small) 0;
 }
 
 .hero__typing-text {
-    font-size: var(--font-size-sextuple-extra-large);
+    font-size: var(--font-size-double-extra-large);
     color: var(--text-secondary);
-    line-height: 1.75;
+    line-height: 1.4;
 }
 
 .hero__typing-text:after {
     content: "|";
-    margin-left: var(--spacing-extra-small);
+    margin-left: 0.25rem;
     animation: blink 1s infinite;
     color: var(--primary);
-    font-size: var(--font-size-quadruple-extra-large);
+    font-size: var(--font-size-large);
 }
 
 @keyframes blink {
@@ -908,35 +917,29 @@ svg {
     50% { opacity: 0 }
 }
 
-.hero__animation {
-    font-size: var(--font-size-quadruple-extra-large);
-    color: var(--text-secondary);
-}
-
 .hero__statement {
-    font-size: var(--font-size-double-extra-large);
-    line-height: 1.75;
+    font-size: var(--font-size-large);
+    line-height: 1.6;
     color: var(--text-secondary);
-    margin: var(--spacing-small) 0 var(--spacing-double-extra-large);
-    max-width: 80%;
-    text-align: justify;
+    margin: var(--spacing-medium) 0 var(--spacing-extra-large);
+    max-width: 85%;
 }
 
 .hero__cta-container {
     display: flex;
     align-items: center;
-    gap: var(--spacing-medium);
+    gap: var(--spacing-small);
     margin-top: var(--spacing-large);
 }
 
 .cta-button {
     display: inline-flex;
     align-items: center;
-    gap: var(--spacing-extra-small);
-    padding: var(--spacing-small) var(--spacing-large);
+    gap: 0.5rem;
+    padding: var(--spacing-extra-small) var(--spacing-medium);
     border-radius: var(--border-radius-medium);
     font-weight: 600;
-    font-size: var(--font-size-extra-large);
+    font-size: var(--font-size-base);
     transition: all var(--transition-speed-normal) var(--transition-easing);
     text-decoration: none;
     user-select: none;
@@ -952,12 +955,12 @@ svg {
     background-color: var(--primary-dark);
     color: white;
     transform: translateY(-2px);
-    box-shadow: var(--shadow-large);
+    box-shadow: var(--shadow-medium);
 }
 
 .cta-button svg {
-    width: var(--font-size-triple-extra-large);
-    height: var(--font-size-triple-extra-large);
+    width: var(--font-size-large);
+    height: var(--font-size-large);
 }
 
 .hero__social-links {
@@ -969,8 +972,8 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: var(--spacing-quadruple-extra-large);
-    height: var(--spacing-quadruple-extra-large);
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: var(--bg-light);
     color: var(--text-secondary);
@@ -984,8 +987,8 @@ svg {
 }
 
 .hero__social-links svg {
-    width: var(--font-size-triple-extra-large);
-    height: var(--font-size-triple-extra-large);
+    width: var(--font-size-large);
+    height: var(--font-size-large);
 }
 
 /* Code Snippet Visual */
@@ -1000,21 +1003,21 @@ svg {
     background-color: var(--bg-light);
     border-radius: var(--border-radius-medium);
     overflow: hidden;
-    box-shadow: var(--shadow-large);
+    box-shadow: var(--shadow-medium);
     border: 1px solid var(--effect-overlay);
 }
 
 .code-snippet__header {
     display: flex;
     align-items: center;
-    padding: var(--spacing-small) var(--spacing-medium);
+    padding: var(--spacing-extra-small) var(--spacing-small);
     background-color: var(--effect-overlay);
     border-bottom: 1px solid var(--effect-overlay);
 }
 
 .code-dot {
-    width: var(--font-size-extra-small);
-    height: var(--font-size-extra-small);
+    width: 0.75rem;
+    height: 0.75rem;
     border-radius: 50%;
     margin-right: var(--spacing-extra-small);
     opacity: 1;
@@ -1026,22 +1029,22 @@ svg {
 .code-dot.green  { background-color: var(--color-success); }
 
 .code-filename {
-    font-size: var(--font-size-extra-large);
+    font-size: var(--font-size-small);
     color: var(--text-secondary);
     margin-left: var(--spacing-small);
 }
 
 .code-content {
     margin: 0;
-    padding: var(--spacing-large);
+    padding: var(--spacing-medium);
     overflow-x: auto;
     background-color: var(--bg-code-content);
 }
 
 .code-content code {
     font-family: 'Fira Code', monospace;
-    font-size: var(--font-size-extra-large);
-    line-height: 1.75;
+    font-size: var(--font-size-small);
+    line-height: 1.5;
     color: var(--text-secondary);
     display: block;
     white-space: pre;
