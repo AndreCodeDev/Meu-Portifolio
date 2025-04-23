@@ -584,7 +584,7 @@ svg {
     position: fixed;
     inset: 0 0 auto 0;
     height: 80px;
-    z-index: 1000;
+    z-index: 100000;
     display: flex;
     justify-content: space-around;
     align-items: center;
