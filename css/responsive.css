@@ -136,10 +136,6 @@
         color: var(--text);
     }
 
-    .hero {
-        min-height: 130vh;
-    }
-
     .hero__container {
         display: flex;
         flex-direction: column-reverse;
@@ -176,10 +172,6 @@
         font-size: var(--font-size-double-extra-large);
     }
 
-    .hero {
-        min-height: 170vh;
-    }
-
     .hero__name {
         font-size: var(--font-size-triple-extra-large);
     }
@@ -207,10 +199,6 @@
     }
     .header__menu-link {
         font-size: var(--font-size-large); /* Reduzido de double-extra-large */
-    }
-
-    .hero {
-        min-height: 190vh;
     }
 
     .hero__name {
@@ -244,10 +232,6 @@
     }
     .header__menu-link {
         font-size: var(--font-size-large); /* Reduzido de double-extra-large */
-    }
-
-    .hero {
-        min-height: 108vh;
     }
 
     .hero__container {
