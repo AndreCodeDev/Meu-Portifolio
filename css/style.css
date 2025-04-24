@@ -59,7 +59,7 @@
     --effect-highlight-blue: rgba(37, 99, 235, 0.08);
     --effect-border-blue: rgba(37, 99, 235, 0.2);
     --effect-selection-blue: rgba(31, 128, 169, 0.3);
-    --effect-overlay: rgba(15, 23, 42, 0.5);
+    --effect-overlay: rgb(15, 23, 42);
 
     /* Gradientes */
     --gradient-blue: linear-gradient(135deg, var(--color-blue-300), var(--color-blue-600));
@@ -169,7 +169,7 @@
     --effect-highlight-blue: rgba(37, 99, 235, 0.08);
     --effect-border-blue: rgba(37, 99, 235, 0.2);
     --effect-selection-blue: rgba(20, 150, 206, 0.3);
-    --effect-overlay: rgba(255, 255, 255, 0.616);
+    --effect-overlay: rgb(255, 255, 255);
     --effect-overlay-header: rgba(255, 255, 255, 0.5);
 
     /* Gradientes */
@@ -218,6 +218,16 @@ body {
     margin: 0;
 }
 
+/* Grid animado sutil */
+@keyframes moveGrid {
+    0% {
+        background-position: 0 0, 0 0;
+    }
+    100% {
+        background-position: 24px 24px, 24px 24px;
+    }
+}
+
 body::before {
     content: "";
     position: absolute;
@@ -226,13 +236,15 @@ body::before {
     right: 0;
     bottom: 0;
     background:
-        linear-gradient(to right, var(--bg-grid) 1px, transparent 1px),
-        linear-gradient(to bottom, var(--bg-grid) 1px, transparent 1px);
+        linear-gradient(to right, var(--bg-grid, rgba(255,255,255,0.05)) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--bg-grid, rgba(255,255,255,0.05)) 1px, transparent 1px);
     background-size: 24px 24px;
-    opacity: 0.15;
-    z-index: -1;
+    opacity: 0.35;
+    z-index: -2;
     pointer-events: none;
+    animation: moveGrid 15s linear infinite;
 }
+
 
 h1 {
     font-size: var(--font-size-sextuple-extra-large);
@@ -345,6 +357,32 @@ svg {
     z-index: 9999;
     overflow: hidden;
     user-select: none;
+}
+
+@keyframes moveGrid {
+    0% {
+        background-position: 0 0, 0 0;
+    }
+    100% {
+        background-position: 24px 24px, 24px 24px;
+    }
+}
+
+#loading-screen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        linear-gradient(to right, var(--bg-grid) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--bg-grid) 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.15;
+    z-index: -1;
+    pointer-events: none;
+    animation: moveGrid 20s linear infinite;
 }
 
 .loading-content {
@@ -827,7 +865,7 @@ svg {
 
 /* ===== Hero Design - Versão Final Ajustada ===== */
 .hero {
-    min-height: 100vh;
+    min-height: 100dvh;
     color: var(--text);
     display: flex;
     align-items: center;
@@ -835,10 +873,8 @@ svg {
 
 .hero__container {
     width: 100%;
-    padding: var(--spacing-double-extra-large) var(--spacing-extra-large) 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-extra-large);
+    display: flex;
+    justify-content: space-evenly;
     position: relative;
     z-index: 1;
 }
@@ -848,7 +884,7 @@ svg {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding-left: var(--spacing-double-extra-large);
+    max-width: 40%;
 }
 
 .hero__badge {
@@ -863,7 +899,8 @@ svg {
     background-color: var(--effect-highlight-blue);
     border-radius: var(--border-radius-full);
     border: 1px solid var(--effect-border-blue);
-    max-width: 85%;
+    max-width: 40%;
+    text-align: center;
 }
 
 .hero__main-headline {
@@ -919,7 +956,6 @@ svg {
     line-height: 1.6;
     color: var(--text-secondary);
     margin: var(--spacing-medium) 0 var(--spacing-extra-large);
-    max-width: 85%;
 }
 
 .hero__cta-container {
@@ -991,13 +1027,14 @@ svg {
 
 /* Code Snippet Visual */
 .hero__visual-element {
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: flex;
+    position: relative;
+    width: 40%;
 }
 
 .code-snippet {
-    width: 75%;
     background-color: var(--effect-overlay);
     border-radius: var(--border-radius-medium);
     overflow: hidden;

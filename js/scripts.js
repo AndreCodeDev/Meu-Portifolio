@@ -180,8 +180,8 @@ function initActiveSectionHighlight() {
 class TextAnimation {
     constructor() {
         this.messages = [
-            { text: "Welcome to my Portfólio", class: "hero__animation" },
-            { text: "My name is André Vitor", class: "hero__animation" },
+            { text: "Bem-Vindo(a) ao meu Portfólio", class: "hero__animation" },
+            { text: "Meu nome é André Vitor", class: "hero__animation" },
         ];
         this.container = document.getElementById("hero__animacaoText");
         this.messageIndex = 0;
