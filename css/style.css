@@ -161,7 +161,6 @@
     --color-gray-800: #f1f5f9;
     --color-gray-900: #f8fafc;
     --color-gray-invertida: #0f172a27;
-    --cta-button--primary: var(--primary);
 
     /* Efeitos Visuais */
     --effect-glass-dark: rgba(255, 255, 255, 0.85);
@@ -175,7 +174,7 @@
     /* Gradientes */
     --gradient-blue: linear-gradient(135deg, var(--color-blue-300), var(--color-blue-600));
     --gradient-purple: linear-gradient(135deg, var(--color-purple-300), var(--color-purple-600));
-    --gradient-text-primary: linear-gradient(to right, var(--primary-gradiente), var(--bg-dark));
+    --gradient-text-primary: linear-gradient(to right, var(--primary-gradiente), var(--primary));
     --gradient-blur-accent: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
     --gradient-card: linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
 
@@ -244,6 +243,38 @@ body::before {
     pointer-events: none;
     animation: moveGrid 15s linear infinite;
 }
+
+@keyframes pulseGlow {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.05);
+    }
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: -180px;
+    right: -180px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(
+        circle,
+        var(--accent-light) 0%,
+        var(--bg) 70%,
+        transparent 100%
+    );
+    z-index: -1;
+    pointer-events: none;
+    filter: blur(20px);
+    transform: rotate(15deg);
+    animation: pulseGlow 6s ease-in-out infinite;
+}
+
 
 
 h1 {
@@ -987,7 +1018,7 @@ svg {
 .cta-button--primary:hover {
     background-color: var(--bg-light);
     border: 1px solid var(--bg-light);
-    color: var(--cta-button--primary);
+    color: var(--text-secondary);
     transform: translateY(-2px);
     box-shadow: var(--shadow-medium);
 }
