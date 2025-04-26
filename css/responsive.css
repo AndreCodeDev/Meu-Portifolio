@@ -1,24 +1,13 @@
 @media screen and (max-width: 2561px) {
-    .hero__container {
-        max-width: 2000px;
-        margin: 0 auto;
-    }
+
 }
 
 @media screen and (max-width: 1441px) {
-    .hero__name {
-        font-size: var(--font-size-quadruple-extra-large);
-    }
-    .hero__title, .hero__typing-text {
-        font-size: var(--font-size-double-extra-large);
-    }
-    .code-snippet {
-        width: 85%;
-    }
+
 }
 
 @media screen and (max-width: 1024px) {
-    
+
     .header__menu {
         display: none;
         flex-direction: column;
@@ -60,14 +49,26 @@
         transform: translateY(0);
     }
 
-    /* Transições em cascata */
-    .header__menu.active .header__menu-item:nth-child(1) { transition-delay: 0.1s; }
-    .header__menu.active .header__menu-item:nth-child(2) { transition-delay: 0.2s; }
-    .header__menu.active .header__menu-item:nth-child(3) { transition-delay: 0.3s; }
-    .header__menu.active .header__menu-item:nth-child(4) { transition-delay: 0.4s; }
-    .header__menu.active .header__menu-item:nth-child(5) { transition-delay: 0.5s; }
+    .header__menu.active .header__menu-item:nth-child(1) {
+        transition-delay: 0.1s;
+    }
 
-    /* Links do menu */
+    .header__menu.active .header__menu-item:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    .header__menu.active .header__menu-item:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+
+    .header__menu.active .header__menu-item:nth-child(4) {
+        transition-delay: 0.4s;
+    }
+
+    .header__menu.active .header__menu-item:nth-child(5) {
+        transition-delay: 0.5s;
+    }
+
     .header__menu-link {
         font-size: var(--font-size-large);
         color: var(--text);
@@ -84,7 +85,6 @@
         color: var(--text);
     }
 
-    /* Botão hamburguer - APENAS MOBILE (MANTIDO EXATAMENTE IGUAL) */
     .header__menu-toggle {
         display: flex;
     }
@@ -103,64 +103,30 @@
         background-color: var(--text);
     }
 
-    /* Formato do X mantido exatamente igual */
     .header__menu-toggle.active .header__menu-line:nth-child(1) {
         transform: rotate(45deg) translate(7px, 8px);
     }
-    
+
     .header__menu-toggle.active .header__menu-line:nth-child(2) {
         opacity: 0;
         transform: scaleX(0);
     }
-    
+
     .header__menu-toggle.active .header__menu-line:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -8px);
     }
 
-    /* Controle de tema */
     .header__theme-toggle-desktop {
         display: none;
     }
-    
+
     .header__theme-toggle-mobile {
         display: block;
     }
 
-    /* Ajustes finos */
-    .header__logo {
-        font-size: var(--font-size-double-extra-large);
-    }
-    
     .header__theme-label {
         font-size: var(--font-size-extra-large);
         color: var(--text);
-    }
-
-    .hero__container {
-        display: flex;
-        flex-direction: column-reverse;
-        padding: var(--spacing-extra-large) var(--spacing-large) 0;
-        gap: var(--spacing-large);
-    }
-    .hero__text-content {
-        padding-left: 0;
-        text-align: center;
-        align-items: center;
-    }
-    .hero__badge, .hero__statement {
-        max-width: 100%;
-    }
-    .hero__visual-element {
-        order: -1;
-        margin-bottom: var(--spacing-large);
-    }
-    .code-snippet {
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    .hero__cta-container {
-        justify-content: center;
     }
 }
 
@@ -168,21 +134,9 @@
     .header__logo {
         font-size: var(--font-size-double-meio-extra-large);
     }
+
     .header__menu-link {
         font-size: var(--font-size-double-extra-large);
-    }
-
-    .hero__name {
-        font-size: var(--font-size-triple-extra-large);
-    }
-    .hero__title, .hero__typing-text {
-        font-size: var(--font-size-extra-large);
-    }
-    .hero__statement {
-        font-size: var(--font-size-small);
-    }
-    .hero__container {
-        padding: var(--spacing-large) var(--spacing-medium) 0;
     }
 }
 
@@ -191,52 +145,18 @@
         height: 70px;
         padding: 0 var(--spacing-medium);
     }
+
     .header__logo {
         font-size: var(--font-size-double-extra-large);
     }
+
     .header__menu-toggle {
         width: 30px;
     }
+
     .header__menu-link {
-        font-size: var(--font-size-large); /* Reduzido de double-extra-large */
-    }
-
-    .hero__name {
-        font-size: var(--font-size-double-extra-large);
-    }
-    .hero__title, .hero__typing-text {
         font-size: var(--font-size-large);
-    }
-    .hero__typing-container {
-        min-height: var(--spacing-medium);
-    }
-    .hero__cta-container {
-        flex-direction: column;
-        gap: var(--spacing-small);
-    }
-    .cta-button {
-        width: 100%;
-        justify-content: center;
-    }
-    .hero__social-links {
-        margin-top: var(--spacing-small);
-    }
-
-    .code-dot {
-        width: 0.55rem;
-        height: 0.55rem;
-    }
-
-    .code-filename {
-        font-size: var(--font-size-extra-small);
-    }
-
-    .code-content {
-        padding: var(--spacing-small);
-    }
-
-    .code-content code {
-        font-size: var(--font-big-extra-small);
+        /* Reduzido de double-extra-large */
     }
 }
 
@@ -244,24 +164,14 @@
     .header {
         height: 65px;
     }
+
     .header__logo {
         font-size: var(--font-size-extra-large);
     }
-    .header__menu-link {
-        font-size: var(--font-size-large); /* Reduzido de double-extra-large */
-    }
 
-    .hero__container {
-        padding: var(--spacing-large) var(--spacing-small) 0;
-    }
-    .hero__name {
-        font-size: var(--font-size-extra-large);
-    }
-    .hero__title, .hero__typing-text {
-        font-size: var(--font-size-base);
-    }
-    .hero__badge {
-        font-size: var(--font-size-extra-small);
+    .header__menu-link {
+        font-size: var(--font-size-large);
+        /* Reduzido de double-extra-large */
     }
 }
 
@@ -270,13 +180,17 @@
         height: 60px;
         padding: 0 var(--spacing-small);
     }
+
     .header__logo {
         font-size: var(--font-size-large);
     }
+
     .header__menu-toggle {
         width: 26px;
     }
+
     .header__menu-link {
-        font-size: var(--font-size-medium); /* Adicionado para telas muito pequenas */
+        font-size: var(--font-size-medium);
+        /* Adicionado para telas muito pequenas */
     }
 }
