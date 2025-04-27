@@ -891,8 +891,8 @@ svg {
 
 .header__theme-label {
     margin-left: 8px;
-    font-size: 16px;
-    color: #fff;
+    font-size: var(--font-size-small);
+    color: var(--text);
     line-height: 1.5;
 }
 
