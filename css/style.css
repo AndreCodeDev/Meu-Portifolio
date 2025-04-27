@@ -504,9 +504,6 @@ svg {
     }
 }
 
-
-
-
 .welcome-message {
     text-align: center;
     margin-bottom: var(--spacing-large);
@@ -583,7 +580,7 @@ svg {
     width: 100%;
     max-width: 400px;
     height: 4px;
-    background: var(--color-gray-900);
+    background: transparent;
     border-radius: var(--border-radius-full);
     margin-bottom: var(--spacing-large);
     overflow: hidden;
