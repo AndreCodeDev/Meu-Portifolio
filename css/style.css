@@ -407,21 +407,13 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--spacing-extra-large);
-    margin-bottom: var(--spacing-medium);
-}
-
-.logo-animation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--spacing-extra-large);
+    gap: var(--spacing-large);
     margin-bottom: var(--spacing-medium);
 }
 
 .logo-item {
-    width: 3rem;
-    height: 3rem;
+    width: 3.2rem;
+    height: 3.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -432,7 +424,7 @@ svg {
     height: 20rem;
     border-radius: var(--border-radius-full);
     object-fit: contain;
-    animation: 
+    animation:
         emergeFromBeyond 1s ease-out forwards,
         pulse 2s infinite ease-in-out 1.5s,
         float 3s infinite ease-in-out 1.5s;
@@ -442,6 +434,33 @@ svg {
         brightness(0) 
         invert(1) 
         drop-shadow(0 0 2px var(--primary-light));
+}
+
+.logo-item:nth-child(1) img {
+    animation-delay: 0.4s, 1.5s, 1.5s;
+    animation-duration: 1s, 2s, 2.8s;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.logo-item:nth-child(2) img {
+    animation-delay: 0s, 1.5s, 1.5s; /* Delay menor para começar antes */
+    animation-duration: 1s, 2s, 3.4s;
+    transform: scale(1) translateY(-16px); /* Subida maior e mais visível */
+}
+
+.logo-item:nth-child(3) img {
+    animation-delay: 0.6s, 1.5s, 1.5s;
+    animation-duration: 1s, 2s, 2.6s;
+    transform: scale(0.8) translateY(-10px); /* Subida mais evidente */
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.logo-item:nth-child(4) img {
+    animation-delay: 0.8s, 1.5s, 1.5s;
+    animation-duration: 1s, 2s, 3.1s;
+    transform: scale(0.8) translateY(-10px); /* Subida mais evidente */
 }
 
 @keyframes emergeFromBeyond {
@@ -481,9 +500,12 @@ svg {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-8px);
+        transform: translateY(-12px); /* Subida mais pronunciada e visível */
     }
 }
+
+
+
 
 .welcome-message {
     text-align: center;
