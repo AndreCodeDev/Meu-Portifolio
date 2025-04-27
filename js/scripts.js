@@ -6,10 +6,9 @@ class PortfolioLoading {
     constructor() {
         this.loadingScreen = document.getElementById('loading-screen');
         this.animatedUrl = document.getElementById('animated-url');
-        this.progressBar = document.querySelector('.progress-bar-center');
         this.url = "https://andrecode.dev.br";
         this.typingSpeed = 120;
-        
+
         this.initLoading();
     }
 
@@ -19,14 +18,20 @@ class PortfolioLoading {
         document.documentElement.style.overflow = 'hidden';
         document.documentElement.classList.add('loading-theme');
 
-        this.typeUrl();
-        this.prepareFadeOut();
-        this.waitForProgressBar();
+        this.prepareZoomOut();
+        this.waitForLoadingScreen();
+    }
+
+    waitForLoadingScreen() {
+        // Espera que o loading screen apareça por um tempo antes de começar a digitação da URL
+        setTimeout(() => {
+            this.typeUrl();
+        }, 1000); // Aumento do delay para garantir que a tela de loading apareça adequadamente
     }
 
     typeUrl() {
         if (!this.animatedUrl) return;
-        
+
         let i = 0;
         const typing = setInterval(() => {
             if (i < this.url.length) {
@@ -34,45 +39,40 @@ class PortfolioLoading {
                 i++;
             } else {
                 clearInterval(typing);
+                // Espera 2 segundos antes de começar a transição de zoom para frente
+                setTimeout(() => {
+                    this.completeLoading();  // Inicia o desaparecimento do loading após o delay
+                }, 200);
             }
         }, this.typingSpeed);
     }
 
-    prepareFadeOut() {
+    prepareZoomOut() {
+        // A transição de zoom e opacidade será aplicada de forma mais suave
         setTimeout(() => {
             if (!this.loadingScreen.dataset.complete) {
-                this.loadingScreen.style.transition = 'opacity 0.8s ease-out';
+                this.loadingScreen.style.transition = 'transform 1.2s ease-out, opacity 1.2s ease-out';  // Zoom e opacidade
             }
-        }, 1500);
-    }
-
-    waitForProgressBar() {
-        if (!this.progressBar) {
-            this.completeLoading();
-            return;
-        }
-
-        const animationDuration = 5500;
-        setTimeout(() => {
-            this.completeLoading();
-        }, animationDuration);
+        }, 2000); // Aguardar um pouco mais antes de começar a transição
     }
 
     completeLoading() {
         if (!this.loadingScreen) return;
 
+        // A URL foi digitada, então vamos iniciar o efeito de zoom e opacidade
         this.loadingScreen.dataset.complete = 'true';
 
-        setTimeout(() => {
-            this.loadingScreen.style.opacity = '0';
+        // Aplicar o zoom e opacidade para desaparecer a tela de loading
+        this.loadingScreen.style.transform = 'scale(1.1)';  // Zoom
+        this.loadingScreen.style.opacity = '0';
 
-            setTimeout(() => {
-                this.loadingScreen.style.display = 'none';
-                document.documentElement.style.overflow = 'auto';
-                document.documentElement.classList.remove('loading-theme');
-                document.dispatchEvent(new CustomEvent('loadingComplete'));
-            }, 800); // tempo da transição de opacidade
-        }, 500); // pequeno delay antes de iniciar o fade-out
+        // Após o efeito de zoom e opacidade, esconder a tela de loading
+        setTimeout(() => {
+            this.loadingScreen.style.display = 'none';
+            document.documentElement.style.overflow = 'auto';
+            document.documentElement.classList.remove('loading-theme');
+            document.dispatchEvent(new CustomEvent('loadingComplete'));
+        }, 1200); // Tempo maior para a transição de opacidade
     }
 }
 
@@ -80,6 +80,7 @@ class PortfolioLoading {
 // INICIALIZAR O SISTEMA DE LOADING IMEDIATAMENTE
 // =============================================
 const loadingSystem = new PortfolioLoading();
+
 
 // =============================================
 // PAGE LOAD HANDLERS

@@ -18,10 +18,11 @@
     --text-dark-secondary: #334155;
     --text-muted: #64748b;
     --text-invert: var(--primary-light);
-    --text-logo-header: #ffffff;
+    --text-logo-header: #1854d5c3;
 
     /*filter*/
     --filter-button-hero: brightness(0) saturate(100%) invert(78%) sepia(0%) saturate(0%) hue-rotate(0deg);
+    --desfoque: brightness(0) invert(1) drop-shadow(0 0 2px var(--primary-light));
 
     /* Fundo */
     --bg: #0f172a;
@@ -33,7 +34,7 @@
     --bg-dark: #ffffff;
     --bg-dark-light: #f8fafc;
     --bg-dark-lighter: #f1f5f9;
-    --bg-code-content: #66666608;
+    --bg-code-content: #3b82f61a;
     --bg-button: #3b82f61a;
 
     /* Cinza */
@@ -145,10 +146,11 @@
     --text-dark: #0f172a;
     --text-dark-secondary: #334155;
     --text-muted: #94a3b8;
-    --text-logo-header: #235ad2;
+    --text-logo-header: #1854d5c3;
 
     /*filter*/
-    --filter-button-hero: filter: invert(26%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(93%) contrast(95%);
+    --filter-button-hero: invert(26%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(93%) contrast(95%);
+    --desfoque: invert(28%) sepia(86%) saturate(638%) hue-rotate(183deg) brightness(94%) contrast(92%) drop-shadow(0 0 2px white);
 
     /* Fundo */
     --bg: #ffffff;
@@ -412,11 +414,12 @@ svg {
 }
 
 .logo-item {
-    width: 3.2rem;
+    width: 4.2rem;
     height: 3.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: var(--spacing-small);
 }
 
 .logo-item img {
@@ -517,22 +520,22 @@ svg {
 }
 
 .word-animation {
-    font-size: var(--font-size-triple-extra-large);
-    font-weight: 600;
+    font-size: var(--font-size-quadruple-extra-large);
+    font-weight: 700;
     background: var(--primary-gradiente);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
-    transform: translateY(20px);
-    animation: wordFadeIn 1s forwards;
+    transform: translateX(-20px); /* Inicia da esquerda */
+    animation: wordFadeInLeft 1s forwards; /* Modificado para animação da esquerda para a direita */
     filter: drop-shadow(0 0 1.6px var(--primary-soft));
 }
 
-@keyframes wordFadeIn {
+@keyframes wordFadeInLeft {
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0); /* Aparece da esquerda para a direita */
     }
 }
 
@@ -549,92 +552,75 @@ svg {
 }
 
 .word-animation-color {
-    font-size: var(--font-size-triple-extra-large);
-    font-weight: 600;
+    font-size: var(--font-size-quintuple-extra-large);
+    font-weight: 700;
     background: linear-gradient(70deg, var(--primary-light), var(--bg-word-animation-color));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
-    transform: translateY(20px);
-    animation: elegantRise 5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    transform: translateY(20px); /* Inicia de baixo para cima */
+    animation: wordFadeInFromBottom 1s forwards;
+    animation-delay: .1s; /* Começa a animação após a .word-animation */
 }
 
-@keyframes elegantRise {
+@keyframes wordFadeInFromBottom {
     0% {
         opacity: 0;
         transform: translateY(20px);
     }
-
-    50% {
-        opacity: 0.8;
-    }
-
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.loading-progress {
-    width: 100%;
-    max-width: 400px;
-    height: 4px;
-    background: transparent;
-    border-radius: var(--border-radius-full);
-    margin-bottom: var(--spacing-large);
-    overflow: hidden;
-    position: relative;
+.word-animation-color:nth-child(1) {
+    animation-delay: 1.2s;
 }
 
-.progress-bar-center {
-    height: 100%;
-    width: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background: linear-gradient(90deg,
-            var(--color-gray-900) 0%,
-            var(--primary-light) 50%,
-            var(--color-gray-900) 100%);
-    border-radius: var(--border-radius-full);
-    animation: progressLoad 5.5s ease-in-out forwards;
+.word-animation-color:nth-child(2) {
+    animation-delay: 1.4s;
 }
 
-@keyframes progressLoad {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 100%;
-    }
+.word-animation-color:nth-child(3) {
+    animation-delay: 1.6s; 
 }
 
 .url-display {
     margin-top: var(--spacing-large);
-    align-items: center;
     text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .url-box {
-    width: 320px;
     padding: var(--spacing-med-extra-small) var(--spacing-small);
     background: var(--bg-code-content);
     border-radius: var(--border-radius-extra-large);
     box-shadow: var(--shadow-blue-glow);
     transition: all var(--transition-speed-normal) var(--transition-easing);
     opacity: 0;
-    transform: translateY(-20px) scale(0.95);
+    transform: translateY(20px) scale(0.95);
     animation: fadeSlideIn 1s ease-out forwards;
+    animation-delay: 1.5s; 
     margin-top: var(--spacing-extra-small);
+    display: flex;
+    align-items: center;
+}
+
+.url-box img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: var(--spacing-extra-small);
+    filter: brightness(0) invert(1) drop-shadow(0 0 2px var(--primary-light));
 }
 
 @keyframes fadeSlideIn {
     0% {
         opacity: 1;
-        transform: translateY(-30px) scale(0.9);
+        transform: translateY(30px) scale(0.9);
     }
     100% {
         opacity: 1;
@@ -644,27 +630,13 @@ svg {
 
 .url-text {
     font-family: 'Courier New', monospace;
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-base);
     color: var(--text);
     letter-spacing: 1px;
     text-shadow: 0 0 5px var(--effect-selection-blue);
+    filter: brightness(0) invert(1) drop-shadow(0 0 2px var(--primary-light));
 }
 
-.url-text:after {
-    content: "|";
-    margin-left: 0.25rem;
-    letter-spacing: 1px;
-    font-family: 'Courier New', monospace;
-    color: var(--text);
-    font-size: var(--font-size-small);
-    text-shadow: 0 0 5px var(--effect-selection-blue);
-    animation: blink 1s infinite;
-}
-
-@keyframes blink {
-    0%, 100% { opacity: 1 }
-    50% { opacity: 0 }
-}
 
 
 
@@ -696,8 +668,8 @@ svg {
 .header__text-logo {
     font-size: var(--font-size-double-extra-large);
     font-weight: 700;
-    color: var(--text-logo-header);
     align-items: center;
+    filter: var(--desfoque);
 }
 
 /* ===== Navigation ===== */
