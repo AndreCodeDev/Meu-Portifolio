@@ -693,7 +693,7 @@ svg {
 }
 
 .header__text-logo:hover {
-    color: var(--text-secondary);
+    color: var(--text);
     text-decoration: none;
 }
 
