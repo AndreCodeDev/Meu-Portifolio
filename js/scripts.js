@@ -6,29 +6,27 @@ class PortfolioLoading {
     constructor() {
         this.loadingScreen = document.getElementById('loading-screen');
         this.animatedUrl = document.getElementById('animated-url');
+        this.progressBar = document.querySelector('.progress-bar-center');
         this.url = "https://andrecode.dev.br";
         this.typingSpeed = 120;
-        this.startTime = Date.now();
         
         this.initLoading();
     }
 
     initLoading() {
         if (!this.loadingScreen) return;
-        
+
         document.documentElement.style.overflow = 'hidden';
         document.documentElement.classList.add('loading-theme');
-        
+
         this.typeUrl();
-        
-        setTimeout(() => {
-            if (!this.loadingScreen.dataset.complete) {
-                this.loadingScreen.style.transition = 'opacity 0.8s ease-out';
-            }
-        }, 1500);
+        this.prepareFadeOut();
+        this.waitForProgressBar();
     }
 
     typeUrl() {
+        if (!this.animatedUrl) return;
+        
         let i = 0;
         const typing = setInterval(() => {
             if (i < this.url.length) {
@@ -36,31 +34,53 @@ class PortfolioLoading {
                 i++;
             } else {
                 clearInterval(typing);
-                this.completeLoading();
             }
         }, this.typingSpeed);
     }
 
+    prepareFadeOut() {
+        setTimeout(() => {
+            if (!this.loadingScreen.dataset.complete) {
+                this.loadingScreen.style.transition = 'opacity 0.8s ease-out';
+            }
+        }, 1500);
+    }
+
+    waitForProgressBar() {
+        if (!this.progressBar) {
+            this.completeLoading();
+            return;
+        }
+
+        const animationDuration = 5500;
+        setTimeout(() => {
+            this.completeLoading();
+        }, animationDuration);
+    }
+
     completeLoading() {
+        if (!this.loadingScreen) return;
+
         this.loadingScreen.dataset.complete = 'true';
-        
+
         setTimeout(() => {
             this.loadingScreen.style.opacity = '0';
-            
+
             setTimeout(() => {
                 this.loadingScreen.style.display = 'none';
                 document.documentElement.style.overflow = 'auto';
                 document.documentElement.classList.remove('loading-theme');
                 document.dispatchEvent(new CustomEvent('loadingComplete'));
-            }, 800);
-        }, 500);
+            }, 800); // tempo da transição de opacidade
+        }, 500); // pequeno delay antes de iniciar o fade-out
     }
 }
 
 // =============================================
-// INITIALIZE LOADING SYSTEM IMMEDIATELY
+// INICIALIZAR O SISTEMA DE LOADING IMEDIATAMENTE
 // =============================================
 const loadingSystem = new PortfolioLoading();
+
 
 // =============================================
 // PAGE LOAD HANDLERS
@@ -105,7 +125,6 @@ function initThemeSystem() {
         });
     });
 
-    //applyTheme(localStorage.getItem('theme') === 'light');
 }
 
 function initMobileMenu() {

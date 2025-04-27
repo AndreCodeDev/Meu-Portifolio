@@ -32,7 +32,7 @@
     --bg-dark: #ffffff;
     --bg-dark-light: #f8fafc;
     --bg-dark-lighter: #f1f5f9;
-    --bg-code-content: #66666610;
+    --bg-code-content: #66666608;
     --bg-button: #3b82f61a;
 
     /* Cinza */
@@ -156,7 +156,7 @@
     --bg-dark: #0f172a;
     --bg-dark-light: #1e293b;
     --bg-dark-lighter: #334155;
-    --bg-code-content: #66666610;
+    --bg-code-content: #66666604;
     --bg-button: #3b83f63e;
 
     /* Cinza */
@@ -350,6 +350,10 @@ svg {
 
 
 
+
+
+
+
 /* ===== LOADING SCREEN ===== */
 #loading-screen {
     position: fixed;
@@ -384,13 +388,13 @@ svg {
     right: 0;
     bottom: 0;
     background:
-        linear-gradient(to right, var(--bg-grid) 1px, transparent 1px),
-        linear-gradient(to bottom, var(--bg-grid) 1px, transparent 1px);
+        linear-gradient(to right, var(--bg-grid, rgba(255,255,255,0.05)) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--bg-grid, rgba(255,255,255,0.05)) 1px, transparent 1px);
     background-size: 24px 24px;
-    opacity: 0.15;
-    z-index: -1;
+    opacity: 0.37;
+    z-index: -2;
     pointer-events: none;
-    animation: moveGrid 20s linear infinite;
+    animation: moveGrid 12s linear infinite;
 }
 
 .loading-content {
@@ -497,7 +501,7 @@ svg {
 }
 
 .word-animation {
-    font-size: var(--font-size-quadruple-extra-large);
+    font-size: var(--font-size-triple-extra-large);
     font-weight: 600;
     background: var(--primary-gradiente);
     -webkit-background-clip: text;
@@ -529,9 +533,9 @@ svg {
 }
 
 .word-animation-color {
-    font-size: var(--font-size-quadruple-extra-large);
+    font-size: var(--font-size-triple-extra-large);
     font-weight: 600;
-    background: linear-gradient(50deg, var(--primary-light), var(--bg-word-animation-color));
+    background: linear-gradient(70deg, var(--primary-light), var(--bg-word-animation-color));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -562,7 +566,7 @@ svg {
     height: 4px;
     background: var(--color-gray-900);
     border-radius: var(--border-radius-full);
-    margin-bottom: var(--spacing-extra-large);
+    margin-bottom: var(--spacing-large);
     overflow: hidden;
     position: relative;
 }
@@ -578,7 +582,7 @@ svg {
             var(--primary-light) 50%,
             var(--color-gray-900) 100%);
     border-radius: var(--border-radius-full);
-    animation: progressLoad 4s ease-in-out forwards;
+    animation: progressLoad 5.5s ease-in-out forwards;
 }
 
 @keyframes progressLoad {
@@ -599,22 +603,60 @@ svg {
 }
 
 .url-box {
-    width: 350px;
-    padding: var(--spacing-small) var(--spacing-medium);
+    width: 320px;
+    padding: var(--spacing-small) var(--spacing-small);
     background: var(--bg-code-content);
-    border-radius: var(--border-radius-large);
+    border-radius: var(--border-radius-medium);
     box-shadow: var(--shadow-blue-glow);
     transition: all var(--transition-speed-normal) var(--transition-easing);
+    opacity: 0;
+    transform: translateY(-50px) scale(0.5) rotate(0deg);
+    animation: bounceIn 1.5s ease-out forwards;
+    margin-top: var(--spacing-extra-small);
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px) scale(0.3) rotate(-15deg);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateY(10px) scale(1.1) rotate(5deg);
+    }
+    70% {
+        opacity: 0.9;
+        transform: translateY(-5px) scale(0.95) rotate(-2deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotate(0);
+    }
 }
 
 .url-text {
     font-family: 'Courier New', monospace;
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-small);
     color: var(--text);
     letter-spacing: 1px;
     text-shadow: 0 0 5px var(--effect-selection-blue);
 }
 
+.url-text:after {
+    content: "|";
+    margin-left: 0.25rem;
+    letter-spacing: 1px;
+    font-family: 'Courier New', monospace;
+    color: var(--text);
+    font-size: var(--font-size-small);
+    text-shadow: 0 0 5px var(--effect-selection-blue);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1 }
+    50% { opacity: 0 }
+}
 
 
 
@@ -643,20 +685,11 @@ svg {
     user-select: none;
 }
 
-.header__logo {
+.header__text-logo {
     font-size: var(--font-size-double-extra-large);
     font-weight: 700;
     color: var(--text);
-    text-decoration: none;
-    display: flex;
     align-items: center;
-    gap: var(--spacing-extra-small);
-    transition: transform 0.3s ease;
-}
-
-.header__logo:hover {
-    transform: translateY(-2px);
-    color: var(--text);
 }
 
 /* Navigation */
