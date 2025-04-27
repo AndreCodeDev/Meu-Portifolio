@@ -84,6 +84,7 @@
 
     /* Espaçamentos */
     --spacing-extra-small: 0.5rem;
+    --spacing-med-extra-small: 0.75rem;
     --spacing-small: 1rem;
     --spacing-medium: 1.5rem;
     --spacing-large: 2rem;
@@ -600,33 +601,25 @@ svg {
 
 .url-box {
     width: 320px;
-    padding: var(--spacing-small) var(--spacing-small);
+    padding: var(--spacing-med-extra-small) var(--spacing-small);
     background: var(--bg-code-content);
-    border-radius: var(--border-radius-medium);
+    border-radius: var(--border-radius-extra-large);
     box-shadow: var(--shadow-blue-glow);
     transition: all var(--transition-speed-normal) var(--transition-easing);
     opacity: 0;
-    transform: translateY(-50px) scale(0.5) rotate(0deg);
-    animation: bounceIn 1.5s ease-out forwards;
+    transform: translateY(-20px) scale(0.95);
+    animation: fadeSlideIn 1s ease-out forwards;
     margin-top: var(--spacing-extra-small);
 }
 
-@keyframes bounceIn {
+@keyframes fadeSlideIn {
     0% {
-        opacity: 0;
-        transform: translateY(-100px) scale(0.3) rotate(-15deg);
-    }
-    50% {
-        opacity: 0.7;
-        transform: translateY(10px) scale(1.1) rotate(5deg);
-    }
-    70% {
-        opacity: 0.9;
-        transform: translateY(-5px) scale(0.95) rotate(-2deg);
+        opacity: 1;
+        transform: translateY(-30px) scale(0.9);
     }
     100% {
         opacity: 1;
-        transform: translateY(0) scale(1) rotate(0);
+        transform: translateY(0) scale(1);
     }
 }
 
