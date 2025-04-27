@@ -227,7 +227,6 @@ body {
     margin: 0;
 }
 
-/* Grid animado sutil */
 @keyframes moveGrid {
     0% {
         background-position: 0 0, 0 0;
@@ -300,10 +299,6 @@ a {
     transition: color 0.3s;
 }
 
-a:hover {
-    color: var(--color-blue-300);
-}
-
 ul,
 ol {
     list-style: none;
@@ -354,7 +349,8 @@ svg {
 
 
 
-/* ===== LOADING SCREEN ===== */
+/* ===== loading screen ===== */
+
 #loading-screen {
     position: fixed;
     top: 0;
@@ -692,12 +688,8 @@ svg {
     align-items: center;
 }
 
-.header__text-logo:hover {
-    color: var(--text);
-    text-decoration: none;
-}
+/* ===== Navigation ===== */
 
-/* Navigation */
 .header__nav {
     display: flex;
     align-items: center;
@@ -758,7 +750,8 @@ svg {
     font-weight: 600;
 }
 
-/* Theme Toggle */
+/* ===== Theme Toggle ===== */
+
 .header__theme-toggle {
     display: flex;
     align-items: center;
@@ -814,7 +807,8 @@ svg {
     background-color: var(--bg-dark);
 }
 
-/* Tooltip */
+/* ===== Tooltip ===== */
+
 .header__theme-tooltip {
     position: absolute;
     top: 70%;
@@ -841,7 +835,8 @@ svg {
     transform: translateX(-50%) translateY(5px);
 }
 
-/* MOBILE MENU TOGGLE */
+/* ===== mobile menu toggle ===== */
+
 .header__menu-toggle {
     display: none;
     flex-direction: column;
@@ -879,7 +874,8 @@ svg {
     transform: translateY(-10px) rotate(-45deg);
 }
 
-/* THEME TOGGLE STYLES */
+/* ===== therme toggle styles ===== */
+
 .header__theme-toggle-mobile {
     display: none;
 }
