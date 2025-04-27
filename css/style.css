@@ -444,15 +444,15 @@ svg {
 }
 
 .logo-item:nth-child(2) img {
-    animation-delay: 0s, 1.5s, 1.5s; /* Delay menor para começar antes */
+    animation-delay: 0s, 1.5s, 1.5s; 
     animation-duration: 1s, 2s, 3.4s;
-    transform: scale(1) translateY(-16px); /* Subida maior e mais visível */
+    transform: scale(1) translateY(-16px); 
 }
 
 .logo-item:nth-child(3) img {
     animation-delay: 0.6s, 1.5s, 1.5s;
     animation-duration: 1s, 2s, 2.6s;
-    transform: scale(0.8) translateY(-10px); /* Subida mais evidente */
+    transform: scale(0.8) translateY(-10px); 
     width: 2.5rem;
     height: 2.5rem;
 }
@@ -460,7 +460,7 @@ svg {
 .logo-item:nth-child(4) img {
     animation-delay: 0.8s, 1.5s, 1.5s;
     animation-duration: 1s, 2s, 3.1s;
-    transform: scale(0.8) translateY(-10px); /* Subida mais evidente */
+    transform: scale(0.8) translateY(-10px); 
 }
 
 @keyframes emergeFromBeyond {
@@ -500,7 +500,7 @@ svg {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-12px); /* Subida mais pronunciada e visível */
+        transform: translateY(-12px);
     }
 }
 
@@ -874,19 +874,6 @@ svg {
     transition: all 0.4s ease;
     transform-origin: center;
     display: block;
-}
-
-.header__menu-toggle.active .header__menu-line:nth-child(1) {
-    transform: translateY(10px) rotate(45deg);
-}
-
-.header__menu-toggle.active .header__menu-line:nth-child(2) {
-    opacity: 0;
-    transform: scaleX(0);
-}
-
-.header__menu-toggle.active .header__menu-line:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg);
 }
 
 /* ===== therme toggle styles ===== */
