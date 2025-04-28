@@ -18,7 +18,7 @@
     --text-dark-secondary: #334155;
     --text-muted: #64748b;
     --text-invert: var(--primary-light);
-    --text-logo-header: #0050fec3;
+    --text-logo-header: #ffffff;
     --text-code-filename: #bebebe;
     --text-code-content: #adadadd4;
 
@@ -146,7 +146,7 @@
     --text-dark: #0f172a;
     --text-dark-secondary: #334155;
     --text-muted: #94a3b8;
-    --text-logo-header: #ffffffc3;
+    --text-logo-header: var(--primary);
     --text-code-filename: #ffffff;
     --text-code-content: #0f172aaf;
 
