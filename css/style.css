@@ -670,8 +670,10 @@ svg {
 }
 
 .header__text-logo {
-    
-    
+    font-size: var(--font-size-double-extra-large);
+    font-weight: 700;
+    align-items: center;
+    color: var(--text-logo-header);
 }
 
 /* ===== navigation ===== */
