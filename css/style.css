@@ -117,6 +117,7 @@
     --font-size-double-meio-extra-large: 1.65rem;
     --font-size-triple-extra-large: 1.875rem;
     --font-size-quadruple-extra-large: 2.25rem;
+    --font-size-quadruple-med-extra-large: 2.55rem;
     --font-size-quintuple-extra-large: 3rem;
     --font-size-sextuple-extra-large: 3.75rem;
     --font-size-sextuple-extra-large-big: 5rem;
@@ -516,7 +517,7 @@ svg {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: var(--spacing-small);
+    gap: var(--spacing-med-extra-small);
 }
 
 .word-animation {
@@ -648,7 +649,7 @@ svg {
 
 
 
-/* ===== Header ===== */
+/* ===== header ===== */
 .header {
     position: fixed;
     inset: 0 0 auto 0;
@@ -672,7 +673,7 @@ svg {
     filter: var(--desfoque);
 }
 
-/* ===== Navigation ===== */
+/* ===== navigation ===== */
 
 .header__nav {
     display: flex;
@@ -734,7 +735,7 @@ svg {
     font-weight: 600;
 }
 
-/* ===== Theme Toggle ===== */
+/* ===== theme toggle ===== */
 
 .header__theme-toggle {
     display: flex;
@@ -791,7 +792,7 @@ svg {
     background-color: var(--bg-dark);
 }
 
-/* ===== Tooltip ===== */
+/* ===== tooltip ===== */
 
 .header__theme-tooltip {
     position: absolute;
