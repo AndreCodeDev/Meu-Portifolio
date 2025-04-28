@@ -98,10 +98,12 @@
 
     .header__menu-line {
         background-color: var(--text-logo-header);
+        filter: var(--desfoque);
     }
 
     .header__menu-toggle.active .header__menu-line {
         background-color: var(--text-logo-header);
+        filter: var(--desfoque);
     }
 
     .header__menu-toggle.active .header__menu-line:nth-child(1) {
