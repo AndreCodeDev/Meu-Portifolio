@@ -227,11 +227,11 @@
     }
 
     .hero__name {
-        font-size: var(--font-size-quadruple-extra-large);
+        font-size: var(--font-size-quintuple-extra-large);
     }
 
     .hero__title {
-        font-size: var(--font-size-double-extra-large);
+        font-size: var(--font-size-triple-extra-large);
     }
 
     .hero__typing-text {
