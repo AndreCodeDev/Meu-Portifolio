@@ -13,7 +13,7 @@
 
     /* Texto */
     --text: #f8fafc;
-    --text-secondary: #adadad;
+    --text-secondary: #c2c2c2;
     --text-dark: #0f172a;
     --text-dark-secondary: #334155;
     --text-muted: #64748b;
@@ -143,7 +143,7 @@
 
     /* Texto */
     --text: #0f172a;
-    --text-secondary: #44494e;
+    --text-secondary: #575b5f;
     --text-dark: #0f172a;
     --text-dark-secondary: #334155;
     --text-muted: #94a3b8;
