@@ -207,7 +207,7 @@
     }
 
     .hero__container {
-        min-height: 180dvh;
+        min-height: 110dvh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -216,7 +216,7 @@
     }
 
     .hero__text-content {
-        max-width: 85%;
+        max-width: 88%;
         align-items: center;
         text-align: center;
     }
