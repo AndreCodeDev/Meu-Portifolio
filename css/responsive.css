@@ -234,12 +234,17 @@
         font-size: var(--font-size-double-meio-extra-large);
     }
 
+    .hero__typing-container {
+        margin: var(--spacing-extra-small) 0;
+    }
+
     .hero__typing-text {
         font-size: var(--font-size-large);
     }
 
     .hero__statement {
         font-size: var(--font-size-small);
+        margin: var(--spacing-small) 0 var(--spacing-large);
     }
 
     .hero__social-links {
