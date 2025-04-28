@@ -919,6 +919,7 @@ svg {
     border-radius: var(--border-radius-full);
     border: 1px solid var(--effect-border-blue);
     text-align: center;
+    max-width: 40%;
 }
 
 .hero__main-headline {

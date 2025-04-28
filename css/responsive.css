@@ -5,7 +5,7 @@
 @media screen and (max-width: 1281px) {
 
     .hero__container {
-        min-height: 190dvh;
+        min-height: 180dvh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -17,6 +17,10 @@
         max-width: 50%;
         align-items: center;
         text-align: center;
+    }
+
+    .hero__badge {
+        max-width: 60%;
     }
 
     .hero__visual-element {
@@ -126,23 +130,8 @@
         color: var(--text);
     }
 
-}
-
-@media screen and (max-width: 769px) {
-    .header__logo {
-        font-size: var(--font-size-double-meio-extra-large);
-    }
-
-    .header__menu-link {
-        font-size: var(--font-size-large);
-    }
-
-    .header__theme-label {
-        font-size: var(--font-size-large);
-    }
-
     .hero__container {
-        min-height: 190dvh;
+        min-height: 180dvh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -159,6 +148,22 @@
     .hero__visual-element {
         width: auto;
     }
+
+}
+
+@media screen and (max-width: 769px) {
+    .header__logo {
+        font-size: var(--font-size-double-meio-extra-large);
+    }
+
+    .header__menu-link {
+        font-size: var(--font-size-large);
+    }
+
+    .header__theme-label {
+        font-size: var(--font-size-large);
+    }
+
 }
 
 @media screen and (max-width: 426px) {
@@ -199,6 +204,62 @@
 
     .header__theme-label {
         font-size: var(--font-size-base);
+    }
+
+    .hero__container {
+        min-height: 180dvh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-double-extra-large);
+        padding: 0;
+    }
+
+    .hero__text-content {
+        max-width: 85%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__badge {
+        font-size: var(--font-size-extra-small);
+    }
+
+    .hero__name {
+        font-size: var(--font-size-quadruple-extra-large);
+    }
+
+    .hero__title {
+        font-size: var(--font-size-double-extra-large);
+    }
+
+    .hero__typing-text {
+        font-size: var(--font-size-large);
+    }
+
+    .hero__statement {
+        font-size: var(--font-size-small);
+    }
+
+    .hero__social-links {
+        flex-direction: column;
+    }
+
+    .hero__cta-container {
+        margin-top: 0;
+    }
+
+    .cta-button {
+        font-size: var(--font-size-extra-small);
+    }
+
+    .hero__social-links svg {
+        width: var(--font-size-small);
+        height: var(--font-size-small);
+    }
+
+    .hero__visual-element {
+        width: auto;
     }
 
     .code-content code {
