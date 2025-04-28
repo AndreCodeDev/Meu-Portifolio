@@ -902,6 +902,7 @@ svg {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    width: 100%;
     max-width: 40%;
 }
 
@@ -917,7 +918,6 @@ svg {
     background-color: var(--effect-highlight-blue);
     border-radius: var(--border-radius-full);
     border: 1px solid var(--effect-border-blue);
-    max-width: 40%;
     text-align: center;
 }
 
