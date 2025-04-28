@@ -213,7 +213,7 @@
 
     .hero__container {
         justify-content: normal;
-        margin-top: var(--spacing-triple-extra-large);
+        margin-top: var(--spacing-quadruple-extra-large);
     }
 
     .hero__text-content {
