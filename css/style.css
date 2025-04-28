@@ -19,6 +19,8 @@
     --text-muted: #64748b;
     --text-invert: var(--primary-light);
     --text-logo-header: #1854d5c3;
+    --text-code-filename: #bebebe;
+    --text-code-content: #adadadd4;
 
     /*filter*/
     --filter-button-hero: brightness(0) saturate(100%) invert(78%) sepia(0%) saturate(0%) hue-rotate(0deg);
@@ -35,8 +37,9 @@
     --bg-dark-light: #f8fafc;
     --bg-dark-lighter: #f1f5f9;
     --bg-url-box: #3b82f61a;
-    --bg-code-content: #30435d29;
     --bg-button: #3b82f61a;
+    --bg-code-snippet__header: #1e293b;
+    --bg-code-content: #30435d29;
 
     /* Cinza */
     --color-gray-50: #f8fafc;
@@ -52,14 +55,9 @@
     --color-gray-invertida: #f8fafc17;
 
     /* Cores Semânticas */
-    --color-success: #10b981;
-    --color-success-light: #a7f3d0;
-    --color-warning: #f59e0b;
-    --color-warning-light: #fde68a;
-    --color-error: #ef4444;
-    --color-error-light: #fecaca;
-    --color-info: #3b82f6;
-    --color-info-light: #bfdbfe;
+    --color-success: #3ee15c;
+    --color-warning: #ffc918;
+    --color-error: #f92d2d;
 
     /* Efeitos Visuais */
     --effect-glass-dark: rgba(15, 23, 42, 0.85);
@@ -150,6 +148,8 @@
     --text-dark-secondary: #334155;
     --text-muted: #94a3b8;
     --text-logo-header: #1854d5c3;
+    --text-code-filename: #ffffff;
+    --text-code-content: #0f172aaf;
 
     /*filter*/
     --filter-button-hero: invert(26%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(93%) contrast(95%);
@@ -165,8 +165,9 @@
     --bg-dark-light: #1e293b;
     --bg-dark-lighter: #334155;
     --bg-url-box: #66666604;
-    --bg-code-content: #eaeaea26;
     --bg-button: #3b83f63e;
+    --bg-code-snippet__header: #3c435381;
+    --bg-code-content: #c1c2c478;
 
     /* Cinza */
     --color-gray-50: #0f172a;
@@ -880,7 +881,7 @@ svg {
 
 
 
-/* ===== Hero ===== */
+/* ===== hero ===== */
 .hero {
     min-height: 110dvh;
     color: var(--text);
@@ -1048,7 +1049,7 @@ svg {
     height: var(--font-size-large);
 }
 
-/* Code Snippet Visual */
+/* code snippet visual */
 .hero__visual-element {
     align-items: center;
     justify-content: center;
@@ -1070,7 +1071,7 @@ svg {
     display: flex;
     align-items: center;
     padding: var(--spacing-extra-small) var(--spacing-small);
-    background-color: var(--bg-light);
+    background-color: var(--bg-code-snippet__header);
     border-bottom: 1px solid var(--effect-overlay-header);
 }
 
@@ -1104,12 +1105,12 @@ svg {
 .code-dot.active {
     opacity: 1;
     transform: scale(1.0);
-    box-shadow: 0 0 10px currentColor;
+    box-shadow: 0 0 15px currentColor;
 }
 
 .code-filename {
     font-size: var(--font-size-small);
-    color: var(--text-secondary);
+    color: var(--text-code-filename);
     margin-left: var(--spacing-small);
 }
 
@@ -1124,7 +1125,7 @@ svg {
     font-family: 'Fira Code', monospace;
     font-size: var(--font-size-small);
     line-height: 1.5;
-    color: var(--text-secondary);
+    color: var(--text-code-content);
     display: block;
     white-space: pre;
 }

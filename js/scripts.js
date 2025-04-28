@@ -156,6 +156,42 @@ function initMobileMenu() {
     });
 }
 
+function initActiveSection() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.header__menu-link');
+    
+    if (!sections.length || !navLinks.length) return;
+
+    let timeout;
+    const updateActiveLink = () => {
+        let currentSection = null;
+        const scrollPosition = window.scrollY + 100;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            
+            if (scrollPosition >= sectionTop && scrollPosition <= sectionTop + sectionHeight) {
+                currentSection = section;
+            }
+        });
+
+        navLinks.forEach(link => {
+            const linkHref = link.getAttribute('href');
+            const isActive = currentSection && linkHref === `#${currentSection.id}`;
+            link.classList.toggle('active', isActive);
+        });
+    };
+
+    window.addEventListener('scroll', () => {
+        clearTimeout(timeout);
+        timeout = setTimeout(updateActiveLink, 50);
+    });
+    
+    window.addEventListener('resize', updateActiveLink);
+    updateActiveLink();
+}
+
 // =============================================
 // TEXT ANIMATION SYSTEM (LAST TO INITIALIZE)
 // =============================================
@@ -216,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize core systems first
     initThemeSystem();
     initMobileMenu();
-    initActiveSectionHighlight();
+    initActiveSection();
     
     // Then initialize sections
     initSections();
@@ -251,20 +287,39 @@ function initAbout() {
 
 
 
+
+
+
+
+
+
+
+
+
+
 const dots = document.querySelectorAll('.code-dot');
 let index = 0;
 
-function blinkNextDot() {
-  dots.forEach(dot => dot.classList.remove('active'));
-  dots[index].classList.add('active');
+function lightRayEffect() {
+    dots.forEach(dot => dot.classList.remove('active'));
 
-  index = (index + 1) % dots.length;
-
-  setTimeout(blinkNextDot, 1000);
+    let currentIndex = index;
+    const interval = setInterval(() => {
+        if (currentIndex < dots.length) {
+            dots[currentIndex].classList.add('active');
+            if (currentIndex > 0) {
+                dots[currentIndex - 1].classList.remove('active');
+            }
+            currentIndex++;
+        } else {
+            clearInterval(interval);
+            dots[dots.length - 1].classList.remove('active');
+            setTimeout(lightRayEffect, 3000); 
+        }
+    }, 250); 
 }
 
-// Start
-setTimeout(blinkNextDot, 1000);
+setTimeout(lightRayEffect, 1000);
 
 
 
