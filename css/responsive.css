@@ -206,13 +206,14 @@
         font-size: var(--font-size-base);
     }
 
-    .hero__container {
-        min-height: 110dvh;
+    .hero {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: var(--spacing-double-extra-large);
-        padding: 0;
+    }
+
+    .hero__container {
+        justify-content: normal;
+        margin-top: var(--spacing-triple-extra-large);
     }
 
     .hero__text-content {
