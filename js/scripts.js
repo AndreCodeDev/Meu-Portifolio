@@ -248,3 +248,27 @@ function initPortfolio() {
 function initAbout() {
     console.log('About inicializado');
 }
+
+
+
+const dots = document.querySelectorAll('.code-dot');
+let index = 0;
+
+function blinkNextDot() {
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[index].classList.add('active');
+
+  index = (index + 1) % dots.length;
+
+  setTimeout(blinkNextDot, 1000);
+}
+
+// Start
+setTimeout(blinkNextDot, 1000);
+
+
+
+
+
+
+
