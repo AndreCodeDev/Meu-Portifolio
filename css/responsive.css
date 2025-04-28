@@ -97,11 +97,11 @@
     }
 
     .header__menu-line {
-        filter: var(--desfoque);
+        color: var(--text-logo-header);
     }
 
     .header__menu-toggle.active .header__menu-line {
-        filter: var(--desfoque);
+        color: var(--text-logo-header);
     }
 
     .header__menu-toggle.active .header__menu-line:nth-child(1) {
