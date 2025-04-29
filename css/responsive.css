@@ -508,11 +508,11 @@
     }
 
     .carrossel-item {
-        width: 15rem;
+        width: 10rem;
     }
 
     .carrossel-item img {
-        width: 25%;
+        width: 20%;
     }
 }
 
