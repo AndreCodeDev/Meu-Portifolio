@@ -70,7 +70,7 @@
     /* Gradientes */
     --gradient-blue: linear-gradient(135deg, var(--color-blue-300), var(--color-blue-600));
     --gradient-purple: linear-gradient(135deg, var(--color-purple-300), var(--color-purple-600));
-    --gradient-text-primary: linear-gradient(to right, var(--primary-gradiente), var(--primary));
+    --gradient-text-primary: linear-gradient(to right, var(--primary-gradiente) 10%, var(--primary) 50%);
     --gradient-blur-accent: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
     --gradient-card: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
 
@@ -194,7 +194,6 @@
     /* Gradientes */
     --gradient-blue: linear-gradient(135deg, var(--color-blue-300), var(--color-blue-600));
     --gradient-purple: linear-gradient(135deg, var(--color-purple-300), var(--color-purple-600));
-    --gradient-text-primary: linear-gradient(to right, var(--primary-gradiente), var(--primary));
     --gradient-blur-accent: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
     --gradient-card: linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
 
