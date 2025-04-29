@@ -500,7 +500,7 @@
     }
 
     .about__image {
-        max-width: 60%;
+        max-width: 70%;
     }
 
     .carrossel-container {
@@ -508,7 +508,7 @@
     }
 
     .carrossel-item {
-        width: 10rem;
+        width: 15rem;
     }
 
     .carrossel-item img {
