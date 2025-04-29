@@ -217,6 +217,11 @@
     }
     
     /* Ajustes no hero section */
+
+    .hero__badge {
+        margin-bottom: var(--spacing-medium);
+    }
+
     .hero__name {
         font-size: var(--font-size-quadruple-med-extra-large);
     }
@@ -405,6 +410,7 @@
     }
     
     .cta-button {
+        font-size: var(--font-size-small);
         padding: var(--spacing-extra-small) var(--spacing-small);
     }
 }
