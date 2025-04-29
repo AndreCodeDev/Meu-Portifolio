@@ -401,7 +401,7 @@
     }
 
     .hero__container {
-        margin-top: var(--spacing-quintuple-extra-large);
+        margin-top: var(--spacing-double-extra-large);
         justify-content: flex-start; 
         padding-top: var(--spacing-double-extra-large); 
         gap: var(--spacing-extra-large);
