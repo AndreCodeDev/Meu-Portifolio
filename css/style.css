@@ -670,10 +670,18 @@ svg {
 }
 
 .header__text-logo {
+    display: flex;
     font-size: var(--font-size-double-extra-large);
     font-weight: 700;
+    text-align: center;
     align-items: center;
     color: var(--text-logo-header);
+}
+
+.header img {
+    width: var(--spacing-medium);
+    height: var(--spacing-medium);
+    margin-left: var(--spacing-extra-small);
 }
 
 /* ===== navigation ===== */
@@ -1321,4 +1329,59 @@ svg {
 .about__image:hover {
     transform: scale(1.02);
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer--grid-layout {
+    padding: var(--spacing-large) 0;
+    color: var(--text);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: var(--spacing-med-extra-small);
+}
+
+.footer-group {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-small);
+}
+
+footer p {
+    font-size: var(--font-size-small);
+    margin: 0;
+}
+
+footer a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+footer img {
+    width: var(--spacing-medium);
+    height: auto;
+    user-select: none;
 }
