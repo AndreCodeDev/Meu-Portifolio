@@ -484,7 +484,7 @@
 
     .about__headline,
     .about__headline__name {
-        font-size: var(--font-size-extra-large);
+        font-size: var(--font-size-double-meio-extra-large);
     }
 
     .about__description {
