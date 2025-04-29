@@ -1,6 +1,5 @@
 @import url('style.css');
 
-/* ===== header ===== */
 .header {
     position: fixed;
     inset: 0 0 auto 0;
@@ -31,8 +30,6 @@
     height: var(--spacing-medium);
     margin-left: var(--spacing-extra-small);
 }
-
-/* ===== navigation ===== */
 
 .header__nav {
     display: flex;
@@ -94,8 +91,6 @@
     font-weight: 600;
 }
 
-/* ===== theme toggle ===== */
-
 .header__theme-toggle {
     display: flex;
     align-items: center;
@@ -151,8 +146,6 @@
     background-color: var(--bg-dark);
 }
 
-/* ===== tooltip ===== */
-
 .header__theme-tooltip {
     position: absolute;
     top: 70%;
@@ -179,8 +172,6 @@
     transform: translateX(-50%) translateY(5px);
 }
 
-/* ===== mobile menu toggle ===== */
-
 .header__menu-toggle {
     display: none;
     flex-direction: column;
@@ -204,8 +195,6 @@
     transform-origin: center;
     display: block;
 }
-
-/* ===== therme toggle styles ===== */
 
 .header__theme-toggle-mobile {
     display: none;

@@ -1,6 +1,5 @@
 @import url('style.css');
 
-/* ===== about ===== */
 .about {
     min-height: 95vh;
     padding: 0;
@@ -23,7 +22,6 @@
     justify-content: center;
 }
 
-/* Conteúdo de texto */
 .about__text-content {
     display: flex;
     flex-direction: column;
@@ -43,12 +41,12 @@
     display: inline-block;
 }
 
-
 .about__headline__name {
     font-size: var(--font-size-quintuple-extra-large);
     font-weight: 800;
     line-height: 1;
-    background: linear-gradient(to right, var(--primary-light), var(--primary-gradiente));    ;
+    background: linear-gradient(to right, var(--primary-light), var(--primary-gradiente));
+    ;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -65,15 +63,14 @@
     max-width: 75%;
 }
 
-/* Links sociais */
-.about__text-content > div {
+.about__text-content>div {
     display: flex;
     gap: var(--spacing-medium);
     margin-top: var(--spacing-large);
     user-select: none;
 }
 
-.about__text-content > div > div {
+.about__text-content>div>div {
     position: relative;
     display: flex;
     align-items: center;
@@ -85,27 +82,27 @@
     cursor: pointer;
 }
 
-.about__text-content > div > div:hover {
+.about__text-content>div>div:hover {
     background-color: var(--primary);
     transform: translateY(-2px);
     box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.3);
 }
 
-.about__text-content > div > div:hover a {
+.about__text-content>div>div:hover a {
     color: white;
 }
 
-.about__text-content > div > div:hover img {
+.about__text-content>div>div:hover img {
     filter: brightness(0) invert(1);
 }
 
-.about__text-content > div > div img {
+.about__text-content>div>div img {
     width: 15px;
     height: 15px;
     transition: all var(--transition-speed-normal) ease;
 }
 
-.about__text-content > div > div a {
+.about__text-content>div>div a {
     color: var(--text-invert);
     text-decoration: none;
     font-weight: 600;
@@ -113,7 +110,6 @@
     transition: all var(--transition-speed-normal) ease;
 }
 
-/* Container da imagem */
 .about__image-container {
     align-items: center;
     display: flex;
@@ -126,7 +122,7 @@
     height: auto;
     border: solid var(--border-radius-small) var(--border-invert);
     border-radius: 50%;
-    box-shadow: 
+    box-shadow:
         0 0 0 1px #3b82f61a,
         0 0 70px #3b82f633,
         0 0 70px #3b82f61a inset;

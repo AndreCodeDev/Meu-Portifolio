@@ -1,18 +1,16 @@
 @import url('style.css');
 
-
-
 .highlights {
     text-align: center;
     position: relative;
     z-index: 10;
-  }
-  
-  .highlights__header {
+}
+
+.highlights__header {
     margin-bottom: var(--spacing-large);
-  }
-  
-  .highlights--title {
+}
+
+.highlights--title {
     font-size: var(--font-size-quintuple-extra-large);
     font-weight: 800;
     background: linear-gradient(to right, var(--primary-light), var(--primary-gradiente));
@@ -21,37 +19,37 @@
     color: transparent;
     position: relative;
     display: inline-block;
-  }
-  
-  .highlights--subtitle {
+}
+
+.highlights--subtitle {
     font-size: var(--font-size-medium);
     color: var(--text-secondary);
     padding: var(--spacing-large) 0;
     margin: 0;
-  }
-  
-  .highlights__buttons {
+}
+
+.highlights__buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--spacing-large);
     padding: var(--spacing-small) 0;
     user-select: none;
-  }
-  
-  .highlight-card {
+}
+
+.highlight-card {
     background-color: var(--effect-highlight-blue);
     border-radius: var(--border-radius-medium);
     box-shadow: var(--shadow-light);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .highlight-card:hover {
+}
+
+.highlight-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-medium);
-  }
-  
-  .highlight-card__link {
+}
+
+.highlight-card__link {
     display: flex;
     align-items: center;
     gap: var(--spacing-medium);
@@ -62,33 +60,32 @@
     font-size: var(--font-size-large);
     transition: color 0.3s ease;
     cursor: pointer;
-  }
-  
-  .highlight-card__link:hover {
+}
+
+.highlight-card__link:hover {
     color: white;
-  }
-  
-  .highlight-card__link img {
+}
+
+.highlight-card__link img {
     width: 28px;
     height: 28px;
     transition: filter 0.3s ease;
-  }
-  
-  .highlight-card__link:hover img {
+}
+
+.highlight-card__link:hover img {
     filter: brightness(0) invert(1);
-  }
+}
 
-
-  .highlight-card.active {
+.highlight-card.active {
     background-color: var(--effect-highlight-purple);
     box-shadow: var(--shadow-blue-glow);
-  }
-  
-  .hidden {
-    display: none !important;
-  }
+}
 
-  
+.hidden {
+    display: none !important;
+}
+
+
 
 
 
@@ -147,8 +144,8 @@
     border: none;
     perspective: 1200px;
     flex-shrink: 0;
-    transition: opacity var(--transition-speed-slow) var(--transition-easing), 
-                transform var(--transition-speed-slow) var(--transition-easing);
+    transition: opacity var(--transition-speed-slow) var(--transition-easing),
+        transform var(--transition-speed-slow) var(--transition-easing);
 }
 
 /* Lado frontal e traseiro do card */
@@ -159,8 +156,8 @@
     height: 100%;
     backface-visibility: hidden;
     border-radius: var(--border-radius-small);
-    transition: opacity var(--transition-speed-fast) var(--transition-easing), 
-                transform var(--transition-speed-slow) var(--transition-easing);
+    transition: opacity var(--transition-speed-fast) var(--transition-easing),
+        transform var(--transition-speed-slow) var(--transition-easing);
     border: none;
 }
 
@@ -219,6 +216,7 @@
         height: 0;
         opacity: 0.5;
     }
+
     100% {
         width: 200px;
         height: 200px;
@@ -345,8 +343,8 @@
     top: 50%;
     transform: translateY(-50%);
     opacity: 0.8;
-    transition: opacity var(--transition-speed-normal) var(--transition-easing), 
-                background-color var(--transition-speed-normal) var(--transition-easing);
+    transition: opacity var(--transition-speed-normal) var(--transition-easing),
+        background-color var(--transition-speed-normal) var(--transition-easing);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -398,6 +396,7 @@ body.light-mode .carousel-control-prev-icon {
 body.light-mode .carousel-control-next-icon {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23fff" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
 }
+
 /*----------------------------------*/
 
 

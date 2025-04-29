@@ -1,7 +1,6 @@
 @import url('style.css');
 
-/* Footer */
-.footer--grid-layout {
+footer .footer--grid-layout {
     height: 80px;
     background-color: var(--bg-header);
     color: var(--text);

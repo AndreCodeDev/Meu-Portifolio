@@ -1,6 +1,5 @@
 @import url('style.css');
 
-/* ===== hero ===== */
 .hero {
     min-height: 110dvh;
     color: var(--text);
@@ -85,8 +84,15 @@
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1 }
-    50% { opacity: 0 }
+
+    0%,
+    100% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
 }
 
 .hero__statement {
@@ -169,7 +175,6 @@
     height: var(--font-size-large);
 }
 
-/* code snippet visual */
 .hero__visual-element {
     align-items: center;
     justify-content: center;
@@ -202,21 +207,23 @@
     margin-right: var(--spacing-extra-small);
     opacity: 0.8;
     transform: scale(1);
-    transition: 
+    transition:
         opacity var(--transition-speed-normal) ease,
         transform 0.3s ease,
         box-shadow 0.3s ease;
-        color: inherit;
+    color: inherit;
 }
 
 .code-dot.red {
     background-color: var(--color-error);
     color: var(--color-error);
 }
+
 .code-dot.yellow {
     background-color: var(--color-warning);
     color: var(--color-warning);
 }
+
 .code-dot.green {
     background-color: var(--color-success);
     color: var(--color-success);

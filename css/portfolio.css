@@ -1,4 +1,3 @@
-
 @import url('style.css');
 
 .portfolio {
@@ -11,13 +10,13 @@
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(148, 163, 184, 0.1);
     border-top: 1px solid rgba(148, 163, 184, 0.1);
-  }
-  
-  .portfolio__header {
+}
+
+.portfolio__header {
     margin-bottom: var(--spacing-large);
-  }
-  
-  .portfolio--title {
+}
+
+.portfolio--title {
     font-size: var(--font-size-sextuple-extra-large-big);
     font-weight: 800;
     background: linear-gradient(to right, var(--primary-light), var(--primary-gradiente));
@@ -26,37 +25,37 @@
     color: transparent;
     position: relative;
     display: inline-block;
-  }
-  
-  .portfolio--subtitle {
+}
+
+.portfolio--subtitle {
     font-size: var(--font-size-double-extra-large);
     color: var(--text-secondary);
     padding: var(--spacing-large) 0;
     margin: 0;
-  }
-  
-  .portfolio__buttons {
+}
+
+.portfolio__buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--spacing-large);
     padding: var(--spacing-large) 0;
     user-select: none;
-  }
-  
-  .portfolio-card {
+}
+
+.portfolio-card {
     background-color: var(--effect-highlight-blue);
     border-radius: var(--border-radius-medium);
     box-shadow: var(--shadow-light);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .portfolio-card:hover {
+}
+
+.portfolio-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-medium);
-  }
-  
-  .portfolio-card__link {
+}
+
+.portfolio-card__link {
     display: flex;
     align-items: center;
     gap: var(--spacing-medium);
@@ -66,31 +65,30 @@
     font-weight: 600;
     font-size: var(--font-size-double-extra-large);
     transition: color 0.3s ease;
-  }
-  
-  .portfolio-card__link:hover {
+}
+
+.portfolio-card__link:hover {
     color: white;
-  }
-  
-  .portfolio-card__link img {
+}
+
+.portfolio-card__link img {
     width: 28px;
     height: 28px;
     transition: filter 0.3s ease;
-  }
-  
-  .portfolio-card__link:hover img {
+}
+
+.portfolio-card__link:hover img {
     filter: brightness(0) invert(1);
-  }
-  
-  .portfolio-card.active {
+}
+
+.portfolio-card.active {
     background-color: var(--effect-highlight-purple);
     box-shadow: var(--shadow-blue-glow);
-  }
-  
-  .portfolio__cards {
+}
+
+.portfolio__cards {
     margin-top: var(--spacing-large);
-  }
-  
+}
 
 
 
@@ -111,7 +109,8 @@
 
 
 
-  
+
+
 
 .projects {
     padding: 6rem 5rem 9rem;
@@ -153,7 +152,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;    
+    height: 100%;
     background-color: var(--background-colorMantem);
     display: flex;
     flex-direction: column;
