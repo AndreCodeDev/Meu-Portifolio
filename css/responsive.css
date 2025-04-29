@@ -307,7 +307,7 @@
     }
 
     .hero__badge {
-        font-size: var(--font-size-extra-small);
+        font-size: var(--font-size-small);
     }
 
     .hero__name {
