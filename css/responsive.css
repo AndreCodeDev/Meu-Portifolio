@@ -184,7 +184,7 @@
     }
 
     .hero__container {
-        min-height: 180dvh;
+        min-height: 190dvh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
