@@ -50,7 +50,7 @@
 
 @media screen and (max-width: 1281px) {
     .hero__container {
-        min-height: 200dvh;
+        min-height: 180dvh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -184,7 +184,7 @@
     }
 
     .hero__container {
-        min-height: 200dvh;
+        min-height: 180dvh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -297,7 +297,7 @@
 
     .hero__container {
         justify-content: normal;
-        margin-top: var(--spacing-quadruple-extra-large);
+        margin-top: var(--spacing-quintuple-extra-large);
     }
 
     .hero__text-content {
