@@ -410,7 +410,7 @@
     }
     
     .cta-button {
-        font-size: var(--font-size-small);
+        font-size: var(--font-size-extra-small);
         padding: var(--spacing-extra-small) var(--spacing-small);
     }
 }
