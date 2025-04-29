@@ -359,3 +359,387 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".highlight-card");
+    const textBlocks = document.querySelectorAll(".highlights--subtitle");
+    const cardsSections = {
+      conquistas: document.getElementById("cards-conquistas"),
+      formacoes: document.getElementById("cards-formacoes"),
+    };
+
+    let active = "conquistas"; // padrão ativo
+
+    function toggleContent(target) {
+      // Atualiza classes dos botões
+      buttons.forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.target === target);
+      });
+
+      // Atualiza texto
+      textBlocks.forEach(text => {
+        text.classList.toggle("hidden", text.dataset.text !== target);
+      });
+
+      // Atualiza cards
+      Object.keys(cardsSections).forEach(key => {
+        cardsSections[key].classList.toggle("hidden", key !== target);
+      });
+
+      active = target;
+    }
+
+    // Inicializa com conquistas ativos
+    toggleContent(active);
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", e => {
+        e.preventDefault();
+        const target = btn.dataset.target;
+        if (target !== active) toggleContent(target);
+      });
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+// Seleciona os elementos do carrossel
+const conquistasCarousel = document.querySelector('.conquistas-carousel');
+const cards = document.querySelectorAll('.card');
+const prevButton = document.querySelector('.conquistas-carousel-control.prev');
+const nextButton = document.querySelector('.conquistas-carousel-control.next');
+
+let currentIndex = 0;
+let touchStartX = 0;
+let touchEndX = 0;
+const SWIPE_THRESHOLD = 50; // Distância mínima para considerar um swipe
+
+// Atualiza a exibição dos cards
+function updateCarousel() {
+    cards.forEach((card, index) => {
+        // Oculta todos os cards inicialmente
+        card.style.display = 'none';
+        card.classList.remove('active', 'prev', 'next', 'flipped'); // Remove a classe 'flipped'
+
+        // Define o card ativo
+        if (index === currentIndex) {
+            card.style.display = 'block';
+            card.classList.add('active');
+            // Faz o flip automático para a imagem (frente)
+            card.classList.remove('flipped');
+        }
+        // Define o card anterior
+        else if (index === currentIndex - 1 || (currentIndex === 0 && index === cards.length - 1)) {
+            card.style.display = 'block';
+            card.classList.add('prev');
+        }
+        // Define o próximo card
+        else if (index === currentIndex + 1 || (currentIndex === cards.length - 1 && index === 0)) {
+            card.style.display = 'block';
+            card.classList.add('next');
+        }
+    });
+}
+
+// Navega para o card anterior
+function goToPrevCard() {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    updateCarousel();
+}
+
+// Navega para o próximo card
+function goToNextCard() {
+    currentIndex = (currentIndex + 1) % cards.length;
+    updateCarousel();
+}
+
+// Event listeners para os botões
+prevButton.addEventListener('click', goToPrevCard);
+nextButton.addEventListener('click', goToNextCard);
+
+// Event listeners para touch/swipe
+conquistasCarousel.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+}, { passive: true });
+
+conquistasCarousel.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+}, { passive: true });
+
+// Função para tratar o gesto de swipe
+function handleSwipe() {
+    const difference = touchStartX - touchEndX;
+
+    // Swipe para a direita (avançar)
+    if (difference > SWIPE_THRESHOLD) {
+        goToNextCard();
+    }
+    // Swipe para a esquerda (voltar)
+    else if (difference < -SWIPE_THRESHOLD) {
+        goToPrevCard();
+    }
+}
+
+// Efeito de flip ao clicar no card
+conquistasCarousel.addEventListener('click', (event) => {
+    const card = event.target.closest('.card');
+    if (card && card.classList.contains('active')) {
+        card.classList.toggle('flipped');
+    }
+});
+
+// Fecha o card quando clicar fora
+document.addEventListener('click', (event) => {
+    const activeCard = document.querySelector('.card.active');
+    const isClickInsideCarousel = conquistasCarousel.contains(event.target);
+    const isClickOnNavButton = event.target === prevButton || event.target === nextButton;
+
+    if (activeCard && !isClickInsideCarousel && !isClickOnNavButton) {
+        activeCard.classList.remove('flipped');
+    }
+});
+
+// Inicializa o carrossel
+updateCarousel();
+
+//--------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const mostrarMaisBtn = document.getElementById("formacaoMostrarMaisBtn");
+    const textoBotao = document.getElementById("formacaoTextoBotao");
+    const cardsOcultos = document.querySelectorAll(".formacao-card.hidden");
+    let cardsVisiveis = false;
+
+    mostrarMaisBtn.addEventListener("click", function () {
+        // Alternar a visibilidade dos cards ocultos
+        cardsOcultos.forEach(card => {
+            card.classList.toggle("hidden");
+        });
+
+        // Alterar o estado e o texto do botão
+        cardsVisiveis = !cardsVisiveis;
+        textoBotao.textContent = cardsVisiveis ? "Ver menos formações" : "Ver mais formações";
+
+        // Rotacionar a seta (se necessário, mas sem afetar o hover)
+        mostrarMaisBtn.classList.toggle("rotated");
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".portfolio-card");
+    const textBlocks = document.querySelectorAll(".portfolio--subtitle");
+    const cardsSections = {
+      projetos: document.getElementById("cards-projetos"),
+      certificados: document.getElementById("cards-certificados"),
+      skills: document.getElementById("cards-skills"),
+    };
+  
+    let active = "projetos"; // padrão ativo
+  
+    function toggleContent(target) {
+      // Atualiza classes dos botões
+      buttons.forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.target === target);
+      });
+  
+      // Atualiza texto
+      textBlocks.forEach(text => {
+        text.classList.toggle("hidden", text.dataset.text !== target);
+      });
+  
+      // Atualiza cards
+      Object.keys(cardsSections).forEach(key => {
+        cardsSections[key].classList.toggle("hidden", key !== target);
+      });
+  
+      active = target;
+    }
+  
+    // Inicializa com projetos ativos
+    toggleContent(active);
+  
+    buttons.forEach(btn => {
+      btn.addEventListener("click", e => {
+        e.preventDefault();
+        const target = btn.dataset.target;
+        if (target !== active) toggleContent(target);
+      });
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const mostrarMaisProjetosBtn = document.getElementById("ProjectMostrarMaisProjetosBtn");
+    const textoBotaoProjetos = document.getElementById("ProjectTextoBotaoProjetos");
+    const projetosOcultos = document.querySelectorAll(".project-item.hidden");
+
+    mostrarMaisProjetosBtn.addEventListener("click", function () {
+        // Alternar a visibilidade dos projetos ocultos
+        projetosOcultos.forEach(projeto => {
+            projeto.classList.toggle("hidden");
+        });
+
+        // Rotacionar a seta do botão
+        mostrarMaisProjetosBtn.classList.toggle("rotated");
+
+        // Alterar o texto do botão
+        if (mostrarMaisProjetosBtn.classList.contains("rotated")) {
+            textoBotaoProjetos.textContent = "Ver menos projetos";
+        } else {
+            textoBotaoProjetos.textContent = "Ver mais projetos";
+        }
+    });
+});
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const mostrarMaisCertificadosBtn = document.getElementById("certificadosMostrarMaisCertificadosBtn");
+    const textoBotaoCertificados = document.getElementById("certificadosTextoBotaoCertificados");
+    const CertificadosOcultos = document.querySelectorAll(".certificados-item.hidden");
+
+    mostrarMaisCertificadosBtn.addEventListener("click", function () {
+        // Alternar a visibilidade dos Certificados ocultos
+        CertificadosOcultos.forEach(Certificados => {
+            Certificados.classList.toggle("hidden");
+        });
+
+        // Rotacionar a seta do botão
+        mostrarMaisCertificadosBtn.classList.toggle("rotated");
+
+        // Alterar o texto do botão
+        if (mostrarMaisCertificadosBtn.classList.contains("rotated")) {
+            textoBotaoCertificados.textContent = "Ver menos certificados";
+        } else {
+            textoBotaoCertificados.textContent = "Ver mais certificados";
+        }
+    });
+});
+
+
+
+
+
+
+//--------------------------------------------------------------------------
+
+function filterSkills(category, event) {
+    // Remove a classe "active" de todos os botões
+    document.querySelectorAll('.skills__filter button').forEach(button => {
+        button.classList.remove('active');
+        // Restaura os estilos padrão do botão
+        button.style.backgroundColor = '';
+        button.style.borderColor = '';
+        button.style.color = '';
+    });
+
+    // Adiciona a classe "active" ao botão clicado sem sobrescrever estilos hover
+    if (event) {
+        const button = event.target;
+        button.classList.add('active');
+        // Aplica estilos apenas quando não está em hover
+        if (!button.matches(':hover')) {
+            button.style.backgroundColor = 'rgba(0, 162, 255, 0.32)';
+            button.style.borderColor = 'var(--primary-color)';
+            button.style.color = 'var(--text-color2)';
+        }
+    } else {
+        // Se não houver evento (ao carregar a página), ativa o botão "Todas"
+        const allButton = document.querySelector('.skills__filter button[onclick*="filterSkills(\'all\'"]');
+        allButton.classList.add('active');
+        if (!allButton.matches(':hover')) {
+            allButton.style.backgroundColor = 'rgba(0, 162, 255, 0.32)';
+            allButton.style.borderColor = 'var(--primary-color)';
+            allButton.style.color = 'var(--text-color2)';
+        }
+    }
+
+    // Oculta todos os cards de habilidades
+    document.querySelectorAll('.skill__card').forEach(card => {
+        card.classList.remove('show');
+    });
+
+    // Mostra os cards da categoria selecionada
+    if (category === 'all') {
+        document.querySelectorAll('.skill__card').forEach(card => {
+            card.classList.add('show');
+        });
+    } else {
+        document.querySelectorAll(`.skill__card.${category}`).forEach(card => {
+            card.classList.add('show');
+        });
+    }
+}
+
+// Adiciona listeners para restaurar estilos hover quando o mouse entra/sai dos botões
+document.querySelectorAll('.skills__filter button').forEach(button => {
+    button.addEventListener('mouseenter', () => {
+        if (button.classList.contains('active')) {
+            button.style.backgroundColor = '';
+            button.style.borderColor = '';
+            button.style.color = '';
+        }
+    });
+
+    button.addEventListener('mouseleave', () => {
+        if (button.classList.contains('active')) {
+            button.style.backgroundColor = 'rgba(0, 162, 255, 0.32)';
+            button.style.borderColor = 'var(--primary-color)';
+            button.style.color = 'var(--text-color2)';
+        }
+    });
+});
+
+// Mostra todas as habilidades e ativa o botão "Todas" ao carregar a página
+document.addEventListener('DOMContentLoaded', () => {
+    filterSkills('all');
+});

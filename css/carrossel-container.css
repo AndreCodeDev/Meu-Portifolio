@@ -1,0 +1,27 @@
+@import url('style.css');
+
+/* Carrossel about */
+.carrossel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 5rem;
+}
+
+.carrossel {
+    display: flex;
+    width: max-content;
+}
+
+.carrossel-item {
+    flex: 0 0 auto;
+    width: 18rem;
+    text-align: center;
+}
+
+.carrossel-item img {
+    width: 18%;
+    height: auto;
+    display: block;
+    user-select: none;
+}

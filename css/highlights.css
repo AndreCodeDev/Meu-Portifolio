@@ -1,0 +1,556 @@
+@import url('style.css');
+
+
+
+.highlights {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .highlights__header {
+    margin-bottom: var(--spacing-large);
+  }
+  
+  .highlights--title {
+    font-size: var(--font-size-quintuple-extra-large);
+    font-weight: 800;
+    background: linear-gradient(to right, var(--primary-light), var(--primary-gradiente));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .highlights--subtitle {
+    font-size: var(--font-size-medium);
+    color: var(--text-secondary);
+    padding: var(--spacing-large) 0;
+    margin: 0;
+  }
+  
+  .highlights__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-large);
+    padding: var(--spacing-small) 0;
+    user-select: none;
+  }
+  
+  .highlight-card {
+    background-color: var(--effect-highlight-blue);
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .highlight-card__link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-medium) var(--spacing-extra-large);
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+    font-size: var(--font-size-large);
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .highlight-card__link:hover {
+    color: white;
+  }
+  
+  .highlight-card__link img {
+    width: 28px;
+    height: 28px;
+    transition: filter 0.3s ease;
+  }
+  
+  .highlight-card__link:hover img {
+    filter: brightness(0) invert(1);
+  }
+
+
+  .highlight-card.active {
+    background-color: var(--effect-highlight-purple);
+    box-shadow: var(--shadow-blue-glow);
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------*/
+/* Seção de conquistas */
+.conquistas-news {
+    padding: var(--spacing-small) var(--spacing-double-extra-large) var(--spacing-quadruple-extra-large);
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.conquistas-news__text h2 {
+    color: var(--text-color2);
+    padding-bottom: var(--spacing-large);
+    font-size: var(--font-size-double-extra-large);
+    font-weight: 500;
+    margin-block-end: 0.83em;
+    text-align: center;
+}
+
+.conquistas-news__text h2 span {
+    color: var(--primary-color);
+}
+
+/* Container do Carrossel */
+.conquistas-carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.conquistas-carousel {
+    display: flex;
+    transition: transform var(--transition-speed-slow) var(--transition-easing);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo base do card */
+.card {
+    width: 330px;
+    height: 430px;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--background-color);
+    border: none;
+    perspective: 1200px;
+    flex-shrink: 0;
+    transition: opacity var(--transition-speed-slow) var(--transition-easing), 
+                transform var(--transition-speed-slow) var(--transition-easing);
+}
+
+/* Lado frontal e traseiro do card */
+.card__front,
+.card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: var(--border-radius-small);
+    transition: opacity var(--transition-speed-fast) var(--transition-easing), 
+                transform var(--transition-speed-slow) var(--transition-easing);
+    border: none;
+}
+
+/* Lado frontal do card */
+.card__front {
+    background-color: transparent;
+    transform: rotateY(0deg);
+}
+
+/* Ajuste da imagem */
+.card__front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+/* Efeito de inclinação ao passar o mouse na imagem */
+.card:hover .card__front {
+    transform: rotateY(17deg);
+    box-shadow: var(--spacing-extra-small) var(--spacing-extra-small) var(--spacing-extra-small) rgba(0, 0, 0, 0.08);
+}
+
+.ripple-hint {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.card:hover .ripple-hint {
+    animation: ripple var(--transition-speed-slow) ease-out;
+}
+
+.flip-hint {
+    position: absolute;
+    bottom: var(--spacing-medium);
+    right: var(--spacing-medium);
+    font-size: var(--font-size-extra-large);
+    opacity: 0;
+    transition: opacity var(--transition-speed-normal) var(--transition-easing);
+}
+
+.card:hover .flip-hint {
+    opacity: 0.8;
+}
+
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.5;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+}
+
+/* Lado traseiro do card */
+.card__back {
+    background-color: var(--background-color2);
+    color: var(--text-color2);
+    padding: 0 var(--spacing-large);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: var(--border-width) var(--border-style) var(--primary-border);
+}
+
+/* Efeito de flip ao clicar no card */
+.card.flipped .card__front {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .card__back {
+    transform: rotateY(0deg);
+}
+
+/* Estilos otimizados para o card */
+.conquistas-card {
+    border-radius: var(--border-radius-large);
+    transition: all var(--transition-speed-normal) var(--transition-easing);
+    width: 100%;
+    max-width: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--spacing-small);
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.conquistas--card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-small);
+    flex-direction: column;
+}
+
+.conquistas--card-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.conquistas--card-info h2 {
+    color: var(--primary-light);
+    font-size: var(--font-size-double-extra-large);
+    font-weight: 700;
+}
+
+.conquistas--card-info p {
+    color: var(--text);
+    font-size: var(--font-size-double);
+    margin: var(--spacing-small);
+}
+
+.conquistas--card-testimonial p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-small);
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Cards adjacentes */
+.card.prev,
+.card.next {
+    opacity: 0.7;
+    transform: scale(0.8);
+    display: block;
+    pointer-events: auto;
+    cursor: default;
+}
+
+.card.prev {
+    position: absolute;
+    left: 2%;
+    z-index: -10;
+}
+
+.card.next {
+    position: absolute;
+    right: 2%;
+    z-index: -10;
+}
+
+/* Oculta todos os cards por padrão */
+.card {
+    display: none;
+}
+
+/* Exibe apenas o card ativo e os adjacentes */
+.card.active,
+.card.prev,
+.card.next {
+    display: block;
+    transition: none;
+}
+
+/* Controles do Carrossel */
+.conquistas-carousel-control {
+    width: var(--spacing-extra-large);
+    height: var(--spacing-extra-large);
+    background-color: var(--primary-light);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    transition: opacity var(--transition-speed-normal) var(--transition-easing), 
+                background-color var(--transition-speed-normal) var(--transition-easing);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.conquistas-carousel-control:hover {
+    opacity: 1;
+    background-color: var(--primary-soft);
+}
+
+.conquistas-carousel-control.prev {
+    left: -5%;
+}
+
+.conquistas-carousel-control.next {
+    right: -5%;
+}
+
+/* Efeito ao clicar */
+.conquistas-carousel-control:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+/* Ícones das setas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: var(--font-size-double-extra-large);
+    height: var(--font-size-double-extra-large);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23111" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
+}
+
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23111" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+}
+
+/* Ajustar a cor das setas com base no tema */
+body.light-mode .carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23fff" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
+}
+
+body.light-mode .carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23fff" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+}
+/*----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------*/
+/* Estilo da Seção de Formação */
+#formacao {
+    padding: var(--spacing-small);
+    position: relative;
+}
+
+#formacao .formacao--container h2 {
+    color: var(--text-color2);
+    padding-bottom: var(--spacing-large);
+    font-size: var(--font-size-quadruple-extra-large);
+    font-weight: 500;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    text-align: center;
+}
+
+/* Container Flex */
+.formacao-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-medium);
+    max-width: 120rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Cards de Formação */
+.formacao-card {
+    background-color: var(--bg-header);
+    border: solid var(--border-width) var(--primary-light);
+    border-radius: var(--border-radius-large);
+    padding: var(--spacing-medium) var(--spacing-large);
+    transition: all var(--transition-speed-normal) var(--transition-easing);
+    box-shadow: var(--shadow-card);
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Efeito de Hover */
+.formacao-card:hover {
+    border-color: var(--primary-light);
+    transform: translateY(-5px);
+    box-shadow: 0 var(--spacing-small) var(--spacing-medium) #00a2ff33;
+}
+
+/* Conteúdo dos Cards */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+}
+
+.card-header img {
+    width: var(--spacing-double-med-extra-large);
+    height: var(--spacing-double-med-extra-large);
+    transition: transform var(--transition-speed-normal) var(--transition-easing);
+    user-select: none;
+}
+
+.formacao-card:hover .card-header img {
+    transform: scale(1.05);
+}
+
+.card-info h3 {
+    text-align: start;
+    color: var(--text-logo-header);
+    font-size: var(--font-size-extra-large);
+    font-weight: 600;
+    margin: 0;
+}
+
+.card-info p {
+    text-align: start;
+    color: var(--text-code-content);
+    font-size: var(--font-size-small);
+    margin: 0;
+}
+
+.card-details {
+    margin-bottom: var(--spacing-small);
+}
+
+.card-details p {
+    text-align: start;
+    color: var(--text-code-content);
+    font-size: var(--font-size-small);
+    margin: var(--spacing-extra-small) 0;
+}
+
+.card-details strong {
+    color: var(--text-logo-header);
+    font-size: var(--font-size-medium);
+}
+
+/* Footer e Botão */
+.formacao-footer {
+    text-align: center;
+    margin-top: var(--spacing-double-extra-large);
+    background-color: transparent;
+    padding: 0;
+}
+
+#formacaoMostrarMaisBtn {
+    background-color: transparent;
+    border: var(--border-width) var(--border-style) var(--secund-color);
+    color: var(--text);
+    padding: var(--spacing-small) var(--spacing-large);
+    border-radius: var(--border-radius-medium);
+    font-size: var(--font-size-extra-large);
+    cursor: pointer;
+    transition: all var(--transition-speed-normal) var(--transition-easing);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-extra-small);
+    margin: 0 auto;
+    user-select: none;
+}
+
+#formacaoMostrarMaisBtn:hover {
+    background-color: rgba(0, 162, 255, 0.32);
+    border-color: var(--primary);
+    color: var(--text);
+}
+
+#formacaoMostrarMaisBtn svg {
+    width: var(--font-size-large);
+    height: var(--font-size-large);
+    transition: transform var(--transition-speed-normal) var(--transition-easing);
+}
+
+#formacaoMostrarMaisBtn.rotated svg {
+    transform: rotate(180deg);
+}

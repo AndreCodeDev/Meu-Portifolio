@@ -1,0 +1,37 @@
+@import url('style.css');
+
+/* Footer */
+.footer--grid-layout {
+    height: 80px;
+    background-color: var(--bg-header);
+    color: var(--text);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: var(--spacing-med-extra-small);
+    border-top: 1px solid var(--border-header);
+}
+
+.footer-group {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-small);
+}
+
+footer p {
+    font-size: var(--font-size-small);
+    margin: 0;
+}
+
+footer a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+footer img {
+    width: var(--spacing-medium);
+    height: auto;
+    user-select: none;
+}
