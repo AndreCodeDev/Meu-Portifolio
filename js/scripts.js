@@ -339,7 +339,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     let scrollPosition = 0;
-    const scrollSpeed = 1.5; // Velocidade do carrossel (ajuste conforme necessário)
+    const scrollSpeed = 2; // Velocidade do carrossel (ajuste conforme necessário)
 
     function scrollCarrossel() {
         scrollPosition += scrollSpeed;
