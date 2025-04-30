@@ -33,6 +33,7 @@
 
     /*filter*/
     --filter-button-hero: brightness(0) saturate(100%) invert(78%) sepia(0%) saturate(0%) hue-rotate(0deg);
+    --filter-button: brightness(0) invert(1);
 
     /* Fundo */
     --bg: #0f172a;
@@ -164,6 +165,7 @@
     /*filter*/
     --filter-button-hero: invert(26%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(93%) contrast(95%);
     --desfoque: invert(28%) sepia(86%) saturate(638%) hue-rotate(183deg) brightness(94%) contrast(92%) drop-shadow(0 0 2px white);
+    --filter-button: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(0%) hue-rotate(0deg);
 
     /* Fundo */
     --bg: #ffffff;
@@ -217,7 +219,6 @@
     --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
 }
-
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
@@ -351,3 +352,15 @@ svg {
     background-color: var(--primary);
     border-radius: var(--border-radius-small);
 }
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

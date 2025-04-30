@@ -271,6 +271,7 @@ function initSections() {
     if (document.querySelector('.hero')) initHero();
     if (document.querySelector('.portfolio')) initPortfolio();
     if (document.querySelector('.about')) initAbout();
+    if (document.querySelector('.high')) initAbout();
 }
 
 function initHero() {
@@ -353,6 +354,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Inicia a animação
     scrollCarrossel();
 });
+
+
+
+
+
 
 
 
@@ -559,7 +565,6 @@ updateCarousel();
 
 
 
-
 document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".portfolio-card");
     const textBlocks = document.querySelectorAll(".portfolio--subtitle");
@@ -743,3 +748,28 @@ document.querySelectorAll('.skills__filter button').forEach(button => {
 document.addEventListener('DOMContentLoaded', () => {
     filterSkills('all');
 });
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".fade-in");
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in-visible");
+          observer.unobserve(entry.target); // Anima só uma vez
+        }
+      });
+    }, { threshold: 0.1 }); // 10% visível já ativa
+  
+    elements.forEach((el) => observer.observe(el));
+  });
+  

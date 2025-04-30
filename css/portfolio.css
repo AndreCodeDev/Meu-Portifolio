@@ -1,15 +1,12 @@
 @import url('style.css');
 
 .portfolio {
-    padding: var(--spacing-double-extra-large) var(--spacing-large);
+    min-height: 95vh;
     text-align: center;
     position: relative;
     z-index: 10;
-    background-color: var(--bg-header);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(148, 163, 184, 0.1);
-    border-top: 1px solid rgba(148, 163, 184, 0.1);
+    margin-top: var(--spacing-double-extra-large);
+    margin-bottom: var(--spacing-double-extra-large);
 }
 
 .portfolio__header {
@@ -17,7 +14,7 @@
 }
 
 .portfolio--title {
-    font-size: var(--font-size-sextuple-extra-large-big);
+    font-size: var(--font-size-quintuple-extra-large);
     font-weight: 800;
     background: linear-gradient(to right, var(--primary-light), var(--primary-gradiente));
     -webkit-background-clip: text;
@@ -28,7 +25,7 @@
 }
 
 .portfolio--subtitle {
-    font-size: var(--font-size-double-extra-large);
+    font-size: var(--font-size-medium);
     color: var(--text-secondary);
     padding: var(--spacing-large) 0;
     margin: 0;
@@ -39,7 +36,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--spacing-large);
-    padding: var(--spacing-large) 0;
+    padding: var(--spacing-small) 0;
     user-select: none;
 }
 
@@ -52,33 +49,34 @@
 
 .portfolio-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-medium);
+    filter: var(--filter-button);
 }
 
 .portfolio-card__link {
     display: flex;
     align-items: center;
     gap: var(--spacing-medium);
-    padding: var(--spacing-large) var(--spacing-double-extra-large);
+    padding: var(--spacing-small) var(--spacing-large);
     text-decoration: none;
-    color: var(--text);
+    color: var(--primary-light);
     font-weight: 600;
-    font-size: var(--font-size-double-extra-large);
+    font-size: var(--font-size-large);
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 .portfolio-card__link:hover {
-    color: white;
+    color: var(--text-secondary);
 }
 
 .portfolio-card__link img {
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
     transition: filter 0.3s ease;
 }
 
 .portfolio-card__link:hover img {
-    filter: brightness(0) invert(1);
+    filter: var(--filter-button);
 }
 
 .portfolio-card.active {
@@ -113,9 +111,8 @@
 
 
 .projects {
-    padding: 6rem 5rem 9rem;
     text-align: center;
-    background-color: var(--background-color);
+    background-color: var(--bg);
 }
 
 .projects-grid {

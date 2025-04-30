@@ -4,6 +4,7 @@
     text-align: center;
     position: relative;
     z-index: 10;
+    margin-bottom: var(--spacing-double-extra-large);
 }
 
 .highlights__header {
@@ -46,16 +47,16 @@
 
 .highlight-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-medium);
+    filter: var(--filter-button);
 }
 
 .highlight-card__link {
     display: flex;
     align-items: center;
     gap: var(--spacing-medium);
-    padding: var(--spacing-medium) var(--spacing-extra-large);
+    padding: var(--spacing-small) var(--spacing-large);
     text-decoration: none;
-    color: var(--text);
+    color: var(--primary-light);
     font-weight: 600;
     font-size: var(--font-size-large);
     transition: color 0.3s ease;
@@ -63,17 +64,17 @@
 }
 
 .highlight-card__link:hover {
-    color: white;
+    color: var(--text-secondary);
 }
 
 .highlight-card__link img {
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
     transition: filter 0.3s ease;
 }
 
 .highlight-card__link:hover img {
-    filter: brightness(0) invert(1);
+    filter: var(--filter-button);
 }
 
 .highlight-card.active {
@@ -412,9 +413,6 @@ body.light-mode .carousel-control-next-icon {
 
 
 
-
-
-
 /*----------------------------------*/
 /* Estilo da Seção de Formação */
 #formacao {
@@ -436,8 +434,8 @@ body.light-mode .carousel-control-next-icon {
 .formacao-flex {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-medium);
-    max-width: 120rem;
+    gap: var(--spacing-large);
+    max-width: 100rem;
     margin: 0 auto;
     justify-content: center;
     align-items: stretch;
@@ -445,13 +443,13 @@ body.light-mode .carousel-control-next-icon {
 
 /* Cards de Formação */
 .formacao-card {
-    background-color: var(--bg-header);
-    border: solid var(--border-width) var(--primary-light);
+    background-color: var(--bg);
+    border: solid var(--border-width) var(--primary);
     border-radius: var(--border-radius-large);
-    padding: var(--spacing-medium) var(--spacing-large);
+    padding: var(--spacing-small) var(--spacing-medium);
     transition: all var(--transition-speed-normal) var(--transition-easing);
     box-shadow: var(--shadow-card);
-    width: 28%;
+    width: 22%; /* Diminuído de 28% para 22% */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -459,9 +457,9 @@ body.light-mode .carousel-control-next-icon {
 
 /* Efeito de Hover */
 .formacao-card:hover {
-    border-color: var(--primary-light);
+    border-color: var(--primary);
     transform: translateY(-5px);
-    box-shadow: 0 var(--spacing-small) var(--spacing-medium) #00a2ff33;
+    box-shadow: 0 var(--spacing-extra-small) var(--spacing-small)  var(--effect-highlight-blue);
 }
 
 /* Conteúdo dos Cards */
@@ -486,7 +484,7 @@ body.light-mode .carousel-control-next-icon {
 .card-info h3 {
     text-align: start;
     color: var(--text-logo-header);
-    font-size: var(--font-size-extra-large);
+    font-size: var(--font-size-medium);
     font-weight: 600;
     margin: 0;
 }
@@ -494,18 +492,18 @@ body.light-mode .carousel-control-next-icon {
 .card-info p {
     text-align: start;
     color: var(--text-code-content);
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-extra-small);
     margin: 0;
 }
 
 .card-details {
-    margin-bottom: var(--spacing-small);
+    margin-bottom: var(--spacing-big-extra-small);
 }
 
 .card-details p {
     text-align: start;
     color: var(--text-code-content);
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-extra-small);
     margin: var(--spacing-extra-small) 0;
 }
 
@@ -525,10 +523,10 @@ body.light-mode .carousel-control-next-icon {
 #formacaoMostrarMaisBtn {
     background-color: transparent;
     border: var(--border-width) var(--border-style) var(--secund-color);
-    color: var(--text);
+    color: var(--text-secondary);
     padding: var(--spacing-small) var(--spacing-large);
     border-radius: var(--border-radius-medium);
-    font-size: var(--font-size-extra-large);
+    font-size: var(--font-size-medium);
     cursor: pointer;
     transition: all var(--transition-speed-normal) var(--transition-easing);
     display: flex;
@@ -539,7 +537,7 @@ body.light-mode .carousel-control-next-icon {
 }
 
 #formacaoMostrarMaisBtn:hover {
-    background-color: rgba(0, 162, 255, 0.32);
+    background-color: var(--effect-highlight-blue);
     border-color: var(--primary);
     color: var(--text);
 }
