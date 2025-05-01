@@ -4,28 +4,28 @@
     text-align: center;
     position: relative;
     z-index: 10;
-    margin-bottom: var(--spacing-double-extra-large);
+    min-height: 110dvh;
 }
 
 .highlights__header {
-    margin-bottom: var(--spacing-large);
+    margin-bottom: var(--space-lg);
 }
 
 .highlights--title {
-    font-size: var(--font-size-quintuple-extra-large);
+    font-size: var(--font-3xl);
     font-weight: 800;
-    line-height: 1.1;
-    background: linear-gradient(to right, var(--primary), var(--primary-gradiente));
+    background: linear-gradient(to right, var(--primary-light), var(--primary-gradiente));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     position: relative;
+    display: inline-block;
 }
 
 .highlights--subtitle {
-    font-size: var(--font-size-medium);
+    font-size: var(--font-base);
     color: var(--text-secondary);
-    padding: var(--spacing-large) 0;
+    padding: var(--space-lg) 0;
     margin: 0;
 }
 
@@ -33,8 +33,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: var(--spacing-large);
-    padding: var(--spacing-small) 0;
+    gap: var(--space-lg);
+    padding: var(--space-sm) 0;
     user-select: none;
 }
 
@@ -53,12 +53,12 @@
 .highlight-card__link {
     display: flex;
     align-items: center;
-    gap: var(--spacing-medium);
-    padding: var(--spacing-small) var(--spacing-large);
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-lg);
     text-decoration: none;
     color: var(--primary-light);
     font-weight: 600;
-    font-size: var(--font-size-large);
+    font-size: var(--font-base);
     transition: color 0.3s ease;
     cursor: pointer;
 }
@@ -68,8 +68,8 @@
 }
 
 .highlight-card__link img {
-    width: 26px;
-    height: 26px;
+    width: var(--space-md);
+    height: var(--space-md);
     transition: filter 0.3s ease;
 }
 
@@ -101,15 +101,15 @@
 /*----------------------------------*/
 /* Seção de conquistas */
 .conquistas-news {
-    padding: var(--spacing-small) var(--spacing-double-extra-large) var(--spacing-quadruple-extra-large);
+    padding: var(--space-sm) var(--space-2xl) var(--space-4xl);
     text-align: center;
     background-color: var(--background-color);
 }
 
 .conquistas-news__text h2 {
     color: var(--text-color2);
-    padding-bottom: var(--spacing-large);
-    font-size: var(--font-size-double-extra-large);
+    padding-bottom: var(--space-lg);
+    font-size: var(--font-lg);
     font-weight: 500;
     margin-block-end: 0.83em;
     text-align: center;
@@ -179,7 +179,7 @@
 /* Efeito de inclinação ao passar o mouse na imagem */
 .card:hover .card__front {
     transform: rotateY(17deg);
-    box-shadow: var(--spacing-extra-small) var(--spacing-extra-small) var(--spacing-extra-small) rgba(0, 0, 0, 0.08);
+    box-shadow: var(--space-sm) var(--space-sm) var(--space-sm) rgba(0, 0, 0, 0.08);
 }
 
 .ripple-hint {
@@ -200,9 +200,9 @@
 
 .flip-hint {
     position: absolute;
-    bottom: var(--spacing-medium);
-    right: var(--spacing-medium);
-    font-size: var(--font-size-extra-large);
+    bottom: var(--space-md);
+    right: var(--space-md);
+    font-size: var(--font-lg);
     opacity: 0;
     transition: opacity var(--transition-speed-normal) var(--transition-easing);
     
@@ -230,7 +230,7 @@
 .card__back {
     background-color: var(--bg);
     color: var(--text-color2);
-    padding: 0 var(--spacing-large);
+    padding: 0 var(--space-lg);
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -258,7 +258,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: var(--spacing-small);
+    gap: var(--space-sm);
     box-sizing: border-box;
     height: 100%;
     overflow: hidden;
@@ -268,7 +268,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--spacing-small);
+    gap: var(--space-sm);
     flex-direction: column;
 }
 
@@ -279,19 +279,19 @@
 
 .conquistas--card-info h2 {
     color: var(--primary-light);
-    font-size: var(--font-size-double-extra-large);
+    font-size: var(--font-xl);
     font-weight: 700;
 }
 
 .conquistas--card-info p {
     color: var(--text);
-    font-size: var(--font-size-double);
-    margin: var(--spacing-small);
+    font-size: var(--font-base);
+    margin: var(--space-sm);
 }
 
 .conquistas--card-testimonial p {
     color: var(--text-secondary);
-    font-size: var(--font-size-small);
+    font-size: var(--font-sm);
     line-height: 1.5;
     text-align: center;
     margin: 0;
@@ -338,8 +338,8 @@
 
 /* Controles do Carrossel */
 .conquistas-carousel-control {
-    width: var(--spacing-extra-large);
-    height: var(--spacing-extra-large);
+    width: var(--space-xl);
+    height: var(--space-xl);
     background-color: var(--primary-light);
     border-radius: 50%;
     border: none;
@@ -377,8 +377,8 @@
 /* Ícones das setas */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: var(--font-size-double-extra-large);
-    height: var(--font-size-double-extra-large);
+    width: var(--font-lg);
+    height: var(--font-lg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -420,13 +420,13 @@ body.light-mode .carousel-control-next-icon {
 /*----------------------------------*/
 /* Estilo da Seção de Formação */
 #formacao {
-    padding: var(--spacing-small);
+    padding: var(--space-sm);
     position: relative;
 }
 
 #formacao .formacao--container h2 {
     color: var(--text-color2);
-    padding-bottom: var(--spacing-large);
+    padding-bottom: var(--space-lg);
     font-size: var(--font-size-quadruple-extra-large);
     font-weight: 500;
     margin-block-start: 0.83em;
@@ -438,7 +438,7 @@ body.light-mode .carousel-control-next-icon {
 .formacao-flex {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-large);
+    gap: var(--space-lg);
     max-width: 100rem;
     margin: 0 auto;
     justify-content: center;
@@ -450,7 +450,7 @@ body.light-mode .carousel-control-next-icon {
     background-color: var(--bg);
     border: solid var(--border-width) var(--primary);
     border-radius: var(--border-radius-large);
-    padding: var(--spacing-small) var(--spacing-medium);
+    padding: var(--space-sm) var(--space-md);
     transition: all var(--transition-speed-normal) var(--transition-easing);
     box-shadow: var(--shadow-card);
     width: 22%; /* Diminuído de 28% para 22% */
@@ -463,15 +463,15 @@ body.light-mode .carousel-control-next-icon {
 .formacao-card:hover {
     border-color: var(--primary);
     transform: translateY(-5px);
-    box-shadow: 0 var(--spacing-extra-small) var(--spacing-small)  var(--effect-highlight-blue);
+    box-shadow: 0 var(--space-sm) var(--space-sm)  var(--effect-highlight-blue);
 }
 
 /* Conteúdo dos Cards */
 .card-header {
     display: flex;
     align-items: center;
-    gap: var(--spacing-small);
-    margin-bottom: var(--spacing-small);
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
 }
 
 .card-header img {
@@ -508,7 +508,7 @@ body.light-mode .carousel-control-next-icon {
     text-align: start;
     color: var(--text-code-content);
     font-size: var(--font-size-extra-small);
-    margin: var(--spacing-extra-small) 0;
+    margin: var(--space-sm) 0;
 }
 
 .card-details strong {
@@ -519,7 +519,7 @@ body.light-mode .carousel-control-next-icon {
 /* Footer e Botão */
 .formacao-footer {
     text-align: center;
-    margin-top: var(--spacing-double-extra-large);
+    margin-top: var(--space-2xl);
     background-color: transparent;
     padding: 0;
 }
@@ -528,14 +528,14 @@ body.light-mode .carousel-control-next-icon {
     background-color: transparent;
     border: var(--border-width) var(--border-style) var(--secund-color);
     color: var(--text-secondary);
-    padding: var(--spacing-small) var(--spacing-large);
+    padding: var(--space-sm) var(--space-lg);
     border-radius: var(--border-radius-medium);
     font-size: var(--font-size-medium);
     cursor: pointer;
     transition: all var(--transition-speed-normal) var(--transition-easing);
     display: flex;
     align-items: center;
-    gap: var(--spacing-extra-small);
+    gap: var(--space-sm);
     margin: 0 auto;
     user-select: none;
 }

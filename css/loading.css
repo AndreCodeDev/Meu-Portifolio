@@ -49,29 +49,29 @@
     align-items: center;
     width: 100%;
     max-width: 800px;
-    padding: var(--spacing-large);
+    padding: var(--space-lg);
 }
 
 .logo-animation {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--spacing-large);
-    margin-bottom: var(--spacing-medium);
+    gap: var(--space-lg);
+    margin-bottom: var(--spece-md);
 }
 
 .logo-item {
-    width: 4.2rem;
-    height: 3.2rem;
+    width: var(--space-3xl);
+    height: var(--space-3xl);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: var(--spacing-small);
+    margin-bottom: var(--space-md);
 }
 
 .logo-item img {
-    width: 20rem;
-    height: 20rem;
+    width: var(--space-4xl);
+    height: var(--space-4xl);
     border-radius: var(--border-radius-full);
     object-fit: contain;
     animation:
@@ -87,8 +87,8 @@
 .logo-item:nth-child(1) img {
     animation-delay: 0.4s, 1.5s, 1.5s;
     animation-duration: 1s, 2s, 2.8s;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: var(--space-2xl);
+    height: var(--space-2xl);
 }
 
 .logo-item:nth-child(2) img {
@@ -101,8 +101,8 @@
     animation-delay: 0.6s, 1.5s, 1.5s;
     animation-duration: 1s, 2s, 2.6s;
     transform: scale(0.8) translateY(-10px);
-    width: 2.5rem;
-    height: 2.5rem;
+    width: var(--space-2xl);
+    height: var(--space-2xl);
 }
 
 .logo-item:nth-child(4) img {
@@ -155,18 +155,18 @@
 
 .welcome-message {
     text-align: center;
-    margin-bottom: var(--spacing-large);
+    margin-bottom: var(--space-lg);
 }
 
 .welcome-line {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: var(--spacing-med-extra-small);
+    gap: var(--space-sm);
 }
 
 .word-animation {
-    font-size: var(--font-size-quadruple-extra-large);
+    font-size: var(--font-xl);
     font-weight: 700;
     background: var(--primary-gradiente);
     -webkit-background-clip: text;
@@ -174,9 +174,7 @@
     -webkit-text-fill-color: transparent;
     opacity: 0;
     transform: translateX(-20px);
-    /* Inicia da esquerda */
     animation: wordFadeInLeft 1s forwards;
-    /* Modificado para animação da esquerda para a direita */
     filter: drop-shadow(0 0 1.6px var(--primary-soft));
 }
 
@@ -201,7 +199,7 @@
 }
 
 .word-animation-color {
-    font-size: var(--font-size-quintuple-extra-large);
+    font-size: var(--font-2xl);
     font-weight: 700;
     background: linear-gradient(70deg, var(--primary-light), var(--bg-word-animation-color));
     -webkit-background-clip: text;
@@ -209,10 +207,8 @@
     -webkit-text-fill-color: transparent;
     opacity: 0;
     transform: translateY(20px);
-    /* Inicia de baixo para cima */
     animation: wordFadeInFromBottom 1s forwards;
     animation-delay: .1s;
-    /* Começa a animação após a .word-animation */
 }
 
 @keyframes wordFadeInFromBottom {
@@ -240,7 +236,7 @@
 }
 
 .url-display {
-    margin-top: var(--spacing-large);
+    margin-top: var(--space-lg);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -248,7 +244,7 @@
 }
 
 .url-box {
-    padding: var(--spacing-med-extra-small) var(--spacing-small);
+    padding: var(--space-sm) var(--space-md);
     background: var(--bg-url-box);
     border-radius: var(--border-radius-extra-large);
     box-shadow: var(--shadow-blue-glow);
@@ -257,15 +253,15 @@
     transform: translateY(20px) scale(0.95);
     animation: fadeSlideIn 1s ease-out forwards;
     animation-delay: 1.5s;
-    margin-top: var(--spacing-extra-small);
+    margin-top: var(--space-xs);
     display: flex;
     align-items: center;
 }
 
 .url-box img {
-    width: 1rem;
-    height: 1rem;
-    margin-right: var(--spacing-extra-small);
+    width: var(--space-base);
+    height: var(--space-base);
+    margin-right: var(--space-sm);
     filter: brightness(0) invert(1) drop-shadow(0 0 2px var(--primary-light));
 }
 
@@ -283,7 +279,7 @@
 
 .url-text {
     font-family: 'Courier New', monospace;
-    font-size: var(--font-size-base);
+    font-size: var(--font-sm);
     color: var(--text);
     letter-spacing: 1px;
     text-shadow: 0 0 5px var(--effect-selection-blue);

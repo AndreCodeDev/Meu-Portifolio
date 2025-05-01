@@ -47,8 +47,10 @@
     --bg-dark-lighter: #f1f5f9;
     --bg-url-box: #3b82f61a;
     --bg-button: #3b82f61a;
-    --bg-code-snippet__header: #1e293b;
     --bg-code-content: #30435d29;
+
+    --bg-code-snippert: #0f172a;
+    --bg-code-snippet__header: #1e293b;
 
     /* Cinza */
     --color-gray-50: #f8fafc;
@@ -65,7 +67,7 @@
 
     /* Cores Semânticas */
     --color-success: #3ee15c;
-    --color-warning: #ffc918;
+    --color-warning: #fddd0c;
     --color-error: #f92d2d;
 
     /* Efeitos Visuais */
@@ -74,7 +76,7 @@
     --effect-highlight-blue: rgba(37, 99, 235, 0.08);
     --effect-border-blue: rgba(37, 99, 235, 0.2);
     --effect-selection-blue: rgba(31, 128, 169, 0.3);
-    --effect-overlay: rgb(15, 23, 42);
+    --effect-overlay: #0f172a;
 
 
     /* Gradientes */
@@ -104,6 +106,7 @@
     --space-4xl: clamp(4rem, 8vw, 8rem);          /* quadruple extra large */
     --space-5xl: clamp(5rem, 9vw, 9rem);          /* quintuple extra large */
     --space-6xl: clamp(6rem, 10vw, 10rem);        /* sextuple extra large */
+    --space-7xl: clamp(7rem, 11vw, 11rem);        /* septuple extra large */
 
     /* Bordas */
     --border-radius-small: 0.25rem;
@@ -117,7 +120,7 @@
     --border-invert: #dddddf;
 
     /* Tipografia */
-    --font-xs: clamp(0.65rem, 1.5vw, 0.75rem);
+    --font-xs: clamp(0.5rem, 1.5vw, 0.75rem);
     --font-sm: clamp(0.75rem, 1.8vw, 0.875rem);
     --font-base: clamp(0.875rem, 2vw, 1rem);
     --font-md: clamp(1rem, 2.2vw, 1.25rem);
@@ -174,8 +177,10 @@
     --bg-dark-lighter: #334155;
     --bg-url-box: #66666604;
     --bg-button: #3b83f63e;
-    --bg-code-snippet__header: #3c435381;
-    --bg-code-content: #c1c2c478;
+
+    
+    --bg-code-snippert: #ffffff;
+    --bg-code-snippet__header: #626569ec;
 
     /* Cinza */
     --color-gray-50: #0f172a;
