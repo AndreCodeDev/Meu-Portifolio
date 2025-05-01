@@ -14,12 +14,12 @@
 .highlights--title {
     font-size: var(--font-size-quintuple-extra-large);
     font-weight: 800;
-    background: linear-gradient(to right, var(--primary-light), var(--primary-gradiente));
+    line-height: 1.1;
+    background: linear-gradient(to right, var(--primary), var(--primary-gradiente));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     position: relative;
-    display: inline-block;
 }
 
 .highlights--subtitle {
@@ -205,6 +205,7 @@
     font-size: var(--font-size-extra-large);
     opacity: 0;
     transition: opacity var(--transition-speed-normal) var(--transition-easing);
+    
 }
 
 .card:hover .flip-hint {
@@ -227,7 +228,7 @@
 
 /* Lado traseiro do card */
 .card__back {
-    background-color: var(--background-color2);
+    background-color: var(--bg);
     color: var(--text-color2);
     padding: 0 var(--spacing-large);
     transform: rotateY(180deg);
@@ -236,7 +237,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: var(--border-width) var(--border-style) var(--primary-border);
+    border: solid var(--border-width) var(--border-header);
 }
 
 /* Efeito de flip ao clicar no card */
@@ -305,6 +306,7 @@
     display: block;
     pointer-events: auto;
     cursor: default;
+    
 }
 
 .card.prev {
@@ -322,6 +324,7 @@
 /* Oculta todos os cards por padrão */
 .card {
     display: none;
+    
 }
 
 /* Exibe apenas o card ativo e os adjacentes */
@@ -330,6 +333,7 @@
 .card.next {
     display: block;
     transition: none;
+    
 }
 
 /* Controles do Carrossel */

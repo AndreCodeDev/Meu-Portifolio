@@ -75,7 +75,7 @@
     --effect-border-blue: rgba(37, 99, 235, 0.2);
     --effect-selection-blue: rgba(31, 128, 169, 0.3);
     --effect-overlay: rgb(15, 23, 42);
-    
+
 
     /* Gradientes */
     --gradient-blue: linear-gradient(135deg, var(--color-blue-300), var(--color-blue-600));
@@ -93,18 +93,17 @@
     --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
     --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
-    /* Espaçamentos */
-    --spacing-extra-small: 0.5rem;
-    --spacing-med-extra-small: 0.75rem;
-    --spacing-small: 1rem;
-    --spacing-medium: 1.5rem;
-    --spacing-large: 2rem;
-    --spacing-extra-large: 3rem;
-    --spacing-double-extra-large: 4rem;
-    --spacing-double-med-extra-large: 4.5rem;
-    --spacing-triple-extra-large: 6rem;
-    --spacing-quadruple-extra-large: 8rem;
-    --spacing-quintuple-extra-large: 9rem;
+    --space-xs: clamp(0.25rem, 1vw, 0.5rem);      /* extra small */
+    --space-sm: clamp(0.5rem, 1.2vw, 0.75rem);    /* small */
+    --space-base: clamp(0.875rem, 2vw, 1rem);
+    --space-md: clamp(0.75rem, 1.5vw, 1.5rem);    /* medium */
+    --space-lg: clamp(1rem, 2vw, 2rem);           /* large */
+    --space-xl: clamp(1.5rem, 3vw, 3rem);         /* extra large */
+    --space-2xl: clamp(2rem, 4vw, 4.5rem);        /* double extra large */
+    --space-3xl: clamp(3rem, 6vw, 6rem);          /* triple extra large */
+    --space-4xl: clamp(4rem, 8vw, 8rem);          /* quadruple extra large */
+    --space-5xl: clamp(5rem, 9vw, 9rem);          /* quintuple extra large */
+    --space-6xl: clamp(6rem, 10vw, 10rem);        /* sextuple extra large */
 
     /* Bordas */
     --border-radius-small: 0.25rem;
@@ -118,20 +117,17 @@
     --border-invert: #dddddf;
 
     /* Tipografia */
-    --font-big-extra-small: 0.61rem;
-    --font-size-extra-small: 0.75rem;
-    --font-size-small: 0.875rem;
-    --font-size-base: 1rem;
-    --font-size-large: 1.125rem;
-    --font-size-extra-large: 1.25rem;
-    --font-size-double-extra-large: 1.5rem;
-    --font-size-double-meio-extra-large: 1.65rem;
-    --font-size-triple-extra-large: 1.875rem;
-    --font-size-quadruple-extra-large: 2.25rem;
-    --font-size-quadruple-med-extra-large: 2.55rem;
-    --font-size-quintuple-extra-large: 3rem;
-    --font-size-sextuple-extra-large: 3.75rem;
-    --font-size-sextuple-extra-large-big: 5rem;
+    --font-xs: clamp(0.65rem, 1.5vw, 0.75rem);
+    --font-sm: clamp(0.75rem, 1.8vw, 0.875rem);
+    --font-base: clamp(0.875rem, 2vw, 1rem);
+    --font-md: clamp(1rem, 2.2vw, 1.25rem);
+    --font-lg: clamp(1.25rem, 2.5vw, 1.5rem);
+    --font-xl: clamp(1.5rem, 3vw, 2rem);
+    --font-2xl: clamp(2rem, 3.5vw, 2.5rem);
+    --font-3xl: clamp(2.5rem, 4vw, 3rem);
+    --font-3xl-5: clamp(2.75rem, 4.5vw, 3.5rem);
+    --font-4xl: clamp(3rem, 5vw, 3.75rem);
+    --font-5xl: clamp(3.75rem, 6vw, 5rem);
 
     /* Transições */
     --transition-speed-fast: 150ms;
@@ -218,6 +214,7 @@
     --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
     --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
+    --border-header: #0f172a25;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
@@ -249,6 +246,7 @@ body {
     0% {
         background-position: 0 0, 0 0;
     }
+
     100% {
         background-position: 24px 24px, 24px 24px;
     }
@@ -262,8 +260,8 @@ body::before {
     right: 0;
     bottom: 0;
     background:
-        linear-gradient(to right, var(--bg-grid, rgba(255,255,255,0.05)) 1px, transparent 1px),
-        linear-gradient(to bottom, var(--bg-grid, rgba(255,255,255,0.05)) 1px, transparent 1px);
+        linear-gradient(to right, var(--bg-grid, rgba(255, 255, 255, 0.05)) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--bg-grid, rgba(255, 255, 255, 0.05)) 1px, transparent 1px);
     background-size: 24px 24px;
     opacity: 0.37;
     z-index: -2;
@@ -341,7 +339,7 @@ svg {
 }
 
 ::-webkit-scrollbar {
-    width: var(--spacing-extra-small);
+    width: var(--space-sm);
 }
 
 ::-webkit-scrollbar-track {
@@ -350,17 +348,15 @@ svg {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary);
-    border-radius: var(--border-radius-small);
 }
 
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .fade-in-visible {
+}
+
+.fade-in-visible {
     opacity: 1;
     transform: translateY(0);
-  }
-  
+}

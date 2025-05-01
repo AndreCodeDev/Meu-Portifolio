@@ -1,29 +1,7 @@
 /* Media Queries */
 @media screen and (min-width: 2561px) {
     /* Ajustes para telas muito grandes */
-    .hero__container {
-        max-width: 1800px;
-        margin: 0 auto;
-    }
-    
-    .hero__name {
-        font-size: var(--font-size-sextuple-extra-large-big);
-    }
-    
-    .hero__title {
-        font-size: var(--font-size-quadruple-extra-large);
-    }
-    
-    .hero__typing-text {
-        font-size: var(--font-size-triple-extra-large);
-    }
-    
-    .hero__statement {
-        font-size: var(--font-size-large);
-        max-width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
     
     .code-snippet {
         transform: scale(1.2);
@@ -55,21 +33,7 @@
 
 @media screen and (max-width: 1441px) {
     /* Pequenos ajustes para telas HD */
-    .hero__name {
-        font-size: var(--font-size-sextuple-extra-large);
-    }
-    
-    .hero__title {
-        font-size: var(--font-size-triple-extra-large);
-    }
-    
-    .hero__typing-text {
-        font-size: var(--font-size-double-extra-large);
-    }
-    
-    .hero__visual-element {
-        width: 45%;
-    }
+
 
     /* About section */
     .about__headline,
@@ -83,29 +47,7 @@
 }
 
 @media screen and (max-width: 1281px) {
-    .hero__container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        padding: var(--spacing-extra-large) 0;
-        gap: var(--spacing-extra-large);
-        min-height: auto;
-    }
 
-    .hero__text-content {
-        max-width: 50%;
-        align-items: center;
-        text-align: center;
-        margin-top: var(--spacing-extra-large);
-    }
-
-    .hero__badge {
-        max-width: 80%;
-    }
-
-    .hero__visual-element {
-        width: auto;
-    }
     
     .header__nav {
         gap: var(--spacing-extra-large);
@@ -248,21 +190,7 @@
         color: var(--text);
     }
 
-    .hero__container {
-        min-height: auto; /* Remove altura mínima fixa */
-        justify-content: flex-start; /* Alterado para flex-start */
-        padding-top: var(--spacing-double-extra-large); /* Espaçamento superior */
-        gap: var(--spacing-double-extra-large); /* Espaçamento controlado */
-    }
 
-    .hero__text-content {
-        max-width: 80%;
-        margin-top: 0;
-    }
-
-    .hero__visual-element {
-        width: auto;
-    }
 
     /* About section */
     .about__headline,
@@ -297,37 +225,7 @@
     }
     
     /* Ajustes no hero section */
-    .hero__badge {
-        margin-bottom: var(--spacing-medium);
-    }
 
-    .hero__name {
-        font-size: var(--font-size-quadruple-med-extra-large);
-    }
-    
-    .hero__title {
-        font-size: var(--font-size-double-meio-extra-large);
-    }
-    
-    .hero__typing-text {
-        font-size: var(--font-size-extra-large);
-    }
-    
-    .hero__statement {
-        font-size: var(--font-size-base);
-    }
-    
-    .hero__visual-element {
-        width: 100%;
-    }
-
-    .code-snippet {
-        max-width: 90%;
-    }
-
-    .code-content code {
-        font-size: var(--font-big-extra-small);
-    }
 
     /* About section */
     .about__headline,
@@ -400,82 +298,7 @@
         font-size: var(--font-size-base);
     }
 
-    .hero__container {
-        margin-top: var(--spacing-double-extra-large);
-        justify-content: flex-start; 
-        padding-top: var(--spacing-double-extra-large); 
-        gap: var(--spacing-extra-large);
-    }
 
-    .hero__text-content {
-        max-width: 88%;
-    }
-
-    .hero__text-content {
-        max-width: 88%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .hero__badge {
-        font-size: var(--font-size-small);
-    }
-
-    .hero__name {
-        font-size: var(--font-size-quintuple-extra-large);
-    }
-
-    .hero__title {
-        font-size: var(--font-size-double-meio-extra-large);
-    }
-
-    .hero__typing-container {
-        margin: var(--spacing-extra-small) 0;
-    }
-
-    .hero__typing-text {
-        font-size: var(--font-size-large);
-    }
-
-    .hero__statement {
-        font-size: var(--font-size-small);
-        margin: var(--spacing-small) 0 var(--spacing-large);
-    }
-
-    .hero__cta-container {
-        margin-top: 0;
-    }
-
-    .cta-button {
-        font-size: var(--font-size-small);
-        order: 1;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .hero__social-links svg {
-        width: var(--font-size-base);
-        height: var(--font-size-base);
-    }
-
-    .hero__cta-container {
-        flex-direction: column;
-        gap: var(--spacing-medium);
-        margin-top: var(--spacing-medium);
-        width: 60%;
-    }
-
-    .hero__social-links {
-        order: 2;
-        margin-top: var(--spacing-medium);
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .code-content code {
-        font-size: var(--font-big-extra-small);
-    }
 
     /* About section */
     .about {
@@ -542,26 +365,7 @@
         font-size: var(--font-size-base);
     }
     
-    .hero__name {
-        font-size: var(--font-size-quadruple-extra-large);
-    }
-    
-    .hero__title {
-        font-size: var(--font-size-double-extra-large);
-    }
-    
-    .hero__typing-text {
-        font-size: var(--font-size-medium);
-    }
-    
-    .hero__statement {
-        font-size: var(--font-size-extra-small);
-    }
-    
-    .cta-button {
-        font-size: var(--font-size-extra-small);
-        padding: var(--spacing-extra-small) var(--spacing-small);
-    }
+
 
     /* About section */
     .about__headline,
@@ -621,25 +425,7 @@
         width: 26px;
     }
     
-    .hero__name {
-        font-size: var(--font-size-triple-extra-large);
-    }
-    
-    .hero__title {
-        font-size: var(--font-size-extra-large);
-    }
-    
-    .hero__typing-text {
-        font-size: var(--font-size-base);
-    }
-    
-    .hero__cta-container {
-        flex-direction: column;
-    }
-    
-    .code-snippet {
-        transform: scale(0.9);
-    }
+
 
     /* About section */
     .about__headline,
