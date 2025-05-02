@@ -570,7 +570,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const textBlocks = document.querySelectorAll(".portfolio--subtitle");
     const cardsSections = {
       projetos: document.getElementById("cards-projetos"),
-      devlab: document.getElementById("cards-devlab"),
+      codelab: document.getElementById("cards-codelab"),
       certificados: document.getElementById("cards-certificados"),
       skills: document.getElementById("cards-skills"),
     };

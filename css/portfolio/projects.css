@@ -7,9 +7,9 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-md);
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 var(--space-lg);
 }
@@ -109,14 +109,6 @@
   
   .project-card__button:hover {
     background-color: var(--bg-light);
-  }
-  
-  .project-card__button img {
-    width: var(--space-sm);
-    height: var(--space-sm);
-    margin-left: var(--space-xs);
-    filter: var(--filter-button);
-    transition: filter var(--transition-speed-normal) var(--transition-easing);
   }
 
 
