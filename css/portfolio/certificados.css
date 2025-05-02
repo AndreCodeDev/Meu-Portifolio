@@ -2,66 +2,66 @@
 
 .certificados__section {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
-    gap: 8rem;
-    justify-content: center;
-    padding: 6rem 5rem 9rem;
-    text-align: center;
-    background-color: var(--background-color);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-2xl);
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+    max-width: 90%;
 }
 
 .certificados-item {
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius-medium);
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform var(--transition-speed-normal) var(--transition-easing);
     align-items: center;
 }
 
 .certificados-item:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 .certificados-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius-medium);
     display: block;
 }
 
 .certificados-footer {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: var(--space-2xl);
     background-color: transparent;
     padding: 0;
+    margin-bottom: var(--space-4xl);
 }
 
 #certificadosMostrarMaisCertificadosBtn {
     background-color: transparent;
-    border: .1rem solid var(--primary-color);
-    color: var(--primary-color);
-    padding: 1rem 2rem;
-    border-radius: .6rem;
-    font-size: 1.3rem;
+    border: var(--border-width) var(--border-style) var(--secund-color);
+    color: var(--text-secondary);
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--border-radius-medium);
+    font-size: var(--font-base);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all var(--transition-speed-normal) var(--transition-easing);
     display: flex;
     align-items: center;
-    gap: .8rem;
+    gap: var(--space-sm);
     margin: 0 auto;
+    user-select: none;
 }
 
 #certificadosMostrarMaisCertificadosBtn:hover {
-    background-color: #00a2ff52;
-    border-color: var(--primary-color);
-    color: var(--text-color2);
+    background-color: var(--effect-highlight-blue);
+    border-color: var(--primary);
+    color: var(--text);
 }
 
-
 #certificadosMostrarMaisCertificadosBtn svg {
-    width: 1.8rem;
-    height: 1.8rem;
-    transition: transform 0.3s ease;
+    width: var(--font-lg);
+    height: var(--font-lg);
+    transition: transform var(--transition-speed-normal) var(--transition-easing);
 }
 
 #certificadosMostrarMaisCertificadosBtn.rotated svg {
@@ -72,4 +72,3 @@
 .hidden {
     display: none;
 }
-

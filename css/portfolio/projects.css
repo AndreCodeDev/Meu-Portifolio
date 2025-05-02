@@ -7,16 +7,16 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--space-md);
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 var(--space-lg);
 }
 
 /* Project Card */
 .project-card {
-    background: #ffffff0f;
+    background-color: var(--bg-code-content-max);
     border-radius: var(--border-radius-small);
     padding: var(--space-lg);
     overflow: hidden;
@@ -30,7 +30,7 @@
 }
 
 .project-card__image {
-    width: auto;
+    width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: var(--border-radius-small);
@@ -49,7 +49,7 @@
 
 .project-card__description {
     color: var(--text-secondary);
-    font-size: var(--font-xs);
+    font-size: var(--font-xxs);
     text-align: start;
     line-height: 1.6;
     margin-bottom: var(--space-md);
@@ -68,65 +68,56 @@
     object-fit: contain;
 }
 
+
+
+
+
+
+
+
+
+
 .project-card__footer {
     display: flex;
-    justify-content: flex-end;
-    gap: var(--space-sm);
-}
-
-.project-card__button {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: var(--space-xs) var(--space-sm);
-    background: var(--primary);
-    color: white;
-    border-radius: var(--border-radius-small);
+    gap: var(--space-sm);
+    padding: var(--space-sm) 0 0 0;
+  }
+  
+  .project-card__date {
+    color: var(--text-secondary);
+    font-size: var(--font-xxs);
+  }
+  
+  .project-card__actions {
+    display: flex;
+    gap: var(--space-xs);
+  }
+  
+  .project-card__button {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-xs) var(--space-base);
+    background-color: var(--primary);
+    color: var(--text);
     text-decoration: none;
+    border-radius: var(--border-radius-small);
     font-size: var(--font-xs);
-    transition: background 0.3s ease;
-}
-
-.project-card__button img {
+    transition: all var(--transition-speed-normal) var(--transition-easing);
+  }
+  
+  .project-card__button:hover {
+    background-color: var(--bg-light);
+  }
+  
+  .project-card__button img {
     width: var(--space-sm);
     height: var(--space-sm);
     margin-left: var(--space-xs);
-    transition: filter 0.3s ease;
     filter: var(--filter-button);
-}
-
-.project-card__button:hover {
-    background: var(--primary-dark);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    transition: filter var(--transition-speed-normal) var(--transition-easing);
+  }
 
 
 

@@ -248,7 +248,7 @@
 
 .code-content code {
     font-family: 'Fira Code', monospace;
-    font-size: var(--font-xs);
+    font-size: var(--font-xxs);
     line-height: 1.5;
     color: var(--text-code-content);
     display: block;

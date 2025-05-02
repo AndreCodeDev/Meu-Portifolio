@@ -12,6 +12,7 @@
 @import url('portfolio/projects.css');
 @import url('portfolio/certificados.css');
 @import url('portfolio/skills.css');
+@import url('portfolio/devlab.css');
 
 @import url('footer.css');
 
@@ -56,6 +57,7 @@
     --bg-url-box: #3b82f61a;
     --bg-button: #3b82f61a;
     --bg-code-content: #30435d17;
+    --bg-code-content-max: #b9b9b915;
     --bg-project: rgba(0, 0, 0, 0.571);
 
     --bg-code-snippert: #0f172a;
@@ -135,6 +137,7 @@
     /* Tipografia */
     --font-xs-s: clamp(0.45rem, 1.2vw, 0.55rem);
     --font-xs: clamp(0.5rem, 1.5vw, 0.75rem);
+    --font-xxs: clamp(0.625rem, 1.5vw, 0.80rem);
     --font-sm: clamp(0.75rem, 1.8vw, 0.875rem);
     --font-base: clamp(0.875rem, 2vw, 1rem);
     --font-md: clamp(1rem, 2.2vw, 1.25rem);

@@ -81,20 +81,20 @@
 .card-info p {
     text-align: start;
     color: var(--text-code-content);
-    font-size: var(--font-xs);
+    font-size: var(--font-xxs);
     margin: 0;
 }
 
 .card-details p {
     text-align: start;
     color: var(--text-code-content);
-    font-size: var(--font-xs);
+    font-size: var(--font-xxs);
     margin: var(--space-sm) 0;
 }
 
 .card-details strong {
     color: var(--text-dark-secondary);
-    font-size: var(--font-xs);
+    font-size: var(--font-xxs);
 }
 
 /* Footer e Botão */

@@ -199,7 +199,7 @@ function initActiveSection() {
 class TextAnimation {
     constructor() {
         this.messages = [
-            { text: "Bem-Vindo(a) ao meu Portfólio", class: "hero__animation" },
+            { text: "Bem-Vindo(a) ao meu Portfólio Tech", class: "hero__animation" },
             { text: "Meu nome é André Vitor", class: "hero__animation" },
         ];
         this.container = document.getElementById("hero__animacaoText");
@@ -570,6 +570,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const textBlocks = document.querySelectorAll(".portfolio--subtitle");
     const cardsSections = {
       projetos: document.getElementById("cards-projetos"),
+      devlab: document.getElementById("cards-devlab"),
       certificados: document.getElementById("cards-certificados"),
       skills: document.getElementById("cards-skills"),
     };
@@ -675,6 +676,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+
+
+
+
+
+
 //--------------------------------------------------------------------------
 
 function filterSkills(category, event) {
@@ -693,18 +703,20 @@ function filterSkills(category, event) {
         button.classList.add('active');
         // Aplica estilos apenas quando não está em hover
         if (!button.matches(':hover')) {
-            button.style.backgroundColor = 'rgba(0, 162, 255, 0.32)';
-            button.style.borderColor = 'var(--primary-color)';
-            button.style.color = 'var(--text-color2)';
+            button.style.backgroundColor = 'var(--effect-highlight-blue)';
+            button.style.borderColor = 'var(--primary)';
+            button.style.color = 'var(--text-secondary)';
         }
     } else {
         // Se não houver evento (ao carregar a página), ativa o botão "Todas"
         const allButton = document.querySelector('.skills__filter button[onclick*="filterSkills(\'all\'"]');
-        allButton.classList.add('active');
-        if (!allButton.matches(':hover')) {
-            allButton.style.backgroundColor = 'rgba(0, 162, 255, 0.32)';
-            allButton.style.borderColor = 'var(--primary-color)';
-            allButton.style.color = 'var(--text-color2)';
+        if (allButton) {
+            allButton.classList.add('active');
+            if (!allButton.matches(':hover')) {
+                allButton.style.backgroundColor = 'var(--effect-highlight-blue)';
+                allButton.style.borderColor = 'var(--primary)';
+                allButton.style.color = 'var(--text-secondary)';
+            }
         }
     }
 
@@ -737,9 +749,9 @@ document.querySelectorAll('.skills__filter button').forEach(button => {
 
     button.addEventListener('mouseleave', () => {
         if (button.classList.contains('active')) {
-            button.style.backgroundColor = 'rgba(0, 162, 255, 0.32)';
-            button.style.borderColor = 'var(--primary-color)';
-            button.style.color = 'var(--text-color2)';
+            button.style.backgroundColor = 'var(--effect-highlight-blue)';
+            button.style.borderColor = 'var(--primary)';
+            button.style.color = 'var(--text-secondary)';
         }
     });
 });
@@ -748,6 +760,19 @@ document.querySelectorAll('.skills__filter button').forEach(button => {
 document.addEventListener('DOMContentLoaded', () => {
     filterSkills('all');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
