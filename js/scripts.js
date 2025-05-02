@@ -623,7 +623,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("DOMContentLoaded", function () {
     const mostrarMaisProjetosBtn = document.getElementById("ProjectMostrarMaisProjetosBtn");
     const textoBotaoProjetos = document.getElementById("ProjectTextoBotaoProjetos");
-    const projetosOcultos = document.querySelectorAll(".project-item.hidden");
+    const projetosOcultos = document.querySelectorAll(".project-card.hidden");
 
     mostrarMaisProjetosBtn.addEventListener("click", function () {
         // Alternar a visibilidade dos projetos ocultos

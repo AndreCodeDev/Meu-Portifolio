@@ -1,0 +1,138 @@
+@import url('style.css');
+
+/*----------------------------------*/
+/* Estilo da Seção de Formação */
+#formacao {
+    padding: var(--space-sm);
+    position: relative;
+}
+
+#formacao .formacao--container h2 {
+    color: var(--text-secondary);
+    padding-bottom: var(--space-lg);
+    font-size: var(--font-3xl);
+    font-weight: 500;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    text-align: center;
+}
+
+/* Container Flex */
+.formacao-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    max-width: 100rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Cards de Formação */
+.formacao-card {
+    border: solid 1px var(--color-gray-600);
+    border-radius: var(--border-radius-medium);
+    padding: var(--space-md);
+    transition: transform var(--transition-speed-normal) var(--transition-easing), 
+                box-shadow var(--transition-speed-normal) var(--transition-easing), 
+                border-color var(--transition-speed-normal) var(--transition-easing);
+    box-shadow: var(--shadow-card);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--bg);
+}
+
+/* Efeito de Hover */
+.formacao-card:hover {
+    border-color: var(--color-gray-500);
+    transform: scale(1.02);
+    box-shadow: 0 var(--space-md) var(--space-xl) var(--effect-highlight-purple);
+}
+
+/* Conteúdo dos Cards */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-xs);
+}
+
+.card-header img {
+    width: var(--space-2xl-5);
+    height: var(--space-2xl-5);
+    transition: transform var(--transition-speed-normal) var(--transition-easing);
+    user-select: none;
+}
+
+.formacao-card:hover .card-header img {
+    transform: scale(1.05);
+}
+
+.card-info h3 {
+    text-align: start;
+    color: var(--text-dark-secondary);
+    font-size: var(--font-sm);
+    font-weight: 600;
+    margin: 0;
+}
+
+.card-info p {
+    text-align: start;
+    color: var(--text-code-content);
+    font-size: var(--font-xs);
+    margin: 0;
+}
+
+.card-details p {
+    text-align: start;
+    color: var(--text-code-content);
+    font-size: var(--font-xs);
+    margin: var(--space-sm) 0;
+}
+
+.card-details strong {
+    color: var(--text-dark-secondary);
+    font-size: var(--font-xs);
+}
+
+/* Footer e Botão */
+.formacao-footer {
+    text-align: center;
+    margin-top: var(--space-2xl);
+    background-color: transparent;
+    padding: 0;
+}
+
+#formacaoMostrarMaisBtn {
+    background-color: transparent;
+    border: var(--border-width) var(--border-style) var(--secund-color);
+    color: var(--text-secondary);
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--border-radius-medium);
+    font-size: var(--font-base);
+    cursor: pointer;
+    transition: all var(--transition-speed-normal) var(--transition-easing);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin: 0 auto;
+    user-select: none;
+}
+
+#formacaoMostrarMaisBtn:hover {
+    background-color: var(--effect-highlight-blue);
+    border-color: var(--primary);
+    color: var(--text);
+}
+
+#formacaoMostrarMaisBtn svg {
+    width: var(--font-lg);
+    height: var(--font-lg);
+    transition: transform var(--transition-speed-normal) var(--transition-easing);
+}
+
+#formacaoMostrarMaisBtn.rotated svg {
+    transform: rotate(180deg);
+}

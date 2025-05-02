@@ -4,13 +4,13 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    height: var(--space-xl);
+    height: var(--space-2xl);
 }
 
 .carrossel {
     display: flex;
     width: max-content;
-    gap: var(--space-4xl); 
+    gap: var(--space-6xl); 
 }
 
 .carrossel-item {
@@ -20,7 +20,7 @@
 }
 
 .carrossel-item img {
-    width: var(--space-xl);
+    width: var(--space-2xl);
     height: auto;
     display: block;
     user-select: none;

@@ -1,122 +1,20 @@
 @import url('style.css');
-
-.highlights {
-    text-align: center;
-    position: relative;
-    z-index: 10;
-    min-height: 110dvh;
-}
-
-.highlights__header {
-    margin-bottom: var(--space-lg);
-}
-
-.highlights--title {
-    font-size: var(--font-3xl);
-    font-weight: 800;
-    background: linear-gradient(to right, var(--primary-light), var(--primary-gradiente));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    position: relative;
-    display: inline-block;
-}
-
-.highlights--subtitle {
-    font-size: var(--font-base);
-    color: var(--text-secondary);
-    padding: var(--space-lg) 0;
-    margin: 0;
-}
-
-.highlights__buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--space-lg);
-    padding: var(--space-sm) 0;
-    user-select: none;
-}
-
-.highlight-card {
-    background-color: var(--effect-highlight-blue);
-    border-radius: var(--border-radius-medium);
-    box-shadow: var(--shadow-light);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.highlight-card:hover {
-    transform: translateY(-5px);
-    filter: var(--filter-button);
-}
-
-.highlight-card__link {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    padding: var(--space-sm) var(--space-lg);
-    text-decoration: none;
-    color: var(--primary-light);
-    font-weight: 600;
-    font-size: var(--font-base);
-    transition: color 0.3s ease;
-    cursor: pointer;
-}
-
-.highlight-card__link:hover {
-    color: var(--text-secondary);
-}
-
-.highlight-card__link img {
-    width: var(--space-md);
-    height: var(--space-md);
-    transition: filter 0.3s ease;
-}
-
-.highlight-card__link:hover img {
-    filter: var(--filter-button);
-}
-
-.highlight-card.active {
-    background-color: var(--effect-highlight-purple);
-    box-shadow: var(--shadow-blue-glow);
-}
-
-.hidden {
-    display: none !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 /*----------------------------------*/
 /* Seção de conquistas */
 .conquistas-news {
     padding: var(--space-sm) var(--space-2xl) var(--space-4xl);
     text-align: center;
-    background-color: var(--background-color);
 }
 
 .conquistas-news__text h2 {
-    color: var(--text-color2);
+    color: var(--text-secondary);
     padding-bottom: var(--space-lg);
     font-size: var(--font-lg);
     font-weight: 500;
     margin-block-end: 0.83em;
     text-align: center;
-}
-
-.conquistas-news__text h2 span {
-    color: var(--primary-color);
 }
 
 /* Container do Carrossel */
@@ -141,7 +39,7 @@
     height: 430px;
     position: relative;
     cursor: pointer;
-    background-color: var(--background-color);
+    background-color: transparent;
     border: none;
     perspective: 1200px;
     flex-shrink: 0;
@@ -174,28 +72,13 @@
     height: 100%;
     object-fit: cover;
     user-select: none;
+    border-radius: var(--border-radius-small);
 }
 
 /* Efeito de inclinação ao passar o mouse na imagem */
 .card:hover .card__front {
     transform: rotateY(17deg);
     box-shadow: var(--space-sm) var(--space-sm) var(--space-sm) rgba(0, 0, 0, 0.08);
-}
-
-.ripple-hint {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-}
-
-.card:hover .ripple-hint {
-    animation: ripple var(--transition-speed-slow) ease-out;
 }
 
 .flip-hint {
@@ -229,7 +112,7 @@
 /* Lado traseiro do card */
 .card__back {
     background-color: var(--bg);
-    color: var(--text-color2);
+    color: var(--text-secondary);
     padding: 0 var(--space-lg);
     transform: rotateY(180deg);
     display: flex;
@@ -238,6 +121,7 @@
     align-items: center;
     text-align: center;
     border: solid var(--border-width) var(--border-header);
+    border-radius: var(--border-radius-small);
 }
 
 /* Efeito de flip ao clicar no card */
@@ -333,7 +217,6 @@
 .card.next {
     display: block;
     transition: none;
-    
 }
 
 /* Controles do Carrossel */
@@ -403,155 +286,3 @@ body.light-mode .carousel-control-next-icon {
 }
 
 /*----------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*----------------------------------*/
-/* Estilo da Seção de Formação */
-#formacao {
-    padding: var(--space-sm);
-    position: relative;
-}
-
-#formacao .formacao--container h2 {
-    color: var(--text-color2);
-    padding-bottom: var(--space-lg);
-    font-size: var(--font-size-quadruple-extra-large);
-    font-weight: 500;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    text-align: center;
-}
-
-/* Container Flex */
-.formacao-flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-lg);
-    max-width: 100rem;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: stretch;
-}
-
-/* Cards de Formação */
-.formacao-card {
-    background-color: var(--bg);
-    border: solid var(--border-width) var(--primary);
-    border-radius: var(--border-radius-large);
-    padding: var(--space-sm) var(--space-md);
-    transition: all var(--transition-speed-normal) var(--transition-easing);
-    box-shadow: var(--shadow-card);
-    width: 22%; /* Diminuído de 28% para 22% */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-/* Efeito de Hover */
-.formacao-card:hover {
-    border-color: var(--primary);
-    transform: translateY(-5px);
-    box-shadow: 0 var(--space-sm) var(--space-sm)  var(--effect-highlight-blue);
-}
-
-/* Conteúdo dos Cards */
-.card-header {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    margin-bottom: var(--space-sm);
-}
-
-.card-header img {
-    width: var(--spacing-double-med-extra-large);
-    height: var(--spacing-double-med-extra-large);
-    transition: transform var(--transition-speed-normal) var(--transition-easing);
-    user-select: none;
-}
-
-.formacao-card:hover .card-header img {
-    transform: scale(1.05);
-}
-
-.card-info h3 {
-    text-align: start;
-    color: var(--text-logo-header);
-    font-size: var(--font-size-medium);
-    font-weight: 600;
-    margin: 0;
-}
-
-.card-info p {
-    text-align: start;
-    color: var(--text-code-content);
-    font-size: var(--font-size-extra-small);
-    margin: 0;
-}
-
-.card-details {
-    margin-bottom: var(--spacing-big-extra-small);
-}
-
-.card-details p {
-    text-align: start;
-    color: var(--text-code-content);
-    font-size: var(--font-size-extra-small);
-    margin: var(--space-sm) 0;
-}
-
-.card-details strong {
-    color: var(--text-logo-header);
-    font-size: var(--font-size-medium);
-}
-
-/* Footer e Botão */
-.formacao-footer {
-    text-align: center;
-    margin-top: var(--space-2xl);
-    background-color: transparent;
-    padding: 0;
-}
-
-#formacaoMostrarMaisBtn {
-    background-color: transparent;
-    border: var(--border-width) var(--border-style) var(--secund-color);
-    color: var(--text-secondary);
-    padding: var(--space-sm) var(--space-lg);
-    border-radius: var(--border-radius-medium);
-    font-size: var(--font-size-medium);
-    cursor: pointer;
-    transition: all var(--transition-speed-normal) var(--transition-easing);
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    margin: 0 auto;
-    user-select: none;
-}
-
-#formacaoMostrarMaisBtn:hover {
-    background-color: var(--effect-highlight-blue);
-    border-color: var(--primary);
-    color: var(--text);
-}
-
-#formacaoMostrarMaisBtn svg {
-    width: var(--font-size-large);
-    height: var(--font-size-large);
-    transition: transform var(--transition-speed-normal) var(--transition-easing);
-}
-
-#formacaoMostrarMaisBtn.rotated svg {
-    transform: rotate(180deg);
-}

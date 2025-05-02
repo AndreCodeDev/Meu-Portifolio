@@ -1,0 +1,101 @@
+@import url('style.css');
+
+/* Estilos gerais da seção */
+.skills {
+    padding: 6rem 5rem 9rem;
+    background-color: var(--background-color2);
+}
+
+.skills__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Botões de filtro */
+.skills__filter {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.skills__filter button {
+    padding: .8rem 1.5rem;
+    background-color: var(--background-color);
+    border: .1rem solid var(--primary-border);
+    color: var(--primary-color);
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.skills__filter button.active,
+.skills__filter button:hover {
+    background-color: rgba(0, 162, 255, 0.32);
+    border-color: var(--primary-color);
+    color: var(--text-color2);
+}
+
+/* Container dos cards de habilidades */
+.skills__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+/* Cards de habilidades */
+.skill__card {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    border: .1rem solid var(--primary-border);
+    border-radius: .6rem;
+    text-align: center;
+    width: 11rem;
+    height: 10rem;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 .4rem .6rem rgba(0, 0, 0, 0.1);
+}
+
+.skill__card.show {
+    display: flex;
+}
+
+.skill__card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 162, 255, 0.2);
+    background-color: rgba(0, 162, 255, 0.03);
+}
+
+.skill__card img {
+    width: 5.5rem;
+    height: 5.5rem;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    user-select: none;
+
+}
+
+/* Hover para a imagem dentro do card */
+.skill__card:hover img {
+    transform: scale(1.05);
+}
+
+.skill__card h1 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin: 0;
+}

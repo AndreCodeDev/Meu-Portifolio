@@ -9,18 +9,18 @@
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    gap: var(--spacing-med-extra-small);
+    gap: var(--space-sm);
     border-top: 1px solid var(--border-header);
 }
 
 .footer-group {
     display: flex;
     align-items: center;
-    gap: var(--spacing-small);
+    gap: var(--space-sm);
 }
 
 .footer--grid-layout p {
-    font-size: var(--font-size-small);
+    font-size: var(--font-sm);
     margin: 0;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .footer--grid-layout img {
-    width: var(--space-lg);
-    height: auto;
+    width: var(--space-md);
+    height: var(--space-md);
     user-select: none;
 }

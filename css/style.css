@@ -3,8 +3,16 @@
 @import url('hero.css');
 @import url('carrossel-container.css');
 @import url('about.css');
-@import url('highlights.css');
-@import url('portfolio.css');
+
+@import url('/css/highlights/highlights.css');
+@import url('/css/highlights/conquistas.css');
+@import url('/css/highlights/formacao.css');
+
+@import url('/css/portfolio/portfolio.css');
+@import url('portfolio/projects.css');
+@import url('portfolio/certificados.css');
+@import url('portfolio/skills.css');
+
 @import url('footer.css');
 
 :root {
@@ -24,7 +32,7 @@
     --text: #f8fafc;
     --text-secondary: #c2c2c2;
     --text-dark: #0f172a;
-    --text-dark-secondary: #334155;
+    --text-dark-secondary: #e4e4e4;
     --text-muted: #64748b;
     --text-invert: var(--primary-light);
     --text-logo-header: #ffffff;
@@ -47,7 +55,8 @@
     --bg-dark-lighter: #f1f5f9;
     --bg-url-box: #3b82f61a;
     --bg-button: #3b82f61a;
-    --bg-code-content: #30435d29;
+    --bg-code-content: #30435d17;
+    --bg-project: rgba(0, 0, 0, 0.571);
 
     --bg-code-snippert: #0f172a;
     --bg-code-snippet__header: #1e293b;
@@ -73,8 +82,9 @@
     /* Efeitos Visuais */
     --effect-glass-dark: rgba(15, 23, 42, 0.85);
     --effect-glass-light: rgba(255, 255, 255, 0.85);
-    --effect-highlight-blue: rgba(37, 99, 235, 0.08);
+    --effect-highlight-blue: rgba(37, 100, 235, 0.096);
     --effect-border-blue: rgba(37, 99, 235, 0.2);
+    --effect-glass-bg-project: rgba(14, 35, 67, 0.571);
     --effect-selection-blue: rgba(31, 128, 169, 0.3);
     --effect-overlay: #0f172a;
 
@@ -95,6 +105,7 @@
     --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
     --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
+    --space-xxs: clamp(0.125rem, 0.8vw, 0.25rem); /* extra extra small */
     --space-xs: clamp(0.25rem, 1vw, 0.5rem);      /* extra small */
     --space-sm: clamp(0.5rem, 1.2vw, 0.75rem);    /* small */
     --space-base: clamp(0.875rem, 2vw, 1rem);
@@ -102,11 +113,13 @@
     --space-lg: clamp(1rem, 2vw, 2rem);           /* large */
     --space-xl: clamp(1.5rem, 3vw, 3rem);         /* extra large */
     --space-2xl: clamp(2rem, 4vw, 4.5rem);        /* double extra large */
+    --space-2xl-5: clamp(2.5rem, 5vw, 5rem);        /* slightly smaller triple extra large */
     --space-3xl: clamp(3rem, 6vw, 6rem);          /* triple extra large */
     --space-4xl: clamp(4rem, 8vw, 8rem);          /* quadruple extra large */
     --space-5xl: clamp(5rem, 9vw, 9rem);          /* quintuple extra large */
     --space-6xl: clamp(6rem, 10vw, 10rem);        /* sextuple extra large */
     --space-7xl: clamp(7rem, 11vw, 11rem);        /* septuple extra large */
+    --space-extreme: clamp(10rem, 20vw, 30rem);    /* extreme extra large */
 
     /* Bordas */
     --border-radius-small: 0.25rem;
@@ -120,6 +133,7 @@
     --border-invert: #dddddf;
 
     /* Tipografia */
+    --font-xs-s: clamp(0.45rem, 1.2vw, 0.55rem);
     --font-xs: clamp(0.5rem, 1.5vw, 0.75rem);
     --font-sm: clamp(0.75rem, 1.8vw, 0.875rem);
     --font-base: clamp(0.875rem, 2vw, 1rem);

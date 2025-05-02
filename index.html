@@ -33,7 +33,7 @@
                   <img src="img/redes/formacoes.svg" alt="Formações" />
                 </div>
                 <div class="logo-item">
-                  <img src="img/redes/projetos.svg" alt="Conquistas" />
+                  <img src="img/redes/portfolio.svg" alt="Conquistas" />
                 </div>
                 <div class="logo-item">
                   <img src="img/redes/skills.svg" alt="Skills" />
@@ -444,7 +444,6 @@ console.log('Pronto para o próximo desafio!');
                 <!-- Card 1 -->
                 <div class="card active">
                   <div class="card__front">
-                    <div class="ripple-hint"></div>
                     <img
                       src="img/conquistas/conquistasProuni.jpg"
                       alt="Notícia 1"
@@ -481,7 +480,6 @@ console.log('Pronto para o próximo desafio!');
                 <!-- Card 2 -->
                 <div class="card">
                   <div class="card__front">
-                    <div class="ripple-hint"></div>
                     <img
                       src="img/conquistas/conquistasOnebitcode.jpg"
                       alt="Notícia 1"
@@ -521,7 +519,6 @@ console.log('Pronto para o próximo desafio!');
                 <!-- Card 3 -->
                 <div class="card">
                   <div class="card__front">
-                    <div class="ripple-hint"></div>
                     <img
                       src="img/conquistas/conquistasCCBEU.jpg"
                       alt="Notícia 1"
@@ -558,7 +555,6 @@ console.log('Pronto para o próximo desafio!');
                 <!-- Card 4 -->
                 <div class="card">
                   <div class="card__front">
-                    <div class="ripple-hint"></div>
                     <img
                       src="img/conquistas/conquistasONE.jpg"
                       alt="Notícia 1"
@@ -596,7 +592,6 @@ console.log('Pronto para o próximo desafio!');
                 <!-- Card 5 -->
                 <div class="card">
                   <div class="card__front">
-                    <div class="ripple-hint"></div>
                     <img
                       src="img/conquistas/conquistasETEC.jpg"
                       alt="Notícia 1"
@@ -635,7 +630,6 @@ console.log('Pronto para o próximo desafio!');
                 <!-- Card 6 -->
                 <div class="card">
                   <div class="card__front">
-                    <div class="ripple-hint"></div>
                     <img
                       src="img/conquistas/conquistasMentoria.jpg"
                       alt="Notícia 1"
@@ -819,20 +813,27 @@ console.log('Pronto para o próximo desafio!');
 
       <section class="portfolio fade-in" id="portfolio">
         <div class="portfolio__header">
-          <h2 class="portfolio--title">Portfolio</h2>
+          <h2 class="portfolio--title">Portfólio</h2>
         </div>
 
         <div class="portfolio__buttons">
           <div class="portfolio-card" data-target="projetos">
             <a class="portfolio-card__link">
-              <img src="img/redes/projetos.svg" alt="Ícone Projetos" />
+              <img src="img/redes/project.svg" alt="Ícone Projetos" />
               <span>Projetos</span>
+            </a>
+          </div>
+
+          <div class="portfolio-card" data-target="devLab">
+            <a class="portfolio-card__link">
+              <img src="img/redes/devlab.svg" alt="DevLab" />
+              <span>DevLab</span>
             </a>
           </div>
 
           <div class="portfolio-card" data-target="certificados">
             <a class="portfolio-card__link">
-              <img src="img/redes/certificados.svg" alt="Ícone Certificados" />
+              <img src="img/redes/certificados.svg" alt="Certificados" />
               <span>Certificados</span>
             </a>
           </div>
@@ -849,6 +850,9 @@ console.log('Pronto para o próximo desafio!');
           <p class="portfolio--subtitle" data-text="projetos">
             Clique nos cards para mais informações
           </p>
+          <p class="portfolio--subtitle hidden" data-text="devLab">
+            ola
+          </p>
           <p class="portfolio--subtitle hidden" data-text="certificados">
             Conheça todas as minhas certificações
           </p>
@@ -859,1140 +863,249 @@ console.log('Pronto para o próximo desafio!');
 
         <div class="portfolio__cards" id="cards-projetos">
           <!-- project -->
-          <section id="projeto" class="projects">
+          <section id="projects" class="projects">
+
             <div class="projects-grid">
-              <!--visivel-->
-
-              <!-- Projeto 1 -->
-              <div class="project-item">
-                <a
-                  href="#exampleModal1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal1"
-                  aria-label="Ver detalhes do projeto Clone da Netflix Web"
-                >
-                  <!-- Imagem do projeto -->
-                  <img
-                    class="project-image fade-in"
-                    src="img/project/imagemProjetos/meuPortfolio.png"
-                    alt="Meu portfólio"
-                  />
-                  <!-- Overlay do projeto -->
-                  <div class="project-overlay">
-                    <h3 class="project-overlay__title fade-in">
-                      Meu Portfólio
-                    </h3>
-                    <div class="project-icons fade-in" role="list">
-                      <img
-                        src="img/skills/html.svg"
-                        alt="html"
-                        role="listitem"
-                      />
-                      <img src="img/skills/css.svg" alt="css" role="listitem" />
-                      <img
-                        src="img/skills/javascript.svg"
-                        alt="javascript"
-                        role="listitem"
-                      />
-                      <img
-                        src="img/skills/bootstrap.svg"
-                        alt="bootstrap"
-                        role="listitem"
-                      />
-                      <img
-                        src="img/skills/vscode.svg"
-                        alt="vscode"
-                        role="listitem"
-                      />
-                      <img src="img/skills/git.svg" alt="git" role="listitem" />
-                      <img
-                        src="img/skills/figma.svg"
-                        alt="figma"
-                        role="listitem"
-                      />
-                    </div>
+              <article class="project-card">
+                <img class="project-card__image" 
+                  src="img/project/imagemProjetos/meuPortfolio.png" 
+                  alt="Captura de tela do meu portfólio">
+                    
+                <div class="project-card__content">
+                  <header class="project-card__header">
+                    <h3 class="project-card__title">Meu Portfólio</h3>
+                  </header>
+        
+                  <div class="project-card__body">
+                    <p class="project-card__description">
+                      Este portfólio foi desenvolvido com HTML, CSS e
+                      JavaScript. Ele é responsivo e possui animações para
+                      melhorar a experiência do usuário. O design é limpo e
+                      moderno, refletindo meu estilo pessoal.
+                    </p>
                   </div>
-                </a>
-
-                <div class="project-item">
-                  <div
-                    class="project-tooltip"
-                    href="#exampleModal1"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal1"
-                    aria-label="Ver detalhes do projeto Clone da Netflix Web"
-                  >
-                    <p class="project-tooltip__date">29 Março de 2025</p>
-                    <a class="project-tooltip__link">Ver mais</a>
+        
+                  <div class="project-card__techs" role="list">
+                    <img src="img/skills/html.svg" alt="HTML" role="listitem">
+                    <img src="img/skills/css.svg" alt="CSS" role="listitem">
+                    <img src="img/skills/javascript.svg" alt="JavaScript" role="listitem">
+                    <img src="img/skills/bootstrap.svg" alt="Bootstrap" role="listitem">
+                    <img src="img/skills/vscode.svg" alt="VS Code" role="listitem">
+                    <img src="img/skills/git.svg" alt="Git" role="listitem">
+                    <img src="img/skills/figma.svg" alt="Figma" role="listitem">
                   </div>
+        
+                  <footer class="project-card__footer">
+                    <a class="project-card__button" href="#" target="_blank">Ver Projeto
+                      <img src="img/redes/entar.svg" alt="" />
+                    </a>
+                    <a class="project-card__button" href="#" target="_blank">Repositório GitHub
+                      <img src="img/redes/entar.svg" alt="" />
+                    </a>
+                  </footer>
                 </div>
-              </div>
-              <!-- Modal 1 -->
-              <div
-                class="modal"
-                id="exampleModal1"
-                tabindex="-1"
-                aria-labelledby="exampleModal1Label"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-centered modal-xl">
-                  <div class="modal-content">
-                    <!-- Header -->
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
+              </article>
 
-                    <!-- Body -->
-                    <div class="modal-body">
-                      <section class="sessao-modal">
-                        <div class="sessao-video">
-                          <video
-                            src="img/project/videoProjetos/meuPortfolio.mp4"
-                            class="projeto-video"
-                            controls
-                            autoplay
-                          ></video>
-                        </div>
-                        <div class="texto-sessao-modal">
-                          <h1 class="titulo-sessao-modal">Meu Portfólio</h1>
-                          <p class="paragrafos-sessao-modal">
-                            Meu portfólio foi desenvolvido para apresentar meus
-                            projetos e habilidades como desenvolvedor,
-                            utilizando HTML, CSS, JavaScript, BootStrap, Git,
-                            Figma e Visual Studio Code. O objetivo principal foi
-                            criar um espaço profissional e interativo,
-                            demonstrando minha evolução e conhecimentos nas
-                            principais tecnologias de desenvolvimento web.
-                            <br /><br />
-                            O projeto inclui uma estrutura organizada, com
-                            seções dedicadas as minha informações, dividas em:
-                            sobre mim, destaques, formações, projetos e
-                            habilidades, garantindo uma navegação intuitiva e
-                            visualmente atraente. Além disso, o código foi
-                            otimizado para responsividade, assegurando uma boa
-                            experiência em diferentes dispositivos. Essa
-                            iniciativa reforçou meu aprendizado em design,
-                            manipulação do DOM e boas práticas de
-                            desenvolvimento.
-                          </p>
-                          <h1 class="data-sessao-modal">29 Março de 2025</h1>
-
-                          <div class="project-icons-header">
-                            <ul>
-                              <li data-tooltip="HTML5">
-                                <img
-                                  src="img/skills/html.svg"
-                                  alt="html"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="CSS3">
-                                <img
-                                  src="img/skills/css.svg"
-                                  alt="css"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="JavaScript">
-                                <img
-                                  src="img/skills/javascript.svg"
-                                  alt="javascript"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="BootStrap">
-                                <img
-                                  src="img/skills/bootstrap.svg"
-                                  alt="BootStrap"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="VS Code">
-                                <img
-                                  src="img/skills/vscode.svg"
-                                  alt="vscode"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="Git">
-                                <img
-                                  src="img/skills/git.svg"
-                                  alt="git"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="Figma">
-                                <img
-                                  src="img/skills/figma.svg"
-                                  alt="figma"
-                                  role="listitem"
-                                />
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-
-                    <!-- Footer -->
-                    <div class="footer-modal">
-                      <div class="botoes-footer">
-                        <a href="https://andrecode.dev.br/" target="_blank"
-                          ><button class="botao-footer-modal">
-                            Acessar projeto
-                          </button></a
-                        >
-                        <a
-                          href="https://github.com/AndreCodeDev/Meu-Portifolio"
-                          target="_blank"
-                          ><button class="botao-footer-modal">
-                            Acessar repertório GitHub
-                          </button></a
-                        >
-                      </div>
-                    </div>
+              <article class="project-card">
+                <img class="project-card__image" 
+                  src="img/project/imagemProjetos/petLife.png" 
+                  alt="Captura de tela do meu portfólio">
+                    
+                <div class="project-card__content">
+                  <header class="project-card__header">
+                    <h3 class="project-card__title">Meu Portfólio</h3>
+                  </header>
+        
+                  <div class="project-card__body">
+                    <p class="project-card__description">
+                      Este portfólio foi desenvolvido com HTML, CSS e
+                      JavaScript. Ele é responsivo e possui animações para
+                      melhorar a experiência do usuário. O design é limpo e
+                      moderno, refletindo meu estilo pessoal.
+                    </p>
                   </div>
+        
+                  <div class="project-card__techs" role="list">
+                    <img src="img/skills/html.svg" alt="HTML" role="listitem">
+                    <img src="img/skills/css.svg" alt="CSS" role="listitem">
+                    <img src="img/skills/javascript.svg" alt="JavaScript" role="listitem">
+                    <img src="img/skills/bootstrap.svg" alt="Bootstrap" role="listitem">
+                    <img src="img/skills/vscode.svg" alt="VS Code" role="listitem">
+                    <img src="img/skills/git.svg" alt="Git" role="listitem">
+                    <img src="img/skills/figma.svg" alt="Figma" role="listitem">
+                  </div>
+        
+                  <footer class="project-card__footer">
+                    <a class="project-card__button" href="#" target="_blank">Ver Projeto
+                      <img src="img/redes/entar.svg" alt="" />
+                    </a>
+                    <a class="project-card__button" href="#" target="_blank">Repositório GitHub
+                      <img src="img/redes/entar.svg" alt="" />
+                    </a>
+                  </footer>
                 </div>
-              </div>
+              </article>
 
-              <!-- Projeto 2 -->
-              <div class="project-item">
-                <a
-                  href="#exampleModal2"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal2"
-                  aria-label="Ver detalhes do projeto Clone da Netflix Web"
-                >
-                  <!-- Imagem do projeto -->
-                  <img
-                    class="project-image fade-in"
-                    src="img/project/imagemProjetos/petLife.png"
-                    alt="PetLife"
-                  />
-                  <!-- Overlay do projeto -->
-                  <div class="project-overlay">
-                    <h3 class="project-overlay__title fade-in">PetLife</h3>
-                    <div class="project-icons fade-in" role="list">
-                      <img
-                        src="img/skills/html.svg"
-                        alt="html"
-                        role="listitem"
-                      />
-                      <img src="img/skills/css.svg" alt="css" role="listitem" />
-                      <img
-                        src="img/skills/javascript.svg"
-                        alt="javascript"
-                        role="listitem"
-                      />
-                      <img
-                        src="img/skills/vscode.svg"
-                        alt="vscode"
-                        role="listitem"
-                      />
-                      <img src="img/skills/git.svg" alt="git" role="listitem" />
-                      <img
-                        src="img/skills/figma.svg"
-                        alt="figma"
-                        role="listitem"
-                      />
-                    </div>
+              <article class="project-card">
+                <img class="project-card__image" 
+                  src="img/project/imagemProjetos/alessio'sPizzaria.png" 
+                  alt="Captura de tela do meu portfólio">
+                    
+                <div class="project-card__content">
+                  <header class="project-card__header">
+                    <h3 class="project-card__title">Meu Portfólio</h3>
+                  </header>
+        
+                  <div class="project-card__body">
+                    <p class="project-card__description">
+                      Este portfólio foi desenvolvido com HTML, CSS e
+                      JavaScript. Ele é responsivo e possui animações para
+                      melhorar a experiência do usuário. O design é limpo e
+                      moderno, refletindo meu estilo pessoal.
+                    </p>
                   </div>
-                </a>
-
-                <div class="project-item">
-                  <div
-                    class="project-tooltip"
-                    href="#exampleModal2"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal2"
-                    aria-label="Ver detalhes do projeto Clone da Netflix Web"
-                  >
-                    <p class="project-tooltip__date">03 Janeiro de 2025</p>
-                    <a class="project-tooltip__link">Ver mais</a>
+        
+                  <div class="project-card__techs" role="list">
+                    <img src="img/skills/html.svg" alt="HTML" role="listitem">
+                    <img src="img/skills/css.svg" alt="CSS" role="listitem">
+                    <img src="img/skills/javascript.svg" alt="JavaScript" role="listitem">
+                    <img src="img/skills/bootstrap.svg" alt="Bootstrap" role="listitem">
+                    <img src="img/skills/vscode.svg" alt="VS Code" role="listitem">
+                    <img src="img/skills/git.svg" alt="Git" role="listitem">
+                    <img src="img/skills/figma.svg" alt="Figma" role="listitem">
                   </div>
+        
+                  <footer class="project-card__footer">
+                    <a class="project-card__button" href="#" target="_blank">Ver Projeto
+                      <img src="img/redes/entar.svg" alt="" />
+                    </a>
+                    <a class="project-card__button" href="#" target="_blank">Repositório GitHub
+                      <img src="img/redes/entar.svg" alt="" />
+                    </a>
+                  </footer>
                 </div>
-              </div>
-              <!-- Modal 2 -->
-              <div
-                class="modal fade"
-                id="exampleModal2"
-                tabindex="-1"
-                aria-labelledby="exampleModal2Label"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-centered modal-xl">
-                  <div class="modal-content">
-                    <!-- Header -->
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
+              </article>
 
-                    <!-- Body -->
-                    <div class="modal-body">
-                      <section class="sessao-modal">
-                        <div class="sessao-video">
-                          <video
-                            src="img/project/videoProjetos/petLife.mp4"
-                            class="projeto-video"
-                            controls
-                            autoplay
-                          ></video>
-                        </div>
-                        <div class="texto-sessao-modal">
-                          <h1 class="titulo-sessao-modal">PetLife</h1>
-                          <p class="paragrafos-sessao-modal">
-                            O site PetLife foi desenvolvido como parte de um
-                            projeto introdutório na OneBitCode, utilizando HTML,
-                            CSS, JavaScript, Figma e Visual Studio Code. O
-                            objetivo principal era aprender os conceitos
-                            fundamentais dessas ferramentas de forma prática e
-                            introdutória na área de desenvolvimento web.
-                            <br /><br />O projeto consiste em um site simples
-                            para um pet shop, contendo algumas seções com
-                            informações sobre o comércio, organizadas de forma
-                            clara e acessível. Esse trabalho proporcionou uma
-                            base sólida para entender o processo de criação e
-                            estruturação de um site, desde o design inicial no
-                            Figma até a implementação com código.
-                          </p>
-                          <h1 class="data-sessao-modal">03 Janeiro de 2025</h1>
-
-                          <div class="project-icons-header">
-                            <ul>
-                              <li data-tooltip="HTML5">
-                                <img
-                                  src="img/skills/html.svg"
-                                  alt="html"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="CSS3">
-                                <img
-                                  src="img/skills/css.svg"
-                                  alt="css"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="JavaScript">
-                                <img
-                                  src="img/skills/javascript.svg"
-                                  alt="javascript"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="VS Code">
-                                <img
-                                  src="img/skills/vscode.svg"
-                                  alt="vscode"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="Git">
-                                <img
-                                  src="img/skills/git.svg"
-                                  alt="git"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="Figma">
-                                <img
-                                  src="img/skills/figma.svg"
-                                  alt="figma"
-                                  role="listitem"
-                                />
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-
-                    <!-- Footer -->
-                    <div class="footer-modal">
-                      <div class="botoes-footer">
-                        <a
-                          href="https://pet-life-xi-flax.vercel.app/"
-                          target="_blank"
-                          ><button class="botao-footer-modal">
-                            Acessar projeto
-                          </button></a
-                        >
-                        <a
-                          href="https://github.com/AndreCodeDev/PetLife"
-                          target="_blank"
-                          ><button class="botao-footer-modal">
-                            Acessar repertório GitHub
-                          </button></a
-                        >
-                      </div>
-                    </div>
+              <article class="project-card">
+                <img class="project-card__image" 
+                  src="img/project/imagemProjetos/amigoSecreto.jpg" 
+                  alt="Captura de tela do meu portfólio">
+                    
+                <div class="project-card__content">
+                  <header class="project-card__header">
+                    <h3 class="project-card__title">Meu Portfólio</h3>
+                  </header>
+        
+                  <div class="project-card__body">
+                    <p class="project-card__description">
+                      Este portfólio foi desenvolvido com HTML, CSS e
+                      JavaScript. Ele é responsivo e possui animações para
+                      melhorar a experiência do usuário. O design é limpo e
+                      moderno, refletindo meu estilo pessoal.
+                    </p>
                   </div>
+        
+                  <div class="project-card__techs" role="list">
+                    <img src="img/skills/html.svg" alt="HTML" role="listitem">
+                    <img src="img/skills/css.svg" alt="CSS" role="listitem">
+                    <img src="img/skills/javascript.svg" alt="JavaScript" role="listitem">
+                    <img src="img/skills/bootstrap.svg" alt="Bootstrap" role="listitem">
+                    <img src="img/skills/vscode.svg" alt="VS Code" role="listitem">
+                    <img src="img/skills/git.svg" alt="Git" role="listitem">
+                    <img src="img/skills/figma.svg" alt="Figma" role="listitem">
+                  </div>
+        
+                  <footer class="project-card__footer">
+                    <a class="project-card__button" href="#" target="_blank">Ver Projeto
+                      <img src="img/redes/entar.svg" alt="" />
+                    </a>
+                    <a class="project-card__button" href="#" target="_blank">Repositório GitHub
+                      <img src="img/redes/entar.svg" alt="" />
+                    </a>
+                  </footer>
                 </div>
-              </div>
+              </article>
 
-              <!-- Projeto 3 -->
-              <div class="project-item">
-                <a
-                  href="#exampleModal3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal3"
-                  aria-label="Ver detalhes do projeto Clone da Netflix Web"
-                >
-                  <!-- Imagem do projeto -->
-                  <img
-                    class="project-image fade-in"
-                    src="img/project/imagemProjetos/sealWorld.jpg"
-                    alt="Seal World"
-                  />
-                  <!-- Overlay do projeto -->
-                  <div class="project-overlay">
-                    <h3 class="project-overlay__title fade-in">Seal World</h3>
-                    <div class="project-icons fade-in" role="list">
-                      <img
-                        src="img/skills/html.svg"
-                        alt="html"
-                        role="listitem"
-                      />
-                      <img src="img/skills/css.svg" alt="css" role="listitem" />
-                      <img
-                        src="img/skills/vscode.svg"
-                        alt="vscode"
-                        role="listitem"
-                      />
-                      <img src="img/skills/git.svg" alt="git" role="listitem" />
-                      <img
-                        src="img/skills/figma.svg"
-                        alt="figma"
-                        role="listitem"
-                      />
-                    </div>
+              <article class="project-card hidden">
+                <img class="project-card__image" 
+                  src="img/project/imagemProjetos/ticTacToeGame.png" 
+                  alt="Captura de tela do meu portfólio">
+                    
+                <div class="project-card__content">
+                  <header class="project-card__header">
+                    <h3 class="project-card__title">Meu Portfólio</h3>
+                  </header>
+        
+                  <div class="project-card__body">
+                    <p class="project-card__description">
+                      Este portfólio foi desenvolvido com HTML, CSS e
+                      JavaScript. Ele é responsivo e possui animações para
+                      melhorar a experiência do usuário. O design é limpo e
+                      moderno, refletindo meu estilo pessoal.
+                    </p>
                   </div>
-                </a>
-
-                <div class="project-item">
-                  <div
-                    class="project-tooltip"
-                    href="#exampleModal3"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal3"
-                    aria-label="Ver detalhes do projeto Clone da Netflix Web"
-                  >
-                    <p class="project-tooltip__date">24 Janeiro de 2025</p>
-                    <a class="project-tooltip__link">Ver mais</a>
+        
+                  <div class="project-card__techs" role="list">
+                    <img src="img/skills/html.svg" alt="HTML" role="listitem">
+                    <img src="img/skills/css.svg" alt="CSS" role="listitem">
+                    <img src="img/skills/javascript.svg" alt="JavaScript" role="listitem">
+                    <img src="img/skills/bootstrap.svg" alt="Bootstrap" role="listitem">
+                    <img src="img/skills/vscode.svg" alt="VS Code" role="listitem">
+                    <img src="img/skills/git.svg" alt="Git" role="listitem">
+                    <img src="img/skills/figma.svg" alt="Figma" role="listitem">
                   </div>
+        
+                  <footer class="project-card__footer">
+                    <a class="project-card__button" href="#" target="_blank">Ver Projeto
+                      <img src="img/redes/entar.svg" alt="" />
+                    </a>
+                    <a class="project-card__button" href="#" target="_blank">Repositório GitHub
+                      <img src="img/redes/entar.svg" alt="" />
+                    </a>
+                  </footer>
                 </div>
-              </div>
-              <!-- Modal 3 -->
-              <div
-                class="modal fade"
-                id="exampleModal3"
-                tabindex="-1"
-                aria-labelledby="exampleModal3Label"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-centered modal-xl">
-                  <div class="modal-content">
-                    <!-- Header -->
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
+              </article>
 
-                    <!-- Body -->
-                    <div class="modal-body">
-                      <section class="sessao-modal">
-                        <div class="sessao-video">
-                          <video
-                            src="img/project/videoProjetos/sealWorld.mp4"
-                            class="projeto-video"
-                            controls
-                            autoplay
-                          ></video>
-                        </div>
-                        <div class="texto-sessao-modal">
-                          <h1 class="titulo-sessao-modal">Seal World</h1>
-                          <p class="paragrafos-sessao-modal">
-                            O site Seal World foi desenvolvido como parte de um
-                            projeto introdutório na OneBitCode, utilizando HTML,
-                            CSS, VS Code, Git e Figma. O objetivo principal era
-                            aprender os conceitos fundamentais dessas
-                            ferramentas de forma prática e introdutória na área
-                            de desenvolvimento web. <br /><br />O projeto
-                            consiste em um site simples sobre a preservação das
-                            focas, contendo algumas seções com informações
-                            educativas e interativas, organizadas de forma clara
-                            e acessível. Esse trabalho proporcionou uma base
-                            sólida para entender o processo de criação e
-                            estruturação de um site, desde o design inicial no
-                            Figma até a implementação com código.
-                          </p>
-                          <h1 class="data-sessao-modal">24 Janeiro de 2025</h1>
-
-                          <div class="project-icons-header">
-                            <ul>
-                              <li data-tooltip="HTML5">
-                                <img
-                                  src="img/skills/html.svg"
-                                  alt="html"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="CSS3">
-                                <img
-                                  src="img/skills/css.svg"
-                                  alt="css"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="VS Code">
-                                <img
-                                  src="img/skills/vscode.svg"
-                                  alt="vscode"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="Git">
-                                <img
-                                  src="img/skills/git.svg"
-                                  alt="git"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="Figma">
-                                <img
-                                  src="img/skills/figma.svg"
-                                  alt="figma"
-                                  role="listitem"
-                                />
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-
-                    <!-- Footer -->
-                    <div class="footer-modal">
-                      <div class="botoes-footer">
-                        <a
-                          href="https://seal-world-ten.vercel.app/"
-                          target="_blank"
-                          ><button class="botao-footer-modal">
-                            Acessar projeto
-                          </button></a
-                        >
-                        <a
-                          href="https://github.com/AndreCodeDev/Seal-World"
-                          target="_blank"
-                          ><button class="botao-footer-modal">
-                            Acessar repertório GitHub
-                          </button></a
-                        >
-                      </div>
-                    </div>
+              <article class="project-card hidden">
+                <img class="project-card__image" 
+                src="img/project/imagemProjetos/ticTacToeGame.png" 
+                alt="Captura de tela do meu portfólio">
+                    
+                <div class="project-card__content">
+                  <header class="project-card__header">
+                    <h3 class="project-card__title">Meu Portfólio</h3>
+                  </header>
+        
+                  <div class="project-card__body">
+                    <p class="project-card__description">
+                      Este portfólio foi desenvolvido com HTML, CSS e
+                      JavaScript. Ele é responsivo e possui animações para
+                      melhorar a experiência do usuário. O design é limpo e
+                      moderno, refletindo meu estilo pessoal.
+                    </p>
                   </div>
+        
+                  <div class="project-card__techs" role="list">
+                    <img src="img/skills/html.svg" alt="HTML" role="listitem">
+                    <img src="img/skills/css.svg" alt="CSS" role="listitem">
+                    <img src="img/skills/javascript.svg" alt="JavaScript" role="listitem">
+                    <img src="img/skills/bootstrap.svg" alt="Bootstrap" role="listitem">
+                    <img src="img/skills/vscode.svg" alt="VS Code" role="listitem">
+                    <img src="img/skills/git.svg" alt="Git" role="listitem">
+                    <img src="img/skills/figma.svg" alt="Figma" role="listitem">
+                  </div>
+        
+                  <footer class="project-card__footer">
+                    <a class="project-card__button" href="#" target="_blank">Ver Projeto
+                      <img src="img/redes/entar.svg" alt="" />
+                    </a>
+                    <a class="project-card__button" href="#" target="_blank">Repositório GitHub
+                      <img src="img/redes/entar.svg" alt="" />
+                    </a>
+                  </footer>
                 </div>
-              </div>
+              </article>
 
-              <!-- Projeto 4 -->
-              <div class="project-item">
-                <a
-                  href="#exampleModal4"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal4"
-                  aria-label="Ver detalhes do projeto Clone da Netflix Web"
-                >
-                  <!-- Imagem do projeto -->
-                  <img
-                    class="project-image fade-in"
-                    src="img/project/imagemProjetos/amigoSecreto.jpg"
-                    alt="Amigo Secreto"
-                  />
-                  <!-- Overlay do projeto -->
-                  <div class="project-overlay">
-                    <h3 class="project-overlay__title fade-in">
-                      Jogo do Amigo Secreto
-                    </h3>
-                    <div class="project-icons fade-in" role="list">
-                      <img
-                        src="img/skills/html.svg"
-                        alt="html"
-                        role="listitem"
-                      />
-                      <img src="img/skills/css.svg" alt="css" role="listitem" />
-                      <img
-                        src="img/skills/javascript.svg"
-                        alt="javascript"
-                        role="listitem"
-                      />
-                      <img
-                        src="img/skills/vscode.svg"
-                        alt="vscode"
-                        role="listitem"
-                      />
-                      <img src="img/skills/git.svg" alt="git" role="listitem" />
-                      <img
-                        src="img/skills/figma.svg"
-                        alt="figma"
-                        role="listitem"
-                      />
-                    </div>
-                  </div>
-                </a>
-
-                <div class="project-item">
-                  <div
-                    class="project-tooltip"
-                    href="#exampleModal4"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal4"
-                    aria-label="Ver detalhes do projeto Clone da Netflix Web"
-                  >
-                    <p class="project-tooltip__date">14 Fevereiro de 2025</p>
-                    <a class="project-tooltip__link">Ver mais</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Modal 4 -->
-              <div
-                class="modal fade"
-                id="exampleModal4"
-                tabindex="-1"
-                aria-labelledby="exampleModal4Label"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-centered modal-xl">
-                  <div class="modal-content">
-                    <!-- Header -->
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-
-                    <!-- Body -->
-                    <div class="modal-body">
-                      <section class="sessao-modal">
-                        <div class="sessao-video">
-                          <video
-                            src="img/project/videoProjetos/amigoSecreto.mp4"
-                            class="projeto-video"
-                            controls
-                            autoplay
-                          ></video>
-                        </div>
-                        <div class="texto-sessao-modal">
-                          <h1 class="titulo-sessao-modal">
-                            Jogo do Amigo Secreto
-                          </h1>
-                          <p class="paragrafos-sessao-modal">
-                            O jogo do Amigo Secreto foi desenvolvido como parte
-                            de uma atividade no Oracle Next Education,
-                            utilizando HTML, CSS, JavaScript, Git, Figma e
-                            Visual Studio Code. O objetivo principal era aplicar
-                            conceitos fundamentais dessas ferramentas de forma
-                            prática e interativa no ambiente de programação
-                            <br /><br />
-                            O projeto consistiu em um sorteio automatizado entre
-                            os participantes, garantindo que ninguém tirasse a
-                            si mesmo. Além disso, o código organizava os pares
-                            de forma dinâmica e exibia os resultados com um
-                            layout simples. Essa atividade proporcionou
-                            aprendizado sólido sobre lógica de programação,
-                            manipulação do DOM e desenvolvimento web.
-                          </p>
-                          <h1 class="data-sessao-modal">
-                            14 Fevereiro de 2025
-                          </h1>
-
-                          <div class="project-icons-header">
-                            <ul>
-                              <li data-tooltip="HTML5">
-                                <img
-                                  src="img/skills/html.svg"
-                                  alt="html"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="CSS3">
-                                <img
-                                  src="img/skills/css.svg"
-                                  alt="css"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="JavaScript">
-                                <img
-                                  src="img/skills/javascript.svg"
-                                  alt="javascript"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="VS Code">
-                                <img
-                                  src="img/skills/vscode.svg"
-                                  alt="vscode"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="Git">
-                                <img
-                                  src="img/skills/git.svg"
-                                  alt="git"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="Figma">
-                                <img
-                                  src="img/skills/figma.svg"
-                                  alt="figma"
-                                  role="listitem"
-                                />
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-
-                    <!-- Footer -->
-                    <div class="footer-modal">
-                      <div class="botoes-footer">
-                        <a
-                          href="https://jogo-amigo-secreto-silk.vercel.app/"
-                          target="_blank"
-                          ><button class="botao-footer-modal">
-                            Acessar projeto
-                          </button></a
-                        >
-                        <a
-                          href="https://github.com/AndreCodeDev/jogo_amigo_secreto"
-                          target="_blank"
-                          ><button class="botao-footer-modal">
-                            Acessar repertório GitHub
-                          </button></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Projeto 5 -->
-              <div class="project-item">
-                <a
-                  href="#exampleModal6"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal6"
-                  aria-label="Ver detalhes do projeto Clone da Netflix Web"
-                >
-                  <!-- Imagem do projeto -->
-                  <img
-                    class="project-image fade-in"
-                    src="img/project/imagemProjetos/mobiSeg.png"
-                    alt="Seal World"
-                  />
-                  <!-- Overlay do projeto -->
-                  <div class="project-overlay">
-                    <h3 class="project-overlay__title fade-in">MobiSeg</h3>
-                    <div class="project-icons fade-in" role="list">
-                      <img
-                        src="img/skills/html.svg"
-                        alt="html"
-                        role="listitem"
-                      />
-                      <img src="img/skills/css.svg" alt="css" role="listitem" />
-                      <img
-                        src="img/skills/vscode.svg"
-                        alt="vscode"
-                        role="listitem"
-                      />
-                      <img src="img/skills/git.svg" alt="git" role="listitem" />
-                      <img
-                        src="img/skills/figma.svg"
-                        alt="figma"
-                        role="listitem"
-                      />
-                    </div>
-                  </div>
-                </a>
-
-                <div class="project-item">
-                  <div
-                    class="project-tooltip"
-                    href="#exampleModal6"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal6"
-                    aria-label="Ver detalhes do projeto Clone da Netflix Web"
-                  >
-                    <p class="project-tooltip__date">09 Dezembro de 2024</p>
-                    <a class="project-tooltip__link">Ver mais</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Modal 5 -->
-              <div
-                class="modal fade"
-                id="exampleModal6"
-                tabindex="-1"
-                aria-labelledby="exampleModal6Label"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-centered modal-xl">
-                  <div class="modal-content">
-                    <!-- Header -->
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-
-                    <!-- Body -->
-                    <div class="modal-body">
-                      <section class="sessao-modal">
-                        <div class="sessao-video">
-                          <video
-                            src="img/project/videoProjetos/mobiSeg.mp4"
-                            class="projeto-video"
-                            controls
-                            autoplay
-                          ></video>
-                        </div>
-                        <div class="texto-sessao-modal">
-                          <h1 class="titulo-sessao-modal">MobiSeg</h1>
-                          <p class="paragrafos-sessao-modal">
-                            O projeto MobiSeg foi desenvolvido como parte de um
-                            trabalho acadêmico na FACENS, durante a UPX1 do
-                            primeiro semestre, com o objetivo de criar um
-                            aplicativo de segurança veicular. Para complementar
-                            o desenvolvimento do app, foi criado um site
-                            utilizando HTML, CSS, VS Code, Git e Figma, servindo
-                            como uma apresentação do projeto e suas
-                            funcionalidades.
-                            <br /><br />
-                            O MobiSeg foi idealizado para oferecer soluções
-                            práticas e acessíveis para aumentar a segurança de
-                            veículos, apresentando recursos que auxiliam na
-                            prevenção e monitoramento de incidentes. Durante o
-                            processo, foram aplicados conhecimentos fundamentais
-                            de desenvolvimento web e design, proporcionando uma
-                            base sólida desde a concepção no Figma até a
-                            implementação com código.
-                          </p>
-                          <h1 class="data-sessao-modal">09 Dezembro de 2024</h1>
-
-                          <div class="project-icons-header">
-                            <ul>
-                              <li data-tooltip="HTML5">
-                                <img
-                                  src="img/skills/html.svg"
-                                  alt="html"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="CSS3">
-                                <img
-                                  src="img/skills/css.svg"
-                                  alt="css"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="VS Code">
-                                <img
-                                  src="img/skills/vscode.svg"
-                                  alt="vscode"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="Git">
-                                <img
-                                  src="img/skills/git.svg"
-                                  alt="git"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="Figma">
-                                <img
-                                  src="img/skills/figma.svg"
-                                  alt="figma"
-                                  role="listitem"
-                                />
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-
-                    <!-- Footer -->
-                    <div class="footer-modal">
-                      <div class="botoes-footer">
-                        <a href="https://mobimeg.vercel.app/" target="_blank"
-                          ><button class="botao-footer-modal">
-                            Acessar projeto
-                          </button></a
-                        >
-                        <a
-                          href="https://github.com/AndreCodeDev/MobiSeg"
-                          target="_blank"
-                          ><button class="botao-footer-modal">
-                            Acessar repertório GitHub
-                          </button></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Projeto 6 -->
-              <div class="project-item">
-                <a
-                  href="#exampleModal5"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal5"
-                  aria-label="Ver detalhes do projeto Clone da Netflix Web"
-                >
-                  <!-- Imagem do projeto -->
-                  <img
-                    class="project-image fade-in"
-                    src="img/project/imagemProjetos/alessio'sPizzaria.png"
-                    alt="Seal World"
-                  />
-                  <!-- Overlay do projeto -->
-                  <div class="project-overlay">
-                    <h3 class="project-overlay__title fade-in">
-                      Alessio's Pizzaria
-                    </h3>
-                    <div class="project-icons fade-in" role="list">
-                      <img
-                        src="img/skills/html.svg"
-                        alt="html"
-                        role="listitem"
-                      />
-                      <img src="img/skills/css.svg" alt="css" role="listitem" />
-                      <img
-                        src="img/skills/vscode.svg"
-                        alt="vscode"
-                        role="listitem"
-                      />
-                      <img src="img/skills/git.svg" alt="git" role="listitem" />
-                      <img
-                        src="img/skills/figma.svg"
-                        alt="figma"
-                        role="listitem"
-                      />
-                    </div>
-                  </div>
-                </a>
-
-                <div class="project-item">
-                  <div
-                    class="project-tooltip"
-                    href="#exampleModal5"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal5"
-                    aria-label="Ver detalhes do projeto Clone da Netflix Web"
-                  >
-                    <p class="project-tooltip__date">24 Janeiro de 2025</p>
-                    <a class="project-tooltip__link">Ver mais</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Modal 6 -->
-              <div
-                class="modal fade"
-                id="exampleModal5"
-                tabindex="-1"
-                aria-labelledby="exampleModal5Label"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-centered modal-xl">
-                  <div class="modal-content">
-                    <!-- Header -->
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-
-                    <!-- Body -->
-                    <div class="modal-body">
-                      <section class="sessao-modal">
-                        <div class="sessao-video">
-                          <video
-                            src="img/project/videoProjetos/alessio'sPizzaria.mp4"
-                            class="projeto-video"
-                            controls
-                            autoplay
-                          ></video>
-                        </div>
-                        <div class="texto-sessao-modal">
-                          <h1 class="titulo-sessao-modal">
-                            Alessio's Pizzaria
-                          </h1>
-                          <p class="paragrafos-sessao-modal">
-                            O projeto Alessio's Pizzaria foi desenvolvido como
-                            parte de um curso na OneBitCode, utilizando HTML,
-                            CSS, VS Code, Git e Figma. O objetivo principal era
-                            aprender os conceitos fundamentais dessas
-                            ferramentas de forma prática e introdutória na área
-                            de desenvolvimento web.
-                            <br /><br />
-                            ...
-                          </p>
-                          <h1 class="data-sessao-modal">24 Janeiro de 2025</h1>
-
-                          <div class="project-icons-header">
-                            <ul>
-                              <li data-tooltip="HTML5">
-                                <img
-                                  src="img/skills/html.svg"
-                                  alt="html"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="CSS3">
-                                <img
-                                  src="img/skills/css.svg"
-                                  alt="css"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="VS Code">
-                                <img
-                                  src="img/skills/vscode.svg"
-                                  alt="vscode"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="Git">
-                                <img
-                                  src="img/skills/git.svg"
-                                  alt="git"
-                                  role="listitem"
-                                />
-                              </li>
-                              <li data-tooltip="Figma">
-                                <img
-                                  src="img/skills/figma.svg"
-                                  alt="figma"
-                                  role="listitem"
-                                />
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-
-                    <!-- Footer -->
-                    <div class="footer-modal">
-                      <div class="botoes-footer">
-                        <a
-                          href="https://alessio-s-pizzaria-sable.vercel.app/"
-                          target="_blank"
-                          ><button class="botao-footer-modal">
-                            Acessar projeto
-                          </button></a
-                        >
-                        <a
-                          href="https://github.com/AndreCodeDev/Alessio-s-Pizzaria"
-                          target="_blank"
-                          ><button class="botao-footer-modal">
-                            Acessar repertório GitHub
-                          </button></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!--nao visivel-->
-
-              <!-- Projeto 7 -->
-              <div class="project-item hidden">
-                <a
-                  href="#exampleModal7"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal7"
-                  aria-label="Ver detalhes do projeto Clone da Netflix Web"
-                >
-                  <!-- Imagem do projeto -->
-                  <img
-                    class="project-image fade-in"
-                    src="img/project/imagemProjetos/ticTacToeGame.png"
-                    alt="Seal World"
-                  />
-                  <!-- Overlay do projeto -->
-                  <div class="project-overlay">
-                    <h3 class="project-overlay__title fade-in">
-                      Tic Tac Toe Game
-                    </h3>
-                    <div class="project-icons fade-in" role="list">
-                      <img
-                        src="img/skills/html.svg"
-                        alt="html"
-                        role="listitem"
-                      />
-                      <img src="img/skills/css.svg" alt="css" role="listitem" />
-                      <img
-                        src="img/skills/javascript.svg"
-                        alt="css"
-                        role="listitem"
-                      />
-                      <img
-                        src="img/skills/vscode.svg"
-                        alt="vscode"
-                        role="listitem"
-                      />
-                      <img src="img/skills/git.svg" alt="git" role="listitem" />
-                      <img
-                        src="img/skills/figma.svg"
-                        alt="figma"
-                        role="listitem"
-                      />
-                    </div>
-                  </div>
-                </a>
-
-                <div class="project-item">
-                  <div
-                    class="project-tooltip"
-                    href="#exampleModal7"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal7"
-                    aria-label="Ver detalhes do projeto Clone da Netflix Web"
-                  >
-                    <p class="project-tooltip__date">Em Construção</p>
-                    <a class="project-tooltip__link">Em Breve</a>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <div class="fade-in">

@@ -1,0 +1,99 @@
+@import url('style.css');
+
+.portfolio {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    min-height: 100vh;
+    scroll-margin-top: 80px; 
+    margin-top: var(--space-2xl);
+}
+
+.portfolio__header {
+    margin-bottom: var(--space-lg);
+}
+
+.portfolio--title {
+    font-size: var(--font-3xl);
+    font-weight: 800;
+    background: linear-gradient(to right, var(--primary-light), var(--primary-gradiente));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+.portfolio--subtitle {
+    font-size: var(--font-base);
+    color: var(--text-secondary);
+    padding: var(--space-lg) 0;
+    margin: 0;
+}
+
+.portfolio__buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+    padding: var(--space-sm) 0;
+    user-select: none;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.portfolio-card {
+    background-color: var(--effect-highlight-blue);
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: var(--space-xs) var(--space-md); 
+    min-width: 10rem;
+    width: auto;
+    text-align: center;
+    box-sizing: border-box;
+    flex: 1;
+    max-width: var(--space-extreme);
+}
+
+.portfolio-card:hover:not(.active) {
+    transform: translateY(-1px);
+    filter: var(--filter-button);
+}
+
+.portfolio-card__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-lg);
+    text-decoration: none;
+    color: var(--primary-light);
+    font-weight: 600;
+    font-size: var(--font-base);
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-card__link:hover:not(.active) {
+    color: var(--primary-light); /* Prevents color change to white */
+    filter: none; /* Prevents image color change to white */
+}
+
+.portfolio-card__link img {
+    width: var(--space-md);
+    height: var(--space-md);
+    transition: filter 0.3s ease;
+}
+
+.portfolio-card.active {
+    background-color: var(--effect-highlight-purple);
+    box-shadow: var(--shadow-blue-glow);
+}
+
+.portfolio__cards {
+    margin-top: var(--space-lg);
+}
