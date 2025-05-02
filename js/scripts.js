@@ -51,29 +51,29 @@ class PortfolioLoading {
         // A transição de zoom e opacidade será aplicada de forma mais suave
         setTimeout(() => {
             if (!this.loadingScreen.dataset.complete) {
-                this.loadingScreen.style.transition = 'transform 1.2s ease-out, opacity 1.2s ease-out';  // Zoom e opacidade
+                this.loadingScreen.style.transition = 'transform 1.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 1.6s cubic-bezier(0.4, 0, 0.2, 1)';
             }
-        }, 2000); // Aguardar um pouco mais antes de começar a transição
+        }, 2000);
     }
-
+    
     completeLoading() {
         if (!this.loadingScreen) return;
-
-        // A URL foi digitada, então vamos iniciar o efeito de zoom e opacidade
+    
         this.loadingScreen.dataset.complete = 'true';
-
+    
         // Aplicar o zoom e opacidade para desaparecer a tela de loading
-        this.loadingScreen.style.transform = 'scale(1.1)';  // Zoom
+        this.loadingScreen.style.transform = 'scale(1.2)';  // Zoom mais suave
         this.loadingScreen.style.opacity = '0';
-
+    
         // Após o efeito de zoom e opacidade, esconder a tela de loading
         setTimeout(() => {
             this.loadingScreen.style.display = 'none';
             document.documentElement.style.overflow = 'auto';
             document.documentElement.classList.remove('loading-theme');
             document.dispatchEvent(new CustomEvent('loadingComplete'));
-        }, 1200); // Tempo maior para a transição de opacidade
+        }, 1600); // Igual à duração da transição
     }
+    
 }
 
 // =============================================
