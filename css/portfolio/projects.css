@@ -94,12 +94,14 @@
     color: white;
     text-decoration: none;
     border-radius: var(--border-radius-small);
+    border: var(--border-width) var(--border-style) var(--border-header);
     font-size: var(--font-xs);
     transition: all var(--transition-speed-normal) var(--transition-easing);
 }
 
 .project-card__button:hover {
-    background-color: var(--bg-light);
+    background-color: var(--effect-highlight-blue);
+    border-color: var(--primary);
     color: var(--text);
 }
 

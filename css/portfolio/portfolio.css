@@ -47,6 +47,7 @@
 
 .portfolio-card {
     background-color: var(--effect-highlight-blue);
+    border: var(--border-width) var(--border-style) var(--border-header);
     border-radius: var(--border-radius-medium);
     box-shadow: var(--shadow-light);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
