@@ -15,7 +15,7 @@ function lightRayEffect() {
         } else {
             clearInterval(interval);
             dots[dots.length - 1].classList.remove('active');
-            setTimeout(lightRayEffect, 2000); 
+            setTimeout(lightRayEffect, 1000); 
         }
     }, 250); 
 }

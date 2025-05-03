@@ -1,169 +1,23 @@
-/* Media Queries */
 @media screen and (min-width: 2561px) {
-    /* Ajustes para telas muito grandes */
-
-    /* About section */
-    .about__container {
-        max-width: 1800px;
-    }
-
-    .carrossel-container {
-        height: 7rem;
-    }
-
-    .carrossel-item {
-        width: 22rem;
-    }
 }
 
 @media screen and (max-width: 1441px) {
 }
 
 @media screen and (max-width: 1281px) {
-
-    /* About section */
-    .about {
-        min-height: auto;
-        padding: var(--spacing-double-extra-large) 0;
-    }
-
-    .about__container {
-        flex-direction: column-reverse;
-        gap: var(--spacing-extra-large);
-    }
-
-    .about__text-content {
-        max-width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .about__description {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .about__image {
-        max-width: 40%;
-        margin-top: var(--spacing-large);
-    }
-
-    .carrossel-container {
-        margin-top: var(--spacing-large);
-    }
 }
 
 @media screen and (max-width: 1024px) {
-
-    .carrossel-item {
-        width: 15rem;
-    }
 }
 
 @media screen and (max-width: 769px) {
-
-    .about__text-content > div {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .about__image {
-        max-width: 70%;
-    }
-
-    .carrossel-container {
-        height: 4rem;
-    }
-
-    .carrossel-item {
-        width: 12rem;
-    }
-
-    .carrossel-item img {
-        width: 25%;
-    }
 }
 
 @media screen and (max-width: 426px) {
-    .logo-item {
-        width: 3.7rem;
-        height: 2.7rem;
-    }
-
-
-
-    /* About section */
-    .about {
-        padding: var(--spacing-extra-large) 0;
-    }
-
-    .about__text-content > div > div {
-        padding: var(--spacing-extra-small) var(--spacing-medium);
-    }
-
-    .about__image {
-        max-width: 70%;
-    }
-
-    .carrossel-container {
-        height: 3.5rem;
-    }
-
-    .carrossel-item {
-        width: 10rem;
-    }
-
-    .carrossel-item img {
-        width: 25%;
-    }
 }
 
 @media screen and (max-width: 376px) {
-    .logo-item {
-        width: 3.2rem;
-        height: 2.2rem;
-    }
-
-    .about__text-content > div {
-        gap: var(--spacing-small);
-    }
-
-    .about__text-content > div > div {
-        padding: var(--spacing-extra-small) var(--spacing-small);
-    }
-
-    .carrossel-container {
-        height: 3rem;
-    }
-
-    .carrossel-item {
-        width: 8rem;
-    }
 }
 
 @media screen and (max-width: 321px) {
-    .logo-item {
-        width: 2.7rem;
-        height: 1.7rem;
-    }
-
-    .about__text-content > div > div {
-        padding: var(--spacing-extra-small) var(--spacing-extra-small);
-    }
-
-    .about__image {
-        max-width: 70%;
-    }
-
-    .carrossel-container {
-        height: 2.5rem;
-    }
-
-    .carrossel-item {
-        width: 6rem;
-    }
-
-    .carrossel-item img {
-        width: 35%;
-    }
 }

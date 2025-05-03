@@ -153,22 +153,30 @@
     gap: var(--space-sm);
 }
 
+.hero__social-links-card {
+    background-color: var(--bg-light);
+    border-radius: 50%;
+    padding: var(--space-xxs);
+    transition: all var(--transition-speed-normal) ease;
+}
+
+.hero__social-links-card:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
 .hero__social-links a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: var(--space-xl);
     height: var(--space-xl);
-    border-radius: 50%;
-    background-color: var(--bg-light);
     color: var(--text-secondary);
-    transition: all var(--transition-speed-normal) ease;
 }
 
 .hero__social-links a:hover {
-    background-color: var(--primary);
     color: white;
-    transform: translateY(-2px);
 }
 
 .hero__social-links svg {
@@ -315,15 +323,12 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .hero__container {
-        min-height: auto;
-        justify-content: flex-start;
+    .hero {
         margin-top: var(--space-6xl);
-        gap: var(--space-2xl);
     }
 
     .hero__text-content {
-        max-width: 80%;
+        max-width: 50%;
         margin-top: 0;
     }
 
@@ -335,27 +340,6 @@
 @media screen and (max-width: 769px) {
     .hero__badge {
         margin-bottom: var(--space-md);
-    }
-    
-    .hero__visual-element {
-        width: 100%;
-    }
-
-    .code-snippet {
-        max-width: 90%;
-    }
-}
-
-@media screen and (max-width: 426px) {
-
-    .hero__text-content {
-        max-width: 88%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .hero__typing-container {
-        margin: var(--space-xs) 0;
     }
 
     .hero__cta-container {
@@ -383,6 +367,35 @@
         width: 100%;
     }
 
+    .hero__social-links-card {
+        padding: var(--space-sm);
+    }
+    
+    .hero__visual-element {
+        width: 100%;
+    }
+
+    .code-snippet {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .hero__text-content {
+        max-width: 88%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__typing-container {
+        margin: var(--space-xs) 0;
+    }
+
+    .code-content code {
+        font-size: var(--font-xs);
+    }
+
 }
 
 @media screen and (max-width: 321px) {
@@ -394,4 +407,5 @@
     .code-snippet {
         transform: scale(0.9);
     }
+
 }
