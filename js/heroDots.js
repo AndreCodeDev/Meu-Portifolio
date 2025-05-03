@@ -1,5 +1,3 @@
-
-
 const dots = document.querySelectorAll('.code-dot');
 let index = 0;
 
@@ -17,7 +15,7 @@ function lightRayEffect() {
         } else {
             clearInterval(interval);
             dots[dots.length - 1].classList.remove('active');
-            setTimeout(lightRayEffect, 3000); 
+            setTimeout(lightRayEffect, 2000); 
         }
     }, 250); 
 }

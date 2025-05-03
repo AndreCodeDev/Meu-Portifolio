@@ -108,34 +108,20 @@
     --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
     --space-xxs: clamp(0.125rem, 0.8vw, 0.25rem);
-    /* extra extra small */
     --space-xs: clamp(0.25rem, 1vw, 0.5rem);
-    /* extra small */
     --space-sm: clamp(0.5rem, 1.2vw, 0.75rem);
-    /* small */
     --space-base: clamp(0.875rem, 2vw, 1rem);
     --space-md: clamp(0.75rem, 1.5vw, 1.5rem);
-    /* medium */
     --space-lg: clamp(1rem, 2vw, 2rem);
-    /* large */
     --space-xl: clamp(1.5rem, 3vw, 3rem);
-    /* extra large */
     --space-2xl: clamp(2rem, 4vw, 4.5rem);
-    /* double extra large */
     --space-2xl-5: clamp(2.5rem, 5vw, 5rem);
-    /* slightly smaller triple extra large */
     --space-3xl: clamp(3rem, 6vw, 6rem);
-    /* triple extra large */
     --space-4xl: clamp(4rem, 8vw, 8rem);
-    /* quadruple extra large */
     --space-5xl: clamp(5rem, 9vw, 9rem);
-    /* quintuple extra large */
     --space-6xl: clamp(6rem, 10vw, 10rem);
-    /* sextuple extra large */
     --space-7xl: clamp(7rem, 11vw, 11rem);
-    /* septuple extra large */
     --space-extreme: clamp(10rem, 20vw, 30rem);
-    /* extreme extra large */
 
     /* Bordas */
     --border-radius-small: 0.25rem;

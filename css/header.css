@@ -256,11 +256,12 @@
     }
 
     .header__menu-link {
-        font-size: var(--font-lg);
         color: var(--text);
         padding: var(--space-sm) 0;
         display: block;
         transition: color 0.3s ease;
+        padding-bottom: var(--space-2xl);
+        border-bottom: solid 1px var(--effect-border-blue);
     }
 
     .header__menu-link::before {
@@ -311,7 +312,6 @@
     }
 
     .header__theme-label {
-        font-size: var(--font-lg);
         color: var(--text);
     }
 }
