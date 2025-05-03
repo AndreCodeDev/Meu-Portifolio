@@ -135,19 +135,19 @@
     --border-invert: #dddddf;
 
     /* Tipografia */
-    --font-xs-s: clamp(0.45rem, 1.2vw, 0.55rem);
-    --font-xs: clamp(0.5rem, 1.5vw, 0.75rem);
-    --font-xxs: clamp(0.625rem, 1.5vw, 0.80rem);
-    --font-sm: clamp(0.75rem, 1.8vw, 0.875rem);
-    --font-base: clamp(0.875rem, 2vw, 1rem);
-    --font-md: clamp(1rem, 2.2vw, 1.25rem);
-    --font-lg: clamp(1.25rem, 2.5vw, 1.5rem);
-    --font-xl: clamp(1.5rem, 3vw, 2rem);
-    --font-2xl: clamp(2rem, 3.5vw, 2.5rem);
-    --font-3xl: clamp(2.5rem, 4vw, 3rem);
-    --font-3xl-5: clamp(2.75rem, 4.5vw, 3.5rem);
-    --font-4xl: clamp(3rem, 5vw, 3.75rem);
-    --font-5xl: clamp(3.75rem, 6vw, 5rem);
+    --font-xs-s: clamp(0.5rem, 1.2vw, 0.55rem);
+    --font-xs: clamp(0.55rem, 1.5vw, 0.75rem);
+    --font-xxs: clamp(0.675rem, 1.5vw, 0.80rem);
+    --font-sm: clamp(0.8rem, 1.8vw, 0.875rem);
+    --font-base: clamp(0.925rem, 2vw, 1rem);
+    --font-md: clamp(1.05rem, 2.2vw, 1.25rem);
+    --font-lg: clamp(1.3rem, 2.5vw, 1.5rem);
+    --font-xl: clamp(1.55rem, 3vw, 2rem);
+    --font-2xl: clamp(2.05rem, 3.5vw, 2.5rem);
+    --font-3xl: clamp(2.55rem, 4vw, 3rem);
+    --font-3xl-5: clamp(2.8rem, 4.5vw, 3.5rem);
+    --font-4xl: clamp(3.05rem, 5vw, 3.75rem);
+    --font-5xl: clamp(3.8rem, 6vw, 5rem);
 
     /* Transições */
     --transition-speed-fast: 150ms;
