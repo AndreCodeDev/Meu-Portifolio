@@ -116,7 +116,7 @@
       </header>
 
       <section class="hero fade-in" id="hero">
-        <div class="hero__container">
+        <div class="hero__container fade-in">
           <div class="hero__text-content">
             <div class="hero__badge">BACK-END EM FORMAÇÃO</div>
             <h1 class="hero__main-headline">
@@ -279,7 +279,7 @@ console.log('Pronto para o próximo desafio!');
       </section>
 
       <section class="about fade-in" id="about">
-        <div class="about__container">
+        <div class="about__container fade-in">
           <div class="about__text-content">
             <h2 class="about__headline">Olá, Eu Sou</h2>
             <p class="about__headline__name">André Vitor Sales</p>
@@ -405,11 +405,11 @@ console.log('Pronto para o próximo desafio!');
         id="highlights"
         aria-label="Minhas Conquistas e Formações"
       >
-        <div class="highlights__header">
+        <div class="highlights__header fade-in">
           <h2 class="highlights--title">Destaques</h2>
         </div>
 
-        <div class="highlights__buttons">
+        <div class="highlights__buttons fade-in">
           <div class="highlight-card" data-target="conquistas">
             <a class="highlight-card__link">
               <img src="img/redes/conquistas.svg" alt="Conquistas" />
@@ -425,7 +425,7 @@ console.log('Pronto para o próximo desafio!');
           </div>
         </div>
 
-        <div class="highlights__text-content">
+        <div class="highlights__text-content fade-in">
           <p class="highlights--subtitle" data-text="conquistas">
             Principais conquistas acadêmicas e profissionais. <br>
             Clique nos cards para mais informações.
@@ -435,7 +435,7 @@ console.log('Pronto para o próximo desafio!');
           </p>
         </div>
 
-        <div class="highlights__cards" id="cards-conquistas">
+        <div class="highlights__cards fade-in" id="cards-conquistas">
           <!-- conquistas carrossel -->
           <section id="conquistas" class="conquistas-news fade-in">
             <!-- Container do Carrossel -->
@@ -686,7 +686,7 @@ console.log('Pronto para o próximo desafio!');
           </section>
         </div>
 
-        <div class="highlights__cards hidden" id="cards-formacoes">
+        <div class="highlights__cards hidden fade-in" id="cards-formacoes">
           <!-- formação -->
           <section id="formacao">
             <div class="formacao--container">
@@ -813,11 +813,11 @@ console.log('Pronto para o próximo desafio!');
       </section>
 
       <section class="portfolio fade-in" id="portfolio">
-        <div class="portfolio__header">
+        <div class="portfolio__header fade-in">
           <h2 class="portfolio--title">Portfólio</h2>
         </div>
 
-        <div class="portfolio__buttons">
+        <div class="portfolio__buttons fade-in">
           <div class="portfolio-card" data-target="projetos">
             <a class="portfolio-card__link">
               <img src="img/redes/project.svg" alt="Ícone Projetos" />
@@ -847,7 +847,7 @@ console.log('Pronto para o próximo desafio!');
           </div>
         </div>
 
-        <div class="portfolio__text-content">
+        <div class="portfolio__text-content fade-in">
           <p class="portfolio--subtitle" data-text="projetos">
             Meus projetos.
           </p>
@@ -863,7 +863,7 @@ console.log('Pronto para o próximo desafio!');
           </p>
         </div>
 
-        <div class="portfolio__cards" id="cards-projetos">
+        <div class="portfolio__cards fade-in" id="cards-projetos">
           <!-- project -->
           <section id="projects" class="projects">
 
@@ -1229,7 +1229,7 @@ console.log('Pronto para o próximo desafio!');
           </section>
         </div>
 
-        <div class="portfolio__cards hidden" id="cards-codelab">
+        <div class="portfolio__cards hidden fade-in" id="cards-codelab">
 
           <div class="codelab-grid">
 
@@ -1263,7 +1263,6 @@ console.log('Pronto para o próximo desafio!');
                   <div class="codelab-card__actions">
                     <a href="#" target="_blank" class="codelab-card__button">
                       Repositório GitHub
-                      <img src="img/redes/entar.svg" alt="Ícone de seta para a direita" />
                     </a>
                   </div>
                 </footer>
@@ -1302,7 +1301,6 @@ console.log('Pronto para o próximo desafio!');
                   <div class="codelab-card__actions">
                     <a href="#" target="_blank" class="codelab-card__button">
                       Repositório GitHub
-                      <img src="img/redes/entar.svg" alt="Ícone de seta para a direita" />
                     </a>
                   </div>
                 </footer>
@@ -1340,7 +1338,6 @@ console.log('Pronto para o próximo desafio!');
                   <div class="codelab-card__actions">
                     <a href="#" target="_blank" class="codelab-card__button">
                       Repositório GitHub
-                      <img src="img/redes/entar.svg" alt="Ícone de seta para a direita" />
                     </a>
                   </div>
                 </footer>
@@ -1380,7 +1377,7 @@ console.log('Pronto para o próximo desafio!');
 
         </div>
 
-        <div class="portfolio__cards hidden" id="cards-certificados">
+        <div class="portfolio__cards hidden fade-in" id="cards-certificados">
           <section class="certificados__section">
             <div class="certificados-item">
               <a href="#" aria-label="ONE">
@@ -1528,7 +1525,7 @@ console.log('Pronto para o próximo desafio!');
           </div>
         </div>
 
-        <div class="portfolio__cards hidden" id="cards-skills">
+        <div class="portfolio__cards hidden fade-in" id="cards-skills">
           <!-- skills -->
           <section id="habilidades" class="skills fade-in">
             <div class="skills__container">
@@ -1687,6 +1684,24 @@ console.log('Pronto para o próximo desafio!');
         </div>
       </footer>
     </main>
+
+    <script src="js/loading.js"></script>
+    <script src="js/themeToggle.js"></script>
+    <script src="js/initActiveSection.js"></script>
+    <script src="js/heroTextAnimation.js"></script>
+    <script src="js/carrosselAbout.js"></script>
+    <script src="js/dots.js"></script>
+    <script src="js/fade.js"></script>
+
+    <script src="js/highlight/buttonsHighlight.js"></script>
+    <script src="js/highlight/conquistasCarousel.js"></script>
+    <script src="js/highlight/formacaoMostrarMaisBtn.js"></script>
+
+    <script src="js/portfolio/buttonsPortfolio.js"></script>
+    <script src="js/portfolio/certificadosMostrarMaisCertificadosBtn.js"></script>
+    <script src="js/portfolio/projectMostrarMaisProjetosBtn.js"></script>
+    <script src="js/portfolio/filterSkills.js"></script>
+
 
     <script src="js/scripts.js"></script>
     <script

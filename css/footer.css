@@ -30,7 +30,7 @@
 }
 
 .footer--grid-layout img {
-    width: var(--space-md);
-    height: var(--space-md);
+    width: var(--space-lg);
+    height: var(--space-lg);
     user-select: none;
 }
