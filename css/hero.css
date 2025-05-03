@@ -384,6 +384,10 @@
         margin: var(--space-xs) 0;
     }
 
+    .code-filename {
+        font-size: var(--font-xs);
+    }
+
     .code-content code {
         font-size: var(--font-xs);
     }
