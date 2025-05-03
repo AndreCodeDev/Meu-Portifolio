@@ -68,34 +68,25 @@
     object-fit: contain;
 }
 
-
-
-
-
-
-
-
-
-
 .project-card__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: var(--space-sm);
     padding: var(--space-sm) 0 0 0;
-  }
-  
-  .project-card__date {
+}
+
+.project-card__date {
     color: var(--text-secondary);
     font-size: var(--font-xxs);
-  }
-  
-  .project-card__actions {
+}
+
+.project-card__actions {
     display: flex;
     gap: var(--space-xs);
-  }
-  
-  .project-card__button {
+}
+
+.project-card__button {
     display: inline-flex;
     align-items: center;
     padding: var(--space-xs) var(--space-base);
@@ -105,23 +96,11 @@
     border-radius: var(--border-radius-small);
     font-size: var(--font-xs);
     transition: all var(--transition-speed-normal) var(--transition-easing);
-  }
-  
-  .project-card__button:hover {
+}
+
+.project-card__button:hover {
     background-color: var(--bg-light);
-  }
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 .projects--github {
     display: inline-flex;
