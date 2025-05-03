@@ -91,7 +91,7 @@
     align-items: center;
     padding: var(--space-xs) var(--space-base);
     background-color: var(--primary);
-    color: var(--text);
+    color: white;
     text-decoration: none;
     border-radius: var(--border-radius-small);
     font-size: var(--font-xs);
@@ -100,6 +100,7 @@
 
 .project-card__button:hover {
     background-color: var(--bg-light);
+    color: var(--text);
 }
 
 .projects--github {
