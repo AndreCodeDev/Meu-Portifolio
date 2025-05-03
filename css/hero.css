@@ -324,7 +324,11 @@
 
 @media screen and (max-width: 1024px) {
     .hero {
-        margin-top: var(--space-6xl);
+        margin-top: var(--space-7xl);
+        min-height: 10dvh;
+        color: var(--text);
+        display: flex;
+        align-items: center;
     }
 
     .hero__text-content {
@@ -380,7 +384,7 @@
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 420px) {
 
     .hero__text-content {
         max-width: 88%;
