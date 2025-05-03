@@ -331,7 +331,7 @@
     }
 
     .hero__statement {
-        margin: var(--space-lg) 0 var(--space-2xl);
+        margin: var(--space-2xl);
     }
 
     .hero__cta-container {
