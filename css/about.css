@@ -165,11 +165,11 @@
     max-width: 65%;
     height: auto;
     border: solid 2px var(--border-invert);
-    border-radius: var(--border-radius-full);
+    border-radius: var(--border-radius-fll);
     box-shadow:
-        0 0 0 1px #3b82f61a,
-        0 0 70px #3b82f633,
-        0 0 70px #3b82f61a inset;
+        0 0 0 1px #359dba47,
+        0 0 70px #359dba77,
+        0 0 70px #359dbac4 inset;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
     position: relative;

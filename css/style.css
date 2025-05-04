@@ -238,16 +238,18 @@ svg {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: #111;
-    color: #fff;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
     justify-content: space-around;
-    padding: 1rem 0;
+    padding: var(--space-sm);
     z-index: 1000;
 }
 
 #menuMobile button {
     background: none;
-    color: #fff;
+    color: var(--text);
+    font-size: var(--font-sm);
+    text-transform: lowercase;
 }
 
 

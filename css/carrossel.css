@@ -1,6 +1,6 @@
 @import url('style.css');
 
-.carrossel {
+.carrossel-container {
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -12,6 +12,7 @@
     width: max-content;
     gap: var(--space-6xl); 
 }
+
 
 .carrossel-item {
     flex: 0 0 auto;
@@ -26,18 +27,3 @@
     user-select: none;
 }
 
-
-@media screen and (max-width: 1441px) {
-    .carrossel {
-        margin: var(--space-5xl) 0 var(--space-5xl) 0;
-        height: var(--space-3xl);
-    }
-
-    .carrossel-item img {
-        width: var(--space-4xl);
-    }
-
-    .carrossel-item {
-        width: var(--space-3xl);
-    }
-}
