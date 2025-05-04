@@ -47,7 +47,7 @@
     /* Fundo */
     --bg: #0f172a;
     --bg-word-animation-color: #21335b;
-    --bg-header: rgba(15, 23, 42, 0.918);
+    --bg-header: rgb(15, 23, 42);
     --bg-light: #1e293b;
     --bg-grid: #1e293b;
     --bg-lighter: #334155;
@@ -185,7 +185,7 @@
 
     /* Fundo */
     --bg: #ffffff;
-    --bg-header: rgba(255, 255, 255, 0.684);
+    --bg-header: rgb(255, 255, 255);
     --bg-light: #d6d9dc;
     --bg-grid: #0f172a39;
     --bg-lighter: #e2e8f0;
