@@ -22,7 +22,7 @@
 }
 
 #desktopPortfolioMenu button:hover{
-    background: var(--accent);
+    background: var(--card-bg);
     color: var(--text);
 }
 
@@ -52,10 +52,3 @@
 
 
 
-#portfolio>section {
-    display: none;
-}
-
-#projects {
-    display: block;
-}

@@ -1,0 +1,9 @@
+@import url('style.css');
+
+#portfolio>section {
+    display: none;
+}
+
+#projects {
+    display: block;
+}
