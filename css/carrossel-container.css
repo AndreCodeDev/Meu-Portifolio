@@ -25,3 +25,19 @@
     display: block;
     user-select: none;
 }
+
+
+@media screen and (max-width: 1441px) {
+    .carrossel-container {
+        margin: var(--space-5xl) 0 var(--space-5xl) 0;
+        height: var(--space-3xl);
+    }
+
+    .carrossel-item img {
+        width: var(--space-4xl);
+    }
+
+    .carrossel-item {
+        width: var(--space-3xl);
+    }
+}

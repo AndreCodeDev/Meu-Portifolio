@@ -47,11 +47,11 @@
 .highlight-card {
     background-color: var(--effect-highlight-blue);
     border: var(--border-width) var(--border-style) var(--border-header);
-    border-radius: var(--border-radius-medium);
+    border-radius: var(--border-radius-small);
     box-shadow: var(--shadow-light);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: var(--space-xs) var(--space-md); 
-    min-width: 25rem;
+    min-width: 10rem;
     width: auto;
     text-align: center;
     box-sizing: border-box;

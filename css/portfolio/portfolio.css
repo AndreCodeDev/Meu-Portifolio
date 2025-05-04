@@ -48,7 +48,7 @@
 .portfolio-card {
     background-color: var(--effect-highlight-blue);
     border: var(--border-width) var(--border-style) var(--border-header);
-    border-radius: var(--border-radius-medium);
+    border-radius: var(--border-radius-small);
     box-shadow: var(--shadow-light);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: var(--space-xs) var(--space-md); 
@@ -80,8 +80,8 @@
 }
 
 .portfolio-card__link:hover:not(.active) {
-    color: var(--primary-light); /* Prevents color change to white */
-    filter: none; /* Prevents image color change to white */
+    color: var(--primary-light); 
+    filter: none;
 }
 
 .portfolio-card__link img {

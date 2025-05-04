@@ -110,8 +110,13 @@
 }
 
 /* Lado traseiro do card */
+
+/* Efeito de Hover */
+
 .card__back {
     background-color: var(--bg);
+    border: var(--border-width) var(--border-style) var(--border-header);
+    border-radius: var(--border-radius-medium);
     color: var(--text-secondary);
     padding: 0 var(--space-lg);
     transform: rotateY(180deg);
@@ -120,8 +125,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: solid var(--border-width) var(--border-header);
-    border-radius: var(--border-radius-small);
+    transform-style: preserve-3d; /* necessário para permitir profundidade nos filhos */
+
 }
 
 /* Efeito de flip ao clicar no card */
@@ -159,23 +164,24 @@
 .conquistas--card-info {
     flex: 1;
     min-width: 0;
+
 }
 
 .conquistas--card-info h2 {
     color: var(--primary-light);
-    font-size: var(--font-xl);
+    font-size: var(--font-lg);
     font-weight: 700;
 }
 
 .conquistas--card-info p {
     color: var(--text);
-    font-size: var(--font-base);
+    font-size: var(--font-sm);
     margin: var(--space-sm);
 }
 
 .conquistas--card-testimonial p {
     color: var(--text-secondary);
-    font-size: var(--font-sm);
+    font-size: var(--font-xxs);
     line-height: 1.5;
     text-align: center;
     margin: 0;
@@ -185,12 +191,11 @@
 /* Cards adjacentes */
 .card.prev,
 .card.next {
-    opacity: 0.7;
+    opacity: 0.9;
     transform: scale(0.8);
     display: block;
     pointer-events: auto;
     cursor: default;
-    
 }
 
 .card.prev {
@@ -208,7 +213,6 @@
 /* Oculta todos os cards por padrão */
 .card {
     display: none;
-    
 }
 
 /* Exibe apenas o card ativo e os adjacentes */
@@ -230,7 +234,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    opacity: 0.8;
     transition: opacity var(--transition-speed-normal) var(--transition-easing),
         background-color var(--transition-speed-normal) var(--transition-easing);
     display: flex;
@@ -240,7 +243,6 @@
 }
 
 .conquistas-carousel-control:hover {
-    opacity: 1;
     background-color: var(--primary-soft);
 }
 

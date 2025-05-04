@@ -116,7 +116,7 @@
       </header>
 
       <section class="hero fade-in" id="hero">
-        <div class="hero__container fade-in">
+        <div class="hero__container">
           <div class="hero__text-content">
             <div class="hero__badge">BACK-END EM FORMAÇÃO</div>
             <h1 class="hero__main-headline">
@@ -283,7 +283,7 @@ console.log('Pronto para o próximo desafio!');
       </section>
 
       <section class="about fade-in" id="about">
-        <div class="about__container fade-in">
+        <div class="about__container">
           <div class="about__text-content">
             <h2 class="about__headline">Olá, Eu Sou</h2>
             <p class="about__headline__name">André Vitor Sales</p>
@@ -294,12 +294,12 @@ console.log('Pronto para o próximo desafio!');
               transformação.
             </p>
 
-            <div>
-              <div>
+            <div class="about__container__buttons">
+              <div class="about__container__buttons-item">
                 <a href="#portfolio">Ver Projetos</a>
                 <img src="img/redes/entar.svg" alt="" />
               </div>
-              <div>
+              <div class="about__container__buttons-item">
                 <a
                   href="curriculoAndreVitor.pdf"
                   download="curriculoAndreVitor.pdf"
@@ -310,7 +310,8 @@ console.log('Pronto para o próximo desafio!');
             </div>
 
             <div class="about__social-links">
-              <a
+              <div class="about__social-links-card">
+                <a
                 href="https://linkedin.com/in/andrecodedev"
                 target="_blank"
                 aria-label="LinkedIn"
@@ -338,8 +339,10 @@ console.log('Pronto para o próximo desafio!');
                     stroke-linejoin="round"
                   />
                 </svg>
-              </a>
-              <a
+                </a>
+              </div>
+              <div class="about__social-links-card">
+                <a
                 href="https://github.com/AndreCodeDev"
                 target="_blank"
                 aria-label="GitHub"
@@ -353,8 +356,10 @@ console.log('Pronto para o próximo desafio!');
                     stroke-linejoin="round"
                   />
                 </svg>
-              </a>
-              <a
+                </a>
+              </div>
+              <div class="about__social-links-card">
+                <a
                 href="mailto:andrecodedev@example.com"
                 target="_blank"
                 aria-label="Email"
@@ -375,8 +380,10 @@ console.log('Pronto para o próximo desafio!');
                     stroke-linejoin="round"
                   />
                 </svg>
-              </a>
-              <a
+                </a>
+              </div>
+              <div class="about__social-links-card">
+                <a
                 href="https://wa.me/00000000"
                 target="_blank"
                 aria-label="WhatsApp"
@@ -392,8 +399,10 @@ console.log('Pronto para o próximo desafio!');
                     d="M16 0C7.163 0 0 7.164 0 16c0 2.822.735 5.61 2.129 8.064L0 32l8.197-2.115C10.59 30.265 13.27 31 16 31c8.837 0 16-7.164 16-15.999C32 7.163 24.837 0 16 0zm.055 29.056c-2.437 0-4.824-.64-6.92-1.85l-.496-.295-4.875 1.258 1.3-4.744-.322-.488a12.877 12.877 0 01-2.002-6.916c0-7.15 5.814-12.965 12.966-12.965 3.463 0 6.715 1.35 9.164 3.8 2.45 2.45 3.8 5.703 3.8 9.165 0 7.15-5.814 12.965-12.965 12.965zm7.205-9.7c-.396-.198-2.346-1.157-2.71-1.288-.363-.13-.628-.198-.893.198-.264.396-1.022 1.288-1.252 1.552-.23.264-.462.297-.858.099-.396-.198-1.672-.616-3.184-1.964-1.176-1.05-1.969-2.346-2.199-2.742-.23-.396-.025-.61.173-.808.177-.176.396-.462.595-.694.198-.231.264-.396.396-.66.132-.264.066-.495-.033-.694-.099-.198-.893-2.156-1.223-2.957-.32-.769-.646-.663-.893-.663-.231 0-.495-.033-.76-.033-.264 0-.694.099-1.058.495-.363.396-1.39 1.358-1.39 3.31 0 1.951 1.423 3.833 1.621 4.099.198.264 2.797 4.272 6.779 5.992.948.408 1.688.651 2.265.832.951.303 1.816.26 2.5.158.763-.113 2.346-.958 2.676-1.882.33-.925.33-1.716.231-1.882-.099-.165-.363-.264-.76-.462z"
                   />
                 </svg>
-              </a>
+                </a>
+              </div>
             </div>
+
           </div>
           <div class="about__image-container">
             <img
@@ -409,11 +418,11 @@ console.log('Pronto para o próximo desafio!');
         id="highlights"
         aria-label="Minhas Conquistas e Formações"
       >
-        <div class="highlights__header fade-in">
+        <div class="highlights__header">
           <h2 class="highlights--title">Destaques</h2>
         </div>
 
-        <div class="highlights__buttons fade-in">
+        <div class="highlights__buttons">
           <div class="highlight-card" data-target="conquistas">
             <a class="highlight-card__link">
               <img src="img/redes/conquistas.svg" alt="Conquistas" />
@@ -429,7 +438,7 @@ console.log('Pronto para o próximo desafio!');
           </div>
         </div>
 
-        <div class="highlights__text-content fade-in">
+        <div class="highlights__text-content">
           <p class="highlights--subtitle" data-text="conquistas">
             Principais conquistas acadêmicas e profissionais. <br>
             Clique nos cards para mais informações.
@@ -439,7 +448,7 @@ console.log('Pronto para o próximo desafio!');
           </p>
         </div>
 
-        <div class="highlights__cards fade-in" id="cards-conquistas">
+        <div class="highlights__cards" id="cards-conquistas">
           <!-- conquistas carrossel -->
           <section id="conquistas" class="conquistas-news fade-in">
             <!-- Container do Carrossel -->
@@ -451,7 +460,7 @@ console.log('Pronto para o próximo desafio!');
                   <div class="card__front">
                     <img
                       src="img/conquistas/conquistasProuni.jpg"
-                      alt="Notícia 1"
+                      alt="Bolsa 100% ProUni"
                     />
                   </div>
 
@@ -480,6 +489,7 @@ console.log('Pronto para o próximo desafio!');
                       </div>
                     </article>
                   </div>
+                  
                 </div>
 
                 <!-- Card 2 -->
@@ -487,7 +497,7 @@ console.log('Pronto para o próximo desafio!');
                   <div class="card__front">
                     <img
                       src="img/conquistas/conquistasOnebitcode.jpg"
-                      alt="Notícia 1"
+                      alt="OneBitCode"
                     />
                   </div>
 
@@ -526,7 +536,7 @@ console.log('Pronto para o próximo desafio!');
                   <div class="card__front">
                     <img
                       src="img/conquistas/conquistasCCBEU.jpg"
-                      alt="Notícia 1"
+                      alt="CCBEU"
                     />
                   </div>
 
@@ -562,7 +572,7 @@ console.log('Pronto para o próximo desafio!');
                   <div class="card__front">
                     <img
                       src="img/conquistas/conquistasONE.jpg"
-                      alt="Notícia 1"
+                      alt="ONE"
                     />
                   </div>
 
@@ -599,7 +609,7 @@ console.log('Pronto para o próximo desafio!');
                   <div class="card__front">
                     <img
                       src="img/conquistas/conquistasETEC.jpg"
-                      alt="Notícia 1"
+                      alt="ETEC"
                     />
                   </div>
 
@@ -637,7 +647,7 @@ console.log('Pronto para o próximo desafio!');
                   <div class="card__front">
                     <img
                       src="img/conquistas/conquistasMentoria.jpg"
-                      alt="Notícia 1"
+                      alt="Mentor Acadêmico"
                     />
                   </div>
 
@@ -690,19 +700,17 @@ console.log('Pronto para o próximo desafio!');
           </section>
         </div>
 
-        <div class="highlights__cards hidden fade-in" id="cards-formacoes">
-          <!-- formação -->
+        <div class="highlights__cards hidden" id="cards-formacoes">
           <section id="formacao">
             <div class="formacao--container">
-              <div class="formacao-flex fade-in">
+              <div class="formacao-flex">
                 <!-- Cards Visíveis Inicialmente -->
                 <article class="formacao-card">
                   <div class="card-header">
                     <img
                       src="img/formacoes/facens.svg"
                       alt="Facens"
-                      class="icon"
-                    />
+                                        />
                     <div class="card-info">
                       <h3>Bacharelando em ADS</h3>
                       <p>Universidade de Engenharia e Tecnologia - FACENS</p>
@@ -720,8 +728,7 @@ console.log('Pronto para o próximo desafio!');
                     <img
                       src="img/formacoes/onebitcode.svg"
                       alt="OneBitCode"
-                      class="icon"
-                    />
+                                        />
                     <div class="card-info">
                       <h3>Full Stack JavaScript</h3>
                       <p>Infinity PRO OneBitCode</p>
@@ -739,8 +746,7 @@ console.log('Pronto para o próximo desafio!');
                     <img
                       src="img/formacoes/one.svg"
                       alt="Oracle Next Education"
-                      class="icon"
-                    />
+                                        />
                     <div class="card-info">
                       <h3>Turma 8 ONE - Oracle Next Education</h3>
                       <p>Alura + Oracle</p>
@@ -760,8 +766,7 @@ console.log('Pronto para o próximo desafio!');
                     <img
                       src="img/formacoes/ccebu.svg"
                       alt="CCBEU"
-                      class="icon"
-                    />
+                                        />
                     <div class="card-info">
                       <h3>Inglês como Segunda Língua (ESL)</h3>
                       <p>CCBEU - Centro Cultural Brasil-Estados Unidos</p>
@@ -774,11 +779,9 @@ console.log('Pronto para o próximo desafio!');
                   </div>
                 </article>
 
-                <!-- Cards Ocultos Inicialmente -->
-
-                <article class="formacao-card hidden fade-in">
+                <article class="formacao-card">
                   <div class="card-header">
-                    <img src="img/formacoes/etec.svg" alt="ETEC" class="icon" />
+                    <img src="img/formacoes/etec.svg" alt="ETEC"/>
                     <div class="card-info">
                       <h3>Técnico em ADS</h3>
                       <p>Escola Técnica Estadual - ETEC</p>
@@ -790,10 +793,73 @@ console.log('Pronto para o próximo desafio!');
                     <p><strong>Data de conclusão:</strong> 31/12/2023</p>
                   </div>
                 </article>
+
+                <!-- Cards Ocultos Inicialmente -->
+
+                <article class="formacao-card hidden">
+                  <div class="card-header">
+                    <img src="img/redes/dio.svg" alt="dio"/>
+                    <div class="card-info">
+                      <h3>ccccc ccc ccccc</h3>
+                      <p>ccccccc cccccccc ccccc - cccccc</p>
+                    </div>
+                  </div>
+                  <div class="card-details">
+                    <p><strong>Status:</strong> ccccc</p>
+                    <p><strong>Data de início:</strong> cc/cc/cccc</p>
+                    <p><strong>Data de conclusão:</strong> cc/cc/cccc</p>
+                  </div>
+                </article>
+
+                <article class="formacao-card hidden">
+                  <div class="card-header">
+                    <img src="img/redes/udemy.svg" alt="ccccc"/>
+                    <div class="card-info">
+                      <h3>ccccc ccc ccccc</h3>
+                      <p>ccccccc cccccccc ccccc - cccccc</p>
+                    </div>
+                  </div>
+                  <div class="card-details">
+                    <p><strong>Status:</strong> ccccc</p>
+                    <p><strong>Data de início:</strong> cc/cc/cccc</p>
+                    <p><strong>Data de conclusão:</strong> cc/cc/cccc</p>
+                  </div>
+                </article>
+
+                <article class="formacao-card hidden">
+                  <div class="card-header">
+                    <img src="img/redes/udemy.svg" alt="udemy"/>
+                    <div class="card-info">
+                      <h3>ccccc ccc ccccc</h3>
+                      <p>ccccccc cccccccc ccccc - cccccc</p>
+                    </div>
+                  </div>
+                  <div class="card-details">
+                    <p><strong>Status:</strong> ccccc</p>
+                    <p><strong>Data de início:</strong> cc/cc/cccc</p>
+                    <p><strong>Data de conclusão:</strong> cc/cc/cccc</p>
+                  </div>
+                </article>
+
+                <article class="formacao-card hidden">
+                  <div class="card-header">
+                    <img src="img/redes/udemy.svg" alt="udemy"/>
+                    <div class="card-info">
+                      <h3>ccccc ccc ccccc</h3>
+                      <p>ccccccc cccccccc ccccc - cccccc</p>
+                    </div>
+                  </div>
+                  <div class="card-details">
+                    <p><strong>Status:</strong> ccccc</p>
+                    <p><strong>Data de início:</strong> cc/cc/cccc</p>
+                    <p><strong>Data de conclusão:</strong> cc/cc/cccc</p>
+                  </div>
+                </article>
+
               </div>
 
               <!-- Botão para Mostrar Mais Cards -->
-              <footer class="formacao-footer fade-in">
+              <footer class="formacao-footer">
                 <button id="formacaoMostrarMaisBtn">
                   <span id="formacaoTextoBotao">Ver mais formações</span>
                   <svg
@@ -814,14 +880,15 @@ console.log('Pronto para o próximo desafio!');
             </div>
           </section>
         </div>
+
       </section>
 
       <section class="portfolio fade-in" id="portfolio">
-        <div class="portfolio__header fade-in">
+        <div class="portfolio__header">
           <h2 class="portfolio--title">Portfólio</h2>
         </div>
 
-        <div class="portfolio__buttons fade-in">
+        <div class="portfolio__buttons">
           <div class="portfolio-card" data-target="projetos">
             <a class="portfolio-card__link">
               <img src="img/redes/project.svg" alt="Ícone Projetos" />
@@ -851,7 +918,7 @@ console.log('Pronto para o próximo desafio!');
           </div>
         </div>
 
-        <div class="portfolio__text-content fade-in">
+        <div class="portfolio__text-content">
           <p class="portfolio--subtitle" data-text="projetos">
             Meus projetos.
           </p>
@@ -867,7 +934,7 @@ console.log('Pronto para o próximo desafio!');
           </p>
         </div>
 
-        <div class="portfolio__cards fade-in" id="cards-projetos">
+        <div class="portfolio__cards" id="cards-projetos">
           <!-- project -->
           <section id="projects" class="projects">
 
@@ -1201,8 +1268,7 @@ console.log('Pronto para o próximo desafio!');
 
             </div>
 
-            <div class="fade-in">
-              <footer class="project-footer fade-in">
+              <footer class="project-footer">
                 <button id="ProjectMostrarMaisProjetosBtn">
                   <span id="ProjectTextoBotaoProjetos">Ver mais projetos</span>
                   <svg
@@ -1228,12 +1294,11 @@ console.log('Pronto para o próximo desafio!');
                   Ver todos os repositórios no GitHub
                 </a>
               </footer>
-            </div>
 
           </section>
         </div>
 
-        <div class="portfolio__cards hidden fade-in" id="cards-codelab">
+        <div class="portfolio__cards hidden" id="cards-codelab">
 
           <div class="codelab-grid">
 
@@ -1348,12 +1413,48 @@ console.log('Pronto para o próximo desafio!');
 
               </div>
             </article>
+
+            <article class="codelab-card hidden">
+              <img class="codelab-card__image" 
+              src="img/project/imagemcodelab/code.svg" 
+              alt="Captura de tela do meu portfólio">
+                  
+              <div class="codelab-card__content">
+                <header class="codelab-card__header">
+                  <h3 class="codelab-card__title">Meu Portfólio</h3>
+                </header>
+      
+                <div class="codelab-card__body">
+                  <p class="codelab-card__description">
+                    Exercício de aula.
+                  </p>
+                </div>
+      
+                <div class="codelab-card__techs" role="list">
+                  <img src="img/skills/sql.svg" alt="Sql" role="listitem">
+                  <img src="img/skills/mysql.svg" alt="Mysql" role="listitem">
+                  <img src="img/skills/git.svg" alt="Git" role="listitem">
+                </div>
+      
+                <footer class="codelab-card__footer">
+                  <div class="codelab-card__date">
+                    <p>00/00/0000</p>
+                  </div>
+                  
+                  <div class="codelab-card__actions">
+                    <a href="#" target="_blank" class="codelab-card__button">
+                      Repositório GitHub
+                    </a>
+                  </div>
+                </footer>
+
+              </div>
+            </article>
           </div>
 
-          <div class="fade-in">
-            <footer class="codelab-footer fade-in">
-              <button id="codelabMostrarMaisProjetosBtn">
-                <span id="codelabTextoBotaoProjetos">Ver mais projetos</span>
+            <footer class="codelab-footer">
+              <button id="codelabMostrarMaisCodelabBtn">
+                <span id="codelabTextoBotaoCodelab">Ver mais projetos</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -1377,17 +1478,16 @@ console.log('Pronto para o próximo desafio!');
                 Ver todos os repositórios no GitHub
               </a>
             </footer>
-          </div>
 
         </div>
 
-        <div class="portfolio__cards hidden fade-in" id="cards-certificados">
+        <div class="portfolio__cards hidden" id="cards-certificados">
           <section class="certificados__section">
             <div class="certificados-item">
               <a href="#" aria-label="ONE">
                 <!-- Imagem do projeto -->
                 <img
-                  class="certificados-image fade-in"
+                  class="certificados-image"
                   src="img/certificados/certificado.svg"
                   alt="ONE"
                 />
@@ -1505,13 +1605,12 @@ console.log('Pronto para o próximo desafio!');
             </div>
           </section>
 
-          <div class="fade-in">
-            <footer class="certificados-footer fade-in">
-              <button id="certificadosMostrarMaisCertificadosBtn">
-                <span id="certificadosTextoBotaoCertificados"
-                  >Ver mais certificações</span
-                >
-                <svg
+          <footer class="certificados-footer">
+            <button id="certificadosMostrarMaisCertificadosBtn">
+              <span id="certificadosTextoBotaoCertificados"
+                >Ver mais certificações</span
+              >
+              <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -1525,13 +1624,12 @@ console.log('Pronto para o próximo desafio!');
                   <path d="M6 9l6 6 6-6" />
                 </svg>
               </button>
-            </footer>
+          </footer>
           </div>
-        </div>
 
-        <div class="portfolio__cards hidden fade-in" id="cards-skills">
+        <div class="portfolio__cards hidden" id="cards-skills">
           <!-- skills -->
-          <section id="habilidades" class="skills fade-in">
+          <section id="habilidades" class="skills">
             <div class="skills__container">
               <!-- Botões para filtrar as habilidades -->
               <div class="skills__filter">
@@ -1704,6 +1802,7 @@ console.log('Pronto para o próximo desafio!');
     <script src="js/portfolio/buttonsPortfolio.js"></script>
     <script src="js/portfolio/certificadosMostrarMaisCertificadosBtn.js"></script>
     <script src="js/portfolio/projectMostrarMaisProjetosBtn.js"></script>
+    <script src="js/portfolio/codelabMostrarMaisCodelabBtn.js"></script>
     <script src="js/portfolio/filterSkills.js"></script>
 
 

@@ -7,7 +7,7 @@
 
 .codelab-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--space-md);
     max-width: 1300px;
     margin: 0 auto;
@@ -200,7 +200,7 @@
     padding: 0;
 }
 
-#codelabMostrarMaisProjetosBtn {
+#codelabMostrarMaisCodelabBtn {
     background-color: transparent;
     border: var(--border-width) var(--border-style) var(--secund-color);
     color: var(--text-secondary);
@@ -216,19 +216,19 @@
     user-select: none;
 }
 
-#codelabMostrarMaisProjetosBtn:hover {
+#codelabMostrarMaisCodelabBtn:hover {
     background-color: var(--effect-highlight-blue);
     border-color: var(--primary);
     color: var(--text);
 }
 
-#codelabMostrarMaisProjetosBtn svg {
+#codelabMostrarMaisCodelabBtn svg {
     width: var(--font-lg);
     height: var(--font-lg);
     transition: transform var(--transition-speed-normal) var(--transition-easing);
 }
 
-#codelabMostrarMaisProjetosBtn.rotated svg {
+#codelabMostrarMaisCodelabBtn.rotated svg {
     transform: rotate(180deg);
 }
 
