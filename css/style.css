@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+section {
+    padding: 2rem;
+}
+
+#desktopPortfolioMenu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#desktopPortfolioMenu button,
+#menuMobile button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#portfolio > section {
+    display: none;
+}
+
+#projects { display: block; } /* Exibe "Projetos" por padrão no desktop */
+
+
+
+
+
+
+
+/* Menu Mobile oculto por padrão */
+#menuMobile {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #111;
+    color: #fff;
+    justify-content: space-around;
+    padding: 1rem 0;
+    z-index: 1000;
+}
+
+#menuMobile button {
+    background: none;
+    color: #fff;
+}
+
+
+
+
+
+
+@media (max-width: 700px) {
+    #desktopPortfolioMenu {
+        display: none;
+    }
+
+    #menuMobile {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+#loading {
+    background-color: #5059ff;
+}
+
+#header {
+    background-color: coral;
+}
+
+#hero {
+    background-color: hotpink;
+}
+
+#carrossel {
+    background-color: #073766;
+}
+
+#about {
+    background-color: #21665f;
+}
+
+#highlight {
+    background-color: #acda6b;
+}
+
+#contact {
+    background-color: gray;
+}
+
+#footer {
+    background: #a92323;
+}
+
+/*-------------------------------*/
+
+#projects {
+    background-color: aqua;
+}
+
+#formations {
+    background-color: #6fff00;
+}
+
+#skills {
+    background-color: #ffbb00;
+}

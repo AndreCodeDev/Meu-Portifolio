@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio Responsivo</title>
+
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
+
+  <section id="loading">Carregando...</section>
+  <header id="header">Cabeçalho</header>
+
+  <!-- Conteúdo principal (desktop) -->
+  <main id="mainContent">
+    <section id="hero">Hero</section>
+    <section id="carrossel">Carrossel</section>
+    <section id="about">Sobre</section>
+    <section id="highlight">Destaques</section>
+    <section id="contact">Contato</section>
+
+    <!-- Botões para alternar conteúdo na sessão portfólio -->
+    <div id="desktopPortfolioMenu">
+      <button data-target="projects">Projetos</button>
+      <button data-target="formations">Formações</button>
+      <button data-target="skills">Habilidades</button>
+    </div>
+
+    <section id="portfolio">
+      <section id="projects">Projetos</section>
+      <section id="formations">Formações</section>
+      <section id="skills">Habilidades</section>
+    </section>
+  </main>
+
+  <!-- Menu Mobile -->
+  <nav id="menuMobile">
+    <button data-mobile="inicio">Início</button>
+    <button data-mobile="projects">Projetos</button>
+    <button data-mobile="formations">Formações</button>
+    <button data-mobile="skills">Habilidades</button>
+  </nav>
+
+  <footer id="footer">Rodapé</footer>
+
+  <script src="/js/script.js"></script>
 </body>
 </html>
