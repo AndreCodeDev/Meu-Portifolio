@@ -270,6 +270,7 @@ svg {
     max-width: var(--space-lg);
     height: auto;
     filter: brightness(0) invert(1);
+    user-select: none;
 }
 
 
