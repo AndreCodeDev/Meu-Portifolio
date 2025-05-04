@@ -330,7 +330,6 @@
     .hero__text-content {
         align-items: center;
         text-align: center;
-        margin-top: var(--space-xl);
     }
 
     .hero__badge {
@@ -340,8 +339,8 @@
 
 @media screen and (max-width: 1024px) {
     .hero {
-        margin-top: var(--space-7xl);
-        min-height: 10dvh;
+        margin-top: var(--space-5xl);
+        min-height: 9dvh;
         color: var(--text);
         display: flex;
         align-items: center;
