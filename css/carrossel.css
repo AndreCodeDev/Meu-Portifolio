@@ -33,7 +33,7 @@
         overflow: hidden;
         position: relative;
         height: var(--space-2xl);
-        margin: var(--space-7xl) 0 var(--space-7xl);
+        margin: var(--space-5xl) 0 var(--space-5xl);
     }
     
     .carrossel {
