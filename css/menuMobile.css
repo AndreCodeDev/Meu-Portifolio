@@ -1,0 +1,44 @@
+@import url('style.css');
+
+/* Menu Mobile oculto por padrão */
+#menuMobile {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    justify-content: space-around;
+    gap: var(--space-xxs);
+    z-index: 1000;
+    user-select: text;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#menuMobile button {
+    background: none;
+    color: var(--text);
+    font-size: var(--font-xs);
+    padding: var(--space-md) var(--space-xs);
+    align-items: center;
+    gap: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+}
+
+#menuMobile button:focus {
+    outline: none;
+}
+
+#menuMobile button:active  {
+    background-color: transparent; 
+}
+
+#menuMobile img {
+    max-width: var(--space-lg);
+    height: auto;
+    filter: brightness(0) invert(1);
+    user-select: none; 
+    pointer-events: none;
+}
+

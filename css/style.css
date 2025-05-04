@@ -3,7 +3,13 @@
 @import url('carrossel.css');
 @import url('about.css');
 @import url('highlight.css');
-@import url('portfolio.css');
+@import url('contact.css');
+@import url('desktopPortfolioMenu.css');
+@import url('menuMobile.css');
+
+
+
+
 
 :root {
     --bg: #0f172a;
@@ -170,6 +176,12 @@ svg {
     opacity: 0.8;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
 ::selection {
     background-color: var(--text);
     color: var(--primary);
@@ -186,99 +198,6 @@ svg {
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Exibe "Projetos" por padrão no desktop */
-
-#desktopPortfolioMenu {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-#desktopPortfolioMenu button,
-#menuMobile button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-}
-
-#portfolio>section {
-    display: none;
-}
-
-#projects {
-    display: block;
-}
-
-
-
-
-
-
-
-
-/* Menu Mobile oculto por padrão */
-#menuMobile {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: var(--bg);
-    border-top: 1px solid var(--border);
-    justify-content: space-around;
-    gap: var(--space-xxs);
-    z-index: 1000;
-    user-select: text; /* Permite selecionar apenas o texto */
-    -webkit-tap-highlight-color: transparent; /* Remove a caixa azul no mobile */
-}
-
-#menuMobile button {
-    background: none;
-    color: var(--text);
-    font-size: var(--font-xs);
-    padding: var(--space-md) var(--space-xs);
-    align-items: center;
-    gap: var(--space-sm);
-    display: flex;
-    flex-direction: column;
-}
-
-#menuMobile button:focus {
-    outline: none;
-}
-
-#menuMobile button:focus {
-    background-color: transparent; 
-}
-
-#menuMobile img {
-    max-width: var(--space-lg);
-    height: auto;
-    filter: brightness(0) invert(1);
-    user-select: none; 
-    pointer-events: none;
-}
-
-
-
-
-
-
 
 @media (max-width: 700px) {
 

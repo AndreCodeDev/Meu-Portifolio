@@ -1,0 +1,61 @@
+@import url('style.css');
+
+/* Exibe "Projetos" por padrão no desktop */
+
+#desktopPortfolioMenu {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+    z-index: 1000;
+    user-select: text; 
+    -webkit-tap-highlight-color: transparent;
+}
+
+#desktopPortfolioMenu button {
+    background: var(--primary);
+    color: var(--text);
+    font-size: var(--font-sm);
+    padding: var(--space-sm) var(--space-md);
+    align-items: center;
+    gap: var(--space-sm);
+    display: flex;
+}
+
+#desktopPortfolioMenu button:hover{
+    background: var(--accent);
+    color: var(--text);
+}
+
+#desktopPortfolioMenu button:focus {
+    outline: none;
+}
+
+#desktopPortfolioMenu button:active  {
+    background-color: transparent; 
+}
+
+#desktopPortfolioMenu img {
+    max-width: var(--space-md);
+    filter: brightness(0) invert(1);
+    height: auto;
+    user-select: none; 
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+#portfolio>section {
+    display: none;
+}
+
+#projects {
+    display: block;
+}
