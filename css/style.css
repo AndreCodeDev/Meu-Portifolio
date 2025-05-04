@@ -259,18 +259,19 @@ svg {
 }
 
 #menuMobile button:focus {
-    outline: none; /* Remove a borda de foco */
+    outline: none;
 }
 
 #menuMobile button:focus {
-    background-color: transparent; /* Impede mudança de cor ao clicar */
+    background-color: transparent; 
 }
 
 #menuMobile img {
     max-width: var(--space-lg);
     height: auto;
     filter: brightness(0) invert(1);
-    user-select: none;
+    user-select: none; 
+    pointer-events: none;
 }
 
 
