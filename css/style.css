@@ -243,6 +243,8 @@ svg {
     justify-content: space-around;
     gap: var(--space-xxs);
     z-index: 1000;
+    user-select: text; /* Permite selecionar apenas o texto */
+    -webkit-tap-highlight-color: transparent; /* Remove a caixa azul no mobile */
 }
 
 #menuMobile button {
@@ -254,6 +256,14 @@ svg {
     gap: var(--space-sm);
     display: flex;
     flex-direction: column;
+}
+
+#menuMobile button:focus {
+    outline: none; /* Remove a borda de foco */
+}
+
+#menuMobile button:focus {
+    background-color: transparent; /* Impede mudança de cor ao clicar */
 }
 
 #menuMobile img {
