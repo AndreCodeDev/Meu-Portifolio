@@ -241,16 +241,27 @@ svg {
     background: var(--bg);
     border-top: 1px solid var(--border);
     justify-content: space-around;
-    padding: var(--space-sm);
+    gap: var(--space-xxs);
     z-index: 1000;
 }
 
 #menuMobile button {
     background: none;
     color: var(--text);
-    font-size: var(--font-sm);
-    text-transform: lowercase;
+    font-size: var(--font-xs);
+    padding: var(--space-md) var(--space-xs);
+    align-items: center;
+    gap: var(--space-sm);
+    display: flex;
+    flex-direction: column;
 }
+
+#menuMobile img {
+    max-width: var(--space-lg);
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
 
 
 
