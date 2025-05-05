@@ -1,7 +1,7 @@
 // Alternar seções no desktop
 const desktopButtons = document.querySelectorAll('#desktopPortfolioMenu button');
 const portfolioSections = ['projects', 'formations', 'skills'];
-const allSections = ['hero', 'carrossel', 'about', 'highlight', 'contact', 'projects', 'formations', 'skills'];
+const allSections = ['hero', 'carrossel', 'about', 'highlight', 'projects', 'formations', 'skills'];
 
 function hidePortfolioSections() {
   portfolioSections.forEach(id => {
@@ -37,7 +37,7 @@ function hideMobileSections() {
 }
 
 function showInicio() {
-  ['hero', 'carrossel', 'about', 'highlight', 'contact'].forEach(id => {
+  ['hero', 'carrossel', 'about', 'highlight'].forEach(id => {
     const el = document.getElementById(id);
     if (el) {
       el.style.display = 'block';
