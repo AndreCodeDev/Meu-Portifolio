@@ -9,26 +9,27 @@
 
 @import url('/css/portfolio/portfolio.css');
 
+@import url('/css/footer.css');
 
 
 :root {
     --bg: #0f172a;
     /* Fundo principal - azul quase preto */
-    --primary: #359eba;
+    --primary: #318da7;
     /* Destaque vibrante - azul neon/turquesa */
     --accent: #2563eb;
     /* Azul profissional - para botões e links */
     --text: #e2e8f0;
     /* Texto claro suave */
     --muted: #94a3b8;
-    /* Texto secundário/cinzas */
+    /* branco branco */
+    --white-white: #e2e8f0;
+    /* Texto claro suave */
     --card-bg: #1e293b;
     /* Fundo de cards/sessões internas */
     --border: #334155;
     /* Bordas e divisores discretos */
     --bg-grid: #1e293bcf;
-
-
 
     --color-warning: yellow;
     --color-error: red;
@@ -54,6 +55,7 @@
     --space-xs: clamp(0.25rem, 1vw, 0.5rem);
     --space-sm: clamp(0.5rem, 1.2vw, 0.75rem);
     --space-base: clamp(0.75rem, 1.5vw, 1rem);
+    --space-md-base: clamp(0.8125rem, 1.75vw, 1.25rem);
     --space-md: clamp(0.875rem, 2vw, 1.5rem);
     --space-lg: clamp(1rem, 2vw, 2rem);
     --space-xl: clamp(1.5rem, 3vw, 3rem);
@@ -72,9 +74,39 @@
     --border-radius-lg: 0.75rem;
     --border-radius-xl: 1rem;
     --border-radius-fll: 9999px;
+
+
+        /* Transições */
+        --transition-speed-fast: 150ms;
+        --transition-speed-normal: 300ms;
+        --transition-speed-slow: 500ms;
+        --transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-:root[data-theme="light"] {}
+:root[data-theme="light"] {
+    --bg: #f1f5f9;
+    /* Cinza muito claro como fundo principal */
+    --primary: #0ea5e9;
+    /* Azul turquesa para destaques */
+    --accent: #2563eb;
+    /* Azul padrão para links e botões */
+    --text: #1e293b;
+    /* Texto escuro - cinza azulado */
+    --muted: #55575a;
+    /* Texto secundário - cinza médio */
+    --white-white: #e2e8f0;
+    /* branco branco */
+    --card-bg: #dadada;
+    /* Cinza claro para cards/sessões */
+    --border: #cbd5e1;
+    /* Bordas suaves - cinza claro */
+    --bg-grid: #cbd5e1cc;
+    /* Grid cinza com leve transparência */
+
+}
+
+
+
 
 *,
 *::before,
@@ -91,7 +123,6 @@ body {
     background-color: var(--bg);
     min-height: 100vh;
     margin: 0;
-    color: var(--text);
     position: relative;
 }
 
@@ -105,7 +136,7 @@ body::before {
     background:
         linear-gradient(to right, var(--bg-grid, rgba(255, 1, 1, 0.05)) 1px, transparent 1px),
         linear-gradient(to bottom, var(--bg-grid, rgba(255, 255, 255, 0.05)) 1px, transparent 1px);
-    background-size: 24px 24px; 
+    background-size: 24px 24px;
     opacity: 0.37;
     z-index: -2;
     pointer-events: none;
@@ -179,11 +210,10 @@ svg {
 button {
     cursor: pointer;
     border: none;
-    border-radius: 5px;
 }
 
 ::selection {
-    background-color: var(--text);
+    background-color: var(--border);
     color: var(--primary);
 }
 
@@ -199,13 +229,21 @@ button {
     background-color: var(--primary);
 }
 
+
+
+
+
+
+
+
+
 @media (max-width: 700px) {
 
     #mainContent {
         margin-top: var(--space-7xl);
         min-height: 10dvh;
     }
-    
+
     #desktopPortfolioMenu {
         display: none;
     }

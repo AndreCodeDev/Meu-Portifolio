@@ -103,48 +103,65 @@
     margin: var(--space-md) 0 var(--space-lg);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero CTA Container */
 .hero__cta-container {
     display: flex;
+    gap: var(--space-sm);
+    z-index: 1000;
+    user-select: text;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: var(--space-sm);
+}
+
+.hero__cta-container button {
+    background: var(--primary);
+    color: var(--white-white);
+    font-size: var(--font-sm);
+    padding: var(--space-xxs) var(--space-md);
     align-items: center;
     gap: var(--space-sm);
-    margin-top: var(--space-lg);
+    display: flex;
+    justify-content: center;
+    border-radius: var(--border-radius-md);
+    transition: background 0.3s ease, color 0.3s ease; 
+    cursor: pointer;
+    border: none;
 }
 
-.cta-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: var(--space-xs) var(--space-md);
-    border-radius: var(--border-radius-sm);
-    font-weight: 400;
-    font-size: var(--font-sm);
-    transition: all var(--transition-speed-normal) var(--transition-easing);
-    text-decoration: none;
-}
-
-.cta-button--primary {
-    background-color: var(--primary);
+.hero__cta-container button:hover {
+    background: var(--card-bg);
     color: var(--text);
-    border: 1px solid var(--primary);
 }
 
-.cta-button--primary:hover {
-    background-color: var(--card-bg);
-    border: 1px solid var(--card-bg);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-sm);
+.hero__cta-container button:focus {
+    outline: none;
 }
 
-.cta-button img {
-    width: var(--space-base);
-    height: var(--space-base);
-    transition: all var(--transition-speed-normal) ease;
+.hero__cta-container button:active {
+    background-color: transparent;
+}
+
+.hero__cta-container img {
+    max-width: var(--space-base);
+    height: auto;
     filter: brightness(0) invert(1);
+    user-select: none;
+    pointer-events: none;
 }
 
-.cta-button:hover img {
-    filter: brightness(0) invert(1);
-}
 
 
 
@@ -153,16 +170,38 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero Social Links */
 .hero__social-links {
     display: flex;
     gap: var(--space-sm);
 }
 
 .hero__social-links-card {
+    position: relative;
     background-color: var(--card-bg);
     border-radius: var(--border-radius-fll);
     padding: var(--space-xxs);
-    transition: all var(--transition-speed-normal) ease;
+    width: var(--space-xl);
+    height: var(--space-xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
 .hero__social-links-card:hover {
@@ -172,22 +211,63 @@
 }
 
 .hero__social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: var(--space-xl);
-    height: var(--space-xl);
     color: var(--muted);
+    transition: color 0.3s ease;
 }
 
 .hero__social-links a:hover {
     color: var(--text);
 }
 
-.hero__social-links svg {
-    width: var(--space-base);
-    height: var(--space-base);
+.hero__social-links-card img {
+    max-width: var(--space-md);
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(62%) sepia(8%) saturate(300%) hue-rotate(180deg) brightness(94%) contrast(88%);
+    user-select: none;
+    pointer-events: none;
 }
+
+.hero__social-links-card:hover img {
+    filter: brightness(0) invert(1);
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--card-bg);
+    color: var(--text);
+    padding: var(--space-xs);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-xs);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    box-shadow: var(--shadow-medium);
+    border: 1px solid var(--effect-border-blue);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.hero__social-links-card:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(5px);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
