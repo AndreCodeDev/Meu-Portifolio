@@ -35,6 +35,10 @@
 
     --bg-code-content-max: #b9b9b911;
 
+
+    --border: #94a3b81a;
+
+
     --color-warning: yellow;
     --color-error: red;
     --color-success: green;
@@ -129,6 +133,7 @@ body {
     min-height: 100vh;
     margin: 0;
     position: relative;
+    text-decoration: none;
 }
 
 body::before {
@@ -184,7 +189,6 @@ h6 {
 
 p {
     font-size: var(--font-base);
-    margin-bottom: var(--space-md);
     color: var(--muted);
 }
 
@@ -220,7 +224,7 @@ button {
 
 ::selection {
     background-color: var(--border);
-    color: var(--primary);
+    color: var(--text);
 }
 
 ::-webkit-scrollbar {

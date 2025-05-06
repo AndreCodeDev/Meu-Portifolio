@@ -2,7 +2,6 @@
 
 /* Projects Section */
 .projects {
-    background: var(--background-secondary);
 }
 
 .projects-grid {
@@ -71,15 +70,16 @@
 .project-card__footer {
     display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     gap: var(--space-sm);
     padding: var(--space-sm) 0 0 0;
 }
 
-.project-card__date {
+.project-card__footer p{
+    margin: 0;
     color: var(--text);
-    font-size: var(--font-xxs);
-}
+    font-size: var(--font-xxs);}
 
 .project-card__actions {
     display: flex;
@@ -93,15 +93,14 @@
     background-color: var(--primary);
     color: white;
     text-decoration: none;
-    border-radius: var(--border-radius-small);
-    border: var(--border-width) var(--border-style) var(--border-header);
-    font-size: var(--font-xs);
+    border-radius: var(--border-radius-md);
+    border: solid 1px var(--border);
+    font-size: var(--font-xs-s);
     transition: all var(--transition-speed-normal) var(--transition-easing);
 }
 
 .project-card__button:hover {
-    background-color: var(--effect-highlight-blue);
-    border-color: var(--primary);
+    background: var(--card-bg);
     color: var(--text);
 }
 

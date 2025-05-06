@@ -5,20 +5,28 @@
 #desktopPortfolioMenu {
     display: flex;
     justify-content: center;
-    gap: var(--space-sm);
+    gap: var(--space-xl);
     z-index: 1000;
     user-select: text; 
     -webkit-tap-highlight-color: transparent;
+    min-height: 30vh;
+    scroll-margin-top: 80px; 
 }
 
 #desktopPortfolioMenu button {
     background: var(--primary);
-    color: var(--text);
+    color: var(--white-white);
     font-size: var(--font-sm);
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--space-xxs) var(--space-5xl);
     align-items: center;
     gap: var(--space-sm);
     display: flex;
+    justify-content: center;
+    border: solid 1px var(--border);
+    border-radius: var(--border-radius-md);
+    transition: background 0.3s ease, color 0.3s ease; 
+    cursor: pointer;
+    height: var(--space-2xl);
 }
 
 #desktopPortfolioMenu button:hover{
@@ -41,14 +49,3 @@
     user-select: none; 
     pointer-events: none;
 }
-
-
-
-
-
-
-
-
-
-
-

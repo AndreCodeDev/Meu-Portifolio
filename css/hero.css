@@ -136,9 +136,9 @@
     display: flex;
     justify-content: center;
     border-radius: var(--border-radius-md);
+    border: solid 1px var(--border);
     transition: background 0.3s ease, color 0.3s ease; 
     cursor: pointer;
-    border: none;
 }
 
 .hero__cta-container button:hover {
@@ -194,6 +194,7 @@
     position: relative;
     background-color: var(--card-bg);
     border-radius: var(--border-radius-fll);
+    border: solid 1px var(--border);
     padding: var(--space-xxs);
     width: var(--space-xl);
     height: var(--space-xl);
