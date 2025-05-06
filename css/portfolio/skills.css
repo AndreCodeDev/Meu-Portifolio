@@ -1,5 +1,28 @@
 @import url('style.css');
 
+
+
+
+.skills__header {
+    margin-bottom: var(--space-lg);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.skills--title {
+    font-size: var(--font-3xl);
+    font-weight: 800;
+    background: linear-gradient(to right, var(--primary), var(--muted));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+
 /* Estilos gerais da seção */
 .skills {
     background: transparent;
@@ -24,9 +47,9 @@
 .skills__filter button {
     padding: var(--space-xs) var(--space-sm);
     background-color: var(--bg-code-content-max);
-    border: var(--border-width) var(--border-style) var(--border-header);
+    border: 1px solid var(--border);
     color: var(--text);
-    border-radius: var(--border-radius-small);
+    border-radius: var(--border-radius-sm);
     cursor: pointer;
     transition: all var(--transition-speed-normal) var(--transition-easing);
     font-size: var(--font-sm);
@@ -35,7 +58,7 @@
 .skills__filter button.active,
 .skills__filter button:hover {
     background-color: var(--effect-highlight-blue);
-    border-color: var(--primary);
+    border: 1px solid var(--primary);
     color: var(--text);
 }
 
@@ -58,8 +81,8 @@
     align-items: center;
     justify-content: center;
     background-color: var(--bg-code-content-max);
-    border: var(--border-width) var(--border-style) var(--border-header);
-    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius-md);
     text-align: center;
     width: var(--space-5xl);
     height: var(--space-5xl);
@@ -73,7 +96,7 @@
 }
 
 .skill__card:hover {
-    border-color: var(--primary);
+    border: 1px solid var(--primary);
     transform: translateY(-5px);
     box-shadow: var(--shadow-blue-glow);
     background-color: var(--bg-url-box);

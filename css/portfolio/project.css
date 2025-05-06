@@ -1,5 +1,39 @@
 @import url('style.css');
 
+
+/* Seção de conquistas */
+#portfolio {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    min-height: 100vh;
+    scroll-margin-top: 80px; 
+}
+
+.projects__header {
+    margin-bottom: var(--space-lg);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.projects--title {
+    font-size: var(--font-3xl);
+    font-weight: 800;
+    background: linear-gradient(to right, var(--primary), var(--muted));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+
+
 /* Projects Section */
 .projects {
 }
@@ -10,6 +44,8 @@
     gap: var(--space-md);
     max-width: 1300px;
     margin: 0 auto;
+    justify-content: center;
+    align-items: stretch;
     padding: 0 var(--space-lg);
 }
 
@@ -17,6 +53,7 @@
 .project-card {
     background-color: var(--bg-code-content-max);
     border-radius: var(--border-radius-small);
+    border: 1px solid var(--border);
     padding: var(--space-lg);
     overflow: hidden;
     box-shadow: var(--shadow-md);
@@ -24,7 +61,7 @@
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
 }
 
@@ -52,6 +89,7 @@
     text-align: start;
     line-height: 1.6;
     margin-bottom: var(--space-md);
+    text-align: justify;
 }
 
 .project-card__techs {
@@ -86,7 +124,7 @@
     gap: var(--space-xs);
 }
 
-.project-card__button {
+.project-card__button  {
     display: inline-flex;
     align-items: center;
     padding: var(--space-xs) var(--space-base);
@@ -97,6 +135,8 @@
     border: solid 1px var(--border);
     font-size: var(--font-xs-s);
     transition: all var(--transition-speed-normal) var(--transition-easing);
+    transition: background 0.3s ease, color 0.3s ease; 
+
 }
 
 .project-card__button:hover {
@@ -104,19 +144,35 @@
     color: var(--text);
 }
 
-.projects--github {
+
+
+
+
+
+
+
+
+
+
+
+.github {
     display: inline-flex;
     align-items: center;
     position: relative;
     margin-top: var(--space-xl);
+    background-color: transparent;
+    color: var(--primary);
+    border: none;
+
     transition: color var(--transition-speed-normal) var(--transition-easing);
     font-size: var(--font-base);
-    color: var(--primary-light);
+    color: var(--primary);
     font-weight: 400;
     padding: 0 0 var(--space-sm);
+    background-color: transparent;
 }
 
-.projects--github::after {
+.github::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -124,15 +180,22 @@
     height: .15rem;
     bottom: -0.2rem;
     left: 0;
-    background: linear-gradient(270deg, var(--primary-light) 0%, var(--bg) 100%);
+    background: linear-gradient(270deg, var(--primary) 0%, var(--bg) 100%);
     transform-origin: bottom right;
     transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-.projects--github:hover::after {
+.github:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+
+
+
+
+
+
 
 /* Botão de Certificação */
 .project--verCertificacao {
@@ -154,6 +217,15 @@
     border-color: var(--primary);
     color: var(--text);
 }
+
+
+
+
+
+
+
+
+
 
 /* Footer e Botão "Ver Mais" */
 .project-footer {
@@ -312,90 +384,53 @@
 .codelab-card__footer {
     display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     gap: var(--space-sm);
     padding: var(--space-sm) 0 0 0;
-  }
-  
-  .codelab-card__date {
+}
+
+.codelab-card__footer p{
+    margin: 0;
     color: var(--text);
-    font-size: var(--font-xxs);
-  }
-  
-  .codelab-card__actions {
+    font-size: var(--font-xxs);}
+
+.codelab-card__actions {
     display: flex;
-    flex-direction: column;
     gap: var(--space-xs);
-  }
-  
-  .codelab-card__button {
+}
+
+.codelab-card__button  {
     display: inline-flex;
     align-items: center;
     padding: var(--space-xs) var(--space-base);
     background-color: var(--primary);
     color: white;
     text-decoration: none;
-    border-radius: var(--border-radius-small);
-    border: var(--border-width) var(--border-style) var(--border-header);
-    font-size: var(--font-xs);
+    border-radius: var(--border-radius-md);
+    border: solid 1px var(--border);
+    font-size: var(--font-xs-s);
     transition: all var(--transition-speed-normal) var(--transition-easing);
-  }
-  
-  .codelab-card__button:hover {
-    background-color: var(--effect-highlight-blue);
-    border-color: var(--primary);
+    transition: background 0.3s ease, color 0.3s ease; 
+
+}
+
+.codelab-card__button:hover {
+    background: var(--card-bg);
     color: var(--text);
-  }
-  
-  .codelab-card__button img {
-    width: var(--space-sm);
-    height: var(--space-sm);
-    margin-left: var(--space-xs);
-    filter: var(--filter-button);
-    transition: filter var(--transition-speed-normal) var(--transition-easing);
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-.codelab--github {
-    display: inline-flex;
-    align-items: center;
-    position: relative;
-    margin-top: var(--space-xl);
-    transition: color var(--transition-speed-normal) var(--transition-easing);
-    font-size: var(--font-base);
-    color: var(--primary-light);
-    font-weight: 400;
-    padding: 0 0 var(--space-sm);
 }
 
-.codelab--github::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: .15rem;
-    bottom: -0.2rem;
-    left: 0;
-    background: linear-gradient(270deg, var(--primary-light) 0%, var(--bg) 100%);
-    transform-origin: bottom right;
-    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
-}
 
-.codelab--github:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 

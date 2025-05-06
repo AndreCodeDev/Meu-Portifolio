@@ -2,6 +2,8 @@
 
 #portfolio>section {
     display: none;
+    min-height: 100vh;
+    scroll-margin-top: 80px; 
 }
 
 #projects {

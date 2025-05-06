@@ -11,11 +11,12 @@
     -webkit-tap-highlight-color: transparent;
     min-height: 30vh;
     scroll-margin-top: 80px; 
+    color: var(--text);
 }
 
 #desktopPortfolioMenu button {
     background: var(--primary);
-    color: var(--white-white);
+    color: var(--text);
     font-size: var(--font-sm);
     padding: var(--space-xxs) var(--space-5xl);
     align-items: center;
@@ -24,7 +25,7 @@
     justify-content: center;
     border: solid 1px var(--border);
     border-radius: var(--border-radius-md);
-    transition: background 0.3s ease, color 0.3s ease; 
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     height: var(--space-2xl);
 }
@@ -32,15 +33,19 @@
 #desktopPortfolioMenu button:hover{
     background: var(--card-bg);
     color: var(--text);
+    transform: translateY(-3px);
 }
 
 #desktopPortfolioMenu button:focus {
     outline: none;
 }
 
-#desktopPortfolioMenu button:active  {
-    background-color: transparent; 
+#desktopPortfolioMenu button.active {
+    background: var(--card-bg);
+    color: var(--white-white);
+    box-shadow: 0 0 0 1px #318da747, 0 0 10px #318da75d;
 }
+
 
 #desktopPortfolioMenu img {
     max-width: var(--space-md);

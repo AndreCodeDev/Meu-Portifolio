@@ -9,7 +9,7 @@
     background: var(--bg);
     border-top: 1px solid var(--border);
     justify-content: space-around;
-    gap: var(--space-xxs);
+    gap: 0 auto;
     z-index: 1000;
     user-select: text;
     -webkit-tap-highlight-color: transparent;

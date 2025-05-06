@@ -2,10 +2,32 @@
 
 
 /*----------------------------------*/
+
+
+
+.formations__header {
+    margin-bottom: var(--space-lg);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.formations--title {
+    font-size: var(--font-3xl);
+    font-weight: 800;
+    background: linear-gradient(to right, var(--primary), var(--muted));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
 /* Estilo da Seção de Formação */
 
 .formacao--container h2 {
-    color: var(--text-secondary);
+    color: var(--muted);
     padding-bottom: var(--space-lg);
     font-size: var(--font-3xl);
     font-weight: 500;
@@ -39,9 +61,8 @@
 
 /* Efeito de Hover */
 .formacao-card:hover {
-    border-color: var(--color-gray-500);
-    transform: scale(1.02);
-    box-shadow: 0 var(--space-md) var(--space-xl) var(--effect-highlight-purple);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
 }
 
 /* Conteúdo dos Cards */
@@ -65,7 +86,7 @@
 
 .card-info h3 {
     text-align: start;
-    color: var(--text-dark-secondary);
+    color: var(--text);
     font-size: var(--font-sm);
     font-weight: 600;
     margin: 0;
@@ -73,20 +94,20 @@
 
 .card-info p {
     text-align: start;
-    color: var(--text-code-content);
+    color: var(--muted);
     font-size: var(--font-xxs);
     margin: 0;
 }
 
 .card-details p {
     text-align: start;
-    color: var(--text-code-content);
+    color: var(--muted);
     font-size: var(--font-xxs);
     margin: var(--space-sm) 0;
 }
 
 .card-details strong {
-    color: var(--text-dark-secondary);
+    color: var(--text);
     font-size: var(--font-xxs);
 }
 
@@ -101,7 +122,7 @@
 #formacaoMostrarMaisBtn {
     background-color: transparent;
     border: var(--border-width) var(--border-style) var(--secund-color);
-    color: var(--text-secondary);
+    color: var(--muted);
     padding: var(--space-sm) var(--space-lg);
     border-radius: var(--border-radius-medium);
     font-size: var(--font-base);
@@ -115,7 +136,7 @@
 }
 
 #formacaoMostrarMaisBtn:hover {
-    background-color: var(--effect-highlight-blue);
+    background-color: var(--primary);
     border-color: var(--primary);
     color: var(--text);
 }
@@ -151,19 +172,18 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--space-2xl);
     margin: 0 auto;
-    padding: 0 var(--space-lg);
     max-width: 90%;
 }
 
 .certificados-item {
     border-radius: var(--border-radius-medium);
     cursor: pointer;
-    transition: transform var(--transition-speed-normal) var(--transition-easing);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     align-items: center;
 }
 
 .certificados-item:hover {
-    transform: scale(1.01);
+    transform: translateY(-4px);
 }
 
 .certificados-image {
@@ -185,7 +205,7 @@
 #certificadosMostrarMaisCertificadosBtn {
     background-color: transparent;
     border: var(--border-width) var(--border-style) var(--secund-color);
-    color: var(--text-secondary);
+    color: var(--muted);
     padding: var(--space-sm) var(--space-lg);
     border-radius: var(--border-radius-medium);
     font-size: var(--font-base);
@@ -199,7 +219,7 @@
 }
 
 #certificadosMostrarMaisCertificadosBtn:hover {
-    background-color: var(--effect-highlight-blue);
+    background-color: var(--primary);
     border-color: var(--primary);
     color: var(--text);
 }

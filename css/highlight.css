@@ -48,8 +48,6 @@
 
 
 
-
-
 .conquistas-news {
     text-align: center;
 }
@@ -91,6 +89,7 @@
     flex-shrink: 0;
     transition: opacity var(--transition-speed-slow) var(--transition-easing),
         transform var(--transition-speed-slow) var(--transition-easing);
+
 }
 
 /* Lado frontal e traseiro do card */
@@ -104,12 +103,16 @@
     transition: opacity var(--transition-speed-fast) var(--transition-easing),
         transform var(--transition-speed-slow) var(--transition-easing);
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Lado frontal do card */
 .card__front {
     background-color: transparent;
     transform: rotateY(0deg);
+
 }
 
 /* Ajuste da imagem */
@@ -293,11 +296,11 @@
 }
 
 .conquistas-carousel-control.prev {
-    left: -5%;
+    left: 5%;
 }
 
 .conquistas-carousel-control.next {
-    right: -5%;
+    right: 5%;
 }
 
 /* Efeito ao clicar */
@@ -335,4 +338,28 @@ body.light-mode .carousel-control-next-icon {
 
 /*----------------------------------*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 420px) {
+/* Ajuste da imagem */
+.card__front img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    user-select: none;
+    border-radius: var(--border-radius-small);
+}
+}
 

@@ -67,7 +67,7 @@ document.querySelectorAll('.skills__filter button').forEach(button => {
         if (button.classList.contains('active')) {
             button.style.backgroundColor = 'var(--effect-highlight-blue)';
             button.style.borderColor = 'var(--primary)';
-            button.style.color = 'var(--text-secondary)';
+            button.style.color = 'var(--primary)';
         }
     });
 });

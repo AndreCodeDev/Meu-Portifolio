@@ -24,8 +24,6 @@
     --text: #e2e8f0;
     /* Texto claro suave */
     --muted: #94a3b8;
-    /* branco branco */
-    --white-white: #e2e8f0;
     /* Texto claro suave */
     --card-bg: #1e293b;
     /* Fundo de cards/sessões internas */
@@ -84,15 +82,15 @@
     --border-radius-fll: 9999px;
 
 
-        /* Transições */
-        --transition-speed-fast: 150ms;
-        --transition-speed-normal: 300ms;
-        --transition-speed-slow: 500ms;
-        --transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
+    /* Transições */
+    --transition-speed-fast: 150ms;
+    --transition-speed-normal: 300ms;
+    --transition-speed-slow: 500ms;
+    --transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :root[data-theme="light"] {
-    --bg: #f1f5f9;
+    --bg: #ffffff;
     /* Cinza muito claro como fundo principal */
     --primary: #0ea5e9;
     /* Azul turquesa para destaques */
@@ -104,7 +102,7 @@
     /* Texto secundário - cinza médio */
     --white-white: #e2e8f0;
     /* branco branco */
-    --card-bg: #dadada;
+    --card-bg: #f7f7f7;
     /* Cinza claro para cards/sessões */
     --border: #cbd5e1;
     /* Bordas suaves - cinza claro */
@@ -122,7 +120,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 body {
@@ -190,12 +188,11 @@ h6 {
 p {
     font-size: var(--font-base);
     color: var(--muted);
+    text-decoration: none;
 }
 
 a {
-    color: var(--accent);
     text-decoration: none;
-    transition: color 0.3s;
 }
 
 ul,
@@ -219,7 +216,6 @@ svg {
 button {
     cursor: pointer;
     text-decoration: none;
-    border: none;
 }
 
 ::selection {

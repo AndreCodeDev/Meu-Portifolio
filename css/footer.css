@@ -2,15 +2,14 @@
 
 .footer--grid-layout {
     height: 80px;
-    background-color: var(--bg-header);
-    color: var(--text);
+    background-color: var(--bg);
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
     gap: var(--space-sm);
-    border-top: 1px solid var(--border-header);
+    border-top: 1px solid var(--border);
 }
 
 .footer-group {
@@ -20,12 +19,13 @@
 }
 
 .footer--grid-layout p {
+    color: var(--text);
     font-size: var(--font-sm);
     margin: 0;
 }
 
 .footer--grid-layout a {
-    color: var(--primary-light);
+    color: var(--primary);
     text-decoration: none;
 }
 

@@ -530,19 +530,21 @@ console.log('Pronto para o próximo desafio!');
     
     <!-- Botões para alternar conteúdo na sessão portfólio -->
     <div id="desktopPortfolioMenu">
-      <button data-target="projects">
+      <button href="#portfolio"  data-target="projects">
         <img src="img/redes/project.svg" alt="projects">Projetos</button>
-      <button data-target="formations">
+      <button href="#portfolio" data-target="formations">
         <img src="img/redes/formacoes.svg" alt="formations">Formações</button>
-      <button data-target="skills">
+      <button href="#portfolio" data-target="skills">
         <img src="img/redes/skills.svg" alt="skills">Habilidades</button>
     </div>
 
     <section id="portfolio">
       
       <section id="projects">
+        <div class="projects__header">
+          <h2 class="projects--title">Projetos</h2>
+        </div>
         <div class="portfolio__cards" id="cards-projetos">
-          <!-- project -->
           <section id="projects" class="projects">
 
             <div class="projects-grid">
@@ -890,19 +892,24 @@ console.log('Pronto para o próximo desafio!');
                     <path d="M6 9l6 6 6-6" />
                   </svg>
                 </button>
-                <a
+
+                <button
                   href="https://github.com/AndreCodeDev"
                   rel="noopener"
                   target="_blank"
-                  class="projects--github"
+                  class="github"
                 >
                   Ver todos os repositórios no GitHub
-                </a>
+                </button>
+
               </footer>
 
           </section>
         </div>
 
+        <div class="projects__header">
+          <h2 class="projects--title">Codelab</h2>
+        </div>
         <div class="portfolio__cards" id="cards-codelab">
 
           <div class="codelab-grid">
@@ -1074,14 +1081,14 @@ console.log('Pronto para o próximo desafio!');
                   <path d="M6 9l6 6 6-6" />
                 </svg>
               </button>
-              <a
-                href="https://github.com/AndreCodeDev"
-                rel="noopener"
-                target="_blank"
-                class="codelab--github"
-              >
-                Ver todos os repositórios no GitHub
-              </a>
+              <button
+              href="https://github.com/AndreCodeDev"
+              rel="noopener"
+              target="_blank"
+              class="github"
+            >
+              Ver todos os repositórios no GitHub
+            </button>
             </footer>
 
         </div>
@@ -1090,6 +1097,9 @@ console.log('Pronto para o próximo desafio!');
 
       <section id="formations">
 
+        <div class="formations__header">
+          <h2 class="formations--title">Formações</h2>
+        </div>
         <div class="highlights__cards" id="cards-formacoes">
           <section id="formacao">
             <div class="formacao--container">
@@ -1271,6 +1281,9 @@ console.log('Pronto para o próximo desafio!');
           </section>
         </div>
 
+        <div class="formations__header">
+          <h2 class="formations--title">Certificados</h2>
+        </div>
         <div class="portfolio__cards" id="cards-certificados">
           <section class="certificados__section">
             <div class="certificados-item">
@@ -1420,7 +1433,9 @@ console.log('Pronto para o próximo desafio!');
       </section>
 
       <section id="skills">
-        
+        <div class="skills__header">
+          <h2 class="skills--title">Certificados</h2>
+        </div>
         <div class="portfolio__cards" id="cards-skills">
           <!-- skills -->
           <section id="habilidades" class="skills">
@@ -1579,8 +1594,8 @@ console.log('Pronto para o próximo desafio!');
           width="14"
           height="14"
           viewBox="0 0 24 24"
-          fill="#00a2ff"
-          stroke="#00a2ff"
+          fill="#318da7"
+          stroke="#318da7"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
