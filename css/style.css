@@ -121,7 +121,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none !important;
-    color: white !important;
 }
 
 body {
@@ -194,6 +193,7 @@ p {
 
 a {
     text-decoration: none;
+    color: white !important;
 }
 
 ul,
@@ -217,6 +217,7 @@ svg {
 button {
     cursor: pointer;
     text-decoration: none;
+    color: white !important;
 }
 
 ::selection {
