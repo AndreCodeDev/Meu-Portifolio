@@ -12,7 +12,7 @@
     height: 75px;
     background-color: var(--bg);
     border-bottom: 1px solid var(--border);
-    z-index: 1000;
+    z-index: 10000;
     transition: transform 0.3s ease;
   }
   
