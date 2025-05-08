@@ -9,8 +9,6 @@
     text-align: center;
     gap: var(--space-sm);
     border-top: 1px solid var(--border);
-    margin: var(--space-md) 0 var(--space-md);
-    padding: var(--space-md) 0 var(--space-md);
 }
 
 .footer-group {
@@ -34,4 +32,12 @@
     width: var(--space-lg);
     height: var(--space-lg);
     user-select: none;
+}
+
+
+@media (max-width: 700px) {
+    #footer--grid-layout {
+        margin-bottom: var(--space-5xl);
+        padding: var(--space-sm);
+    }
 }
