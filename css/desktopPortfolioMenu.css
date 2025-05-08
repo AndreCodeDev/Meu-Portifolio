@@ -1,0 +1,61 @@
+@import url('sysle.css');
+
+#desktopPortfolioMenu {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-xl);
+    z-index: 10;
+    user-select: text; 
+    -webkit-tap-highlight-color: transparent;
+    scroll-margin-top: 80px; 
+    color: var(--text-white);
+    margin: var(--space-md) 0 var(--space-md);
+}
+
+#desktopPortfolioMenu button {
+    background: var(--primary);
+    color: var(--text-white);
+    font-size: var(--font-sm);
+    padding: var(--space-xxs) var(--space-2xl);
+    align-items: center;
+    gap: var(--space-sm);
+    display: flex;
+    justify-content: center;
+    border: solid 1px var(--border);
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    height: var(--space-2xl);
+    transition: background 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#desktopPortfolioMenu button:hover {
+    background: var(--bg-grid);
+    color: var(--text-white);
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+#desktopPortfolioMenu button:focus {
+    outline: none;
+}
+
+#desktopPortfolioMenu button.active {
+    background-color: var(--bg-grid);
+    color: var(--primary);
+    box-shadow: 0 0 0 1px #318da747, 0 0 10px #318da75d;
+    transform: scale(1.03);
+}
+
+#desktopPortfolioMenu img {
+    max-width: var(--space-md);
+    filter: var(--filter-button);
+    height: auto;
+    user-select: none;
+    pointer-events: none;
+}
+
+#desktopPortfolioMenu button.active img {
+    filter: brightness(0) saturate(100%) invert(39%) sepia(36%) saturate(772%) hue-rotate(156deg) brightness(91%) contrast(91%);
+}

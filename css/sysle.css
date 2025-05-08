@@ -1,27 +1,46 @@
-body {
+@import url('variables.css');
+@import url('desktopPortfolioMenu.css');
+@import url('menuMobile.css');
+@import url('components.css');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     margin: 0;
-    font-family: sans-serif;
+    padding: 0;
 }
 
-section {
-    padding: 2rem;
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: var(--bg);
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    text-decoration: none;
 }
 
-#desktopPortfolioMenu {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        linear-gradient(to right, var(--bg-grid, rgba(255, 1, 1, 0.05)) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--bg-grid, rgba(255, 255, 255, 0.05)) 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.37;
+    z-index: -2;
+    pointer-events: none;
 }
 
-#desktopPortfolioMenu button,
-#menuMobile button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-}
+
+
+
 
 #portfolio > section {
     display: none;
@@ -32,26 +51,6 @@ section {
 
 
 
-
-
-
-/* Menu Mobile oculto por padrão */
-#menuMobile {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #111;
-    color: #fff;
-    justify-content: space-around;
-    padding: 1rem 0;
-    z-index: 1000;
-}
-
-#menuMobile button {
-    background: none;
-    color: #fff;
-}
 
 
 

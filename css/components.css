@@ -1,0 +1,276 @@
+@import url('sysle.css');
+
+/*button__geral*/
+
+.button__geral__cta-container {
+    display: flex;
+    gap: var(--space-sm);
+    user-select: text;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: var(--space-sm);
+}
+
+.button__geral__cta-container button {
+    background: var(--primary);
+    color: var(--white-white);
+    font-size: var(--font-sm);
+    padding: var(--space-xxs) var(--space-md);
+    align-items: center;
+    gap: var(--space-sm);
+    display: flex;
+    justify-content: center;
+    border-radius: var(--border-radius-md);
+    border: solid 1px var(--border);
+    transition: background 0.3s ease, color 0.3s ease; 
+    cursor: pointer;
+}
+
+.button__geral__cta-container button:hover {
+    background: var(--card-bg);
+    color: var(--text);
+}
+
+.button__geral__cta-container button:focus {
+    outline: none;
+}
+
+.button__geral__cta-container button:active {
+    background-color: transparent;
+}
+
+.button__geral__cta-container img {
+    max-width: var(--space-base);
+    height: auto;
+    filter: brightness(0) invert(1);
+    user-select: none;
+    pointer-events: none;
+}
+
+/*button__vermais*/
+
+.button__vermais__footer {
+    text-align: center;
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-4xl);
+    background-color: transparent;
+    padding: 0;
+}
+
+#button__vermais {
+    background-color: transparent;
+    border: var(--border-width) var(--border-style) var(--secund-color);
+    color: var(--text);
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--border-radius-medium);
+    font-size: var(--font-base);
+    cursor: pointer;
+    transition: all var(--transition-speed-normal) var(--transition-easing);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin: 0 auto;
+    user-select: none;
+}
+
+#button__vermais:hover {
+    background-color: var(--effect-highlight-blue);
+    border-color: var(--primary);
+    color: var(--text);
+}
+
+#button__vermais svg {
+    width: var(--font-lg);
+    height: var(--font-lg);
+    transition: transform var(--transition-speed-normal) var(--transition-easing);
+}
+
+#button__vermais.rotated svg {
+    transform: rotate(180deg);
+}
+
+/* Cards Ocultos */
+.hidden {
+    display: none;
+}
+
+/*button__github*/
+
+.button__github {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    margin-top: var(--space-xl);
+    background-color: transparent;
+    color: var(--primary);
+    border: none;
+
+    transition: color var(--transition-speed-normal) var(--transition-easing);
+    font-size: var(--font-base);
+    color: var(--primary);
+    font-weight: 400;
+    padding: 0 0 var(--space-sm);
+    background-color: transparent;
+}
+
+.button__github::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: .15rem;
+    bottom: -0.2rem;
+    left: 0;
+    background: linear-gradient(270deg, var(--primary) 0%, var(--bg) 100%);
+    transform-origin: bottom right;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.button__github:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*button__redes*/
+
+.button__redes__social-links {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.button__redes__social-links-card {
+    position: relative;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius-fll);
+    border: solid 1px var(--border);
+    padding: var(--space-xxs);
+    width: var(--space-xl);
+    height: var(--space-xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.button__redes__social-links-card:hover {
+    background-color: var(--primary);
+    color: var(--text);
+    transform: translateY(-2px);
+}
+
+.button__redes__social-links a {
+    color: var(--muted);
+    transition: color 0.3s ease;
+}
+
+.button__redes__social-links a:hover {
+    color: var(--text);
+}
+
+.button__redes__social-links-card img {
+    max-width: var(--space-md);
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(62%) sepia(8%) saturate(300%) hue-rotate(180deg) brightness(94%) contrast(88%);
+    user-select: none;
+    pointer-events: none;
+}
+
+.button__redes__social-links-card:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.button__redes__tooltip {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--card-bg);
+    color: var(--text);
+    padding: var(--space-xs);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-xs);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    box-shadow: var(--shadow-medium);
+    border: 1px solid var(--effect-border-blue);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.button__redes__social-links-card:hover .button__redes__tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(5px);
+}
+
+/*title*/
+
+.title {
+    font-size: var(--font-3xl);
+    font-weight: 800;
+    background: linear-gradient(to right, var(--primary), var(--muted));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+/*text__paragraf*/
+
+.text__paragraf {
+    font-size: var(--font-sm);
+    text-align: justify;
+    line-height: 1.6;
+    color: var(--text);
+    max-width: 65ch;
+    margin: var(--space-md) 0 var(--space-sm);
+}
+
+/*cards*/
+
+.cards__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-md);
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+}
+
+/* codelab Card */
+.cards__grid__card {
+    background-color: var(--bg-code-content-max);
+    border-radius: var(--border-radius-md);
+    padding: var(--space-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards__grid__card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+
+
+
+
+
+
+
+
+.button_desktopPortfolioMenu {
+    
+}
+
+.button_menuMobile {
+    
+}
+
+.button_card {
+    
+}

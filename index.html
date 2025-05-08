@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Portfólio Responsivo</title>
+  <title>Portfólio AndreCode</title>
   <link rel="icon" href="img/logo.svg" type="image/svg" />
 
   <link rel="stylesheet" href="/css/sysle.css">
@@ -26,9 +26,13 @@
 
     <!-- Botões para alternar conteúdo na sessão portfólio -->
     <div id="desktopPortfolioMenu">
-      <button data-target="projects">Projetos</button>
-      <button data-target="formations">Formações</button>
-      <button data-target="skills">Habilidades</button>
+      <button data-target="projects">
+        <img src="img/redes/project.svg" alt="Projetos">Projetos
+      </button>
+      <button data-target="formations">
+        <img src="img/redes/formation.svg" alt="Formações">Formações</button>
+      <button data-target="skills">
+        <img src="img/redes/skills.svg" alt="Habilidades">Habilidades</button>
     </div>
 
     <section id="portfolio">
@@ -40,15 +44,20 @@
 
   <!-- Menu Mobile -->
   <nav id="menuMobile">
-    <button data-mobile="inicio">Início</button>
-    <button data-mobile="projects">Projetos</button>
-    <button data-mobile="formations">Formações</button>
-    <button data-mobile="skills">Habilidades</button>
+    <button data-mobile="inicio" class="active">
+      <img src="img/redes/home.svg" alt="home">Início</button>
+    <button data-mobile="projects">
+      <img src="img/redes/project.svg" alt="projects">Projetos</button>
+    <button data-mobile="formations">
+      <img src="img/redes/formation.svg" alt="formations">Formações</button>
+    <button data-mobile="skills">
+      <img src="img/redes/skills.svg" alt="skills">Habilidades</button>
   </nav>
 
   <footer id="footer">Rodapé</footer>
 
   <script src="/js/script.js"></script>
+  <script src="/js/menuMobile.js"></script>
 
 </body>
 </html>
