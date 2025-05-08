@@ -291,6 +291,10 @@
         padding: var(--space-base) var(--space-4xl);
     }
 
+    .button__geral__cta-container img {
+        max-width: var(--space-lg);
+    }
+
     .button__redes__social-links {
         order: 2;
         margin-top: var(--space-md);
