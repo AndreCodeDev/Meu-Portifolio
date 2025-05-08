@@ -1,7 +1,7 @@
 // Alternar seções no desktop
 const desktopButtons = document.querySelectorAll('#desktopPortfolioMenu button');
-const portfolioSections = ['projects', 'formations', 'skills'];
-const allSections = ['hero', 'carrossel', 'about', 'highlight', 'contact', 'projects', 'formations', 'skills'];
+const portfolioSections = ['projects', 'formations', 'technologies'];
+const allSections = ['hero', 'carrossel', 'about', 'highlight', 'contact', 'projects', 'formations', 'technologies'];
 
 function hidePortfolioSections() {
   portfolioSections.forEach(id => {
