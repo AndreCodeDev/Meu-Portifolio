@@ -2,6 +2,10 @@
 @import url('desktopPortfolioMenu.css');
 @import url('menuMobile.css');
 @import url('components.css');
+@import url('header.css');
+@import url('hero.css');
+@import url('carroseelAbout.css');
+@import url('footer.css');
 
 *,
 *::before,
@@ -38,6 +42,16 @@ body::before {
     pointer-events: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+svg {
+    background-color: transparent;
+    opacity: 0.8;
+}
 
 
 
@@ -79,18 +93,6 @@ body::before {
     background-color: #5059ff;
 }
 
-#header {
-    background-color: coral;
-}
-
-#hero {
-    background-color: hotpink;
-}
-
-#carrossel {
-    background-color: #073766;
-}
-
 #about {
     background-color: #21665f;
 }
@@ -103,10 +105,6 @@ body::before {
     background-color: gray;
 }
 
-#footer {
-    background: #a92323;
-}
-
 /*-------------------------------*/
 
 #projects {
@@ -117,6 +115,6 @@ body::before {
     background-color: #6fff00;
 }
 
-#stack {
+#technologies {
     background-color: #ffbb00;
 }

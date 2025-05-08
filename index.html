@@ -1,63 +1,251 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfólio AndreCode</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg" />
 
-  <title>Portfólio AndreCode</title>
-  <link rel="icon" href="img/logo.svg" type="image/svg" />
+    <link rel="stylesheet" href="/css/sysle.css" />
+  </head>
+  <body>
+    <section id="loading">Carregando...</section>
 
-  <link rel="stylesheet" href="/css/sysle.css">
+    <header class="header" id="header">
+      <a href="index.html" class="header__text-logo"> Portfólio </a>
 
-</head>
-<body>
+      <nav class="header__nav">
+        <ul class="header__menu" id="header__menu">
+          <li class="header__menu-item">
+            <a href="#hero" class="header__menu-link">Início</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#about" class="header__menu-link">Sobre</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#highlight" class="header__menu-link">Destaques</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#portfolio" class="header__menu-link">Portfólio</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <section id="loading">Carregando...</section>
-  <header id="header">Cabeçalho</header>
+    <!-- Conteúdo principal (desktop) -->
+    <main id="mainContent">
+      <section id="hero">
+        <div class="hero__container">
+          <div class="hero__text-content">
+            <div class="hero__badge">BACK-END EM FORMAÇÃO</div>
+            <h1 class="hero__main-headline">
+              <span class="hero__name">AndreCode</span>
+              <span class="hero__title">Desenvolvedor</span>
+            </h1>
+            <div class="hero__typing-container">
+              <div id="hero__animacaoText" class="hero__typing-text"></div>
+            </div>
+            <p class="hero__statement">
+              "Sou impulsionado pelo aprendizado contínuo, desenvolvendo
+              sistemas escaláveis, eficientes e que refletem minha constante
+              evolução profissional."
+            </p>
+            <div class="button__geral__cta-container">
 
-  <!-- Conteúdo principal (desktop) -->
-  <main id="mainContent">
-    <section id="hero">Hero</section>
-    <section id="carrossel">Carrossel</section>
-    <section id="about">Sobre</section>
-    <section id="highlight">Destaques</section>
-    <section id="contact">Contato</section>
+                <button href="#portfolio">
+                  <img src="img/redes/entar.svg" alt=""/>Ver Projetos</button>
+                </button>
 
-    <!-- Botões para alternar conteúdo na sessão portfólio -->
-    <div id="desktopPortfolioMenu">
-      <button data-target="projects">
-        <img src="img/redes/project.svg" alt="Projetos">Projetos
+                <button href="#about">
+                  <img src="img/redes/contato.svg" alt=""/>Contato</button>
+
+
+                  <div class="button__redes__social-links">
+                    <div class="button__redes__social-links-card">
+                      <a href="https://linkedin.com/in/andrecodedev" target="_blank" aria-label="LinkedIn">
+                        <img src="img/redes/linkedin.svg"/>
+                        <span class="button__redes__tooltip">LinkedIn</span>
+                      </a>
+                    </div>
+                  
+                    <div class="button__redes__social-links-card">
+                      <a href="https://github.com/AndreCodeDev" target="_blank" aria-label="GitHub">
+                        <img src="img/redes/github.svg"/>
+                        <span class="button__redes__tooltip">GitHub</span>
+                      </a>
+                    </div>
+                  </div>
+
+            </div>
+          </div>
+
+          <div class="hero__visual-element">
+            <div class="code-snippet">
+              <div class="code-snippet__header">
+                <div class="code-dot red"></div>
+                <div class="code-dot yellow"></div>
+                <div class="code-dot green"></div>
+                <span class="code-filename">andre.js</span>
+              </div>
+              <pre class="code-content"><code>// Iniciando jornada
+const andre = new Dev('André Vitor');
+
+// Aprendizado contínuo
+andre.learn(['Algoritmos', 'JavaScript', 'Resiliência']);
+
+// Conectando com o mundo
+andre.deployProjects('github.com/AndreCodeDev');
+
+// Evoluindo com propósito
+andre.levelUp('a cada erro e acerto');
+
+console.log('Pronto para o próximo desafio!');
+</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>  
+      <section id="carrossel" class="carrossel-container">
+        <div class="carrossel">
+          <div class="carrossel-item">
+            <img src="img/skills/html.svg" alt="HTML" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/css.svg" alt="CSS" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/java.svg" alt="Java" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/javascript.svg" alt="javascript" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/bootstrap.svg" alt="bootstrap" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/sql.svg" alt="sql" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/git.svg" alt="git" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/vscode.svg" alt="vscode" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/visualstudy.svg" alt="visualstudy" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/eclipse.svg" alt="eclipse" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/netbeans.svg" alt="netbeans" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/intellij.svg" alt="intellij" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/agil.svg" alt="agil" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/figma.svg" alt="figma" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/trello.svg" alt="trello" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/jira.svg" alt="jira" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/canva.svg" alt="canva" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/office.svg" alt="office" />
+          </div>
+          <div class="carrossel-item">
+            <img src="img/skills/gimp.svg" alt="gimp" />
+          </div>
+        </div>
+      </section>
+      <section id="about">Sobre</section>
+      <section id="highlight">Destaques</section>
+      <section id="contact">Contato</section>
+
+      <!-- Botões para alternar conteúdo na sessão portfólio -->
+      <div id="desktopPortfolioMenu">
+        <button data-target="projects">
+          <img src="img/redes/project.svg" alt="Projetos" />Projetos
+        </button>
+        <button data-target="formations">
+          <img src="img/redes/formation.svg" alt="Formações" />Formações
+        </button>
+        <button data-target="technologies">
+          <img src="img/redes/technologies.svg" alt="technologies" />Tecnologias
+        </button>
+      </div>
+
+      <section id="portfolio">
+        <section id="projects">Projetos</section>
+        <section id="formations">Formações</section>
+        <section id="technologies">Tecnologias</section>
+      </section>
+    </main>
+
+    <!-- Menu Mobile -->
+    <nav id="menuMobile">
+      <button data-mobile="inicio" class="active">
+        <img src="img/redes/home.svg" alt="home" />Início
       </button>
-      <button data-target="formations">
-        <img src="img/redes/formation.svg" alt="Formações">Formações</button>
-      <button data-target="technologies">
-        <img src="img/redes/technologies.svg" alt="technologies">Tecnologias</button>
-    </div>
+      <button data-mobile="projects">
+        <img src="img/redes/project.svg" alt="projects" />Projetos
+      </button>
+      <button data-mobile="formations">
+        <img src="img/redes/formation.svg" alt="formations" />Formações
+      </button>
+      <button data-mobile="technologies">
+        <img src="img/redes/technologies.svg" alt="technologies" />Tecnologias
+      </button>
+    </nav>
 
-    <section id="portfolio">
-      <section id="projects">Projetos</section>
-      <section id="formations">Formações</section>
-      <section id="technologies">technologies</section>
-    </section>
-  </main>
+    <!-- Menu Mobile -->
+    <footer id="footer--grid-layout">
+      <div class="footer-group">
+        <p>
+          Copyright © 2025
+          <a href="index.html" rel="noopener">andrecode.dev.br</a>
+          <br />
+          Todos os direitos reservados.
+        </p>
+      </div>
 
-  <!-- Menu Mobile -->
-  <nav id="menuMobile">
-    <button data-mobile="inicio" class="active">
-      <img src="img/redes/home.svg" alt="home">Início</button>
-    <button data-mobile="projects">
-      <img src="img/redes/project.svg" alt="projects">Projetos</button>
-    <button data-mobile="formations">
-      <img src="img/redes/formation.svg" alt="formations">Formações</button>
-    <button data-mobile="technologies">
-      <img src="img/redes/technologies.svg" alt="technologies">Tecnologias</button>
-  </nav>
+      <div class="footer-group">
+        <p>
+          Construído com
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="#318da7"
+            stroke="#318da7"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+            ></path>
+          </svg>
+          por André Vitor
+        </p>
+        <img src="img/logo.svg" alt="Logo" />
+      </div>
+    </footer>
 
-  <footer id="footer">Rodapé</footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/menuMobile.js"></script>
+    <script src="/js/heroTextAnimation.js"></script>
+    <script src="/js/carroseelAbout.js"></script>
 
-  <script src="/js/script.js"></script>
-  <script src="/js/menuMobile.js"></script>
-
-</body>
+  </body>
 </html>

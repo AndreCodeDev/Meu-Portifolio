@@ -16,7 +16,7 @@
     background: var(--primary);
     color: var(--text-white);
     font-size: var(--font-sm);
-    padding: var(--space-xxs) var(--space-2xl);
+    padding: var(--space-sm) var(--space-xl);
     align-items: center;
     gap: var(--space-sm);
     display: flex;

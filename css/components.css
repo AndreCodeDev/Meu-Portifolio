@@ -194,7 +194,7 @@
     transition: all 0.3s ease;
     white-space: nowrap;
     box-shadow: var(--shadow-medium);
-    border: 1px solid var(--effect-border-blue);
+    border: 1px solid var(--border);
     pointer-events: none;
     z-index: 10;
 }
