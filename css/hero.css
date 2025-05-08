@@ -313,6 +313,12 @@
     .button__redes__social-links-card img {
         max-width: var(--space-xl);
     }
+
+    .button__redes__tooltip {
+        padding: var(--space-xs);
+        border-radius: var(--border-radius-sm);
+        font-size: var(--font-xxs);
+    }
     
     .hero__visual-element {
         width: 100%;
