@@ -321,6 +321,7 @@
     }
     
     .hero__visual-element {
+        margin: var(--space-md) 0 var(--space-md);
         width: 100%;
     }
 
