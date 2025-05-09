@@ -1,0 +1,146 @@
+@import url('style.css');
+
+.about {
+    min-height: 100dvh;
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+}
+
+.about__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 1;
+    gap: var(--space-2xl);
+}
+
+.about__text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 60ch;
+}
+
+.about__paragraph {
+    font-size: var(--font-sm);
+    text-align: justify;
+    line-height: 1.6;
+    color: var(--text-gray);
+    max-width: 65ch;
+    margin: var(--space-lg) 0 var(--space-lg);
+}
+
+
+
+
+
+
+
+
+
+
+
+.about__image-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.about__image {
+    max-width: 68%;
+    height: auto;
+    border: solid 2px var(--text-white);
+    border-radius: var(--border-radius-fll);
+    box-shadow:
+        0 0 0 1px #359dba47,
+        0 0 70px #359dba77,
+        0 0 70px #359dbac4 inset;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 2;
+    user-select: none;
+}
+
+.about__image:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1281px) {
+    .about__container {
+        flex-direction: column-reverse;
+        min-height: auto;
+
+    }
+
+    .about__text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        max-width: 55ch;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 769px) {
+    .hero__badge {
+        margin-bottom: var(--space-xl);
+    }
+
+    .hero__typing-text {
+        margin: var(--space-lg) 0 0;
+    }
+
+    .hero__statement {
+        margin: var(--space-2xl);
+    }
+    
+    .hero__visual-element {
+        margin: var(--space-md) 0 var(--space-md);
+        width: 100%;
+    }
+
+    .code-snippet {
+        max-width: 90%;
+    }
+}

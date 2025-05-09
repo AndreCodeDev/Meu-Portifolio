@@ -11,7 +11,7 @@
 
     /*text-color*/
     --text-white: #ffffff;
-    --text-gray: #94a3b8;
+    --text-gray: #b7b7b7;
     --text-dark: #0f172a;
 
     /*background*/
@@ -19,8 +19,9 @@
     --bg-grid: #1e293bcf;
     --bg-code-content-max: #b9b9b911;
     --card-bg: #1e293b;
-    --bg-url-box: #1e293b5e;
+    --bg-box: #318da711;
     --bg-button: #3b82f61a;
+    --bg-transparent: transparent;
 
     /*filter*/
     --filter-button-hero: brightness(0) saturate(100%) invert(78%) sepia(0%) saturate(0%) hue-rotate(0deg);
@@ -28,7 +29,7 @@
 
     /* Efeitos Visuais */
     --effect-glass-dark: rgba(15, 23, 42, 0.85);
-    --effect-glass-light: rgba(255, 255, 255, 0.85);
+    --effect-glass-light: rgba(255, 255, 255, 0.188);
     --effect-highlight-blue: rgba(37, 100, 235, 0.068);
     --effect-border-blue: rgba(37, 99, 235, 0.2);
     --effect-glass-bg-project: rgba(14, 35, 67, 0.571);
@@ -41,7 +42,7 @@
     --gradient-card: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
 
     /*border*/
-    --border: #334155;
+    --border: #3341556d;
 
     /* Tipografia */
     --font-xs-s: clamp(0.6rem, 1.3vw, 0.6rem);

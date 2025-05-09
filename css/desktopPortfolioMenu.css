@@ -42,7 +42,7 @@
 }
 
 #desktopPortfolioMenu button.active {
-    background-color: var(--bg-grid);
+    background-color: var(--bg-box);
     color: var(--primary);
     box-shadow: 0 0 0 1px #318da747, 0 0 10px #318da75d;
     transform: scale(1.03);
