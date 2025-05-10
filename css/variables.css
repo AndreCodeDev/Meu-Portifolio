@@ -1,0 +1,95 @@
+@import url('sysle.css');
+
+:root {
+  /* Color */
+  --primary: #353535;
+  --accent: #6e6e6e;
+  --color-warning: #ffc107;
+  --color-error: #ff4d4f;
+  --color-success: #28a745;
+
+  /* Text Color */
+  --text-white: #ffffff;
+  --text-gray: #c0c0c0;
+  --text-dark: #e0e0e0;
+
+  /* Background */
+  --bg: #111111;
+  --bg-grid: #252525a8;
+  --bg-code-content-max: #1e90ff11;
+  --card-bg: #1a1a1a;
+  --bg-box: #4d4d4d0f;
+  --bg-button: #3e3e3e1a;
+  --bg-transparent: transparent;
+
+  /* Filter */
+  --filter-button-hero: brightness(0) saturate(100%) invert(75%) sepia(0%) saturate(100%) hue-rotate(0deg);
+  --filter-button: brightness(0) invert(1);
+
+  /* Efeitos Visuais */
+  --effect-glass-dark: rgba(17, 17, 17, 0.85);
+  --effect-glass-light: rgba(255, 255, 255, 0.15);
+  --effect-highlight-neutral: rgba(255, 255, 255, 0.05);
+  --effect-border-neutral: rgba(255, 255, 255, 0.1);
+  --effect-glass-bg-project: rgba(80, 80, 80, 0.3);
+  --effect-selection-neutral: rgba(255, 255, 255, 0.2);
+  --effect-overlay: #111111;
+
+  /* Gradientes */
+  --gradient-blue: linear-gradient(135deg, #353535, #6e6e6e);
+  --gradient-text-primary: linear-gradient(to right, #ffffff 10%, #353535 50%);
+  --gradient-card: linear-gradient(to bottom right, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+
+  /* Border */
+  --border: #4444446d;
+
+    /* Tipografia */
+    --font-xs-s: clamp(0.6rem, 1.3vw, 0.6rem);
+    --font-xs: clamp(0.65rem, 1.6vw, 0.8rem);
+    --font-xxs: clamp(0.775rem, 1.6vw, 0.85rem);
+    --font-sm: clamp(0.9rem, 1.9vw, 0.925rem);
+    --font-base: clamp(1.025rem, 2.1vw, 1.05rem);
+    --font-md: clamp(1.15rem, 2.3vw, 1.3rem);
+    --font-lg: clamp(1.4rem, 2.6vw, 1.55rem);
+    --font-xl: clamp(1.65rem, 3.1vw, 2.1rem);
+    --font-2xl: clamp(2.15rem, 3.6vw, 2.6rem);
+    --font-3xl: clamp(2.65rem, 4.1vw, 3.1rem);
+    --font-3xl-5: clamp(2.85rem, 4.5vw, 3.5rem);
+    --font-4xl: clamp(3.2rem, 5.1vw, 3.85rem);
+    --font-5xl: clamp(3.9rem, 6.1vw, 5.1rem);
+
+    /* Espaços */
+    --space-xxs: clamp(0.125rem, 0.8vw, 0.25rem);
+    --space-xs: clamp(0.25rem, 1vw, 0.5rem);
+    --space-sm: clamp(0.5rem, 1.2vw, 0.75rem);
+    --space-base: clamp(0.75rem, 1.5vw, 1rem);
+    --space-md-base: clamp(0.8125rem, 1.75vw, 1.25rem);
+    --space-md: clamp(0.875rem, 2vw, 1.5rem);
+    --space-lg: clamp(1rem, 2vw, 2rem);
+    --space-xl: clamp(1.5rem, 3vw, 3rem);
+    --space-2xl: clamp(2rem, 4vw, 4.5rem);
+    --space-2xl-5: clamp(2.5rem, 5vw, 5rem);
+    --space-3xl: clamp(3rem, 6vw, 6rem);
+    --space-4xl: clamp(4rem, 8vw, 8rem);
+    --space-5xl: clamp(5rem, 9vw, 9rem);
+    --space-6xl: clamp(6rem, 10vw, 10rem);
+    --space-7xl: clamp(7rem, 11vw, 11rem);
+    --space-extreme: clamp(8.5rem, 18.5vw, 28.5rem);
+
+    /* Bordas radius*/
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 0.75rem;
+    --border-radius-xl: 1rem;
+    --border-radius-fll: 9999px;
+
+
+    /* Transições */
+    --transition-speed-fast: 150ms;
+    --transition-speed-normal: 300ms;
+    --transition-speed-slow: 500ms;
+    --transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+:root [data-theme="light"] {}

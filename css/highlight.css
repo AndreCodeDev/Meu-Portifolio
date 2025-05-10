@@ -1,0 +1,364 @@
+@import url('style.css');
+ 
+
+/* Seção de conquistas */
+#highlight {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    scroll-margin-top: 80px; 
+    min-height: 100dvh;
+}
+
+.highlights__header {
+    margin-bottom: var(--space-lg);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.highlights__text-content {
+    display: flex;
+    justify-content: center;
+    margin: var(--space-md);
+}
+
+.highlights--subtitle {
+    color: var(--text-gray);
+    font-size: var(--font-sm);
+    text-align: center;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.conquistas-news {
+    text-align: center;
+}
+
+.conquistas-news__text h2 {
+    color: var(--muted);
+    padding-bottom: var(--space-lg);
+    font-size: var(--font-lg);
+    font-weight: 500;
+    margin-block-end: 0.83em;
+    text-align: center;
+}
+
+  /* Container do Carrossel */
+  .conquistas-carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .conquistas-carousel {
+    display: flex;
+    transition: transform var(--transition-speed-slow) var(--transition-easing);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Estilo base do card */
+  .card {
+    width: 320px;
+    height: 390px;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    perspective: 1200px;
+    flex-shrink: 0;
+    transition: opacity var(--transition-speed-slow) var(--transition-easing),
+      transform var(--transition-speed-slow) var(--transition-easing);
+    margin: 0 10px;
+  }
+
+  /* Lado frontal e traseiro do card */
+  .card__front,
+  .card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: var(--border-radius-md);
+    transition: opacity var(--transition-speed-fast) var(--transition-easing),
+      transform var(--transition-speed-slow) var(--transition-easing);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Lado frontal do card */
+  .card__front {
+    background-color: transparent;
+    transform: rotateY(0deg);
+  }
+
+  /* Ajuste da imagem */
+  .card__front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    border-radius: var(--border-radius-sm);
+    opacity: 0.9;
+    transition: opacity var(--transition-speed-normal) var(--transition-easing);
+  }
+
+  .card__front:hover img {
+    opacity: 1;
+  }
+
+  /* Efeito de inclinação ao passar o mouse na imagem */
+  .card:hover .card__front {
+    transform: rotateY(17deg);
+    box-shadow: var(--space-sm) var(--space-sm) var(--space-sm) rgba(0, 0, 0, 0.08);
+  }
+
+  .flip-hint {
+    position: absolute;
+    bottom: var(--space-md);
+    right: var(--space-md);
+    font-size: var(--font-lg);
+    opacity: 0;
+    transition: opacity var(--transition-speed-normal) var(--transition-easing);
+  }
+
+  .card:hover .flip-hint {
+    opacity: 0.8;
+  }
+
+  @keyframes ripple {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 0.5;
+    }
+    100% {
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+    }
+  }
+
+  /* Lado traseiro do card */
+  .card__back {
+    background-color: var(--bg);
+    border: solid 1px var(--border);
+    border-radius: var(--border-radius-md);
+    color: var(--text-gray);
+    padding: 0 var(--space-lg);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform-style: preserve-3d; /* necessário para permitir profundidade nos filhos */
+  }
+
+  /* Efeito de flip ao clicar no card */
+  .card.flipped .card__front {
+    transform: rotateY(180deg);
+  }
+
+  .card.flipped .card__back {
+    transform: rotateY(0deg);
+  }
+
+  /* Estilos otimizados para o card */
+  .conquistas-card {
+    border-radius: var(--border-radius-large);
+    transition: all var(--transition-speed-normal) var(--transition-easing);
+    width: 100%;
+    max-width: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-sm);
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .conquistas--card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    flex-direction: column;
+  }
+
+  .conquistas--card-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .conquistas--card-info h2 {
+    color: var(--text-white);
+    font-size: var(--font-lg);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .conquistas--card-info p {
+    color: var(--accent);
+    font-size: var(--font-sm);
+    margin: var(--space-base) 0 0 0;
+  }
+
+  .conquistas--card-testimonial p {
+    color: var(--text-gray);
+    font-size: var(--font-xxs);
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+    text-align: justify;
+  }
+
+  /* Cards adjacentes */
+  .card.prev,
+  .card.next {
+    opacity: 0.9;
+    transform: scale(0.8);
+    display: block;
+    pointer-events: auto;
+    cursor: default;
+  }
+
+  .card.prev {
+    position: absolute;
+    left: 2%;
+    z-index: -1;
+  }
+
+  .card.next {
+    position: absolute;
+    right: 2%;
+    z-index: -1;
+  }
+
+  /* Oculta todos os cards por padrão */
+  .card {
+    display: none;
+  }
+
+  /* Exibe apenas o card ativo e os adjacentes */
+  .card.active,
+  .card.prev,
+  .card.next {
+    display: block;
+    transition: none;
+  }
+
+  /* Container dos controles */
+  .carousel-controls-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  /* Controles do Carrossel */
+  .conquistas-carousel-control {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    border-radius: var(--border-radius-md);
+    border: solid 1px var(--border);
+    cursor: pointer;
+    transition: opacity var(--transition-speed-normal) var(--transition-easing),
+      background-color var(--transition-speed-normal) var(--transition-easing);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: static;
+    transform: none;
+  }
+
+  .conquistas-carousel-control:hover {
+    background-color: var(--text-gray);
+  }
+
+  /* Efeito ao clicar */
+  .conquistas-carousel-control:active {
+    transform: scale(0.9);
+  }
+
+  /* Ícones das setas */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: var(--font-lg);
+    height: var(--font-lg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23111" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
+  }
+
+  .carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23111" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+  }
+
+  /* Ajustar a cor das setas com base no tema */
+  body.light-mode .carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23fff" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
+  }
+
+  body.light-mode .carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23fff" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 420px) {
+/* Ajuste da imagem */
+.card__front img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    user-select: none;
+    border-radius: var(--border-radius-sm);
+}
+}
+
