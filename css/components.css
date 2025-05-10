@@ -89,6 +89,7 @@
 
 .title {
     font-size: var(--font-3xl-5);
+    margin: 0 0 var(--space-sm) 0;
     font-weight: 800;
     line-height: 1.2;
     background: linear-gradient(to right, var(--primary), var(--text-gray));

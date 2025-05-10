@@ -20,6 +20,7 @@
   color: var(--text-gray);
   font-size: var(--font-xxs);
   margin: 0 auto;
+  margin-top: var(--space-lg);
 }
 
 .contact-info {

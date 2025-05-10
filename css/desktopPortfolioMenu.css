@@ -9,7 +9,7 @@
     -webkit-tap-highlight-color: transparent;
     scroll-margin-top: 80px; 
     color: var(--text-white);
-    margin: var(--space-md) 0 var(--space-md);
+    margin: var(--space-2xl) 0 var(--space-2xl);
 }
 
 #desktopPortfolioMenu button {

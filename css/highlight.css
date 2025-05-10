@@ -7,7 +7,7 @@
     position: relative;
     z-index: 10;
     scroll-margin-top: 80px; 
-    min-height: 100dvh;
+    min-height: 95dvh;
 }
 
 .highlights__header {
