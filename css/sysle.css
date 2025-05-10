@@ -56,7 +56,22 @@ svg {
     opacity: 0.8;
 }
 
+::selection {
+    background-color: var(--effect-selection-blue);
+    color: var(--text-color-primary);
+}
 
+::-webkit-scrollbar {
+    width: var(--space-xs);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+}
 
 
 #portfolio > section {

@@ -7,12 +7,13 @@
 }
   
   .contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-md);
     max-width: 1000px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: var(--space-base);
+    align-items: stretch;
     color: var(--text-gray);
     font-size: var(--font-xxs);
     padding: var(--space-xl) 0 0 0;
@@ -32,6 +33,130 @@
         gap: var(--space-base);
   }
 
+
+
+
+
+  
+.cta-wrapper {
+  display: flex;
+  gap: var(--space-md);
+  user-select: text;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cta-button {
+  background: var(--primary);
+  color: var(--text-white);
+  font-size: var(--font-sm);
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  justify-content: center;
+  border-radius: var(--border-radius-md);
+  border: solid 1px var(--border);
+  transition: background 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background: var(--card-bg);
+  color: var(--text);
+}
+
+.cta-button:focus {
+  outline: none;
+}
+
+.cta-button:active {
+  background-color: transparent;
+}
+
+.cta-button img {
+  max-width: var(--space-base);
+  height: auto;
+  filter: brightness(0) invert(1);
+  user-select: none;
+  pointer-events: none;
+}
+
+.social-links {
+  display: flex;
+  gap: var(--space-base);
+  justify-content: center;
+  align-items: center;
+}
+
+.social-card {
+  position: relative;
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius-fll);
+  border: solid 1px var(--border);
+  padding: var(--space-xxs);
+  width: var(--space-xl);
+  height: var(--space-xl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.social-card:hover {
+  background-color: var(--primary);
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+.social-card a {
+  color: var(--muted);
+  transition: color 0.3s ease;
+}
+
+.social-card a:hover {
+  color: var(--text);
+}
+
+.social-card img {
+  max-width: var(--space-md);
+  height: auto;
+  filter: brightness(0) saturate(100%) invert(62%) sepia(8%) saturate(300%) hue-rotate(180deg) brightness(94%) contrast(88%);
+  user-select: none;
+  pointer-events: none;
+}
+
+.social-card:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.tooltip {
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--card-bg);
+  color: var(--text);
+  padding: var(--space-xs);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-xs);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  box-shadow: var(--shadow-medium);
+  border: 1px solid var(--border);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.social-card:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(5px);
+}
+
+
   .contact-form {
     flex: 1;
     padding: var(--space-base);
@@ -48,7 +173,7 @@
   .contact-info h3,
   .contact-form h3 {
     margin-bottom: var(--space-base);
-    color: var(--primary);
+    color: var(--accent);
     font-size: var(--font-md);
   }
   
@@ -95,6 +220,20 @@
   }
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* Toast de sucesso */
   #toast {
     display: none;

@@ -60,14 +60,39 @@
               sistemas escaláveis, eficientes e que refletem minha constante
               evolução profissional."
             </p>
-            <div class="button__geral__cta-container">
-              <button href="#portfolio">
-                Ver Projetos<img src="img/redes/entar.svg" alt="" />
-              </button>
 
-              <button href="#about">
-                Entrar em Contato<img src="img/redes/contato.svg" alt="" />
-              </button>
+            <div class="cta-wrapper">
+              <a href="#portfolio" class="cta-button">
+                Ver Projetos <img src="img/redes/entar.svg" alt="" />
+              </a>
+
+              <a href="#about" class="cta-button">
+                Contato <img src="img/redes/contato.svg" alt="" />
+              </a>
+
+              <div class="social-links">
+                <div class="social-card">
+                  <a
+                    href="https://linkedin.com/in/andrecodedev"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    <img src="img/redes/linkedin.svg" alt="LinkedIn" />
+                    <span class="tooltip">LinkedIn</span>
+                  </a>
+                </div>
+
+                <div class="social-card">
+                  <a
+                    href="https://github.com/AndreCodeDev"
+                    target="_blank"
+                    aria-label="GitHub"
+                  >
+                    <img src="img/redes/github.svg" alt="GitHub" />
+                    <span class="tooltip">GitHub</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -79,19 +104,25 @@
                 <div class="code-dot green"></div>
                 <span class="code-filename">andre.js</span>
               </div>
-              <pre class="code-content"><code>// Iniciando jornada
+              <pre class="code-content"><code>// Iniciando um novo capítulo
 const andre = new Dev('André Vitor');
 
-// Aprendizado contínuo
-andre.learn(['Algoritmos', 'JavaScript', 'Resiliência']);
+// Carregando habilidades essenciais
+andre.learn([
+  'Algoritmos',
+  'JavaScript',
+  'Lógica de Programação',
+  'Resiliência'
+]);
 
-// Conectando com o mundo
-andre.deployProjects('github.com/AndreCodeDev');
+// Compartilhando evolução com o mundo
+andre.deploy('https://github.com/AndreCodeDev');
 
-// Evoluindo com propósito
-andre.levelUp('a cada erro e acerto');
+// Aprendendo com cada desafio
+andre.grow('com erros, acertos e propósito');
 
-console.log('Pronto para o próximo desafio!');
+// Status atual
+console.log('Pronto para construir, colaborar e ir além.');
 </code></pre>
             </div>
           </div>
@@ -163,8 +194,8 @@ console.log('Pronto para o próximo desafio!');
       <section id="about" class="about">
         <div class="about__container">
           <div class="about__text-content">
-            <h2 class="title">Olá, Eu Sou</h2>
-            <p class="title">André Vitor Sales</p>
+            <h2 class="about__title">Olá, Eu Sou</h2>
+            <p class="about__title">André Vitor Sales</p>
             <p class="about__paragraph">
               Sou André Vitor, estudante de Análise e Desenvolvimento de
               Sistemas na FACENS com bolsa integral pelo ProUni. Atuo como
@@ -175,15 +206,20 @@ console.log('Pronto para o próximo desafio!');
               vontade de impactar positivamente o mundo.
             </p>
 
-            <div class="button__geral__cta-container">
-              <button href="#portfolio">
-                Ver Projetos<img src="img/redes/entar.svg" alt="entar" />
-              </button>
+            <div class="cta-wrapper">
+              <a href="#portfolio" class="cta-button">
+                Ver Projetos <img src="img/redes/entar.svg" alt="entar" />
+              </a>
 
-              <button href="docs/Curriculo_AndreVitor.pdf" download>
+              <a
+                href="docs/Curriculo_AndreVitor.pdf"
+                download
+                class="cta-button"
+              >
                 Dowload CV<img src="img/redes/CV.svg" alt="CV" />
-              </button>
+              </a>
             </div>
+
           </div>
 
           <div class="about__image-container">
@@ -192,257 +228,258 @@ console.log('Pronto para o próximo desafio!');
         </div>
       </section>
 
-      <section id="highlight">
-        <div class="highlights__header">
-          <h2 class="title">Destaques</h2>
-        </div>
-        <div class="highlights__text-content">
-          <p class="highlights--subtitle" data-text="conquistas">
-            Principais conquistas acadêmicas e profissionais. <br />
-            Clique nos cards para mais informações.
-          </p>
-        </div>
-        <div class="highlights__cards" id="cards-conquistas">
-          <section id="conquistas" class="conquistas-news fade-in">
-            <!-- Container do Carrossel -->
-            <div class="conquistas-carousel-container">
-              <!-- Cards do Carrossel -->
-              <div class="conquistas-carousel">
-                <!-- Card 1 -->
-                <div class="card active">
-                  <div class="card__front">
-                    <img
-                      src="img/conquistas/conquistasProuni.jpg"
-                      alt="Bolsa 100% ProUni"
-                    />
-                  </div>
-
-                  <div class="card__back">
-                    <article class="conquistas-card">
-                      <!-- Cabeçalho do Card com logo e informações principais -->
-                      <div class="conquistas--card-header">
-                        <div class="conquistas--card-info">
-                          <h2>A Jornada da Conquista</h2>
-                          <p>Bolsa 100% ProUni - FACENS</p>
-                        </div>
-                      </div>
-
-                      <!-- Detalhes do curso -->
-                      <div class="conquistas--card-details">
-                        <div class="conquistas--card-testimonial">
-                          <p>
-                            Desde os 14 anos, sonhava em estudar na FACENS. Com
-                            dedicação e apoio da minha família, conquistei a tão
-                            sonhada vaga com bolsa 100% pelo ProUni. Cada
-                            desafio superado foi uma lição e, ao olhar para
-                            trás, vejo que todo esforço fez essa vitória ainda
-                            mais especial.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="card">
-                  <div class="card__front">
-                    <img
-                      src="img/conquistas/conquistasOnebitcode.jpg"
-                      alt="OneBitCode"
-                    />
-                  </div>
-
-                  <div class="card__back">
-                    <article class="conquistas-card">
-                      <!-- Cabeçalho do Card com logo e informações principais -->
-                      <div class="conquistas--card-header">
-                        <div class="conquistas--card-info">
-                          <h2>Minha Jornada até a OneBitCode</h2>
-                          <p>
-                            Desenvolvendo habilidades para o futuro da
-                            tecnologia
-                          </p>
-                        </div>
-                      </div>
-
-                      <!-- Detalhes do curso -->
-                      <div class="conquistas--card-details">
-                        <div class="conquistas--card-testimonial">
-                          <p>
-                            Ingressar na OneBitCode foi uma decisão estratégica
-                            para minha evolução em tecnologia. Com uma abordagem
-                            prática e foco em conteúdo atualizado, estou
-                            construindo uma base sólida para minha carreira. O
-                            ambiente dinâmico e a troca com a comunidade fazem
-                            essa jornada ainda mais enriquecedora.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="card">
-                  <div class="card__front">
-                    <img src="img/conquistas/conquistasCCBEU.jpg" alt="CCBEU" />
-                  </div>
-
-                  <div class="card__back">
-                    <article class="conquistas-card">
-                      <!-- Cabeçalho do Card com logo e informações principais -->
-                      <div class="conquistas--card-header">
-                        <div class="conquistas--card-info">
-                          <h2>Crescendo com a CCBEU</h2>
-                          <p>Desenvolvendo o inglês para um futuro global</p>
-                        </div>
-                      </div>
-
-                      <!-- Detalhes do curso -->
-                      <div class="conquistas--card-details">
-                        <div class="conquistas--card-testimonial">
-                          <p>
-                            A CCBEU tem sido essencial para meu desenvolvimento
-                            no inglês. Com um ensino dinâmico e voltado para a
-                            prática, estou conquistando fluência e habilidades
-                            que ampliam minhas oportunidades, tanto no ambiente
-                            acadêmico quanto profissional. Cada passo me
-                            aproxima mais de meus objetivos.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="card">
-                  <div class="card__front">
-                    <img src="img/conquistas/conquistasONE.jpg" alt="ONE" />
-                  </div>
-
-                  <div class="card__back">
-                    <article class="conquistas-card">
-                      <!-- Cabeçalho do Card com logo e informações principais -->
-                      <div class="conquistas--card-header">
-                        <div class="conquistas--card-info">
-                          <h2>Transformando o Futuro na ONE</h2>
-                          <p>Acelerando o aprendizado em programação</p>
-                        </div>
-                      </div>
-
-                      <!-- Detalhes do curso -->
-                      <div class="conquistas--card-details">
-                        <div class="conquistas--card-testimonial">
-                          <p>
-                            Ao ingressar na ONE, encontrei um ambiente
-                            estimulante para minha evolução em programação. A
-                            metodologia prática e os desafios propostos são
-                            fundamentais para consolidar meus conhecimentos.
-                            Essa experiência tem sido essencial para meu
-                            crescimento profissional e minha preparação para o
-                            mercado de tecnologia.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="card">
-                  <div class="card__front">
-                    <img src="img/conquistas/conquistasETEC.jpg" alt="ETEC" />
-                  </div>
-
-                  <div class="card__back">
-                    <article class="conquistas-card">
-                      <!-- Cabeçalho do Card com logo e informações principais -->
-                      <div class="conquistas--card-header">
-                        <div class="conquistas--card-info">
-                          <h2>A Base da Minha Formação na ETEC</h2>
-                          <p>
-                            Construindo o alicerce para a carreira em tecnologia
-                          </p>
-                        </div>
-                      </div>
-
-                      <!-- Detalhes do curso -->
-                      <div class="conquistas--card-details">
-                        <div class="conquistas--card-testimonial">
-                          <p>
-                            A ETEC foi o ponto de partida para minha jornada na
-                            tecnologia. Com uma formação sólida e prática, pude
-                            desenvolver habilidades essenciais para minha
-                            carreira. A experiência adquirida nesse período me
-                            preparou para os desafios futuros e fortaleceu meu
-                            desejo de seguir nessa área.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="card">
-                  <div class="card__front">
-                    <img
-                      src="img/conquistas/conquistasMentoria.jpg"
-                      alt="Mentor Acadêmico"
-                    />
-                  </div>
-
-                  <div class="card__back">
-                    <article class="conquistas-card">
-                      <!-- Cabeçalho do Card com logo e informações principais -->
-                      <div class="conquistas--card-header">
-                        <div class="conquistas--card-info">
-                          <h2>Iniciando como Mentor Acadêmico</h2>
-                          <p>
-                            Uma nova experiência em Construção de Algoritmos
-                          </p>
-                        </div>
-                      </div>
-
-                      <!-- Detalhes do curso -->
-                      <div class="conquistas--card-details">
-                        <div class="conquistas--card-testimonial">
-                          <p>
-                            Estou prestes a começar como mentor acadêmico em
-                            Construção de Algoritmos na FACENS. Essa
-                            oportunidade me permitirá compartilhar meu
-                            conhecimento e apoiar outros alunos no aprendizado.
-                            Ansioso para essa nova experiência, buscarei tornar
-                            cada aula uma troca enriquecedora de saberes.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Controles do Carrossel -->
-              <button class="conquistas-carousel-control prev" type="button">
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-              <button class="conquistas-carousel-control next" type="button">
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Próximo</span>
-              </button>
+<section id="highlight">
+  <div class="highlights__header">
+    <h2 class="title">Destaques</h2>
+  </div>
+  <div class="highlights__text-content">
+    <p class="highlights--subtitle" data-text="conquistas">
+      Principais conquistas acadêmicas e profissionais. Clique nos cards para mais informações.
+    </p>
+  </div>
+  <div class="highlights__cards" id="cards-conquistas">
+    <section id="conquistas" class="conquistas-news fade-in">
+      <!-- Container do Carrossel -->
+      <div class="conquistas-carousel-container">
+        <!-- Cards do Carrossel -->
+        <div class="conquistas-carousel">
+          <!-- Card 1 -->
+          <div class="card active">
+            <div class="card__front">
+              <img
+                src="img/conquistas/conquistasProuni.jpg"
+                alt="Bolsa 100% ProUni"
+              />
             </div>
-          </section>
+
+            <div class="card__back">
+              <article class="conquistas-card">
+                <!-- Cabeçalho do Card com logo e informações principais -->
+                <div class="conquistas--card-header">
+                  <div class="conquistas--card-info">
+                    <h2>A Jornada da Conquista</h2>
+                    <p>Bolsa 100% ProUni - FACENS</p>
+                  </div>
+                </div>
+
+                <!-- Detalhes do curso -->
+                <div class="conquistas--card-details">
+                  <div class="conquistas--card-testimonial">
+                    <p>
+                      Desde os 14 anos, sonhava em estudar na FACENS. Com
+                      dedicação e apoio da minha família, conquistei a tão
+                      sonhada vaga com bolsa 100% pelo ProUni. Cada
+                      desafio superado foi uma lição e, ao olhar para
+                      trás, vejo que todo esforço fez essa vitória ainda
+                      mais especial.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card__front">
+              <img
+                src="img/conquistas/conquistasOnebitcode.jpg"
+                alt="OneBitCode"
+              />
+            </div>
+
+            <div class="card__back">
+              <article class="conquistas-card">
+                <!-- Cabeçalho do Card com logo e informações principais -->
+                <div class="conquistas--card-header">
+                  <div class="conquistas--card-info">
+                    <h2>Minha Jornada até a OneBitCode</h2>
+                    <p>
+                      Desenvolvendo habilidades para o futuro da
+                      tecnologia
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Detalhes do curso -->
+                <div class="conquistas--card-details">
+                  <div class="conquistas--card-testimonial">
+                    <p>
+                      Ingressar na OneBitCode foi uma decisão estratégica
+                      para minha evolução em tecnologia. Com uma abordagem
+                      prática e foco em conteúdo atualizado, estou
+                      construindo uma base sólida para minha carreira. O
+                      ambiente dinâmico e a troca com a comunidade fazem
+                      essa jornada ainda mais enriquecedora.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card__front">
+              <img src="img/conquistas/conquistasCCBEU.jpg" alt="CCBEU" />
+            </div>
+
+            <div class="card__back">
+              <article class="conquistas-card">
+                <!-- Cabeçalho do Card com logo e informações principais -->
+                <div class="conquistas--card-header">
+                  <div class="conquistas--card-info">
+                    <h2>Crescendo com a CCBEU</h2>
+                    <p>Desenvolvendo o inglês para um futuro global</p>
+                  </div>
+                </div>
+
+                <!-- Detalhes do curso -->
+                <div class="conquistas--card-details">
+                  <div class="conquistas--card-testimonial">
+                    <p>
+                      A CCBEU tem sido essencial para meu desenvolvimento
+                      no inglês. Com um ensino dinâmico e voltado para a
+                      prática, estou conquistando fluência e habilidades
+                      que ampliam minhas oportunidades, tanto no ambiente
+                      acadêmico quanto profissional. Cada passo me
+                      aproxima mais de meus objetivos.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="card__front">
+              <img src="img/conquistas/conquistasONE.jpg" alt="ONE" />
+            </div>
+
+            <div class="card__back">
+              <article class="conquistas-card">
+                <!-- Cabeçalho do Card com logo e informações principais -->
+                <div class="conquistas--card-header">
+                  <div class="conquistas--card-info">
+                    <h2>Transformando o Futuro na ONE</h2>
+                    <p>Acelerando o aprendizado em programação</p>
+                  </div>
+                </div>
+
+                <!-- Detalhes do curso -->
+                <div class="conquistas--card-details">
+                  <div class="conquistas--card-testimonial">
+                    <p>
+                      Ao ingressar na ONE, encontrei um ambiente
+                      estimulante para minha evolução em programação. A
+                      metodologia prática e os desafios propostos são
+                      fundamentais para consolidar meus conhecimentos.
+                      Essa experiência tem sido essencial para meu
+                      crescimento profissional e minha preparação para o
+                      mercado de tecnologia.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card">
+            <div class="card__front">
+              <img src="img/conquistas/conquistasETEC.jpg" alt="ETEC" />
+            </div>
+
+            <div class="card__back">
+              <article class="conquistas-card">
+                <!-- Cabeçalho do Card com logo e informações principais -->
+                <div class="conquistas--card-header">
+                  <div class="conquistas--card-info">
+                    <h2>A Base da Minha Formação na ETEC</h2>
+                    <p>
+                      Construindo o alicerce para a carreira em tecnologia
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Detalhes do curso -->
+                <div class="conquistas--card-details">
+                  <div class="conquistas--card-testimonial">
+                    <p>
+                      A ETEC foi o ponto de partida para minha jornada na
+                      tecnologia. Com uma formação sólida e prática, pude
+                      desenvolver habilidades essenciais para minha
+                      carreira. A experiência adquirida nesse período me
+                      preparou para os desafios futuros e fortaleceu meu
+                      desejo de seguir nessa área.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card">
+            <div class="card__front">
+              <img
+                src="img/conquistas/conquistasMentoria.jpg"
+                alt="Mentor Acadêmico"
+              />
+            </div>
+
+            <div class="card__back">
+              <article class="conquistas-card">
+                <!-- Cabeçalho do Card com logo e informações principais -->
+                <div class="conquistas--card-header">
+                  <div class="conquistas--card-info">
+                    <h2>Iniciando como Mentor Acadêmico</h2>
+                    <p>
+                      Uma nova experiência em Construção de Algoritmos
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Detalhes do curso -->
+                <div class="conquistas--card-details">
+                  <div class="conquistas--card-testimonial">
+                    <p>
+                      Estou prestes a começar como mentor acadêmico em
+                      Construção de Algoritmos na FACENS. Essa
+                      oportunidade me permitirá compartilhar meu
+                      conhecimento e apoiar outros alunos no aprendizado.
+                      Ansioso para essa nova experiência, buscarei tornar
+                      cada aula uma troca enriquecedora de saberes.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-      </section>
+
+        <!-- Controles do Carrossel -->
+        <div class="carousel-controls-container">
+          <button class="conquistas-carousel-control prev" type="button">
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="conquistas-carousel-control next" type="button">
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
 
       <!-- Botões para alternar conteúdo na sessão portfólio -->
       <div id="desktopPortfolioMenu">
@@ -502,44 +539,42 @@ console.log('Pronto para o próximo desafio!');
             <span>Seg - Sex: 9:00 - 18:00</span>
           </div>
 
-          <div class="button__geral__cta-container">
-            <div class="button__redes__social-links">
-              <div class="button__redes__social-links-card">
-                <a
-                  href="https://linkedin.com/in/andrecodedev"
-                  target="_blank"
-                  aria-label="LinkedIn"
-                >
-                  <img src="img/redes/linkedin.svg" alt="LinkedIn" />
-                  <span class="button__redes__tooltip">LinkedIn</span>
-                </a>
-              </div>
+              <div class="social-links">
+                <div class="social-card">
+                  <a
+                    href="https://linkedin.com/in/andrecodedev"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    <img src="img/redes/linkedin.svg" alt="LinkedIn" />
+                    <span class="tooltip">LinkedIn</span>
+                  </a>
+                </div>
 
-              <div class="button__redes__social-links-card">
-                <a
-                  href="https://github.com/AndreCodeDev"
-                  target="_blank"
-                  aria-label="GitHub"
-                >
-                  <img src="img/redes/github.svg" alt="GitHub" />
-                  <span class="button__redes__tooltip">GitHub</span>
-                </a>
-              </div>
+                <div class="social-card">
+                  <a
+                    href="https://github.com/AndreCodeDev"
+                    target="_blank"
+                    aria-label="GitHub"
+                  >
+                    <img src="img/redes/github.svg" alt="GitHub" />
+                    <span class="tooltip">GitHub</span>
+                  </a>
+                </div>
 
-              <div class="button__redes__social-links-card">
+              <div class="social-card">
                 <a
                   href="mailto:contato@andresodeslev.com"
                   target="_blank"
                   aria-label="E-mail"
                 >
                   <img src="img/redes/email.svg" alt="E-mail" />
-                  <span class="button__redes__tooltip">E-mail</span>
+                  <span class="tooltip">E-mail</span>
                 </a>
               </div>
+        
             </div>
-          </div>
-        </div>
-
+            </div>
         <div class="contact-form">
           <h3>Envie uma Mensagem</h3>
 
@@ -595,12 +630,11 @@ console.log('Pronto para o próximo desafio!');
               >
             </div>
 
-            <div class="button__geral__cta-container" class="form-group">
-              <button type="submit">Enviar Mensagem
-              <img src="img/redes/entar.svg" alt="entar" />
-              </button>
+            <div class="cta-wrapper" class="form-group">
+              <a type="submit" class="cta-button">
+                Enviar Mensagem <img src="img/redes/entar.svg" alt="" />
+              </a>
             </div>
-            
           </form>
         </div>
       </div>
@@ -648,6 +682,7 @@ console.log('Pronto para o próximo desafio!');
     <script src="/js/menuMobile.js"></script>
     <script src="/js/themeToggles.js"></script>
     <script src="/js/heroTextAnimation.js"></script>
+    <script src="/js/heroDots.js"></script>
     <script src="/js/carroseelAbout.js"></script>
     <script src="/js/highlight.js"></script>
     <script src="/js/forms.js"></script>

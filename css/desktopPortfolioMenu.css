@@ -33,18 +33,18 @@
 #desktopPortfolioMenu button:hover {
     background: var(--bg-grid);
     color: var(--text-white);
-    transform: scale(1.03);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--effect-glass-dark);
 }
 
 #desktopPortfolioMenu button:focus {
     outline: none;
+    
 }
 
 #desktopPortfolioMenu button.active {
     background-color: var(--bg-box);
-    color: var(--primary);
-    box-shadow: 0 0 0 1px #318da747, 0 0 10px #318da75d;
+    color: var(--text-white);
+    box-shadow: 0 0 0 1px var(--effect-glass-dark), 0 0 10px var(--effect-glass-light);
     transform: scale(1.03);
 }
 
@@ -57,5 +57,5 @@
 }
 
 #desktopPortfolioMenu button.active img {
-    filter: brightness(0) saturate(100%) invert(39%) sepia(36%) saturate(772%) hue-rotate(156deg) brightness(91%) contrast(91%);
+    filter: var(--filter-button);
 }
