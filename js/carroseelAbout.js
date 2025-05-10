@@ -10,5 +10,5 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // Ajusta a largura do track para acomodar os itens duplicados
     const itemWidth = items[0].offsetWidth + parseInt(getComputedStyle(document.documentElement).getPropertyValue('--space-6xl'));
-    track.style.width = `${itemWidth * items.length * 2}px`;
+    track.style.width = `${itemWidth * items.length * 1}px`;
 });

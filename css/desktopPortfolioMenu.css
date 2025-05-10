@@ -9,8 +9,7 @@
     -webkit-tap-highlight-color: transparent;
     scroll-margin-top: 80px;
     color: var(--text-white);
-
-
+    margin: var(--space-3xl) 0;
 }
 
 #desktopPortfolioMenu button {
