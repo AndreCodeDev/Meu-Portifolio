@@ -59,8 +59,8 @@ svg {
 }
 
 ::selection {
-    background-color: var(--effect-selection-blue);
-    color: var(--text-color-primary);
+    background-color: var(--primary);
+    color: var(--text-white);
 }
 
 ::-webkit-scrollbar {
@@ -74,6 +74,12 @@ svg {
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary);
 }
+
+
+
+
+
+
 
 
 #portfolio > section {

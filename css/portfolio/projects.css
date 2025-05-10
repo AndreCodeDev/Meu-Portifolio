@@ -3,8 +3,10 @@
     text-align: center;
     position: relative;
     z-index: 10;
-    min-height: 100vh;
-    scroll-margin-top: 80px; 
+    scroll-margin-top: clamp(4rem, 8vh, 6rem);
+    padding-top: clamp(5rem, 10vh, 8rem);
+    padding-bottom: clamp(3rem, 6vh, 6rem);
+    min-height: clamp(100svh, 100dvh, 100lvh);
 }
 
 .projects__header {

@@ -1,7 +1,10 @@
 @import url('style.css');
 
 #hero {
-    min-height: 100dvh;
+    scroll-margin-top: clamp(4rem, 8vh, 6rem);
+    padding-top: clamp(5rem, 10vh, 8rem);
+    padding-bottom: clamp(3rem, 6vh, 6rem);
+    min-height: clamp(100svh, 100dvh, 100lvh);
     color: var(--text-white);
     display: flex;
     align-items: center;
@@ -79,121 +82,121 @@
 }
 
 .cta-wrapper {
-  display: flex;
-  gap: var(--space-md);
-  user-select: text;
-  -webkit-tap-highlight-color: transparent;
+    display: flex;
+    gap: var(--space-md);
+    user-select: text;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .cta-button {
-  background: var(--primary);
-  color: var(--text-white);
-  font-size: var(--font-sm);
-  padding: var(--space-sm) var(--space-md);
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-  justify-content: center;
-  border-radius: var(--border-radius-md);
-  border: solid 1px var(--border);
-  transition: background 0.3s ease, color 0.3s ease;
-  text-decoration: none;
+    background: var(--primary);
+    color: var(--text-white);
+    font-size: var(--font-sm);
+    padding: var(--space-sm) var(--space-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    justify-content: center;
+    border-radius: var(--border-radius-md);
+    border: solid 1px var(--border);
+    transition: background 0.3s ease, color 0.3s ease;
+    text-decoration: none;
 }
 
 .cta-button:hover {
-  background: var(--card-bg);
-  color: var(--text);
+    background: var(--card-bg);
+    color: var(--text);
 }
 
 .cta-button:focus {
-  outline: none;
+    outline: none;
 }
 
 .cta-button:active {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 .cta-button img {
-  max-width: var(--space-base);
-  height: auto;
-  filter: brightness(0) invert(1);
-  user-select: none;
-  pointer-events: none;
+    max-width: var(--space-base);
+    height: auto;
+    filter: brightness(0) invert(1);
+    user-select: none;
+    pointer-events: none;
 }
 
 .social-links {
-  display: flex;
-  gap: var(--space-base);
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    gap: var(--space-base);
+    justify-content: center;
+    align-items: center;
 }
 
 .social-card {
-  position: relative;
-  background-color: var(--card-bg);
-  border-radius: var(--border-radius-fll);
-  border: solid 1px var(--border);
-  padding: var(--space-xxs);
-  width: var(--space-xl);
-  height: var(--space-xl);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    position: relative;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius-fll);
+    border: solid 1px var(--border);
+    padding: var(--space-xxs);
+    width: var(--space-xl);
+    height: var(--space-xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
 .social-card:hover {
-  background-color: var(--primary);
-  color: var(--text);
-  transform: translateY(-2px);
+    background-color: var(--primary);
+    color: var(--text);
+    transform: translateY(-2px);
 }
 
 .social-card a {
-  color: var(--muted);
-  transition: color 0.3s ease;
+    color: var(--muted);
+    transition: color 0.3s ease;
 }
 
 .social-card a:hover {
-  color: var(--text);
+    color: var(--text);
 }
 
 .social-card img {
-  max-width: var(--space-md);
-  height: auto;
-  filter: brightness(0) saturate(100%) invert(62%) sepia(8%) saturate(300%) hue-rotate(180deg) brightness(94%) contrast(88%);
-  user-select: none;
-  pointer-events: none;
+    max-width: var(--space-md);
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(62%) sepia(8%) saturate(300%) hue-rotate(180deg) brightness(94%) contrast(88%);
+    user-select: none;
+    pointer-events: none;
 }
 
 .social-card:hover img {
-  filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
 }
 
 .tooltip {
-  position: absolute;
-  top: 115%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--card-bg);
-  color: var(--text);
-  padding: var(--space-xs);
-  border-radius: var(--border-radius-sm);
-  font-size: var(--font-xs);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-  box-shadow: var(--shadow-medium);
-  border: 1px solid var(--border);
-  pointer-events: none;
-  z-index: 10;
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--card-bg);
+    color: var(--text);
+    padding: var(--space-xs);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-xs);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    box-shadow: var(--shadow-medium);
+    border: 1px solid var(--border);
+    pointer-events: none;
+    z-index: 10;
 }
 
 .social-card:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(5px);
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(5px);
 }
 
 
@@ -321,9 +324,7 @@
 
 
 
-@media screen and (max-width: 1441px) {
-    
-}
+@media screen and (max-width: 1441px) {}
 
 @media screen and (max-width: 1281px) {
     .hero__container {
@@ -358,7 +359,7 @@
     .hero__statement {
         margin: var(--space-2xl);
     }
-    
+
     .hero__visual-element {
         margin: var(--space-md) 0 var(--space-md);
         width: 100%;
@@ -391,11 +392,11 @@
 }
 
 @media screen and (max-width: 321px) {
-    
+
     .button__geral__cta-container {
         flex-direction: column;
     }
-    
+
     .code-snippet {
         transform: scale(0.9);
     }
