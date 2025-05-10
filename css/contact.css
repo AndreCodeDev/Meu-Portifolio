@@ -1,43 +1,45 @@
 @import url('style.css');
+
 /* Estilos da seção de contato com uso total de variáveis */
 #contact {
-    text-align: center;
-    scroll-margin-top: 80px; 
-    min-height: 80dvh;
+  text-align: center;
+  scroll-margin-top: 80px;
+  min-height: 80dvh;
+  margin: var(--space-md);
+  padding: var(--space-xl) 0 0 0;
+
 }
-  
-  .contact-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-md);
-    max-width: 1000px;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: stretch;
-    color: var(--text-gray);
-    font-size: var(--font-xxs);
-    padding: var(--space-xl) 0 0 0;
-  }
-  
-  .contact-info {
-    flex: 1;
-    padding: var(--space-base);
-    background-color: var(--bg-box);
-    border-radius: var(--border-radius-md);
-    border: solid 1px var(--border);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-        gap: var(--space-base);
-  }
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-md);
+  max-width: 1000px;
+  justify-content: space-between;
+  align-items: stretch;
+  color: var(--text-gray);
+  font-size: var(--font-xxs);
+  margin: 0 auto;
+}
+
+.contact-info {
+  padding: var(--space-base);
+  background-color: var(--bg-box);
+  border-radius: var(--border-radius-md);
+  border: solid 1px var(--border);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-base);
+}
 
 
 
 
 
-  
+
 .cta-wrapper {
   display: flex;
   gap: var(--space-md);
@@ -157,69 +159,67 @@
 }
 
 
-  .contact-form {
-    flex: 1;
-    padding: var(--space-base);
-    background-color: var(--bg-box);
-    border-radius: var(--border-radius-md);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px var(--border);
+.contact-form {
+  flex: 1;
+  padding: var(--space-base);
+  background-color: var(--bg-box);
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px var(--border);
 
-  }
-  
-  .contact-info h3,
-  .contact-form h3 {
-    margin-bottom: var(--space-base);
-    color: var(--accent);
-    font-size: var(--font-md);
-  }
-  
-  .info-item {
-    display: flex;
-    align-items: center;
-    color: var(--text-gray);
-    font-size: var(--font-sm);
-  }
-  
-  .info-item i {
-    color: var(--primary);
-    font-size: 1.2rem;
-  }
-  
-  /* Estilos do formulário */
-  .form-group {
-    margin-bottom: var(--space-sm);
-    width: 100%;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: var(--space-sm);
-    font-weight: bold;
-    color: var(--primary);
-    font-size: var(--font-xs);
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: var(--padding-input, 10px);
-    border: 1px solid var(--border);
-    border-radius: var(--border-radius-md);
-    font-size: var(--font-xs);
-    background-color: var(--bg-box);
-    color: var(--text-gray);
-  }
-  
-  .form-group textarea {
-    height: 120px;
-    resize: vertical;
-  }
+}
 
-  
+.contact-info h3,
+.contact-form h3 {
+  margin-bottom: var(--space-base);
+  color: var(--accent);
+  font-size: var(--font-md);
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  color: var(--text-gray);
+  font-size: var(--font-sm);
+}
+
+.info-item i {
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+/* Estilos do formulário */
+.form-group {
+  margin-bottom: var(--space-sm);
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--space-sm);
+  font-weight: bold;
+  color: var(--primary);
+  font-size: var(--font-xs);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: var(--padding-input, 10px);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-xs);
+  background-color: var(--bg-box);
+  color: var(--text-gray);
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
 
 
 
@@ -234,75 +234,77 @@
 
 
 
-  /* Toast de sucesso */
-  #toast {
-    display: none;
-    position: fixed;
-    bottom: var(--toast-bottom, 20px);
-    right: var(--toast-right, 20px);
-    background-color: #4dff7731;
-    color: var(--text-white);
-    padding: var(--toast-padding, 15px 20px);
-    border-radius: var(--radius-toast, 8px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    font-family: sans-serif;
-    font-size: var(--font-sm);
-  }
-  
+
+
+/* Toast de sucesso */
+#toast {
+  display: none;
+  position: fixed;
+  bottom: var(--toast-bottom, 20px);
+  right: var(--toast-right, 20px);
+  background-color: #4dff7731;
+  color: var(--text-white);
+  padding: var(--toast-padding, 15px 20px);
+  border-radius: var(--radius-toast, 8px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-family: sans-serif;
+  font-size: var(--font-sm);
+}
 
 
 
 
-  /* Adicione ao seu arquivo CSS */
+
+/* Adicione ao seu arquivo CSS */
 .form-row {
-    display: flex;
-    gap: var(--space-sm);
-    width: 100%;
+  display: flex;
+  gap: var(--space-sm);
+  width: 100%;
 }
 
 .form-row .form-group {
-    flex: 1;
+  flex: 1;
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-form h3 {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 #contactForm {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-group {
-    width: 100%;
-    max-width: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 
 
 /* Remove o fundo branco dos inputs preenchidos automaticamente */
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 1000px var(--bg-transparent) inset !important;
-    transition: background-color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0 1000px var(--bg-transparent) inset !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 /* Opcional: manter a cor do texto consistente */
 input:-webkit-autofill {
-    -webkit-text-fill-color: var(--text-gray) !important;
+  -webkit-text-fill-color: var(--text-gray) !important;
 }
 
 /* COR DO TEXTO (SEMPRE CINZA) */
@@ -312,85 +314,97 @@ input:-webkit-autofill {
 .form-group textarea:focus,
 .form-group input:active,
 .form-group textarea:active {
-    color: var(--text-gray);
-    -webkit-text-fill-color: var(--text-gray) !important; /* Para navegadores WebKit (Chrome/Safari) */
+  color: var(--text-gray);
+  -webkit-text-fill-color: var(--text-gray) !important;
+  /* Para navegadores WebKit (Chrome/Safari) */
 }
 
 /* --- ESTADO INICIAL --- */
 .form-group input,
 .form-group textarea {
-    border: 1px solid var(--effect-glass-light) !important;
-    color: var(--text-gray) !important;
-    -webkit-text-fill-color: var(--text-gray) !important;
+  border: 1px solid var(--effect-glass-light) !important;
+  color: var(--text-gray) !important;
+  -webkit-text-fill-color: var(--text-gray) !important;
 }
 
 /* --- QUANDO CLICADO (FOCUS) --- */
 .form-group input:focus:not(:valid),
 .form-group textarea:focus:not(:valid) {
-    border-color: darkred !important; /* Vermelho se vazio/clicado */
-    outline: none;
+  border-color: darkred !important;
+  /* Vermelho se vazio/clicado */
+  outline: none;
 }
 
 /* --- QUANDO PREENCHIDO --- */
 .form-group input:valid,
 .form-group textarea:valid {
-    border-color: green !important; /* Verde se válido/preenchido */
+  border-color: green !important;
+  /* Verde se válido/preenchido */
 }
 
 /* --- QUANDO CLICADO E JÁ PREENCHIDO --- */
 .form-group input:focus:valid,
 .form-group textarea:focus:valid {
-    border-color: darkgreen !important; /* Verde mais escuro se válido e com foco */
-    outline: none;
+  border-color: darkgreen !important;
+  /* Verde mais escuro se válido e com foco */
+  outline: none;
 }
 
 
 /* Estilização do placeholder - TEXTO AZUL */
 #name::placeholder {
-    opacity: 1;           /* Necessário para Firefox */
-    font-style: italic;   /* Opcional: deixa em itálico */
+  opacity: 1;
+  /* Necessário para Firefox */
+  font-style: italic;
+  /* Opcional: deixa em itálico */
 }
 
 /* Remove o placeholder ao focar (opcional) */
 #name:focus::placeholder {
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 /* Estilização do placeholder - TEXTO AZUL */
 #email::placeholder {
-    opacity: 1;           /* Necessário para Firefox */
-    font-style: italic;   /* Opcional: deixa em itálico */
+  opacity: 1;
+  /* Necessário para Firefox */
+  font-style: italic;
+  /* Opcional: deixa em itálico */
 }
 
 /* Remove o placeholder ao focar (opcional) */
 #email:focus::placeholder {
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 /* Estilização do placeholder - TEXTO AZUL */
 #subject::placeholder {
-    opacity: 1;           /* Necessário para Firefox */
-    font-style: italic;   /* Opcional: deixa em itálico */
+  opacity: 1;
+  /* Necessário para Firefox */
+  font-style: italic;
+  /* Opcional: deixa em itálico */
 }
 
 /* Remove o placeholder ao focar (opcional) */
 #subject:focus::placeholder {
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 /* Estilização do placeholder - TEXTO AZUL */
 #message::placeholder {
-    opacity: 1;           /* Necessário para Firefox */
-    font-style: italic;   /* Opcional: deixa em itálico */
+  opacity: 1;
+  /* Necessário para Firefox */
+  font-style: italic;
+  /* Opcional: deixa em itálico */
 }
 
 /* Remove o placeholder ao focar (opcional) */
 #message:focus::placeholder {
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 
@@ -405,42 +419,42 @@ input:-webkit-autofill {
 
 /* Tooltip no estilo do button__redes__tooltip */
 .form-tooltip {
-    position: absolute;
-    top: 115%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--card-bg);
-    color: var(--text);
-    padding: var(--space-xs);
-    border-radius: var(--border-radius-sm);
-    font-size: var(--font-xs);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    white-space: nowrap;
-    box-shadow: var(--shadow-medium);
-    border: 1px solid var(--border);
-    pointer-events: none;
-    z-index: 10;
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--card-bg);
+  color: var(--text);
+  padding: var(--space-xs);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-xs);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  box-shadow: var(--shadow-medium);
+  border: 1px solid var(--border);
+  pointer-events: none;
+  z-index: 10;
 }
 
 .form-group {
-    position: relative;
+  position: relative;
 }
 
 .form-group:hover .form-tooltip {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(5px);
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(5px);
 }
 
 /* Remove comportamentos padrão indesejados */
-.form-group input:invalid, 
+.form-group input:invalid,
 .form-group textarea:invalid {
-    box-shadow: none;
+  box-shadow: none;
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
-    outline: none;
+  outline: none;
 }
