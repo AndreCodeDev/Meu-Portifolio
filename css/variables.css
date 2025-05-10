@@ -24,6 +24,7 @@
   /* Filter */
   --filter-button-hero: brightness(0) saturate(100%) invert(75%) sepia(0%) saturate(100%) hue-rotate(0deg);
   --filter-button: brightness(0) invert(1);
+  --filter-button-gray: invert(32%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(92%) contrast(90%);
 
   /* Efeitos Visuais */
   --effect-glass-dark: rgba(17, 17, 17, 0.85);

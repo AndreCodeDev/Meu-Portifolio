@@ -47,10 +47,10 @@
 
 /* Classe para o estado ativo */
 #menuMobile button.active img {
-    filter: brightness(0) saturate(100%) invert(39%) sepia(36%) saturate(772%) hue-rotate(156deg) brightness(91%) contrast(91%);
+    filter: var(--filter-button-gray);
 }
 
 /* Opcional: estilo para o texto quando ativo */
 #menuMobile button.active {
-    color: var(--primary); /* Ou qualquer cor de destaque que você preferir */
+    color: var(--accent);
 }
