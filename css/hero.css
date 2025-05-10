@@ -1,9 +1,9 @@
 @import url('style.css');
 
 #hero {
-    scroll-margin-top: clamp(4rem, 8vh, 6rem);
-    padding-top: clamp(5rem, 10vh, 8rem);
-    padding-bottom: clamp(3rem, 6vh, 6rem);
+    scroll-margin-top: clamp(2rem, 4vh, 4rem);
+    padding-top: clamp(3rem, 6vh, 5rem);
+    padding-bottom: clamp(1rem, 4vh, 4rem);
     min-height: clamp(100svh, 100dvh, 100lvh);
     color: var(--text-white);
     display: flex;

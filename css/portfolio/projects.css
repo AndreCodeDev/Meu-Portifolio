@@ -1,35 +1,7 @@
-/* Seção de conquistas */
-#portfolio {
-    text-align: center;
-    position: relative;
-    z-index: 10;
-    scroll-margin-top: clamp(4rem, 8vh, 6rem);
-    padding-top: clamp(5rem, 10vh, 8rem);
-    padding-bottom: clamp(3rem, 6vh, 6rem);
-    min-height: clamp(100svh, 100dvh, 100lvh);
-}
-
-.projects__header {
-    margin-bottom: var(--space-lg);
-    align-items: center;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.projects--title {
-    font-size: var(--font-3xl);
-    font-weight: 800;
-    background: linear-gradient(to right, var(--primary), var(--text-));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    position: relative;
-    display: inline-block;
-}
 
 
 
+@import url('sysle.css');
 
 
 

@@ -5,11 +5,12 @@
     justify-content: center;
     gap: var(--space-xl);
     z-index: 10;
-    user-select: text; 
+    user-select: text;
     -webkit-tap-highlight-color: transparent;
-    scroll-margin-top: 80px; 
+    scroll-margin-top: 80px;
     color: var(--text-white);
-    margin: var(--space-2xl) 0 var(--space-3xl);
+
+
 }
 
 #desktopPortfolioMenu button {
@@ -26,8 +27,8 @@
     cursor: pointer;
     height: var(--space-2xl);
     transition: background 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-                transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #desktopPortfolioMenu button:hover {
@@ -38,7 +39,7 @@
 
 #desktopPortfolioMenu button:focus {
     outline: none;
-    
+
 }
 
 #desktopPortfolioMenu button.active {

@@ -1,18 +1,27 @@
 @import url('style.css');
 
 .carrossel-container {
-    scroll-margin-top: clamp(4rem, 8vh, 6rem);
-    padding-top: clamp(5rem, 10vh, 8rem);
-    padding-bottom: clamp(3rem, 6vh, 6rem);
     width: 100%;
     overflow: hidden;
     position: relative;
+    margin-top: var(--space-xss);
+    margin-bottom: var(--space-2xl);
 }
 
 .carrossel {
     display: flex;
-    width: max-content;
-    gap: var(--space-6xl); 
+    width: 100%;
+}
+
+.carrossel-track {
+    display: flex;
+    gap: var(--space-6xl);
+    animation: scroll 20s linear infinite;
+    will-change: transform;
+}
+
+.carrossel:hover .carrossel-track {
+    animation-play-state: paused;
 }
 
 .carrossel-item {
@@ -28,6 +37,14 @@
     user-select: none;
 }
 
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
 @media screen and (max-width: 1441px) {
     .carrossel-container {
