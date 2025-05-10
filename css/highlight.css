@@ -125,12 +125,7 @@
     object-fit: cover;
     user-select: none;
     border-radius: var(--border-radius-sm);
-    opacity: 0.9;
     transition: opacity var(--transition-speed-normal) var(--transition-easing);
-  }
-
-  .card__front:hover img {
-    opacity: 1;
   }
 
   /* Efeito de inclinação ao passar o mouse na imagem */
