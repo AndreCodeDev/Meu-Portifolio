@@ -81,14 +81,14 @@
     margin: var(--space-xxs) 0 var(--space-lg);
 }
 
-.cta-wrapper {
+.hero__cta-wrapper {
     display: flex;
     gap: var(--space-md);
     user-select: text;
     -webkit-tap-highlight-color: transparent;
 }
 
-.cta-button {
+.hero__cta-button {
     background: var(--primary);
     color: var(--text-white);
     font-size: var(--font-sm);
@@ -103,20 +103,20 @@
     text-decoration: none;
 }
 
-.cta-button:hover {
+.hero__cta-button:hover {
     background: var(--card-bg);
     color: var(--text);
 }
 
-.cta-button:focus {
+.hero__cta-button:focus {
     outline: none;
 }
 
-.cta-button:active {
+.hero__cta-button:active {
     background-color: transparent;
 }
 
-.cta-button img {
+.hero__cta-button img {
     max-width: var(--space-base);
     height: auto;
     filter: brightness(0) invert(1);
@@ -124,14 +124,14 @@
     pointer-events: none;
 }
 
-.social-links {
+.hero__social-links {
     display: flex;
     gap: var(--space-base);
     justify-content: center;
     align-items: center;
 }
 
-.social-card {
+.hero__social-card {
     position: relative;
     background-color: var(--card-bg);
     border-radius: var(--border-radius-fll);
@@ -146,22 +146,22 @@
     transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
-.social-card:hover {
+.hero__social-card:hover {
     background-color: var(--primary);
     color: var(--text);
     transform: translateY(-2px);
 }
 
-.social-card a {
+.hero__social-card a {
     color: var(--muted);
     transition: color 0.3s ease;
 }
 
-.social-card a:hover {
+.hero__social-card a:hover {
     color: var(--text);
 }
 
-.social-card img {
+.hero__social-card img {
     max-width: var(--space-md);
     height: auto;
     filter: brightness(0) saturate(100%) invert(62%) sepia(8%) saturate(300%) hue-rotate(180deg) brightness(94%) contrast(88%);
@@ -169,11 +169,11 @@
     pointer-events: none;
 }
 
-.social-card:hover img {
+.hero__social-card:hover img {
     filter: brightness(0) invert(1);
 }
 
-.tooltip {
+.hero__tooltip {
     position: absolute;
     top: 115%;
     left: 50%;
@@ -193,7 +193,7 @@
     z-index: 10;
 }
 
-.social-card:hover .tooltip {
+.hero__social-card:hover .hero__tooltip {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(5px);
@@ -370,7 +370,7 @@
 
 /* Mobile Grande (481px - 599px) */
 @media screen and (max-width: 600px) {
-    .cta-wrapper {
+    .hero__cta-wrapper {
         flex-direction: column-reverse;
         gap: var(--space-sm);
     }
@@ -399,11 +399,11 @@
         transform: scale(0.9);
     }
     
-    .social-links {
+    .hero__social-links {
         gap: var(--space-xs);
     }
     
-    .social-card {
+    .hero__social-card {
         width: var(--space-3xl);
         height: var(--space-3xl);
     }

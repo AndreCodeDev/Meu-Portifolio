@@ -43,14 +43,14 @@
 
 
 
-.cta-wrapper {
+.contact__cta-wrapper {
   display: flex;
   gap: var(--space-md);
   user-select: text;
   -webkit-tap-highlight-color: transparent;
 }
 
-.cta-button {
+.contact__cta-button {
   background: var(--primary);
   color: var(--text-white);
   font-size: var(--font-sm);
@@ -65,20 +65,20 @@
   text-decoration: none;
 }
 
-.cta-button:hover {
+.contact__cta-button:hover {
   background: var(--card-bg);
   color: var(--text);
 }
 
-.cta-button:focus {
+.contact__cta-button:focus {
   outline: none;
 }
 
-.cta-button:active {
+.contact__cta-button:active {
   background-color: transparent;
 }
 
-.cta-button img {
+.contact__cta-button img {
   max-width: var(--space-base);
   height: auto;
   filter: brightness(0) invert(1);
@@ -86,14 +86,14 @@
   pointer-events: none;
 }
 
-.social-links {
+.contact__social-links {
   display: flex;
   gap: var(--space-base);
   justify-content: center;
   align-items: center;
 }
 
-.social-card {
+.contact__social-card {
   position: relative;
   background-color: var(--card-bg);
   border-radius: var(--border-radius-fll);
@@ -108,22 +108,22 @@
   transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
-.social-card:hover {
+.contact__social-card:hover {
   background-color: var(--primary);
   color: var(--text);
   transform: translateY(-2px);
 }
 
-.social-card a {
+.contact__social-card a {
   color: var(--muted);
   transition: color 0.3s ease;
 }
 
-.social-card a:hover {
+.contact__social-card a:hover {
   color: var(--text);
 }
 
-.social-card img {
+.contact__social-card img {
   max-width: var(--space-md);
   height: auto;
   filter: brightness(0) saturate(100%) invert(62%) sepia(8%) saturate(300%) hue-rotate(180deg) brightness(94%) contrast(88%);
@@ -131,11 +131,11 @@
   pointer-events: none;
 }
 
-.social-card:hover img {
+.contact__social-card:hover img {
   filter: brightness(0) invert(1);
 }
 
-.tooltip {
+.contact__tooltip {
   position: absolute;
   top: 115%;
   left: 50%;
@@ -155,7 +155,7 @@
   z-index: 10;
 }
 
-.social-card:hover .tooltip {
+.contact__social-card:hover .contact__tooltip {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(5px);
