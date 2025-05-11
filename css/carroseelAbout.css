@@ -4,8 +4,6 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin-top: var(--space-xss);
-    margin-bottom: var(--space-2xl);
 }
 
 .carrossel {
