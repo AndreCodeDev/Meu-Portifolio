@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // Aplica o tema inicial
-  const preferredTheme = getPreferredTheme();
-  applyTheme(preferredTheme);
+  //const preferredTheme = getPreferredTheme();
+  //applyTheme(preferredTheme);
   
   // Alternar tema ao clicar
   themeToggle.addEventListener('click', () => {
