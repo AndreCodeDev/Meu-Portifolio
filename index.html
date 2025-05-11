@@ -488,17 +488,32 @@ console.log('Na jornada do conhecimento e crescimento.');
       </section>
 
       <!-- Botões para alternar conteúdo na sessão portfólio -->
-      <div id="desktopPortfolioMenu">
-        <button data-target="projects">
-          <img src="img/redes/project.svg" alt="Projetos" />Projetos
-        </button>
-        <button data-target="formations">
-          <img src="img/redes/formation.svg" alt="Formações" />Formações
-        </button>
-        <button data-target="technologies">
-          <img src="img/redes/technologies.svg" alt="technologies" />Tecnologias
-        </button>
-      </div>
+<div id="desktopPortfolioMenu">
+  <button data-target="projects">
+    <img 
+      src="img/redes/project.svg" 
+      data-inactive="img/redes/project.svg" 
+      data-active="img/redes/project-active.svg" 
+      alt="Projetos"
+    />Projetos
+  </button>
+  <button data-target="formations">
+    <img 
+      src="img/redes/formation.svg" 
+      data-inactive="img/redes/formation.svg" 
+      data-active="img/redes/formation-active.svg" 
+      alt="Formações"
+    />Formações
+  </button>
+  <button data-target="technologies">
+    <img 
+      src="img/redes/technologies.svg" 
+      data-inactive="img/redes/technologies.svg" 
+      data-active="img/redes/technologies-active.svg" 
+      alt="technologies"
+    />Tecnologias
+  </button>
+</div>
 
       <section id="portfolio">
         <section id="projects">
@@ -955,6 +970,7 @@ console.log('Na jornada do conhecimento e crescimento.');
     <script src="/js/heroDots.js"></script>
     <script src="/js/carroseelAbout.js"></script>
     <script src="/js/highlight.js"></script>
+    <script src="/js/descktopButton.js"></script>
     <script src="/js/forms.js"></script>
 
     <script
