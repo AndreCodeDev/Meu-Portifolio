@@ -50,7 +50,7 @@
 .project-card__title {
     color: var(--text-white);
     font-size: var(--font-lg);
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-base);
     text-align: start;
 }
 
@@ -59,7 +59,7 @@
     font-size: var(--font-xxs);
     text-align: start;
     line-height: 1.6;
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-base);
     text-align: justify;
 }
 
@@ -67,7 +67,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-sm);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-base);
 }
 
 .project-card__techs img {
@@ -79,10 +79,9 @@
 .project-card__footer {
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    text-align: start;
     align-items: center;
     gap: var(--space-sm);
-    padding: var(--space-sm) 0 0 0;
 }
 
 .project-card__footer p{

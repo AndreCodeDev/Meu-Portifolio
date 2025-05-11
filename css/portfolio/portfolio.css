@@ -6,12 +6,12 @@
     position: relative;
     z-index: 10;
     scroll-margin-top: clamp(2rem, 4vh, 4rem);
-    padding-top: clamp(3rem, 6vh, 5rem);
-  padding-bottom: clamp(3rem, 6vh, 5rem);
+    padding-bottom: clamp(5rem, 8vh, 7rem);
 }
 
 .projects__header {
     margin-bottom: var(--space-lg);
+        margin-top: var(--space-lg);
     align-items: center;
     text-align: center;
     display: flex;

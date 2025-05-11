@@ -2,8 +2,8 @@
 
 #hero {
     scroll-margin-top: clamp(2rem, 4vh, 4rem);
-    padding-top: clamp(3rem, 6vh, 5rem);
-  padding-bottom: clamp(3rem, 6vh, 5rem);
+    padding-top: clamp(8rem, 10vh, 9rem);
+    padding-bottom: clamp(8rem, 10vh, 9rem);
     color: var(--text-white);
     display: flex;
     align-items: center;

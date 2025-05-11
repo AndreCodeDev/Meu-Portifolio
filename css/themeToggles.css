@@ -46,14 +46,26 @@
 
 .theme-toggle__tooltip {
   position: absolute;
-  white-space: nowrap;
-  left: 50px;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--card-bg);
+  color: var(--text-white);
+  padding: var(--space-xs);
+  border-radius: var(--border-radius-sm);
   font-size: var(--font-xs);
-  color: var(--text-gray);
   opacity: 0;
-  transition: opacity var(--transition-speed-normal) var(--transition-easing);
+  visibility: hidden;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  box-shadow: var(--shadow-medium);
+  border: 1px solid var(--border);
+  pointer-events: none;
+  z-index: 10;
 }
 
 .theme-toggle:hover .theme-toggle__tooltip {
   opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(5px);
 }

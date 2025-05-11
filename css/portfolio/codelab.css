@@ -46,7 +46,7 @@
 .codelab-card__title {
     color: var(--text-white);
     font-size: var(--font-lg);
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-base);
     text-align: start;
 }
 
@@ -55,7 +55,7 @@
     font-size: var(--font-xxs);
     text-align: start;
     line-height: 1.6;
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-base);
     text-align: justify;
 }
 
@@ -63,7 +63,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-sm);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-base);
 }
 
 .codelab-card__techs img {
@@ -76,9 +76,8 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    align-items: center;
+    text-align: start;
     gap: var(--space-sm);
-    padding: var(--space-sm) 0 0 0;
 }
 
 .codelab-card__footer p{

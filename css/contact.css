@@ -3,11 +3,8 @@
 /* Estilos da seção de contato com uso total de variáveis */
 #contact {
   scroll-margin-top: clamp(4rem, 8vh, 6rem);
-  padding-top: clamp(5rem, 10vh, 8rem);
-  padding-bottom: clamp(3rem, 6vh, 5rem);
+    padding-bottom: clamp(8rem, 10vh, 9rem);
   text-align: center;
-  margin: var(--space-md);
-  padding: var(--space-xl) 0 0 0;
 
 }
 
@@ -90,6 +87,7 @@
   gap: var(--space-base);
   justify-content: center;
   align-items: center;
+  margin-top: var(--space-base);
 }
 
 .contact__social-card {
@@ -140,7 +138,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--card-bg);
-  color: var(--text);
+  color: var(--text-white);
   padding: var(--space-xs);
   border-radius: var(--border-radius-sm);
   font-size: var(--font-xs);
@@ -177,7 +175,7 @@
 .contact-info h3,
 .contact-form h3 {
   margin-bottom: var(--space-base);
-  color: var(--accent);
+  color: var(--text-white);
   font-size: var(--font-md);
 }
 

@@ -39,7 +39,7 @@
 #menuMobile img {
     max-width: 1.1rem;
     height: auto;
-    filter: brightness(0) invert(1);
+    filter: var(--filter-button);
     user-select: none; 
     pointer-events: none;
     transition: filter 0.2s ease; 

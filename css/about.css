@@ -2,8 +2,8 @@
 
 .about {
   scroll-margin-top: clamp(2rem, 4vh, 4rem);
-  padding-top: clamp(3rem, 6vh, 5rem);
-  padding-bottom: clamp(3rem, 6vh, 5rem);
+    padding-top: clamp(10rem, 12vh, 11rem);
+    padding-bottom: clamp(10rem, 12vh, 11rem);
   color: var(--text-white);
   display: flex;
   align-items: center;
