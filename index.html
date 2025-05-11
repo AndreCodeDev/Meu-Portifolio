@@ -17,55 +17,54 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-
-      <section id="loading">
-    <section id="loading-screen">
-      <div class="loading-content">
-        <div class="logo-container">
+    <section id="loading">
+      <section id="loading-screen">
+        <div class="loading-content">
           <div class="logo-container">
-            <div class="logo-animation">
-              <div class="logo-item">
-                <img src="img/redes/loadingFormation.svg" alt="Formações" />
+            <div class="logo-container">
+              <div class="logo-animation">
+                <div class="logo-item">
+                  <img src="img/redes/loadingFormation.svg" alt="Formações" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/redes/loadingPortfolio.svg" alt="Conquistas" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/redes/loadingSkills.svg" alt="Skills" />
+                </div>
               </div>
-              <div class="logo-item">
-                <img src="img/redes/loadingPortfolio.svg" alt="Conquistas" />
-              </div>
-              <div class="logo-item">
-                <img src="img/redes/loadingSkills.svg" alt="Skills" />
-              </div>
-            </div>
 
-            <div class="welcome-message">
-              <div class="welcome-line">
-                <span class="word-animation">Bem-Vindo(a)</span>
-                <span class="word-animation">Ao</span>
-                <span class="word-animation">Meu</span>
+              <div class="welcome-message">
+                <div class="welcome-line">
+                  <span class="word-animation">Bem-Vindo(a)</span>
+                  <span class="word-animation">Ao</span>
+                  <span class="word-animation">Meu</span>
+                </div>
+                <div class="welcome-line">
+                  <span class="word-animation-color">Portfólio</span>
+                  <span class="word-animation-color">Tech</span>
+                </div>
               </div>
-              <div class="welcome-line">
-                <span class="word-animation-color">Portfólio</span>
-                <span class="word-animation-color">Tech</span>
+
+              <div class="loading-progress">
+                <div class="progress-bar-center"></div>
               </div>
-            </div>
 
-            <div class="loading-progress">
-              <div class="progress-bar-center"></div>
-            </div>
-
-            <div class="url-display">
-              <div class="url-box">
-                <img src="img/redes/web.svg" alt="Web" />
-                <div class="url-text" id="animated-url"></div>
+              <div class="url-display">
+                <div class="url-box">
+                  <img src="img/redes/web.svg" alt="Web" />
+                  <div class="url-text" id="animated-url"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
-  </section>
 
     <header class="header" id="header">
       <a href="index.html" class="header__text-logo">
-        <img src="img/logo.svg" alt="Logo"/>Portfólio Tech</a
+        <img src="img/logo.svg" alt="Logo" />Portfólio Tech</a
       >
 
       <nav class="header__nav">
@@ -89,14 +88,13 @@
           </li>
         </ul>
 
-                <!-- Botão de alternar tema integrado no menu -->
+        <!-- Botão de alternar tema integrado no menu -->
         <li class="header__menu-item theme-toggle-item">
           <div class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
             <div class="theme-toggle__switch"></div>
             <span class="theme-toggle__tooltip">Tema Escuro</span>
           </div>
         </li>
-
       </nav>
     </header>
 
@@ -447,6 +445,41 @@ console.log('Na jornada do conhecimento e crescimento.');
                 <!-- Card 5 -->
                 <div class="card">
                   <div class="card__front">
+                    <img src="img/conquistas/conquistasIFSP.jpg" alt="IFSP" />
+                  </div>
+
+                  <div class="card__back">
+                    <article class="conquistas-card">
+                      <!-- Cabeçalho do Card com logo e informações principais -->
+                      <div class="conquistas--card-header">
+                        <div class="conquistas--card-info">
+                          <h2>IFSP</h2>
+                          <p>
+                            Construindo o alicerce para a carreira em tecnologia
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Detalhes do curso -->
+                      <div class="conquistas--card-details">
+                        <div class="conquistas--card-testimonial">
+                          <p>
+                            A ETEC foi o ponto de partida para minha jornada na
+                            tecnologia. Com uma formação sólida e prática, pude
+                            desenvolver habilidades essenciais para minha
+                            carreira. A experiência adquirida nesse período me
+                            preparou para os desafios futuros e fortaleceu meu
+                            desejo de seguir nessa área.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card">
+                  <div class="card__front">
                     <img src="img/conquistas/conquistasETEC.jpg" alt="ETEC" />
                   </div>
 
@@ -479,7 +512,7 @@ console.log('Na jornada do conhecimento e crescimento.');
                   </div>
                 </div>
 
-                <!-- Card 6 -->
+                <!-- Card 7 -->
                 <div class="card">
                   <div class="card__front">
                     <img
@@ -1016,7 +1049,7 @@ console.log('Na jornada do conhecimento e crescimento.');
     </footer>
 
     <script src="/js/script.js"></script>
-        <script src="/js/loading.js"></script>
+    <script src="/js/loading.js"></script>
     <script src="/js/menuMobile.js"></script>
     <script src="/js/themeToggles.js" defer></script>
     <script src="/js/header.js"></script>
