@@ -323,10 +323,21 @@
 
 
 
+/* Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    #hero {
+        margin-top: var(--space-5xl);
+        min-height: 50dvh;
+        padding-top: clamp(2rem, 4vh, 3rem);
+    }
+    
+    .hero__container {
+        gap: var(--space-xl);
+    }
+}
 
-@media screen and (max-width: 1441px) {}
-
-@media screen and (max-width: 1281px) {
+/* Tablet Pequeno (600px - 767px) */
+@media screen and (max-width: 768px) {
     .hero__container {
         flex-direction: column;
         align-items: center;
@@ -339,29 +350,16 @@
         text-align: center;
     }
 
-}
-
-@media screen and (max-width: 1024px) {
-    #hero {
-        margin-top: var(--space-5xl);
-        min-height: 9dvh;
-        display: flex;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 769px) {
-
     .hero__typing-text {
         margin: var(--space-lg) 0 0;
     }
 
     .hero__statement {
-        margin: var(--space-2xl);
+        margin: var(--space-2xl) 0;
     }
 
     .hero__visual-element {
-        margin: var(--space-md) 0 var(--space-md);
+        margin: var(--space-md) 0;
         width: 100%;
     }
 
@@ -370,35 +368,48 @@
     }
 }
 
-@media screen and (max-width: 420px) {
-
-    .hero__text-content {
-        align-items: center;
-        text-align: center;
+/* Mobile Grande (481px - 599px) */
+@media screen and (max-width: 600px) {
+    .cta-wrapper {
+        flex-direction: column-reverse;
+        gap: var(--space-sm);
     }
+    
+    .hero__statement {
+        margin: var(--space-lg) 0;
+    }
+}
 
+/* Mobile Pequeno (320px - 480px) */
+@media screen and (max-width: 480px) {
     .hero__typing-container {
         margin: var(--space-xs) 0;
     }
 
     .code-filename {
-        font-size: var(--font-xs);
+        font-size: var(--font-sm);
     }
 
     .code-content code {
         font-size: var(--font-xs);
+        padding: var(--space-sm);
     }
 
-}
-
-@media screen and (max-width: 321px) {
-
-    .button__geral__cta-container {
-        flex-direction: column;
-    }
-
-    .code-snippet {
+        .code-snippet {
         transform: scale(0.9);
     }
+    
+    .social-links {
+        gap: var(--space-xs);
+    }
+    
+    .social-card {
+        width: var(--space-3xl);
+        height: var(--space-3xl);
+    }
+}
+
+/* Mobile Muito Pequeno (até 319px) */
+@media screen and (max-width: 320px) {
 
 }
