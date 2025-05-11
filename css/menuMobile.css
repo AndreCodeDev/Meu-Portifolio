@@ -6,7 +6,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: var(--bg);
+    background: var(--bg-header);
     border-top: 1px solid var(--border);
     justify-content: space-around;
     gap: 0 auto;
@@ -19,9 +19,9 @@
     background: none;
     color: var(--text-white);
     font-size: var(--font-xs);
-    padding: var(--space-md) var(--space-xs);
+    padding: var(--space-base) var(--space-xs);
     align-items: center;
-    gap: var(--space-sm);
+    gap: var(--space-xxs);
     display: flex;
     flex-direction: column;
     border: none;
