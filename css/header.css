@@ -10,7 +10,7 @@
   justify-content: space-around;
   align-items: center;
   height: 75px;
-  background-color: var(--bg);
+  background: var(--bg-header);
   border-bottom: 1px solid var(--border);
   z-index: 1200;
   transition: transform 0.3s ease;

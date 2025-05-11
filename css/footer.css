@@ -9,6 +9,7 @@
     text-align: center;
     gap: var(--space-sm);
     border-top: 1px solid var(--border);
+    background: var(--bg-header);
 }
 
 .footer-group {
