@@ -1,6 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('#menuMobile button');
     
+    // Ativa o botão "Início" por padrão
+    const defaultButton = document.querySelector('[data-mobile="inicio"]');
+    if(defaultButton) {
+        defaultButton.classList.add('active');
+        const activeImg = defaultButton.querySelector('img');
+        if(activeImg) {
+            activeImg.src = activeImg.getAttribute('data-active');
+        }
+    }
+    
     buttons.forEach(button => {
         button.addEventListener('click', function() {
             // Remove a classe 'active' de todos os botões e volta para imagem inativa
