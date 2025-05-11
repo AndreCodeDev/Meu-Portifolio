@@ -391,7 +391,7 @@
     }
 
     .code-content code {
-        font-size: var(--font-xs);
+        font-size: var(--font-xs-s);
         padding: var(--space-sm);
     }
 
