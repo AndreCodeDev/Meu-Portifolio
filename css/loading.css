@@ -56,13 +56,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--space-lg);
+    gap: var(--space-md);
     margin-bottom: var(--spece-md);
 }
 
 .logo-item {
-    width: var(--space-2xl);
-    height: var(--space-2xl);
+    width: var(--space-4xl);
+    height: var(--space-4xl);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,7 +72,6 @@
 .logo-item img {
     width: var(--space-3xl);
     height: var(--space-3xl);
-    border-radius: var(--border-radius-fll);
     object-fit: contain;
     animation:
         emergeFromBeyond 1s ease-out forwards,
@@ -87,8 +86,8 @@
 .logo-item:nth-child(1) img {
     animation-delay: 0.4s, 1.5s, 1.5s;
     animation-duration: 1s, 2s, 2.8s;
-    width: var(--space-xl);
-    height: var(--space-xl);
+    width: var(--space-2xl);
+    height: var(--space-2xl);
 }
 
 .logo-item:nth-child(2) img {
@@ -101,8 +100,8 @@
     animation-delay: 0.6s, 1.5s, 1.5s;
     animation-duration: 1s, 2s, 2.6s;
     transform: scale(0.8) translateY(-10px);
-    width: var(--space-xl);
-    height: var(--space-xl);
+    width: var(--space-2xl);
+    height: var(--space-2xl);
 }
 
 .logo-item:nth-child(4) img {
