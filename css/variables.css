@@ -17,7 +17,7 @@
 
   /* Background */
   --bg: #111111;
-  --bg-grid: #252525a8;
+  --bg-grid: #2b2b2b94;
   --card-bg: #1a1a1a;
   --bg-box: #151515ab;
   --bg-button: #3e3e3e1a;
@@ -107,7 +107,7 @@
 
   /* Text Color */
   --text-white: #000000;
-  --text-gray: #4f4f4f;
+  --text-gray: #818181;
   --text-dark: #1a1a1a;
   --text-gray-linear-gradient: #c0c0c0;
 

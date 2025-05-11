@@ -2,7 +2,7 @@
 
 #hero {
     scroll-margin-top: clamp(2rem, 4vh, 4rem);
-    padding-top: clamp(8rem, 10vh, 9rem);
+    padding-top: clamp(10rem, 12vh, 11rem);
     padding-bottom: clamp(8rem, 10vh, 9rem);
     color: var(--text-white);
     display: flex;
@@ -337,6 +337,11 @@
 
 /* Tablet Pequeno (600px - 767px) */
 @media screen and (max-width: 768px) {
+
+    #hero {
+    padding-bottom: clamp(1rem, 2vh, 2rem);
+}
+
     .hero__container {
         flex-direction: column;
         align-items: center;

@@ -90,7 +90,7 @@
   transform: scaleX(0);
   height: 0.15rem;
   bottom: -0.1rem;
-  background: linear-gradient(270deg, var(--primary) 0%, var(--bg) 100%);
+  background: linear-gradient(270deg, var(--accent) 0%, var(--bg) 100%);
   transform-origin: bottom right;
   transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }
