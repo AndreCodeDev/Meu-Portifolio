@@ -18,7 +18,7 @@ desktopButtons.forEach(button => {
     const targetSection = document.getElementById(target);
     if (targetSection) {
       targetSection.style.display = 'block';
-      targetSection.scrollIntoView({ behavior: 'smooth' });
+      //targetSection.scrollIntoView({ behavior: 'smooth' });
       desktopButtons.forEach(b => b.classList.remove('active'));
       button.classList.add('active');
     }
