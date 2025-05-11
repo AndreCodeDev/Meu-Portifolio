@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="/css/sysle.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <section id="loading">Carregando...</section>
@@ -43,7 +43,16 @@
           <li class="header__menu-item">
             <a href="#contact" class="header__menu-link">Contato</a>
           </li>
-        </ul>
+
+        <!-- Botão de alternar tema integrado no menu -->
+        <li class="header__menu-item theme-toggle-item">
+          <div class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+            <div class="theme-toggle__switch"></div>
+            <span class="theme-toggle__tooltip">Tema Escuro</span>
+          </div>
+        </li>
+                </ul>
+
       </nav>
     </header>
 
@@ -964,7 +973,7 @@ console.log('Na jornada do conhecimento e crescimento.');
 
     <script src="/js/script.js"></script>
     <script src="/js/menuMobile.js"></script>
-    <script src="/js/themeToggles.js"></script>
+    <script src="/js/themeToggles.js" defer></script>
     <script src="/js/header.js"></script>
     <script src="/js/heroTextAnimation.js"></script>
     <script src="/js/heroDots.js"></script>

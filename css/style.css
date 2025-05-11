@@ -1,8 +1,10 @@
+@import url('style.css');
 @import url('variables.css');
 @import url('desktopPortfolioMenu.css');
 @import url('menuMobile.css');
 @import url('components.css');
 @import url('header.css');
+@import url('themeToggles.css');
 @import url('hero.css');
 @import url('carroseelAbout.css');
 @import url('about.css');
@@ -107,4 +109,8 @@ svg {
         display: flex;
     }
 }
+
+
+
+
 

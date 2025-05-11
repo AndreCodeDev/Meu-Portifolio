@@ -407,6 +407,10 @@
         width: var(--space-3xl);
         height: var(--space-3xl);
     }
+
+    .hero__social-card img {
+    width: var(--space-md);
+}
 }
 
 /* Mobile Muito Pequeno (até 319px) */

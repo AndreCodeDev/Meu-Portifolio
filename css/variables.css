@@ -1,4 +1,4 @@
-@import url('sysle.css');
+@import url('style.css');
 
 :root {
   /* Color */
@@ -17,7 +17,7 @@
   --bg: #111111;
   --bg-grid: #252525a8;
   --card-bg: #1a1a1a;
-  --bg-box: #4d4d4d0f;
+  --bg-box: #15151595;
   --bg-button: #3e3e3e1a;
   --bg-header: #111111f1;
   --bg-transparent: transparent;
@@ -93,4 +93,47 @@
 
 }
 
-:root [data-theme="light"] {}
+[data-theme="light"] {
+  /* Color */
+  --primary: #d9d9d9;
+  --accent: #a6a6a6;
+  --color-warning: #ffcc00;
+  --color-error: #d32f2f;
+  --color-success: #388e3c;
+
+  /* Text Color */
+  --text-white: #000000;
+  --text-gray: #4f4f4f;
+  --text-dark: #1a1a1a;
+
+  /* Background */
+  --bg: #ffffff;
+  --bg-grid: #b1b1b1;
+  --card-bg: #f5f5f5;
+  --bg-box: #f0f0f095;
+  --bg-button: #e0e0e01a;
+  --bg-header: #fffffff0;
+  --bg-transparent: transparent;
+
+  /* Filter */
+  --filter-button-hero: brightness(0) saturate(100%) invert(25%) sepia(0%) saturate(100%) hue-rotate(0deg);
+  --filter-button: brightness(0) invert(0);
+  --filter-button-gray: invert(68%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(108%) contrast(110%);
+
+  /* Efeitos Visuais */
+  --effect-glass-dark: rgba(255, 255, 255, 0.85);
+  --effect-glass-light: rgba(0, 0, 0, 0.05);
+  --effect-highlight-neutral: rgba(0, 0, 0, 0.03);
+  --effect-border-neutral: rgba(0, 0, 0, 0.1);
+  --effect-glass-bg-project: rgba(200, 200, 200, 0.3);
+  --effect-selection-neutral: rgba(0, 0, 0, 0.1);
+  --effect-overlay: #ffffff;
+
+  /* Gradientes */
+  --gradient-blue: linear-gradient(135deg, #d9d9d9, #a6a6a6);
+  --gradient-text-primary: linear-gradient(to right, #000000 10%, #a6a6a6 50%);
+  --gradient-card: linear-gradient(to bottom right, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.01));
+
+  /* Border */
+  --border: #bbbbbb6d;
+}
