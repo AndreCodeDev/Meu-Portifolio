@@ -17,7 +17,51 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <section id="loading">Carregando...</section>
+
+      <section id="loading">
+    <section id="loading-screen">
+      <div class="loading-content">
+        <div class="logo-container">
+          <div class="logo-container">
+            <div class="logo-animation">
+              <div class="logo-item">
+                <img src="img/redes/loadingFormation.svg" alt="Formações" />
+              </div>
+              <div class="logo-item">
+                <img src="img/redes/loadingPortfolio.svg" alt="Conquistas" />
+              </div>
+              <div class="logo-item">
+                <img src="img/redes/loadingSkills.svg" alt="Skills" />
+              </div>
+            </div>
+
+            <div class="welcome-message">
+              <div class="welcome-line">
+                <span class="word-animation">Bem-Vindo(a)</span>
+                <span class="word-animation">Ao</span>
+                <span class="word-animation">Meu</span>
+              </div>
+              <div class="welcome-line">
+                <span class="word-animation-color">Portfólio</span>
+                <span class="word-animation-color">Tech</span>
+              </div>
+            </div>
+
+            <div class="loading-progress">
+              <div class="progress-bar-center"></div>
+            </div>
+
+            <div class="url-display">
+              <div class="url-box">
+                <img src="img/redes/web.svg" alt="Web" />
+                <div class="url-text" id="animated-url"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
 
     <header class="header" id="header">
       <a href="index.html" class="header__text-logo">
@@ -955,8 +999,8 @@ console.log('Na jornada do conhecimento e crescimento.');
             width="14"
             height="14"
             viewBox="0 0 24 24"
-            fill="#ffffff"
-            stroke="#ffffff"
+            fill="#6e6e6e"
+            stroke="#6e6e6e"
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -972,6 +1016,7 @@ console.log('Na jornada do conhecimento e crescimento.');
     </footer>
 
     <script src="/js/script.js"></script>
+        <script src="/js/loading.js"></script>
     <script src="/js/menuMobile.js"></script>
     <script src="/js/themeToggles.js" defer></script>
     <script src="/js/header.js"></script>

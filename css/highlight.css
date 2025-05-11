@@ -296,7 +296,7 @@
   justify-content: center;
   position: static;
   transform: none;
-  padding: var(--space-sm) var(--space-2xl);
+  padding: var(--space-base) var(--space-2xl);
 }
 
 .conquistas-carousel-control:hover {
@@ -311,9 +311,9 @@
 /* Ícones das setas */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  padding: var(--space-sm) var(--space-2xl);
-  width: var(--font-lg);
-  height: var(--font-lg);
+  padding: var(--space-base) var(--space-2xl);
+  width: var(--font-sm);
+  height: var(--font-sm);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

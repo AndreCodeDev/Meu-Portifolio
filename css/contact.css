@@ -1,24 +1,23 @@
 @import url('style.css');
 
-/* Estilos da seção de contato com uso total de variáveis */
+/* Estilos da seção de contato */
 #contact {
   scroll-margin-top: clamp(4rem, 8vh, 6rem);
-    padding-bottom: clamp(8rem, 10vh, 9rem);
+  padding-bottom: clamp(8rem, 10vh, 9rem);
   text-align: center;
-
 }
 
 .contact-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--space-md);
+  width: 100%;
   max-width: 1000px;
-  justify-content: space-between;
+  margin: var(--space-md) auto var(--space-lg);
   align-items: stretch;
   color: var(--text-gray);
   font-size: var(--font-xxs);
-  margin: 0 auto;
-  margin-top: var(--space-lg);
+  padding: 0 var(--space-lg);
 }
 
 .contact-info {
@@ -33,11 +32,6 @@
   align-items: center;
   gap: var(--space-base);
 }
-
-
-
-
-
 
 .contact__cta-wrapper {
   display: flex;
@@ -77,7 +71,7 @@
 .contact__cta-button img {
   max-width: var(--space-base);
   height: auto;
-    filter: var(--filter-button);
+  filter: var(--filter-button);
   user-select: none;
   pointer-events: none;
 }
@@ -158,7 +152,6 @@
   transform: translateX(-50%) translateY(5px);
 }
 
-
 .contact-form {
   flex: 1;
   padding: var(--space-base);
@@ -169,7 +162,6 @@
   justify-content: center;
   align-items: center;
   border: solid 1px var(--border);
-
 }
 
 .contact-info h3,
@@ -195,6 +187,7 @@
 .form-group {
   margin-bottom: var(--space-sm);
   width: 100%;
+  position: relative;
 }
 
 .form-group label {
@@ -209,32 +202,18 @@
 .form-group textarea {
   width: 100%;
   padding: var(--padding-input, 10px);
-  border: 1px solid var(--border);
+  border: 1px solid var(--effect-glass-light);
   border-radius: var(--border-radius-md);
   font-size: var(--font-xs);
   background-color: var(--bg-box);
   color: var(--text-gray);
+  outline: none;
 }
 
 .form-group textarea {
   height: 120px;
   resize: vertical;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Toast de sucesso */
 #toast {
@@ -254,11 +233,7 @@
   font-size: var(--font-sm);
 }
 
-
-
-
-
-/* Adicione ao seu arquivo CSS */
+/* Layout do formulário */
 .form-row {
   display: flex;
   gap: var(--space-sm);
@@ -287,137 +262,40 @@
   align-items: center;
 }
 
-.form-group {
-  width: 100%;
-  max-width: 100%;
-}
-
-
-/* Remove o fundo branco dos inputs preenchidos automaticamente */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 1000px var(--bg-transparent) inset !important;
-  transition: background-color 5000s ease-in-out 0s;
-}
-
-/* Opcional: manter a cor do texto consistente */
-input:-webkit-autofill {
-  -webkit-text-fill-color: var(--text-gray) !important;
-}
-
-/* COR DO TEXTO (SEMPRE CINZA) */
-.form-group input,
-.form-group textarea,
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group input:active,
-.form-group textarea:active {
-  color: var(--text-gray);
-  -webkit-text-fill-color: var(--text-gray) !important;
-  /* Para navegadores WebKit (Chrome/Safari) */
-}
-
-/* --- ESTADO INICIAL --- */
-.form-group input,
-.form-group textarea {
-  border: 1px solid var(--effect-glass-light) !important;
-  color: var(--text-gray) !important;
-  -webkit-text-fill-color: var(--text-gray) !important;
-}
-
-/* --- QUANDO CLICADO (FOCUS) --- */
-.form-group input:focus:not(:valid),
-.form-group textarea:focus:not(:valid) {
-  border-color: darkred !important;
-  /* Vermelho se vazio/clicado */
-  outline: none;
-}
-
-/* --- QUANDO PREENCHIDO --- */
+/* Estilos de validação */
 .form-group input:valid,
 .form-group textarea:valid {
-  border-color: green !important;
-  /* Verde se válido/preenchido */
+  border-color: green;
 }
 
-/* --- QUANDO CLICADO E JÁ PREENCHIDO --- */
 .form-group input:focus:valid,
 .form-group textarea:focus:valid {
-  border-color: darkgreen !important;
-  /* Verde mais escuro se válido e com foco */
-  outline: none;
+  border-color: darkgreen;
 }
 
-
-/* Estilização do placeholder - TEXTO AZUL */
-#name::placeholder {
-  opacity: 1;
-  /* Necessário para Firefox */
-  font-style: italic;
-  /* Opcional: deixa em itálico */
+.form-group input:focus:not(:valid),
+.form-group textarea:focus:not(:valid) {
+  border-color: darkred;
 }
 
-/* Remove o placeholder ao focar (opcional) */
-#name:focus::placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-/* Estilização do placeholder - TEXTO AZUL */
-#email::placeholder {
-  opacity: 1;
-  /* Necessário para Firefox */
-  font-style: italic;
-  /* Opcional: deixa em itálico */
-}
-
-/* Remove o placeholder ao focar (opcional) */
-#email:focus::placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-/* Estilização do placeholder - TEXTO AZUL */
-#subject::placeholder {
-  opacity: 1;
-  /* Necessário para Firefox */
-  font-style: italic;
-  /* Opcional: deixa em itálico */
-}
-
-/* Remove o placeholder ao focar (opcional) */
-#subject:focus::placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-/* Estilização do placeholder - TEXTO AZUL */
+/* Placeholders */
+#name::placeholder,
+#email::placeholder,
+#subject::placeholder,
 #message::placeholder {
   opacity: 1;
-  /* Necessário para Firefox */
   font-style: italic;
-  /* Opcional: deixa em itálico */
 }
 
-/* Remove o placeholder ao focar (opcional) */
+#name:focus::placeholder,
+#email:focus::placeholder,
+#subject:focus::placeholder,
 #message:focus::placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* Tooltip no estilo do button__redes__tooltip */
+/* Tooltip */
 .form-tooltip {
   position: absolute;
   top: 115%;
@@ -438,23 +316,18 @@ input:-webkit-autofill {
   z-index: 10;
 }
 
-.form-group {
-  position: relative;
-}
-
 .form-group:hover .form-tooltip {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(5px);
 }
 
-/* Remove comportamentos padrão indesejados */
-.form-group input:invalid,
-.form-group textarea:invalid {
-  box-shadow: none;
-}
-
-.form-group input,
-.form-group textarea {
-  outline: none;
+/* Autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px var(--bg-transparent) inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--text-gray) !important;
 }

@@ -19,13 +19,13 @@
 }
 
 #footer--grid-layout p {
-    color: var(--text-gray);
+    color: var(--text-white);
     font-size: var(--font-sm);
     margin: 0;
 }
 
 #footer--grid-layout a {
-    color: var(--text-white);
+    color: var(--text-gray);
     text-decoration: none;
 }
 

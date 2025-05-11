@@ -11,7 +11,7 @@
 
 .projects__header {
     margin-bottom: var(--space-lg);
-        margin-top: var(--space-lg);
+    margin-top: var(--space-lg);
     align-items: center;
     text-align: center;
     display: flex;
