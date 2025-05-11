@@ -7,11 +7,13 @@
   --color-warning: #ffc107;
   --color-error: #ff4d4f;
   --color-success: #28a745;
+  --primary-linear-gradient: #353535;
 
   /* Text Color */
   --text-white: #ffffff;
   --text-gray: #c0c0c0;
   --text-dark: #e0e0e0;
+  --text-gray-linear-gradient: #c0c0c0;
 
   /* Background */
   --bg: #111111;
@@ -96,19 +98,21 @@
 [data-theme="light"] {
   /* Color */
   --primary: #d9d9d9;
-  --accent: #a6a6a6;
+  --accent: #c1c1c1;
   --color-warning: #ffcc00;
   --color-error: #d32f2f;
   --color-success: #388e3c;
+  --primary-linear-gradient: #000000;
 
   /* Text Color */
   --text-white: #000000;
   --text-gray: #4f4f4f;
   --text-dark: #1a1a1a;
+  --text-gray-linear-gradient: #c0c0c0;
 
   /* Background */
   --bg: #ffffff;
-  --bg-grid: #b1b1b1;
+  --bg-grid: #c3c3c3;
   --card-bg: #f5f5f5;
   --bg-box: #f0f0f095;
   --bg-button: #e0e0e01a;

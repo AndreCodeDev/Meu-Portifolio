@@ -32,7 +32,7 @@
   font-size: var(--font-3xl);
   font-weight: 800;
   line-height: 1.2;
-  background: linear-gradient(to right, var(--primary), var(--text-gray));
+  background: linear-gradient(to right, var(--primary-linear-gradient), var(--text-gray-linear-gradient));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -95,7 +95,7 @@
 .about__cta-button img {
   max-width: var(--space-base);
   height: auto;
-  filter: brightness(0) invert(1);
+  filter: var(--filter-button);
   user-select: none;
   pointer-events: none;
 }
@@ -110,7 +110,7 @@
 .about__image {
   max-width: 68%;
   height: auto;
-  border: solid 2px var(--text-gray);
+  border: solid 5px var(--accent);
   border-radius: var(--border-radius-fll);
   box-shadow:
     0 0 0 1px #aaaaaa47,

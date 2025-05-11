@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function updateToggleUI(theme) {
     const tooltip = document.querySelector('.theme-toggle__tooltip');
     if (tooltip) {
-      tooltip.textContent = theme === 'light' ? 'Tema Claro' : 'Tema Escuro';
+      tooltip.textContent = theme === 'light' ? 'Tema Escuro' : 'Tema Claro';
     }
   }
   
