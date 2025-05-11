@@ -37,7 +37,7 @@
 }
 
 #menuMobile img {
-    max-width: var(--space-lg);
+    max-width: 1.1rem;
     height: auto;
     filter: brightness(0) invert(1);
     user-select: none; 
