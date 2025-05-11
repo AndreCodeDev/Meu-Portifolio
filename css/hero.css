@@ -371,7 +371,7 @@
 /* Mobile Grande (481px - 599px) */
 @media screen and (max-width: 600px) {
     .hero__cta-wrapper {
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: var(--space-sm);
     }
     
