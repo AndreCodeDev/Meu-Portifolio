@@ -47,10 +47,5 @@
 
 /* Classe para o estado ativo */
 #menuMobile button.active img {
-    filter: var(--filter-button-gray);
-}
-
-/* Opcional: estilo para o texto quando ativo */
-#menuMobile button.active {
-    color: var(--accent);
+    filter: var(--filter-button);
 }

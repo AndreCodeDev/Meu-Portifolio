@@ -16,7 +16,7 @@
 .carrossel-track {
     display: flex;
     gap: var(--space-6xl);
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
     will-change: transform;
 }
 

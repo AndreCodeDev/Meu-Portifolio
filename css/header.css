@@ -35,6 +35,13 @@
   color: var(--text-white);
 }
 
+.header__text-logo img {
+  margin-right: var(--space-sm);
+  width: var(--font-xl);
+  height: var(--font-xl);
+  user-select: none;
+}
+
 
 
 

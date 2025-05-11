@@ -7,7 +7,7 @@
     z-index: 10;
     user-select: text;
     -webkit-tap-highlight-color: transparent;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 200px;
     color: var(--text-white);
     margin: var(--space-3xl) 0;
 }
