@@ -3,7 +3,7 @@
 /* Estilos da seção de contato */
 #contact {
   scroll-margin-top: clamp(4rem, 8vh, 6rem);
-  padding-bottom: clamp(8rem, 10vh, 9rem);
+  padding-bottom: clamp(3rem, 5vh, 5rem);
   text-align: center;
 }
 
@@ -265,17 +265,17 @@
 /* Estilos de validação */
 .form-group input:valid,
 .form-group textarea:valid {
-  border-color: green;
+  border-color: var(--color-success);
 }
 
 .form-group input:focus:valid,
 .form-group textarea:focus:valid {
-  border-color: darkgreen;
+  border-color: var(--color-success);
 }
 
 .form-group input:focus:not(:valid),
 .form-group textarea:focus:not(:valid) {
-  border-color: darkred;
+  border-color: var(--color-error);
 }
 
 /* Placeholders */
