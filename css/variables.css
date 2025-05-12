@@ -48,6 +48,7 @@
   --border-invert: #ececec;
 
   /* Tipografia */
+  --font-xxxs: clamp(0.5rem, 1vw, 0.55rem);
   --font-xs-s: clamp(0.6rem, 1.3vw, 0.6rem);
   --font-xs: clamp(0.65rem, 1.6vw, 0.8rem);
   --font-xxs: clamp(0.775rem, 1.6vw, 0.85rem);

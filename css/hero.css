@@ -63,8 +63,15 @@
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1 }
-    50% { opacity: 0 }
+
+    0%,
+    100% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
 }
 
 .hero__statement {
@@ -110,7 +117,7 @@
 }
 
 .hero__cta-button img {
-    max-width: var(--space-base);
+    width: var(--space-base);
     height: auto;
     filter: var(--filter-button);
     user-select: none;
@@ -155,7 +162,7 @@
 }
 
 .hero__social-card img {
-    max-width: var(--space-md);
+    width: var(--space-md);
     height: auto;
     filter: var(--filter-button-gray);
     user-select: none;
@@ -299,8 +306,8 @@
     }
 
     .hero__text-content {
-        max-width: 60ch;
-                align-items: center;
+        max-width: 35ch;
+        align-items: center;
         text-align: center;
     }
 }
@@ -316,35 +323,33 @@
         gap: var(--space-xl);
     }
 
-        .hero__cta-wrapper {
+    .hero__cta-wrapper {
         flex-direction: column;
-        gap: var(--space-sm);
+        gap: var(--space-base);
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
-    .hero__statement {
-        margin: var(--space-lg) 0;
+    .hero__cta-button {
+        width: 50%;
+    }
+
+    .hero__social-card {
+        padding: var(--space-xxs);
+        width: var(--space-3xl);
+        height: var(--space-3xl);
+    }
+
+    .hero__social-card img {
+        width: var(--space-xl);
+        height: auto;
     }
 }
 
 @media screen and (max-width: 768px) {
     #hero {
         padding-bottom: clamp(1rem, 2vh, 2rem);
-    }
-
-    .hero__container {
-
-    }
-
-    .hero__text-content {
-
-    }
-
-    .hero__typing-text {
-        margin: var(--space-lg) 0 0;
-    }
-
-    .hero__statement {
-        margin: var(--space-2xl) 0;
     }
 
     .hero__visual-element {
@@ -367,24 +372,10 @@
     }
 
     .code-content code {
-        font-size: var(--font-xs-s);
-        padding: var(--space-sm);
+        font-size: var(--font-xxxs);
     }
 
     .code-snippet {
         transform: scale(0.9);
-    }
-
-    .hero__social-links {
-        gap: var(--space-xs);
-    }
-
-    .hero__social-card {
-        width: var(--space-3xl);
-        height: var(--space-3xl);
-    }
-
-    .hero__social-card img {
-        width: var(--space-md);
     }
 }
