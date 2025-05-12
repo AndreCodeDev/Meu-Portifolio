@@ -851,7 +851,130 @@ console.log('Na jornada do conhecimento e crescimento.');
           </div>
         </section>
         <section id="formations">Formações</section>
-        <section id="technologies">Tecnologias</section>
+        <section id="">Tecnologias</section>
+        <section id="technologies" class="skills">
+          <div class="skills__container">
+            <!-- Botões para filtrar as habilidades -->
+            <div class="skills__filter fade-in">
+              <button onclick="filterSkills('all', event)">Todas</button>
+              <button onclick="filterSkills('linguagens', event)">
+                Linguagens
+              </button>
+              <button onclick="filterSkills('ferramentas', event)">
+                Ferramentas
+              </button>
+              <button onclick="filterSkills('ides', event)">IDEs</button>
+              <button onclick="filterSkills('metodologias', event)">
+                Metodologias
+              </button>
+              <button onclick="filterSkills('frameworks', event)">
+                Frameworks
+              </button>
+              <button onclick="filterSkills('banco-dados', event)">
+                Banco de Dados
+              </button>
+            </div>
+
+            <!-- Cards de habilidades -->
+            <div class="skills__flex fade-in">
+              <!-- Linguagens de Programação -->
+              <div class="skill__card fade-in linguagens">
+                <img src="img/imgSVG/linguagens/html.svg" alt="Ícone do HTML" />
+                <h1>HTML5</h1>
+              </div>
+              <div class="skill__card fade-in linguagens">
+                <img src="img/imgSVG/linguagens/css.svg" alt="Ícone do CSS" />
+                <h1>CSS3</h1>
+              </div>
+              <div class="skill__card fade-in linguagens">
+                <img
+                  src="img/imgSVG/linguagens/javascript.svg"
+                  alt="Ícone do JavaScript"
+                />
+                <h1>JavaScript</h1>
+              </div>
+              <div class="skill__card fade-in linguagens">
+                <img src="img/imgSVG/linguagens/java.svg" alt="Ícone do Java" />
+                <h1>Java</h1>
+              </div>
+
+              <!-- Ferramentas -->
+              <div class="skill__card fade-in ferramentas">
+                <img src="img/imgSVG/linguagens/git.svg" alt="Ícone do Git" />
+                <h1>Git</h1>
+              </div>
+              <div class="skill__card fade-in ferramentas">
+                <img
+                  src="img/imgSVG/linguagens/figma.svg"
+                  alt="Ícone do Figma"
+                />
+                <h1>Figma</h1>
+              </div>
+              <div class="skill__card fade-in ferramentas">
+                <img
+                  src="img/imgSVG/linguagens/trello.svg"
+                  alt="Ícone do Trello"
+                />
+                <h1>Trello</h1>
+              </div>
+              <div class="skill__card fade-in ferramentas">
+                <img src="img/imgSVG/linguagens/jira.svg" alt="Ícone do Jira" />
+                <h1>Jira</h1>
+              </div>
+              <div class="skill__card fade-in ferramentas">
+                <img
+                  src="img/imgSVG/linguagens/office.svg"
+                  alt="Ícone do Office"
+                />
+                <h1>Pacote Office</h1>
+              </div>
+              <div class="skill__card fade-in ferramentas">
+                <img
+                  src="img/imgSVG/linguagens/canva.svg"
+                  alt="Ícone do Canva"
+                />
+                <h1>Canva</h1>
+              </div>
+
+              <!-- Metodologias -->
+              <div class="skill__card fade-in metodologias">
+                <img src="img/imgSVG/linguagens/agil.svg" alt="Ícone do Agil" />
+                <h1>Scrum e Kanban</h1>
+              </div>
+
+              <!-- Frameworks -->
+              <div class="skill__card fade-in frameworks">
+                <img
+                  src="img/imgSVG/linguagens/bootstrap.svg"
+                  alt="Ícone do BootStrap"
+                />
+                <h1>BootStrap</h1>
+              </div>
+
+              <!-- Banco de Dados -->
+              <div class="skill__card fade-in banco-dados">
+                <img src="img/imgSVG/linguagens/sql.svg" alt="Ícone do SQL" />
+                <h1>Banco SQL</h1>
+              </div>
+
+              <!-- IDEs -->
+              <div class="skill__card fade-in ides">
+                <img
+                  src="img/imgSVG/linguagens/VScode.svg"
+                  alt="Ícone do VScode"
+                />
+                <h1>VScode</h1>
+              </div>
+              <div class="skill__card fade-in ides">
+                <img
+                  src="img/imgSVG/linguagens/VisualStudio.svg"
+                  alt="Ícone do VisualStudio"
+                />
+                <h1>Visual Studio</h1>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
 
@@ -1059,6 +1182,7 @@ console.log('Na jornada do conhecimento e crescimento.');
     <script src="/js/highlight.js"></script>
     <script src="/js/descktopButton.js"></script>
     <script src="/js/forms.js"></script>
+    <script src="js/portfolio/skills.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

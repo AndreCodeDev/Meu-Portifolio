@@ -354,7 +354,7 @@
 
     .hero__visual-element {
         margin: var(--space-md) 0;
-        width: 100%;
+        width: 95%;
     }
 
     .code-snippet {
