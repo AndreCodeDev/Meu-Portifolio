@@ -2,12 +2,11 @@
 
 
 /* codelab Section */
-.codelab {
-}
+.codelab {}
 
 .codelab-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--space-md);
     max-width: 1300px;
     margin: 0 auto;
@@ -18,17 +17,16 @@
 
 /* codelab Card */
 .codelab-card {
-  background-color: var(--bg-box);
-  border-radius: var(--border-radius-md);
-  border: solid 1px var(--border);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-box);
+    border-radius: var(--border-radius-md);
+    border: solid 1px var(--border);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: var(--space-lg);
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 
 .codelab-card:hover {
-    transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
 }
 
@@ -37,6 +35,7 @@
     height: auto;
     object-fit: cover;
     border-radius: var(--border-radius-sm);
+    user-select: none;
 }
 
 .codelab-card__content {
@@ -64,6 +63,7 @@
     flex-wrap: wrap;
     gap: var(--space-sm);
     margin-bottom: var(--space-base);
+    user-select: none;
 }
 
 .codelab-card__techs img {
@@ -75,18 +75,18 @@
 .codelab-card__footer {
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    flex-direction: column;
     text-align: start;
     gap: var(--space-sm);
 }
 
-.codelab-card__footer p{
+.codelab-card__footer p {
     margin: 0;
     color: var(--text-gray);
     font-size: var(--font-xxs);
 }
 
-.codelab-card__footer span{
+.codelab-card__footer span {
     margin: 0;
     color: var(--text-white);
     font-size: var(--font-xxs);
@@ -94,22 +94,24 @@
 
 .codelab-card__actions {
     display: flex;
+    justify-content: center;
+    width: 100%;
     gap: var(--space-xs);
 }
 
-.codelab-card__button  {
-    display: inline-flex;
+.codelab-card__button {
     align-items: center;
     padding: var(--space-xs) var(--space-base);
     background-color: var(--primary);
     color: var(--text-gray);
     text-decoration: none;
+    text-align: center;
     border-radius: var(--border-radius-md);
     border: solid 1px var(--border);
+    width: 100%;
     font-size: var(--font-xs-s);
     transition: all var(--transition-speed-normal) var(--transition-easing);
-    transition: background 0.3s ease, color 0.3s ease; 
-
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .codelab-card__button:hover {

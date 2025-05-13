@@ -1,59 +1,54 @@
 @import url('style.css');
 
-
 /* Estilos gerais da seção */
 .skills {
-    padding: 15rem 5rem;
-    background-color: var(--background-color2);
+    padding: var(--space-5xl) var(--space-lg);
 }
 
 .skills__container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 var(--space-base);
 }
 
 /* Título da seção */
 .skills__text h2 {
-    margin-bottom: 7rem;
-    color: var(--text-color2);
-    font-size: 3.5rem;
+    margin-bottom: var(--space-4xl);
+    color: var(--text-dark);
+    font-size: var(--font-3xl-5);
     font-weight: 600;
     text-align: center;
 }
 
 .skills__text h2 span {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 /* Botões de filtro */
 .skills__filter {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-bottom: 3rem;
-    /* Aumentei o espaçamento abaixo dos botões */
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
     flex-wrap: wrap;
 }
 
 .skills__filter button {
-    padding: 0.8rem 1.5rem;
-    /* Aumentei o padding interno */
-    background-color: var(--background-color);
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-    border-radius: 5px;
+    padding: var(--space-xs) var(--space-md);
+    background-color: var(--bg-button);
+    border: 1px solid var(--primary);
+    color: var(--text-white);
+    border-radius: var(--border-radius-sm);
     cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1.1rem;
-    /* Aumentei o tamanho da fonte */
+    transition: all var(--transition-speed-normal) var(--transition-easing);
+    font-size: var(--font-sm);
 }
 
 .skills__filter button.active,
 .skills__filter button:hover {
-    background-color: rgba(0, 162, 255, 0.32);
-    border-color: var(--primary-color);
-    color: var(--text-color2);
+    background-color: var(--effect-highlight-neutral);
+    border-color: var(--primary);
+    color: var(--text-dark);
 }
 
 /* Container dos cards de habilidades */
@@ -62,26 +57,25 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: var(--space-lg);
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 2rem;
-    margin: 0 2rem;
-    /* Adicionei um espaçamento acima dos cards */
+    padding-top: var(--space-md);
+    margin: 0 var(--space-base);
 }
 
 /* Cards de habilidades */
 .skill__card {
     display: none;
-    /* Oculta todos os cards por padrão */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-color);
-    border: .1rem solid #1f1f1f;
-    border-radius: 6px;
-    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    /* Transições suaves */
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius-md);
+    transition: border-color var(--transition-speed-normal) var(--transition-easing),
+                transform var(--transition-speed-normal) var(--transition-easing),
+                box-shadow var(--transition-speed-normal) var(--transition-easing);
     text-align: center;
     width: 120px;
     height: 120px;
@@ -90,23 +84,20 @@
 
 .skill__card.show {
     display: flex;
-    /* Exibe os cards com a classe "show" */
 }
 
 .skill__card:hover {
-    border-color: var(--primary-color);
+    border-color: var(--primary);
 }
-
 
 .skill__card img {
     width: 45px;
     height: 45px;
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--space-sm);
 }
 
 .skill__card h1 {
-    font-size: 1.3rem;
-    color: var(--primary-color);
+    font-size: var(--font-xs);
+    color: var(--primary);
     margin: 0;
 }
-

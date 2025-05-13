@@ -7,13 +7,13 @@
   --color-warning: #ffc107;
   --color-error: #ff4d4f;
   --color-success: #28a745;
-  --primary-linear-gradient: #353535;
+  --primary-linear-gradient: #777777;
 
   /* Text Color */
   --text-white: #ffffff;
   --text-gray: #c0c0c0;
   --text-dark: #e0e0e0;
-  --text-gray-linear-gradient: #c0c0c0;
+  --text-gray-linear-gradient: #ffffff;
 
   /* Background */
   --bg: #111111;
@@ -27,7 +27,7 @@
   /* Filter */
   --filter-button-hero: brightness(0) saturate(100%) invert(75%) sepia(0%) saturate(100%) hue-rotate(0deg);
   --filter-button: brightness(0) invert(1);
-  --filter-button-gray: invert(20%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(80%) contrast(110%);
+  --filter-button-gray: invert(10%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(100%);
 
   /* Efeitos Visuais */
   --effect-glass-dark: rgba(17, 17, 17, 0.85);
@@ -104,11 +104,11 @@
   --color-warning: #ffcc00;
   --color-error: #d32f2f;
   --color-success: #388e3c;
-  --primary-linear-gradient: #000000;
+  --primary-linear-gradient: #282828;
 
   /* Text Color */
   --text-white: #000000;
-  --text-gray: #818181;
+  --text-gray: #696969;
   --text-dark: #1a1a1a;
   --text-gray-linear-gradient: #c0c0c0;
 
