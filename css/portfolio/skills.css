@@ -2,7 +2,6 @@
 
 /* Estilos gerais da seção */
 .skills {
-    padding: var(--space-5xl) var(--space-lg);
 }
 
 .skills__container {
@@ -98,6 +97,6 @@
 
 .skill__card h1 {
     font-size: var(--font-xs);
-    color: var(--primary);
+    color: var(--text-white);
     margin: 0;
 }

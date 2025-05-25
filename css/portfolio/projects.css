@@ -243,8 +243,3 @@
 #ProjectMostrarMaisProjetosBtn.rotated svg {
     transform: rotate(180deg);
 }
-
-/* Cards Ocultos */
-.hidden {
-    display: none;
-}

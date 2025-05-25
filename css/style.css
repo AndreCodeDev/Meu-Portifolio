@@ -88,12 +88,6 @@ svg {
 
 
 
-#portfolio > section {
-    display: none;
-}
-
-#projects { display: block; } /* Exibe "Projetos" por padrão no desktop */
-
 
 
 
@@ -104,9 +98,6 @@ svg {
 
 
 @media (max-width: 700px) {
-    #desktopPortfolioMenu {
-        display: none;
-    }
 
     #menuMobile {
         display: flex;

@@ -379,3 +379,56 @@
         transform: scale(0.9);
     }
 }
+
+
+
+
+
+
+  /* Estilos melhorados para a seta animada */
+  .hero__scroll-down {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  
+  .scroll-down__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .scroll-down__link:hover {
+    transform: translateY(5px);
+  }
+  
+  .scroll-down__arrow {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    border-right: 2px solid rgba(255, 255, 255, 0.8);
+    transform: rotate(45deg);
+    animation: scroll-down 2s infinite;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+  
+  @keyframes scroll-down {
+    0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-10px, -10px);
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(0, 0);
+    }
+  }

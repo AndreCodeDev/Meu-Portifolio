@@ -1,84 +1,64 @@
-// Alternar seções no desktop
-const desktopButtons = document.querySelectorAll('#desktopPortfolioMenu button');
-const portfolioSections = ['projects', 'formations', 'technologies'];
-const allSections = ['hero', 'carrossel', 'about', 'highlight', 'contact', 'projects', 'formations', 'technologies'];
+const mobileButtons = document.querySelectorAll('#menuMobile button');
+const mobileSections = ['hero', 'carrossel', 'about', 'highlight', 'contact', 'projects', 'formations', 'technologies'];
 
-function hidePortfolioSections() {
-  portfolioSections.forEach(id => {
+function handleMobileView() {
+  // Esconde todas as seções no mobile
+  mobileSections.forEach(id => {
     const el = document.getElementById(id);
     if (el) el.style.display = 'none';
   });
-}
-
-// Alternar seções no desktop
-desktopButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    hidePortfolioSections();
-    const target = button.getAttribute('data-target');
-    const targetSection = document.getElementById(target);
-    if (targetSection) {
-      targetSection.style.display = 'block';
-      //targetSection.scrollIntoView({ behavior: 'smooth' });
-      desktopButtons.forEach(b => b.classList.remove('active'));
-      button.classList.add('active');
-    }
-  });
-});
-
-const mobileButtons = document.querySelectorAll('#menuMobile button');
-
-function hideMobileSections() {
-  allSections.forEach(id => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.style.display = 'none';
-    }
-  });
+  
+  // Mostra apenas o início
+  showInicio();
 }
 
 function showInicio() {
   ['hero', 'carrossel', 'about', 'highlight', 'contact'].forEach(id => {
     const el = document.getElementById(id);
-    if (el) {
-      el.style.display = 'block';
-    }
+    if (el) el.style.display = 'block';
   });
   document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
 }
 
+// Função para restaurar a visibilidade no desktop
+function handleDesktopView() {
+  mobileSections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'block';
+  });
+}
+
+// Eventos dos botões mobile
 mobileButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const target = button.getAttribute('data-mobile');
-    hideMobileSections();
+    if (window.innerWidth <= 700) { // Só executa no mobile
+      const target = button.getAttribute('data-mobile');
+      mobileSections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = 'none';
+      });
 
-    if (target === 'inicio') {
-      showInicio();
-    } else {
-      const el = document.getElementById(target);
-      if (el) {
-        el.style.display = 'block';
-        el.scrollIntoView({ behavior: 'smooth' });
+      if (target === 'inicio') {
+        showInicio();
+      } else {
+        const el = document.getElementById(target);
+        if (el) {
+          el.style.display = 'block';
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     }
   });
 });
 
-// Ao carregar a página, definir estado inicial baseado no tamanho da tela
-window.addEventListener('load', () => {
-  if (window.innerWidth > 700) {
-    // Versão desktop: mostra "Projetos" e ativa o botão
-    hidePortfolioSections();
-    const projectsSection = document.getElementById('projects');
-    if (projectsSection) {
-      projectsSection.style.display = 'block';
-    }
-    const projectsButton = document.querySelector('[data-target="projects"]');
-    if (projectsButton) {
-      projectsButton.classList.add('active');
-    }
+// Verificação inicial e no redimensionamento
+function checkViewport() {
+  if (window.innerWidth <= 700) {
+    handleMobileView();
   } else {
-    // Versão mobile: mostra início
-    hideMobileSections();
-    showInicio();
+    handleDesktopView();
   }
-});
+}
+
+window.addEventListener('load', checkViewport);
+window.addEventListener('resize', checkViewport);
