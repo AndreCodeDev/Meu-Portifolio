@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfólio AndreCode</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <section id="loading">
+      <section id="loading-screen">
+        <div class="loading-content">
+          <div class="logo-container">
+            <div class="logo-container">
+              <div class="logo-animation">
+                <div class="logo-item">
+                  <img src="img/redes/loadingFormation.svg" alt="Formações" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/redes/loadingPortfolio.svg" alt="Conquistas" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/redes/loadingSkills.svg" alt="Skills" />
+                </div>
+              </div>
+
+              <div class="welcome-message">
+                <div class="welcome-line">
+                  <span class="word-animation">Bem-Vindo(a)</span>
+                  <span class="word-animation">Ao</span>
+                  <span class="word-animation">Meu</span>
+                </div>
+                <div class="welcome-line">
+                  <span class="word-animation-color">Portfólio</span>
+                  <span class="word-animation-color">Tech</span>
+                </div>
+              </div>
+
+              <div class="loading-progress">
+                <div class="progress-bar-center"></div>
+              </div>
+
+              <div class="url-display">
+                <div class="url-box">
+                  <img src="img/redes/web.svg" alt="Web" />
+                  <div class="url-text" id="animated-url"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <header class="header" id="header">
+      <a href="index.html" class="header__text-logo">
+        <img src="img/logo.svg" alt="Logo" />Portfólio Tech</a
+      >
+
+      <nav class="header__nav">
+        <ul class="header__menu" id="header__menu">
+          <li class="header__menu-item">
+            <a href="#hero" class="header__menu-link">Início</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#about" class="header__menu-link">Sobre</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#highlight" class="header__menu-link">Destaques</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#desktopPortfolioMenu" class="header__menu-link"
+              >Portfólio</a
+            >
+          </li>
+          <li class="header__menu-item">
+            <a href="#contact" class="header__menu-link">Contato</a>
+          </li>
+        </ul>
+
+        <!-- Botão de alternar tema integrado no menu -->
+        <li class="header__menu-item theme-toggle-item">
+          <div class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+            <div class="theme-toggle__switch"></div>
+            <span class="theme-toggle__tooltip">Tema Escuro</span>
+          </div>
+        </li>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal (desktop) -->
+    <main id="mainContent">
+      <section id="hero">
+        <div class="hero__container">
+          <div class="hero__text-content">
+            <h1 class="hero__main-headline">
+              <span class="title">AndreCode</span>
+              <span class="hero__title">Desenvolvedor</span>
+            </h1>
+            <div class="hero__typing-container">
+              <div id="hero__animacaoText" class="hero__typing-text"></div>
+            </div>
+            <p class="hero__statement">
+              "Sou impulsionado pelo aprendizado contínuo, desenvolvendo
+              sistemas escaláveis, eficientes e que refletem minha constante
+              evolução profissional."
+            </p>
+
+            <div class="hero__cta-wrapper">
+              <a href="#portfolio" class="hero__cta-button">
+                Ver Projetos <img src="img/redes/entar.svg" alt="" />
+              </a>
+
+              <a href="#about" class="hero__cta-button">
+                Contato <img src="img/redes/contato.svg" alt="" />
+              </a>
+
+              <div class="hero__social-links">
+                <div class="hero__social-card">
+                  <a
+                    href="https://linkedin.com/in/andrecodedev"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    <img src="img/redes/linkedin.svg" alt="LinkedIn" />
+                    <span class="hero__tooltip">LinkedIn</span>
+                  </a>
+                </div>
+
+                <div class="hero__social-card">
+                  <a
+                    href="https://github.com/AndreCodeDev"
+                    target="_blank"
+                    aria-label="GitHub"
+                  >
+                    <img src="img/redes/github.svg" alt="GitHub" />
+                    <span class="hero__tooltip">GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual-element">
+            <div class="code-snippet">
+              <div class="code-snippet__header">
+                <div class="code-dot red"></div>
+                <div class="code-dot yellow"></div>
+                <div class="code-dot green"></div>
+                <span class="code-filename">andre.js</span>
+              </div>
+              <pre class="code-content"><code>// Iniciando um novo capítulo
+const andre = new Dev('André Vitor');
+
+// Carregando habilidades essenciais
+andre.learn([
+  'Algoritmos',
+  'JavaScript',
+  'Lógica de Programação',
+  'Resiliência'
+]);
+
+// Compartilhando evolução com o mundo
+andre.deploy('https://github.com/AndreCodeDev');
+
+// Aprendendo com cada desafio
+andre.grow('com erros, acertos e propósito');
+
+// Status atual
+console.log('Na jornada do conhecimento e crescimento.');
+</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="carrossel" class="carrossel-container">
+        <div class="carrossel">
+          <div class="carrossel-track">
+            <div class="carrossel-item">
+              <img src="img/skills/html.svg" alt="HTML" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/css.svg" alt="CSS" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/java.svg" alt="Java" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/javascript.svg" alt="javascript" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/bootstrap.svg" alt="bootstrap" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/sql.svg" alt="sql" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/git.svg" alt="git" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/vscode.svg" alt="vscode" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/visualstudy.svg" alt="visualstudy" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/eclipse.svg" alt="eclipse" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/netbeans.svg" alt="netbeans" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/intellij.svg" alt="intellij" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/agil.svg" alt="agil" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/figma.svg" alt="figma" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/trello.svg" alt="trello" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/jira.svg" alt="jira" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/canva.svg" alt="canva" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/office.svg" alt="office" />
+            </div>
+            <div class="carrossel-item">
+              <img src="img/skills/gimp.svg" alt="gimp" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="about__container">
+          <div class="about__text-content">
+            <h2 class="about__title">Olá, Eu Sou</h2>
+            <p class="about__title">André Vitor Sales</p>
+            <p class="about__paragraph">
+              Sou André Vitor, estudante de Análise e Desenvolvimento de
+              Sistemas na FACENS com bolsa integral pelo ProUni. Atuo como
+              mentor acadêmico em Algoritmos e sou aluno da CCBEU, Oracle Next
+              Education e OneBitCode. <br />
+              Apaixonado por tecnologia desde criança, desenvolvo projetos web e
+              busco crescer na área de TI com foco, aprendizado constante e
+              vontade de impactar positivamente o mundo.
+            </p>
+
+            <div class="about__cta-wrapper">
+              <a href="#portfolio" class="about__cta-button">
+                Ver Projetos <img src="img/redes/entar.svg" alt="entar" />
+              </a>
+
+              <a
+                href="docs/Curriculo_AndreVitor.pdf"
+                download
+                class="about__cta-button"
+              >
+                Dowload CV<img src="img/redes/CV.svg" alt="CV" />
+              </a>
+            </div>
+          </div>
+
+          <div class="about__image-container">
+            <img src="img/avatar.svg" alt="Avatar" class="about__image" />
+          </div>
+        </div>
+      </section>
+
+      <section id="highlight">
+        <div class="highlights__header">
+          <h2 class="title">Destaques</h2>
+        </div>
+        <div class="highlights__text-content">
+          <p class="highlights--subtitle" data-text="conquistas">
+            Principais conquistas acadêmicas e profissionais. Clique nos cards
+            para mais informações.
+          </p>
+        </div>
+        <div class="highlights__cards" id="cards-conquistas">
+          <section id="conquistas" class="conquistas-news fade-in">
+            <!-- Container do Carrossel -->
+            <div class="conquistas-carousel-container">
+              <!-- Cards do Carrossel -->
+              <div class="conquistas-carousel">
+                <!-- Card 1 -->
+                <div class="card active">
+                  <div class="card__front">
+                    <img
+                      src="img/conquistas/conquistasProuni.jpg"
+                      alt="Bolsa 100% ProUni"
+                    />
+                  </div>
+
+                  <div class="card__back">
+                    <article class="conquistas-card">
+                      <!-- Cabeçalho do Card com logo e informações principais -->
+                      <div class="conquistas--card-header">
+                        <div class="conquistas--card-info">
+                          <h2>A Jornada da Conquista</h2>
+                          <p>Bolsa 100% ProUni - FACENS</p>
+                        </div>
+                      </div>
+
+                      <!-- Detalhes do curso -->
+                      <div class="conquistas--card-details">
+                        <div class="conquistas--card-testimonial">
+                          <p>
+                            Desde os 14 anos, sonhava em estudar na FACENS. Com
+                            dedicação e apoio da minha família, conquistei a tão
+                            sonhada vaga com bolsa 100% pelo ProUni. Cada
+                            desafio superado foi uma lição e, ao olhar para
+                            trás, vejo que todo esforço fez essa vitória ainda
+                            mais especial.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                  <div class="card__front">
+                    <img
+                      src="img/conquistas/conquistasOnebitcode.jpg"
+                      alt="OneBitCode"
+                    />
+                  </div>
+
+                  <div class="card__back">
+                    <article class="conquistas-card">
+                      <!-- Cabeçalho do Card com logo e informações principais -->
+                      <div class="conquistas--card-header">
+                        <div class="conquistas--card-info">
+                          <h2>Minha Jornada até a OneBitCode</h2>
+                          <p>
+                            Desenvolvendo habilidades para o futuro da
+                            tecnologia
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Detalhes do curso -->
+                      <div class="conquistas--card-details">
+                        <div class="conquistas--card-testimonial">
+                          <p>
+                            Ingressar na OneBitCode foi uma decisão estratégica
+                            para minha evolução em tecnologia. Com uma abordagem
+                            prática e foco em conteúdo atualizado, estou
+                            construindo uma base sólida para minha carreira. O
+                            ambiente dinâmico e a troca com a comunidade fazem
+                            essa jornada ainda mais enriquecedora.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                  <div class="card__front">
+                    <img src="img/conquistas/conquistasCCBEU.jpg" alt="CCBEU" />
+                  </div>
+
+                  <div class="card__back">
+                    <article class="conquistas-card">
+                      <!-- Cabeçalho do Card com logo e informações principais -->
+                      <div class="conquistas--card-header">
+                        <div class="conquistas--card-info">
+                          <h2>Crescendo com a CCBEU</h2>
+                          <p>Desenvolvendo o inglês para um futuro global</p>
+                        </div>
+                      </div>
+
+                      <!-- Detalhes do curso -->
+                      <div class="conquistas--card-details">
+                        <div class="conquistas--card-testimonial">
+                          <p>
+                            A CCBEU tem sido essencial para meu desenvolvimento
+                            no inglês. Com um ensino dinâmico e voltado para a
+                            prática, estou conquistando fluência e habilidades
+                            que ampliam minhas oportunidades, tanto no ambiente
+                            acadêmico quanto profissional. Cada passo me
+                            aproxima mais de meus objetivos.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card">
+                  <div class="card__front">
+                    <img src="img/conquistas/conquistasONE.jpg" alt="ONE" />
+                  </div>
+
+                  <div class="card__back">
+                    <article class="conquistas-card">
+                      <!-- Cabeçalho do Card com logo e informações principais -->
+                      <div class="conquistas--card-header">
+                        <div class="conquistas--card-info">
+                          <h2>Transformando o Futuro na ONE</h2>
+                          <p>Acelerando o aprendizado em programação</p>
+                        </div>
+                      </div>
+
+                      <!-- Detalhes do curso -->
+                      <div class="conquistas--card-details">
+                        <div class="conquistas--card-testimonial">
+                          <p>
+                            Ao ingressar na ONE, encontrei um ambiente
+                            estimulante para minha evolução em programação. A
+                            metodologia prática e os desafios propostos são
+                            fundamentais para consolidar meus conhecimentos.
+                            Essa experiência tem sido essencial para meu
+                            crescimento profissional e minha preparação para o
+                            mercado de tecnologia.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card">
+                  <div class="card__front">
+                    <img src="img/conquistas/conquistasIFSP.jpg" alt="IFSP" />
+                  </div>
+
+                  <div class="card__back">
+                    <article class="conquistas-card">
+                      <!-- Cabeçalho do Card com logo e informações principais -->
+                      <div class="conquistas--card-header">
+                        <div class="conquistas--card-info">
+                          <h2>IFSP</h2>
+                          <p>
+                            Construindo o alicerce para a carreira em tecnologia
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Detalhes do curso -->
+                      <div class="conquistas--card-details">
+                        <div class="conquistas--card-testimonial">
+                          <p>
+                            A ETEC foi o ponto de partida para minha jornada na
+                            tecnologia. Com uma formação sólida e prática, pude
+                            desenvolver habilidades essenciais para minha
+                            carreira. A experiência adquirida nesse período me
+                            preparou para os desafios futuros e fortaleceu meu
+                            desejo de seguir nessa área.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card">
+                  <div class="card__front">
+                    <img src="img/conquistas/conquistasETEC.jpg" alt="ETEC" />
+                  </div>
+
+                  <div class="card__back">
+                    <article class="conquistas-card">
+                      <!-- Cabeçalho do Card com logo e informações principais -->
+                      <div class="conquistas--card-header">
+                        <div class="conquistas--card-info">
+                          <h2>A Base da Minha Formação na ETEC</h2>
+                          <p>
+                            Construindo o alicerce para a carreira em tecnologia
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Detalhes do curso -->
+                      <div class="conquistas--card-details">
+                        <div class="conquistas--card-testimonial">
+                          <p>
+                            A ETEC foi o ponto de partida para minha jornada na
+                            tecnologia. Com uma formação sólida e prática, pude
+                            desenvolver habilidades essenciais para minha
+                            carreira. A experiência adquirida nesse período me
+                            preparou para os desafios futuros e fortaleceu meu
+                            desejo de seguir nessa área.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="card">
+                  <div class="card__front">
+                    <img
+                      src="img/conquistas/conquistasMentoria.jpg"
+                      alt="Mentor Acadêmico"
+                    />
+                  </div>
+
+                  <div class="card__back">
+                    <article class="conquistas-card">
+                      <!-- Cabeçalho do Card com logo e informações principais -->
+                      <div class="conquistas--card-header">
+                        <div class="conquistas--card-info">
+                          <h2>Iniciando como Mentor Acadêmico</h2>
+                          <p>
+                            Uma nova experiência em Construção de Algoritmos
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Detalhes do curso -->
+                      <div class="conquistas--card-details">
+                        <div class="conquistas--card-testimonial">
+                          <p>
+                            Estou prestes a começar como mentor acadêmico em
+                            Construção de Algoritmos na FACENS. Essa
+                            oportunidade me permitirá compartilhar meu
+                            conhecimento e apoiar outros alunos no aprendizado.
+                            Ansioso para essa nova experiência, buscarei tornar
+                            cada aula uma troca enriquecedora de saberes.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controles do Carrossel -->
+              <div class="carousel-controls-container">
+                <button class="conquistas-carousel-control prev" type="button">
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="conquistas-carousel-control next" type="button">
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Botões para alternar conteúdo na sessão portfólio -->
+      <div id="desktopPortfolioMenu">
+        <button data-target="projects">
+          <img
+            src="img/redes/project.svg"
+            data-inactive="img/redes/project.svg"
+            data-active="img/redes/project-active.svg"
+            alt="Projetos"
+          />Projetos
+        </button>
+        <button data-target="formations">
+          <img
+            src="img/redes/formation.svg"
+            data-inactive="img/redes/formation.svg"
+            data-active="img/redes/formation-active.svg"
+            alt="Formações"
+          />Formações
+        </button>
+        <button data-target="technologies">
+          <img
+            src="img/redes/technologies.svg"
+            data-inactive="img/redes/technologies.svg"
+            data-active="img/redes/technologies-active.svg"
+            alt="technologies"
+          />Tecnologias
+        </button>
+      </div>
+
+      <section id="portfolio">
+        <section id="projects">
+          <!-- Seção de Projetos -->
+          <div class="projects__header">
+            <h2 class="title">Projetos</h2>
+          </div>
+
+          <div class="projects">
+            <div class="projects-grid">
+              <!-- Card de Projeto 1 -->
+              <div class="project-card">
+                <img
+                  src="img/project/imagemProjetos/amigoSecreto.svg"
+                  alt="Projeto 1"
+                  class="project-card__image"
+                />
+                <div class="project-card__content">
+                  <h3 class="project-card__title">Título do Projeto 1</h3>
+                  <p class="project-card__description">
+                    Descrição detalhada do projeto. Aqui você pode explicar o
+                    que o projeto faz, quais problemas resolve e quais
+                    tecnologias foram utilizadas.
+                  </p>
+                  <div class="project-card__techs">
+                    <!-- Ícones das linguagens/tecnologias -->
+                    <img src="img/skills/html.svg" alt="Tecnologia 1" />
+                    <img src="img/skills/css.svg" alt="Tecnologia 2" />
+                    <img src="img/skills/javascript.svg" alt="Tecnologia 3" />
+                    <img src="img/skills/bootstrap.svg" alt="Tecnologia 4" />
+                    <img src="img/skills/git.svg" alt="Tecnologia 5" />
+                    <img src="img/skills/figma.svg" alt="Tecnologia 6" />
+                    <img src="img/skills/trello.svg" alt="Tecnologia 7" />
+                  </div>
+                  <div class="project-card__footer">
+                    <p>
+                      <span>Tipo:</span> Projeto Pessoal <br /><span
+                        >Data:</span
+                      >
+                      00/00/0000
+                    </p>
+                    <div class="project-card__actions">
+                      <a href="#" class="project-card__button">Ver Projeto</a>
+                      <a href="#" class="project-card__button">Código</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card de Projeto 2 -->
+              <div class="project-card">
+                <img
+                  src="img/project/imagemProjetos/amigoSecreto.svg"
+                  alt="Projeto 2"
+                  class="project-card__image"
+                />
+                <div class="project-card__content">
+                  <h3 class="project-card__title">Título do Projeto 2</h3>
+                  <p class="project-card__description">
+                    Descrição detalhada do projeto. Aqui você pode explicar o
+                    que o projeto faz, quais problemas resolve e quais
+                    tecnologias foram utilizadas.
+                  </p>
+                  <div class="project-card__techs">
+                    <!-- Ícones das linguagens/tecnologias -->
+                    <img src="img/skills/html.svg" alt="Tecnologia 1" />
+                    <img src="img/skills/css.svg" alt="Tecnologia 2" />
+                    <img src="img/skills/javascript.svg" alt="Tecnologia 3" />
+                    <img src="img/skills/git.svg" alt="Tecnologia 5" />
+                    <img src="img/skills/figma.svg" alt="Tecnologia 6" />
+                    <img src="img/skills/trello.svg" alt="Tecnologia 7" />
+                    <img src="img/skills/jira.svg" alt="Tecnologia 8" />
+                    <img src="img/skills/canva.svg" alt="Tecnologia 9" />
+                  </div>
+                  <div class="project-card__footer">
+                    <p>
+                      <span>Tipo:</span> Projeto Pessoal <br /><span
+                        >Data:</span
+                      >
+                      00/00/0000
+                    </p>
+                    <div class="project-card__actions">
+                      <a href="#" class="project-card__button">Ver Projeto</a>
+                      <a href="#" class="project-card__button">Código</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card de Projeto 3 -->
+              <div class="project-card">
+                <img
+                  src="img/project/imagemProjetos/amigoSecreto.svg"
+                  alt="Projeto 3"
+                  class="project-card__image"
+                />
+                <div class="project-card__content">
+                  <h3 class="project-card__title">Título do Projeto 3</h3>
+                  <p class="project-card__description">
+                    Descrição detalhada do projeto. Aqui você pode explicar o
+                    que o projeto faz, quais problemas resolve e quais
+                    tecnologias foram utilizadas.
+                  </p>
+                  <div class="project-card__techs">
+                    <!-- Ícones das linguagens/tecnologias -->
+                    <img src="img/skills/html.svg" alt="Tecnologia 1" />
+                    <img src="img/skills/css.svg" alt="Tecnologia 2" />
+                    <img src="img/skills/javascript.svg" alt="Tecnologia 3" />
+                    <img src="img/skills/bootstrap.svg" alt="Tecnologia 4" />
+                    <img src="img/skills/git.svg" alt="Tecnologia 5" />
+                    <img src="img/skills/figma.svg" alt="Tecnologia 6" />
+                  </div>
+                  <div class="project-card__footer">
+                    <p>
+                      <span>Tipo:</span> Projeto Pessoal <br /><span
+                        >Data:</span
+                      >
+                      00/00/0000
+                    </p>
+                    <div class="project-card__actions">
+                      <a href="#" class="project-card__button">Ver Projeto</a>
+                      <a href="#" class="project-card__button">Código</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Você pode adicionar mais cards conforme necessário -->
+            </div>
+
+            <!-- Botão Ver Mais -->
+            <div class="project-footer">
+              <button id="ProjectMostrarMaisProjetosBtn">
+                Ver Mais Projetos
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Seção de Codelabs -->
+          <div class="projects__header">
+            <h2 class="title">Codelabs</h2>
+          </div>
+
+          <div class="codelab-grid">
+            <!-- Card de Codelab 1 -->
+            <div class="codelab-card">
+              <img
+                src="img/project/imagemcodelab/code.svg"
+                alt="Codelab 1"
+                class="codelab-card__image"
+              />
+              <div class="codelab-card__content">
+                <h3 class="codelab-card__title">Título do Codelab 1</h3>
+                <p class="codelab-card__description">
+                  Descrição do codelab ou tutorial.
+                </p>
+                <div class="codelab-card__techs">
+                  <!-- Ícones das linguagens/tecnologias -->
+                  <img src="img/skills/javascript.svg" alt="Tecnologia 1" />
+                  <img src="img/skills/vscode.svg" alt="Tecnologia 2" />
+                  <img src="img/skills/git.svg" alt="Tecnologia 3" />
+                </div>
+                <div class="codelab-card__footer">
+                  <p>
+                    <span>Data:</span>
+                    00/00/0000
+                  </p>
+                  <div class="codelab-card__actions">
+                    <a href="#" class="codelab-card__button">Ver Repositório</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card de Codelab 2 -->
+            <div class="codelab-card">
+              <img
+                src="img/project/imagemcodelab/code.svg"
+                alt="Codelab 2"
+                class="codelab-card__image"
+              />
+              <div class="codelab-card__content">
+                <h3 class="codelab-card__title">Título do Codelab 2</h3>
+                <p class="codelab-card__description">
+                  Descrição do codelab ou tutorial.
+                </p>
+                <div class="codelab-card__techs">
+                  <!-- Ícones das linguagens/tecnologias -->
+                  <img src="img/skills/java.svg" alt="Tecnologia 1" />
+                  <img src="img/skills/netbeans.svg" alt="Tecnologia 2" />
+                  <img src="img/skills/vscode.svg" alt="Tecnologia 2" />
+                  <img src="img/skills/git.svg" alt="Tecnologia 3" />
+                </div>
+                <div class="codelab-card__footer">
+                  <p>
+                    <span>Data:</span>
+                    00/00/0000
+                  </p>
+                  <div class="codelab-card__actions">
+                    <a href="#" class="codelab-card__button">Ver Repositório</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card de Codelab 3 -->
+            <div class="codelab-card">
+              <img
+                src="img/project/imagemcodelab/code.svg"
+                alt="Codelab 3"
+                class="codelab-card__image"
+              />
+              <div class="codelab-card__content">
+                <h3 class="codelab-card__title">Título do Codelab 3</h3>
+                <p class="codelab-card__description">
+                  Descrição do codelab ou tutorial.
+                </p>
+                <div class="codelab-card__techs">
+                  <!-- Ícones das linguagens/tecnologias -->
+                  <img src="img/skills/sql.svg" alt="Tecnologia 1" />
+                  <img src="img/skills/sqlServer.svg" alt="Tecnologia 2" />
+                  <img src="img/skills/git.svg" alt="Tecnologia 3" />
+                </div>
+                <div class="codelab-card__footer">
+                  <p>
+                    <span>Data:</span>
+                    00/00/0000
+                  </p>
+                  <div class="codelab-card__actions">
+                    <a href="#" class="codelab-card__button">Ver Repositório</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card de Codelab 4 -->
+            <div class="codelab-card">
+              <img
+                src="img/project/imagemcodelab/code.svg"
+                alt="Codelab 3"
+                class="codelab-card__image"
+              />
+              <div class="codelab-card__content">
+                <h3 class="codelab-card__title">Título do Codelab 4</h3>
+                <p class="codelab-card__description">
+                  Descrição do codelab ou tutorial.
+                </p>
+                <div class="codelab-card__techs">
+                  <!-- Ícones das linguagens/tecnologias -->
+                  <img src="img/skills/java.svg" alt="Tecnologia 1" />
+                  <img src="img/skills/intellij.svg" alt="Tecnologia 1" />
+                  <img src="img/skills/vscode.svg" alt="Tecnologia 2" />
+                  <img src="img/skills/git.svg" alt="Tecnologia 3" />
+                </div>
+                <div class="codelab-card__footer">
+                  <p>
+                    <span>Data:</span>
+                    00/00/0000
+                  </p>
+                  <div class="codelab-card__actions">
+                    <a href="#" class="codelab-card__button">Ver Repositório</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botão Ver Mais para Codelabs -->
+          <div class="codelab-footer">
+            <button id="codelabMostrarMaisCodelabBtn">
+              Ver Mais Codelabs
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M7 10l5 5 5-5z" />
+              </svg>
+            </button>
+          </div>
+        </section>
+        <section id="formations">Formações</section>
+        <section id="">Tecnologias</section>
+        <section id="technologies" class="skills">
+          <div class="skills__container">
+            <!-- Botões para filtrar as habilidades -->
+            <div class="skills__filter fade-in">
+              <button onclick="filterSkills('all', event)">Todas</button>
+              <button onclick="filterSkills('linguagens', event)">
+                Linguagens
+              </button>
+              <button onclick="filterSkills('ferramentas', event)">
+                Ferramentas
+              </button>
+              <button onclick="filterSkills('ides', event)">IDEs</button>
+              <button onclick="filterSkills('metodologias', event)">
+                Metodologias
+              </button>
+              <button onclick="filterSkills('frameworks', event)">
+                Frameworks
+              </button>
+              <button onclick="filterSkills('banco-dados', event)">
+                Banco de Dados
+              </button>
+            </div>
+
+            <!-- Cards de habilidades -->
+            <div class="skills__flex fade-in">
+              <!-- Linguagens de Programação -->
+              <div class="skill__card fade-in linguagens">
+                <img src="img/skills/html.svg" alt="Ícone do HTML" />
+                <h1>HTML5</h1>
+              </div>
+              <div class="skill__card fade-in linguagens">
+                <img src="img/imgSVG/linguagens/css.svg" alt="Ícone do CSS" />
+                <h1>CSS3</h1>
+              </div>
+              <div class="skill__card fade-in linguagens">
+                <img
+                  src="img/imgSVG/linguagens/javascript.svg"
+                  alt="Ícone do JavaScript"
+                />
+                <h1>JavaScript</h1>
+              </div>
+              <div class="skill__card fade-in linguagens">
+                <img src="img/imgSVG/linguagens/java.svg" alt="Ícone do Java" />
+                <h1>Java</h1>
+              </div>
+
+              <!-- Ferramentas -->
+              <div class="skill__card fade-in ferramentas">
+                <img src="img/imgSVG/linguagens/git.svg" alt="Ícone do Git" />
+                <h1>Git</h1>
+              </div>
+              <div class="skill__card fade-in ferramentas">
+                <img
+                  src="img/imgSVG/linguagens/figma.svg"
+                  alt="Ícone do Figma"
+                />
+                <h1>Figma</h1>
+              </div>
+              <div class="skill__card fade-in ferramentas">
+                <img
+                  src="img/imgSVG/linguagens/trello.svg"
+                  alt="Ícone do Trello"
+                />
+                <h1>Trello</h1>
+              </div>
+              <div class="skill__card fade-in ferramentas">
+                <img src="img/imgSVG/linguagens/jira.svg" alt="Ícone do Jira" />
+                <h1>Jira</h1>
+              </div>
+              <div class="skill__card fade-in ferramentas">
+                <img
+                  src="img/imgSVG/linguagens/office.svg"
+                  alt="Ícone do Office"
+                />
+                <h1>Pacote Office</h1>
+              </div>
+              <div class="skill__card fade-in ferramentas">
+                <img
+                  src="img/imgSVG/linguagens/canva.svg"
+                  alt="Ícone do Canva"
+                />
+                <h1>Canva</h1>
+              </div>
+
+              <!-- Metodologias -->
+              <div class="skill__card fade-in metodologias">
+                <img src="img/imgSVG/linguagens/agil.svg" alt="Ícone do Agil" />
+                <h1>Scrum e Kanban</h1>
+              </div>
+
+              <!-- Frameworks -->
+              <div class="skill__card fade-in frameworks">
+                <img
+                  src="img/imgSVG/linguagens/bootstrap.svg"
+                  alt="Ícone do BootStrap"
+                />
+                <h1>BootStrap</h1>
+              </div>
+
+              <!-- Banco de Dados -->
+              <div class="skill__card fade-in banco-dados">
+                <img src="img/imgSVG/linguagens/sql.svg" alt="Ícone do SQL" />
+                <h1>Banco SQL</h1>
+              </div>
+
+              <!-- IDEs -->
+              <div class="skill__card fade-in ides">
+                <img
+                  src="img/imgSVG/linguagens/VScode.svg"
+                  alt="Ícone do VScode"
+                />
+                <h1>VScode</h1>
+              </div>
+              <div class="skill__card fade-in ides">
+                <img
+                  src="img/imgSVG/linguagens/VisualStudio.svg"
+                  alt="Ícone do VisualStudio"
+                />
+                <h1>Visual Studio</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- Menu Mobile -->
+    <nav id="menuMobile">
+      <button data-mobile="inicio">
+        <img
+          src="img/redes/home.svg"
+          data-inactive="img/redes/home.svg"
+          data-active="img/redes/home-active.svg"
+          alt="home"
+        />Início
+      </button>
+      <button data-mobile="projects">
+        <img
+          src="img/redes/project.svg"
+          data-inactive="img/redes/project.svg"
+          data-active="img/redes/project-active.svg"
+          alt="projects"
+        />Projetos
+      </button>
+      <button data-mobile="formations">
+        <img
+          src="img/redes/formation.svg"
+          data-inactive="img/redes/formation.svg"
+          data-active="img/redes/formation-active.svg"
+          alt="formations"
+        />Formações
+      </button>
+      <button data-mobile="technologies">
+        <img
+          src="img/redes/technologies.svg"
+          data-inactive="img/redes/technologies.svg"
+          data-active="img/redes/technologies-active.svg"
+          alt="technologies"
+        />Tecnologias
+      </button>
+    </nav>
+
+    <section id="contact">
+      <h2 class="title">Contato</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Informações de Contato</h3>
+
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>São Paulo, Brasil</span>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <span>contato@andresodeslev.com</span>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <span>Seg - Sex: 9:00 - 18:00</span>
+          </div>
+
+          <div class="contact__social-links">
+            <div class="contact__social-card">
+              <a
+                href="https://linkedin.com/in/andrecodedev"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <img src="img/redes/linkedin.svg" alt="LinkedIn" />
+                <span class="contact__tooltip">LinkedIn</span>
+              </a>
+            </div>
+
+            <div class="contact__social-card">
+              <a
+                href="https://github.com/AndreCodeDev"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <img src="img/redes/github.svg" alt="GitHub" />
+                <span class="contact__tooltip">GitHub</span>
+              </a>
+            </div>
+
+            <div class="contact__social-card">
+              <a
+                href="mailto:contato@andresodeslev.com"
+                target="_blank"
+                aria-label="E-mail"
+              >
+                <img src="img/redes/email.svg" alt="E-mail" />
+                <span class="contact__tooltip">E-mail</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Envie uma Mensagem</h3>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Nome:"
+                  oninvalid="this.setCustomValidity('')"
+                />
+                <span class="form-tooltip">Digite seu nome completo</span>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="E-mail:"
+                  oninvalid="this.setCustomValidity('')"
+                />
+                <span class="form-tooltip">Exemplo: usuario@provedor.com</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                placeholder="Assunto:"
+                oninvalid="this.setCustomValidity('')"
+              />
+              <span class="form-tooltip">Sobre o que é sua mensagem?</span>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Mensagem:"
+                oninvalid="this.setCustomValidity('')"
+              ></textarea>
+              <span class="form-tooltip"
+                >Escreva sua mensagem detalhadamente</span
+              >
+            </div>
+
+            <div class="contact__cta-wrapper" class="form-group">
+              <a type="submit" class="contact__cta-button">
+                Enviar Mensagem <img src="img/redes/entar.svg" alt="" />
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="toast">✅ Mensagem enviada com sucesso!</div>
+    </section>
+
+    <!-- Menu Mobile -->
+    <footer id="footer--grid-layout">
+      <div class="footer-group">
+        <p>
+          Copyright © 2025
+          <a href="index.html" rel="noopener">andrecode.dev.br</a>
+          <br />
+          Todos os direitos reservados.
+        </p>
+      </div>
+
+      <div class="footer-group">
+        <p>
+          Construído com
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="#6e6e6e"
+            stroke="#6e6e6e"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+            ></path>
+          </svg>
+          por André Vitor
+        </p>
+        <img src="img/logo.svg" alt="Logo" />
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/loading.js"></script>
+    <script src="/js/menuMobile.js"></script>
+    <script src="/js/themeToggles.js" defer></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/heroTextAnimation.js"></script>
+    <script src="/js/heroDots.js"></script>
+    <script src="/js/carroseelAbout.js"></script>
+    <script src="/js/highlight.js"></script>
+    <script src="/js/descktopButton.js"></script>
+    <script src="/js/forms.js"></script>
+    <script src="js/portfolio/skills.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

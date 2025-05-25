@@ -1,0 +1,250 @@
+
+
+
+@import url('sysle.css');
+
+
+
+/* Projects Section */
+.projects {
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-md);
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 var(--space-lg);
+}
+
+/* Project Card */
+.project-card {
+  background-color: var(--bg-box);
+  border-radius: var(--border-radius-md);
+  border: solid 1px var(--border);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: var(--space-lg);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.project-card__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--border-radius-sm);
+}
+
+.project-card__content {
+    padding: var(--space-md) 0 0 0;
+}
+
+.project-card__title {
+    color: var(--text-white);
+    font-size: var(--font-lg);
+    margin-bottom: var(--space-base);
+    text-align: start;
+}
+
+.project-card__description {
+    color: var(--text-gray);
+    font-size: var(--font-xxs);
+    text-align: start;
+    line-height: 1.6;
+    margin-bottom: var(--space-base);
+    text-align: justify;
+}
+
+.project-card__techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-base);
+}
+
+.project-card__techs img {
+    width: var(--space-md);
+    height: var(--space-md);
+    object-fit: contain;
+}
+
+.project-card__footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.project-card__footer p{
+    margin: 0;
+    color: var(--text-gray);
+    font-size: var(--font-xxs);
+}
+
+.project-card__footer span{
+    margin: 0;
+    color: var(--text-white);
+    font-size: var(--font-xxs);
+}
+
+.project-card__actions {
+    display: flex;
+    gap: var(--space-xs);
+}
+
+.project-card__button  {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-xs) var(--space-base);
+    background-color: var(--primary);
+    color: var(--text-gray);
+    text-decoration: none;
+    border-radius: var(--border-radius-md);
+    border: solid 1px var(--border);
+    font-size: var(--font-xs-s);
+    transition: all var(--transition-speed-normal) var(--transition-easing);
+    transition: background 0.3s ease, color 0.3s ease; 
+
+}
+
+.project-card__button:hover {
+    background: var(--card-bg);
+    color: var(--text-white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.github {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    margin-top: var(--space-xl);
+    background-color: transparent;
+    color: var(--primary);
+    border: none;
+
+    transition: color var(--transition-speed-normal) var(--transition-easing);
+    font-size: var(--font-base);
+    color: var(--primary);
+    font-weight: 400;
+    padding: 0 0 var(--space-sm);
+    background-color: transparent;
+}
+
+.github::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: .15rem;
+    bottom: -0.2rem;
+    left: 0;
+    background: linear-gradient(270deg, var(--primary) 0%, var(--bg) 100%);
+    transform-origin: bottom right;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.github:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+
+
+
+
+
+/* Botão de Certificação */
+.project--verCertificacao {
+    display: inline-block;
+    padding: var(--space-sm) var(--space-md);
+    background-color: #00a2ff1a;
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: var(--border-radius-small);
+    font-size: var(--font-sm);
+    transition: all var(--transition-speed-normal) var(--transition-easing);
+    text-align: center;
+    width: 100%;
+    border: solid 1px var(--border);
+}
+
+.project--verCertificacao:hover {
+    background-color: #00a2ff33;
+    border-color: var(--primary);
+    color: var(--text);
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer e Botão "Ver Mais" */
+.project-footer {
+    text-align: center;
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-xl);
+    background-color: transparent;
+    padding: 0;
+}
+
+#ProjectMostrarMaisProjetosBtn {
+    background-color: transparent;
+    border: solid 1px var(--border);
+    color: var(--text-gray);
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-base);
+    cursor: pointer;
+    transition: all var(--transition-speed-normal) var(--transition-easing);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin: 0 auto;
+    user-select: none;
+}
+
+#ProjectMostrarMaisProjetosBtn:hover {
+    background-color: var(--effect-highlight-blue);
+    border-color: var(--primary);
+    color: var(--text-white);
+}
+
+#ProjectMostrarMaisProjetosBtn svg {
+    width: var(--font-lg);
+    height: var(--font-lg);
+    transition: transform var(--transition-speed-normal) var(--transition-easing);
+}
+
+#ProjectMostrarMaisProjetosBtn.rotated svg {
+    transform: rotate(180deg);
+}
+
+/* Cards Ocultos */
+.hidden {
+    display: none;
+}

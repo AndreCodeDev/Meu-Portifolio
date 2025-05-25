@@ -1,0 +1,119 @@
+@import url('style.css');
+@import url('loading.css');
+@import url('variables.css');
+@import url('desktopPortfolioMenu.css');
+@import url('menuMobile.css');
+@import url('components.css');
+@import url('header.css');
+@import url('themeToggles.css');
+@import url('hero.css');
+@import url('carroseelAbout.css');
+@import url('about.css');
+@import url('highlight.css');
+@import url('portfolio/portfolio.css');
+@import url('portfolio/projects.css');
+@import url('portfolio/codelab.css');
+@import url('portfolio/formation.css');
+@import url('portfolio/skills.css');
+@import url('contact.css');
+@import url('footer.css');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: var(--bg);
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        linear-gradient(to right, var(--bg-grid, rgba(255, 1, 1, 0.05)) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--bg-grid, rgba(255, 255, 255, 0.05)) 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.37;
+    z-index: -2;
+    pointer-events: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+svg {
+    background-color: transparent;
+    opacity: 0.8;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: var(--text-white);
+}
+
+::-webkit-scrollbar {
+    width: var(--space-xs);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+}
+
+
+
+
+
+
+
+
+#portfolio > section {
+    display: none;
+}
+
+#projects { display: block; } /* Exibe "Projetos" por padrão no desktop */
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    #desktopPortfolioMenu {
+        display: none;
+    }
+
+    #menuMobile {
+        display: flex;
+    }
+}
+
+
+
+
+
