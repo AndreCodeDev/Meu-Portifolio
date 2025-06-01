@@ -3,8 +3,14 @@
 
 /* Seção de conquistas */
 #highlight {
+<<<<<<< HEAD
   scroll-margin-top: clamp(.5rem, .5vh, .5rem);
   padding-top: clamp(4.5rem, 6.5vh, 5.5rem);
+=======
+  scroll-margin-top: clamp(2rem, 4vh, 4rem);
+    padding-top: clamp(3rem, 5vh, 4rem);
+    padding-bottom: clamp(3rem, 5vh, 4rem);
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
   text-align: center;
   position: relative;
   z-index: 10;
@@ -18,6 +24,7 @@
   justify-content: center;
 }
 
+<<<<<<< HEAD
 .highlights__text-title {
     font-size: var(--font-3xl-5);
     margin: 0 0 var(--space-sm) 0;
@@ -31,6 +38,8 @@
     display: inline-block;
 }
 
+=======
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
 .highlights__text-content {
   display: flex;
   justify-content: center;
@@ -297,7 +306,11 @@
 .conquistas-carousel-control {
   width: var(--space-xl);
   height: var(--space-lg);
+<<<<<<< HEAD
   background: var(--primary);
+=======
+  background-color: var(--accent);
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
   border-radius: var(--border-radius-md);
   border: solid 1px var(--border);
   cursor: pointer;
@@ -312,7 +325,11 @@
 }
 
 .conquistas-carousel-control:hover {
+<<<<<<< HEAD
   background: var(--card-bg);
+=======
+  background-color: var(--text-gray);
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
 }
 
 /* Efeito ao clicar */

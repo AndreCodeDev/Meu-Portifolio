@@ -1,0 +1,42 @@
+@import url('sysle.css');
+
+/* Seção de conquistas */
+#portfolio {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    scroll-margin-top: clamp(2rem, 4vh, 4rem);
+    padding-bottom: clamp(5rem, 8vh, 7rem);
+}
+
+.projects__header {
+    margin-bottom: var(--space-lg);
+    margin-top: var(--space-lg);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.projects--title {
+    font-size: var(--font-3xl);
+    font-weight: 800;
+    background: linear-gradient(to right, var(--primary), var(--text-));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    #portfolio {
+        scroll-margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        min-height: 0;
+
+    }
+}

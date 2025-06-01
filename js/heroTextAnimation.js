@@ -1,16 +1,30 @@
+<<<<<<< HEAD
 
+=======
+// =============================================
+// TEXT ANIMATION SYSTEM (LAST TO INITIALIZE)
+// =============================================
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
 
 class TextAnimation {
     constructor() {
         this.messages = [
             { text: "Bem-Vindo(a) ao meu Portfólio", class: "hero__animation" },
+<<<<<<< HEAD
             { text: "Meu nome é André Vitor Sales", class: "hero__animation" },
+=======
+            { text: "Meu nome é André Vitor", class: "hero__animation" },
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
         ];
         this.container = document.getElementById("hero__animacaoText");
         this.messageIndex = 0;
         this.charIndex = 0;
         this.isDeleting = false;
+<<<<<<< HEAD
         this.waitTime = 2500;
+=======
+        this.waitTime = 2000;
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
         
         if (this.container) this.init();
     }

@@ -1,0 +1,60 @@
+@import url('style.css');
+
+.carrossel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrossel {
+    display: flex;
+    width: 100%;
+}
+
+.carrossel-track {
+    display: flex;
+    gap: var(--space-6xl);
+    animation: scroll 30s linear infinite;
+    will-change: transform;
+}
+
+.carrossel:hover .carrossel-track {
+    animation-play-state: paused;
+}
+
+.carrossel-item {
+    flex: 0 0 auto;
+    width: var(--space-3xl);
+    text-align: center;
+}
+
+.carrossel-item img {
+    width: var(--space-2xl);
+    height: auto;
+    display: block;
+    user-select: none;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 1441px) {
+    .carrossel-container {
+        margin: var(--space-5xl) 0 var(--space-5xl) 0;
+        height: var(--space-3xl);
+    }
+
+    .carrossel-item img {
+        width: var(--space-4xl);
+    }
+
+    .carrossel-item {
+        width: var(--space-3xl);
+    }
+}

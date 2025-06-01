@@ -2,6 +2,7 @@
 
 /* Estilos da seção de contato */
 #contact {
+<<<<<<< HEAD
   scroll-margin-top: clamp(2rem, 4vh, 4rem);
   padding-top: clamp(4.5rem, 6.5vh, 5.5rem);
   padding-bottom: clamp(2rem, 4vh, 3rem);
@@ -30,6 +31,13 @@
 }
 
 
+=======
+  scroll-margin-top: clamp(4rem, 8vh, 6rem);
+  padding-bottom: clamp(3rem, 5vh, 5rem);
+  text-align: center;
+}
+
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
 .contact-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

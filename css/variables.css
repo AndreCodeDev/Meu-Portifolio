@@ -2,7 +2,11 @@
 
 :root {
   /* Color */
+<<<<<<< HEAD
   --primary: #373737;
+=======
+  --primary: #353535;
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
   --accent: #6e6e6e;
   --color-warning: #ffc107;
   --color-error: #ff4d4f;
@@ -19,9 +23,15 @@
   --bg: #111111;
   --bg-grid: #2b2b2b94;
   --card-bg: #1a1a1a;
+<<<<<<< HEAD
   --bg-box: #15151592;
   --bg-button: #3e3e3e1a;
   --bg-header: #111111fb;
+=======
+  --bg-box: #151515ab;
+  --bg-button: #3e3e3e1a;
+  --bg-header: #111111f1;
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
   --bg-transparent: transparent;
 
   /* Filter */
@@ -63,9 +73,12 @@
   --font-4xl: clamp(3.2rem, 5.1vw, 3.85rem);
   --font-5xl: clamp(3.9rem, 6.1vw, 5.1rem);
 
+<<<<<<< HEAD
   --font-primary: 'Inter', sans-serif;
   --font-mono: 'Fira Code', monospace;
 
+=======
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
   /* Espaços */
   --space-xxs: clamp(0.125rem, 0.8vw, 0.25rem);
   --space-xs: clamp(0.25rem, 1vw, 0.5rem);
@@ -110,16 +123,26 @@
   --primary-linear-gradient: #282828;
 
   /* Text Color */
+<<<<<<< HEAD
   --text-white: #2c2c2c;
   --text-gray: #696969;
   --text-dark: #323232;
+=======
+  --text-white: #000000;
+  --text-gray: #696969;
+  --text-dark: #1a1a1a;
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
   --text-gray-linear-gradient: #c0c0c0;
 
   /* Background */
   --bg: #ffffff;
   --bg-grid: #c3c3c3;
   --card-bg: #efefef;
+<<<<<<< HEAD
   --bg-box: #f0f0f094;
+=======
+  --bg-box: #f0f0f0b1;
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
   --bg-button: #e0e0e01a;
   --bg-header: #fffffff0;
   --bg-transparent: transparent;
@@ -132,10 +155,17 @@
   /* Efeitos Visuais */
   --effect-glass-dark: rgba(255, 255, 255, 0.85);
   --effect-glass-light: rgba(0, 0, 0, 0.05);
+<<<<<<< HEAD
   --effect-highlight-neutral: rgba(0, 0, 0, 0.099);
   --effect-border-neutral: rgba(0, 0, 0, 0.1);
   --effect-glass-bg-project: rgba(200, 200, 200, 0.3);
   --effect-selection-neutral: rgba(0, 0, 0, 0.199);
+=======
+  --effect-highlight-neutral: rgba(0, 0, 0, 0.03);
+  --effect-border-neutral: rgba(0, 0, 0, 0.1);
+  --effect-glass-bg-project: rgba(200, 200, 200, 0.3);
+  --effect-selection-neutral: rgba(0, 0, 0, 0.1);
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
   --effect-overlay: #ffffff;
 
   /* Gradientes */
@@ -144,6 +174,10 @@
   --gradient-card: linear-gradient(to bottom right, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.01));
 
   /* Border */
+<<<<<<< HEAD
   --border: #81818183;
+=======
+  --border: #bbbbbb6d;
+>>>>>>> 4d98d54790e29ca06285f44294714b0be5a6e166
   --border-invert: #c4c4c4;
 }
