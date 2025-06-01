@@ -16,12 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Inicialização correta
-  const savedTheme = localStorage.getItem('theme');
-  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
-  
-  applyTheme(initialTheme);
+  // Sempre aplicar o tema escuro como padrão, ignorando localStorage e preferências do sistema
+  applyTheme('dark');
 
   // Evento de clique
   themeToggle.addEventListener('click', () => {
@@ -30,10 +26,5 @@ document.addEventListener('DOMContentLoaded', function() {
     applyTheme(newTheme);
   });
 
-  // Observar mudanças no tema do sistema
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    if (!localStorage.getItem('theme')) {
-      applyTheme(e.matches ? 'dark' : 'light');
-    }
-  });
+  // Removemos o observador de mudanças no tema do sistema pois não é mais necessário
 });
