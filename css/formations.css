@@ -64,8 +64,8 @@
 }
 
 .card-header img {
-    width: 60px; /* Reduzido de 60px */
-    height: 60px; /* Reduzido de 60px */
+    width: 40px; /* Reduzido de 60px */
+    height: 40px; /* Reduzido de 60px */
     transition: transform 0.3s ease;
 }
 
@@ -144,11 +144,11 @@
 }
 
 #formationsMostrarMaisFormationsBtn {
-    background-color: var(--bg-transparent);
+    background: var(--primary);
     border: 1px solid var(--primary);
-    color: var(--primary);
+    color: var(--text-button);
     padding: var(--space-sm) var(--space-md);
-    border-radius: var(--border-radius-sm);
+    border-radius: var(--border-radius-fll);
     font-size: var(--font-sm);
     cursor: pointer;
     transition: all var(--transition-speed-normal) var(--transition-easing);
@@ -159,9 +159,9 @@
 }
 
 #formationsMostrarMaisFormationsBtn:hover {
-    background-color: var(--accent);
-    border-color: var(--primary);
-    color: var(--text-white);
+    border: solid 1px var(--border);
+    background: var(--card-bg);
+    color: var(--text-gray);
 }
 
 #formationsMostrarMaisFormationsBtn svg {

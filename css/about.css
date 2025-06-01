@@ -66,14 +66,14 @@
 
 .about__cta-button {
     background: var(--primary);
-    color: var(--text-white);
+    color: var(--text-button);
     font-size: var(--font-sm);
     padding: var(--space-sm) var(--space-md);
     display: flex;
     align-items: center;
     gap: var(--space-sm);
     justify-content: center;
-    border-radius: var(--border-radius-md);
+    border-radius: var(--border-radius-fll);
     border: solid 1px var(--border);
     transition: background 0.3s ease, color 0.3s ease;
     text-decoration: none;
@@ -81,7 +81,7 @@
 
 .about__cta-button:hover {
     background: var(--card-bg);
-    color: var(--text);
+    color: var(--text-gray);
 }
 
 .about__cta-button:focus {
@@ -102,6 +102,10 @@
     filter: var(--filter-button);
     user-select: none;
     pointer-events: none;
+}
+
+.about__cta-button:hover img {
+    filter: var(--filter-button-gray);
 }
 
 .about__button {

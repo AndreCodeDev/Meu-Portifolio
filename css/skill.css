@@ -55,9 +55,9 @@
 
 .skills__filter button.active,
 .skills__filter button:hover {
-    background-color: var(--effect-highlight-neutral);
-    border-color: var(--primary);
-    color: var(--text-dark);
+    background-color: var(--primary);
+    border-color: var(--border);
+    color: var(--text-button);
 }
 
 /* Container dos cards de habilidades */

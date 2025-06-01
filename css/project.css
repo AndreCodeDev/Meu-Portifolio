@@ -146,10 +146,10 @@
     align-items: center;
     position: relative;
     transition: color var(--transition-speed-normal) var(--transition-easing);
-    font-size: var(--font-md);
-    color: var(--primary);
+    font-size: var(--font-base);
+    color: var(--text-gray);
     font-weight: 400;
-    margin-top: var(--space-3xl);
+    margin-top: var(--space-xl);
     padding: 0 0 var(--space-sm);
     text-decoration: none;
 }
@@ -172,27 +172,6 @@
     transform-origin: bottom left;
 }
 
-/* Botão de Certificação */
-.project--verCertificacao {
-    display: inline-block;
-    padding: var(--space-xs) var(--space-md);
-    background-color: rgba(0, 162, 255, 0.1);
-    color: var(--primary);
-    text-decoration: none;
-    border-radius: var(--border-radius-sm);
-    font-size: var(--font-xs);
-    transition: all var(--transition-speed-normal) var(--transition-easing);
-    text-align: center;
-    width: 100%;
-    border: 1px solid var(--primary);
-}
-
-.project--verCertificacao:hover {
-    background-color: rgba(0, 162, 255, 0.2);
-    border-color: var(--primary);
-    color: var(--text-white);
-}
-
 /* Footer e Botão "Ver Mais" */
 .project-footer {
     text-align: center;
@@ -202,11 +181,11 @@
 }
 
 #ProjectMostrarMaisProjetosBtn {
-    background-color: var(--bg-transparent);
+    background: var(--primary);
     border: 1px solid var(--primary);
-    color: var(--primary);
+    color: var(--text-button);
     padding: var(--space-sm) var(--space-md);
-    border-radius: var(--border-radius-sm);
+    border-radius: var(--border-radius-fll);
     font-size: var(--font-sm);
     cursor: pointer;
     transition: all var(--transition-speed-normal) var(--transition-easing);
@@ -217,9 +196,9 @@
 }
 
 #ProjectMostrarMaisProjetosBtn:hover {
-    background-color: var(--accent);
-    border-color: var(--primary);
-    color: var(--text-white);
+    border: solid 1px var(--border);
+    background: var(--card-bg);
+    color: var(--text-gray);
 }
 
 #ProjectMostrarMaisProjetosBtn svg {

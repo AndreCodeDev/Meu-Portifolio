@@ -75,7 +75,7 @@ svg {
 
 ::selection {
     background-color: var(--primary);
-    color: var(--text-white);
+    color: var(--text-button);
 }
 
 ::-webkit-scrollbar {

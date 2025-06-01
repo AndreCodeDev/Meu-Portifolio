@@ -102,14 +102,14 @@
 
 .hero__cta-button {
     background: var(--primary);
-    color: var(--text-white);
+    color: var(--text-button);
     font-size: var(--font-sm);
     padding: var(--space-sm) var(--space-md);
     display: flex;
     align-items: center;
     gap: var(--space-sm);
     justify-content: center;
-    border-radius: var(--border-radius-md);
+    border-radius: var(--border-radius-fll);
     border: solid 1px var(--border);
     transition: background 0.3s ease, color 0.3s ease;
     text-decoration: none;
@@ -117,7 +117,7 @@
 
 .hero__cta-button:hover {
     background: var(--card-bg);
-    color: var(--text);
+    color: var(--text-gray);
 }
 
 .hero__cta-button:focus {
@@ -134,6 +134,10 @@
     filter: var(--filter-button);
     user-select: none;
     pointer-events: none;
+}
+
+.hero__cta-button:hover img {
+    filter: var(--filter-button-gray);
 }
 
 .hero__social-links {
@@ -190,7 +194,7 @@
     top: 115%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--card-bg);
+    background-color: var(--primary);
     color: var(--text);
     padding: var(--space-xs);
     border-radius: var(--border-radius-sm);

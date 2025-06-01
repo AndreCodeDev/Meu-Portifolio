@@ -2,16 +2,16 @@
 
 :root {
   /* Color */
-  --primary: #373737;
+  --primary: #3c3c3c;
   --accent: #6e6e6e;
-  --color-warning: #ffc107;
   --color-error: #ff4d4f;
   --color-success: #28a745;
-  --primary-linear-gradient: #777777;
+  --primary-linear-gradient: #454545;
 
   /* Text Color */
   --text-white: #ffffff;
   --text-gray: #c0c0c0;
+  --text-button: #ffffff;
   --text-dark: #e0e0e0;
   --text-gray-linear-gradient: #ffffff;
 
@@ -102,12 +102,10 @@
 
 [data-theme="light"] {
   /* Color */
-  --primary: #e4e4e4;
   --accent: #9f9f9f;
-  --color-warning: #ffcc00;
   --color-error: #d32f2f;
   --color-success: #388e3c;
-  --primary-linear-gradient: #282828;
+  --primary-linear-gradient: #353535;
 
   /* Text Color */
   --text-white: #2c2c2c;
@@ -119,14 +117,14 @@
   --bg: #ffffff;
   --bg-grid: #c3c3c3;
   --card-bg: #efefef;
-  --bg-box: #f0f0f094;
+  --bg-box: #ffffff94;
   --bg-button: #e0e0e01a;
   --bg-header: #fffffff0;
   --bg-transparent: transparent;
 
   /* Filter */
   --filter-button-hero: brightness(0) saturate(100%) invert(25%) sepia(0%) saturate(100%) hue-rotate(0deg);
-  --filter-button: brightness(0) invert(0);
+  --filter-button: brightness(0) invert(1);
   --filter-button-gray: invert(20%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(80%) contrast(110%);
 
   /* Efeitos Visuais */

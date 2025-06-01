@@ -298,26 +298,27 @@
   width: var(--space-xl);
   height: var(--space-lg);
   background: var(--primary);
-  border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-fll);
   border: solid 1px var(--border);
   cursor: pointer;
-  transition: opacity var(--transition-speed-normal) var(--transition-easing),
-    background-color var(--transition-speed-normal) var(--transition-easing);
+  transition: 
+    transform var(--transition-speed-normal) var(--transition-easing);
   display: flex;
   align-items: center;
   justify-content: center;
   position: static;
-  transform: none;
+  transform: scale(1);
   padding: var(--space-base) var(--space-2xl);
 }
 
+/* Exemplo de hover sutil (escolha um ou combine) */
 .conquistas-carousel-control:hover {
-  background: var(--card-bg);
+  transform: scale(1.05); 
 }
 
 /* Efeito ao clicar */
 .conquistas-carousel-control:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 /* Ícones das setas */
@@ -333,19 +334,10 @@
 }
 
 .carousel-control-prev-icon {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23111" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
-}
-
-.carousel-control-next-icon {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23111" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
-}
-
-/* Ajustar a cor das setas com base no tema */
-body.light-mode .carousel-control-prev-icon {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23fff" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
 }
 
-body.light-mode .carousel-control-next-icon {
+.carousel-control-next-icon {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23fff" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
 }
 
