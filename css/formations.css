@@ -1,0 +1,180 @@
+@import url('style.css');
+
+/* Estilos para a seção de formações */
+#formations {
+    scroll-margin-top: clamp(2rem, 4vh, 4rem);
+    padding-top: clamp(4.5rem, 6.5vh, 5.5rem);
+    position: relative;
+    z-index: 10;
+}
+
+.formations__header {
+  margin-bottom: var(--space-lg);
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.formations__text-title {
+    font-size: var(--font-3xl-5);
+    margin: 0 0 var(--space-sm) 0;
+    font-weight: 800;
+    line-height: 1.2;
+    background: linear-gradient(to right, var(--primary-linear-gradient), var(--text-gray-linear-gradient));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+.formations-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); /* Reduzido de 350px para 300px */
+    gap: var(--space-md);
+    padding: 0 var(--space-4xl);
+    width: 100%;
+}
+
+/* Cards de Formação */
+.formacao-card {
+    background-color: var(--bg-box);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius-md);
+    padding: var(--space-md);
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.formacao-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-color: var(--primary);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: 0.75rem; /* Reduzido de 1rem */
+}
+
+.card-header img {
+    width: 60px; /* Reduzido de 60px */
+    height: 60px; /* Reduzido de 60px */
+    transition: transform 0.3s ease;
+}
+
+.card-header img:hover {
+    transform: scale(1.1);
+}
+
+.card-info h3 {
+    color: var(--text-white);
+    font-size: var(--font-sm); /* Reduzido de var(--font-sm) */
+    font-weight: 600;
+    margin: 0;
+}
+
+.card-info p {
+    color: var(--text-gray);
+    font-size: var(--font-xxs);
+    margin: 0;
+}
+
+.card-details {
+    margin-bottom: var(--space-xxs); /* Reduzido de var(--space-xs) */
+    margin-top: auto;
+}
+
+.card-details p {
+    color: var(--text-gray);
+    font-size: var(--font-xxs);
+    margin: var(--space-xs) 0; /* Reduzido de var(--space-sm) */
+}
+
+.card-details strong {
+    color: var(--text-white);
+    font-size: var(--font-xs); /* Reduzido de var(--font-sm) */
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .formations-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .formations-content {
+        grid-template-columns: 1fr;
+        padding: var(--space-md);
+    }
+}
+
+
+
+
+  /* Estilo para os elementos ocultos */
+  .formacao-card.hidden {
+    display: none;
+  }
+  
+  /* Estilo para a rotação da seta */
+  #formationsMostrarMaisFormationsBtn.rotated .arrow-icon {
+    transform: rotate(180deg);
+  }
+  
+  .arrow-icon {
+    transition: transform 0.3s ease;
+  }
+
+
+
+  /* Footer e Botão "Ver Mais" Formações */
+.formations-footer {
+    text-align: center;
+    margin-top: var(--space-xl);
+    background-color: var(--bg-transparent);
+    padding: 0;
+}
+
+#formationsMostrarMaisFormationsBtn {
+    background-color: var(--bg-transparent);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-sm);
+    cursor: pointer;
+    transition: all var(--transition-speed-normal) var(--transition-easing);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin: 0 auto;
+}
+
+#formationsMostrarMaisFormationsBtn:hover {
+    background-color: var(--accent);
+    border-color: var(--primary);
+    color: var(--text-white);
+}
+
+#formationsMostrarMaisFormationsBtn svg {
+    width: 18px;
+    height: 18px;
+    transition: transform var(--transition-speed-normal) var(--transition-easing);
+}
+
+#formationsMostrarMaisFormationsBtn.rotated svg {
+    transform: rotate(180deg);
+}
+
+/* Estilo para os elementos ocultos */
+.formacao-card.hidden {
+    display: none;
+}

@@ -1,0 +1,2106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="" type="image/svg" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <section id="loading">
+      <section id="loading-screen">
+        <div class="loading-content">
+          <div class="logo-container">
+            <div class="logo-container">
+              <div class="logo-animation">
+                <div class="logo-item">
+                  <img src="img/redes/loadingFormation.svg" alt="Formações" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/redes/loadingPortfolio.svg" alt="Conquistas" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/redes/loadingSkills.svg" alt="Skills" />
+                </div>
+              </div>
+
+              <div class="welcome-message">
+                <div class="welcome-line">
+                  <span class="word-animation">Bem-Vindo(a)</span>
+                  <span class="word-animation">Ao</span>
+                  <span class="word-animation">Meu</span>
+                </div>
+                <div class="welcome-line">
+                  <span class="word-animation-color">Portfólio</span>
+                  <span class="word-animation-color">Tech</span>
+                </div>
+              </div>
+
+              <div class="loading-progress">
+                <div class="progress-bar-center"></div>
+              </div>
+
+              <div class="url-display">
+                <div class="url-box">
+                  <img src="img/redes/web.svg" alt="Web" />
+                  <div class="url-text" id="animated-url"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <header class="header">
+      <a href="index.html" class="header__text-logo">
+        <img src="img/logo.svg" alt="Logo" />Portfólio Tech
+      </a>
+
+      <nav class="header__nav">
+        <ul class="header__menu" id="header__menu">
+          <li class="header__menu-item">
+            <a href="#hero" class="header__menu-link" data-scroll>Início</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#about" class="header__menu-link" data-scroll>Sobre</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#highlight" class="header__menu-link" data-scroll
+              >Destaques</a
+            >
+          </li>
+          <li class="header__menu-item">
+            <a href="#formations" class="header__menu-link" data-scroll
+              >Formações</a
+            >
+          </li>
+          <li class="header__menu-item">
+            <a href="#project" class="header__menu-link" data-scroll
+              >Projetos</a
+            >
+          </li>
+          <li class="header__menu-item">
+            <a href="#skills" class="header__menu-link" data-scroll
+              >Habilides</a
+            >
+          </li>
+          <li class="header__menu-item">
+            <a href="#contact" class="header__menu-link" data-scroll>Contato</a>
+          </li>
+        </ul>
+
+        <li class="header__menu-item theme-toggle-item">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Alternar tema"
+            aria-pressed="false"
+          >
+            <span class="theme-toggle__switch" aria-hidden="true"></span>
+            <span class="theme-toggle__tooltip">Tema Escuro</span>
+          </button>
+        </li>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero__container">
+          <div class="hero__text-content">
+            <h1 class="hero__main-headline">
+              <span class="hero__title">AndreCode</span>
+              <span class="hero__subtitle">Desenvolvedor</span>
+            </h1>
+            <div class="hero__typing-container">
+              <div id="hero__animacaoText" class="hero__typing-text"></div>
+            </div>
+            <p class="hero__statement">
+              "Sou impulsionado pelo aprendizado contínuo, desenvolvendo
+              sistemas escaláveis, eficientes e que refletem minha constante
+              evolução profissional."
+            </p>
+
+            <div class="hero__cta-wrapper">
+              <a href="#portfolio" class="hero__cta-button">
+                Ver Projetos <img src="img/redes/entar.svg" alt="" />
+              </a>
+
+              <a href="#about" class="hero__cta-button">
+                Contato <img src="img/redes/contato.svg" alt="" />
+              </a>
+
+              <div class="hero__social-links">
+                <div class="hero__social-card">
+                  <a
+                    href="https://linkedin.com/in/andrecodedev"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    <img src="img/redes/linkedin.svg" alt="LinkedIn" />
+                    <span class="hero__tooltip">LinkedIn</span>
+                  </a>
+                </div>
+
+                <div class="hero__social-card">
+                  <a
+                    href="https://github.com/AndreCodeDev"
+                    target="_blank"
+                    aria-label="GitHub"
+                  >
+                    <img src="img/redes/github.svg" alt="GitHub" />
+                    <span class="hero__tooltip">GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__visual-element">
+            <img
+              src="img/avatar.svg"
+              alt="Avatar"
+              class="hero__visual-element-image"
+            />
+          </div>
+          <div class="hero__scroll-down">
+            <a href="#about" class="scroll-down__link">
+              <span class="scroll-down__arrow"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img
+              src="/img/skills/html.svg"
+              height="100"
+              width="250"
+              alt="skill1"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/css.svg"
+              height="100"
+              width="250"
+              alt="skill2"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/java.svg"
+              height="100"
+              width="250"
+              alt="skill3"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/javascript.svg"
+              height="100"
+              width="250"
+              alt="skill4"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/figma.svg"
+              height="100"
+              width="250"
+              alt="skill5"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/git.svg"
+              height="100"
+              width="250"
+              alt="skill6"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/sql.svg"
+              height="100"
+              width="250"
+              alt="skill7"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/bootstrap.svg"
+              height="100"
+              width="250"
+              alt="skill8"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/c++.svg"
+              height="100"
+              width="250"
+              alt="skill9"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/html.svg"
+              height="100"
+              width="250"
+              alt="skill1"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/css.svg"
+              height="100"
+              width="250"
+              alt="skill2"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/java.svg"
+              height="100"
+              width="250"
+              alt="skill3"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/javascript.svg"
+              height="100"
+              width="250"
+              alt="skill4"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/figma.svg"
+              height="100"
+              width="250"
+              alt="skill5"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/git.svg"
+              height="100"
+              width="250"
+              alt="skill6"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/sql.svg"
+              height="100"
+              width="250"
+              alt="skill7"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/bootstrap.svg"
+              height="100"
+              width="250"
+              alt="skill8"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="/img/skills/c++.svg"
+              height="100"
+              width="250"
+              alt="skill9"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="about__container">
+          <div class="about__text-content">
+            <h2 class="about__title">Olá, Eu Sou</h2>
+            <p class="about__title">André Vitor Sales</p>
+            <p class="about__paragraph">
+              Sou André Vitor, estudante de Análise e Desenvolvimento de
+              Sistemas na FACENS com bolsa integral pelo ProUni. Atuo como
+              mentor acadêmico em Algoritmos e sou aluno da CCBEU, Oracle Next
+              Education e OneBitCode. <br /><br />
+              Apaixonado por tecnologia desde criança, desenvolvo projetos web e
+              busco crescer na área de TI com foco, aprendizado constante e
+              vontade de impactar positivamente o mundo.
+            </p>
+            <div class="about__cta-wrapper">
+              <a href="#project" class="about__cta-button" data-scroll>
+                Ver Projetos <img src="img/redes/entar.svg" alt="entar" />
+              </a>
+
+              <a
+                href="docs/Curriculo_AndreVitor.pdf"
+                download
+                class="about__cta-button"
+              >
+                Dowload CV<img src="img/redes/CV.svg" alt="CV" />
+              </a>
+            </div>
+          </div>
+
+          <iframe
+            class="floating-video"
+            src="https://www.youtube.com/embed/CFGLoQIhmow"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <div class="about__stats">
+          <div class="stats-container">
+            <div class="stats-grid">
+              <div class="stat-item">
+                <h5 class="stat-number">4+</h5>
+                <p class="stat-description">Anos de Estudo Intensivo</p>
+              </div>
+
+              <div class="stat-item">
+                <h5 class="stat-number">10+</h5>
+                <p class="stat-description">Projetos Realizados</p>
+              </div>
+
+              <div class="stat-item">
+                <h5 class="stat-number">4K+</h5>
+                <p class="stat-description">Horas de Codificação</p>
+              </div>
+
+              <div class="stat-item">
+                <h5 class="stat-number">20+</h5>
+                <p class="stat-description">Repositórios no GitHub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="highlight">
+        <div class="highlights__header">
+          <h2 class="highlights__text-title">Destaques</h2>
+        </div>
+        <div class="highlights__text-content">
+          <p class="highlights--subtitle" data-text="conquistas">
+            Principais conquistas acadêmicas e profissionais. Clique nos cards
+            para mais informações.
+          </p>
+        </div>
+        <div class="highlights__cards" id="cards-conquistas">
+          <section id="conquistas" class="conquistas-news fade-in">
+            <!-- Container do Carrossel -->
+            <div class="conquistas-carousel-container">
+              <!-- Cards do Carrossel -->
+              <div class="conquistas-carousel">
+                <!-- Card 1 -->
+                <div class="card active">
+                  <div class="card__front">
+                    <img
+                      src="img/conquistas/conquistasProuni.jpg"
+                      alt="Bolsa 100% ProUni"
+                    />
+                  </div>
+
+                  <div class="card__back">
+                    <article class="conquistas-card">
+                      <!-- Cabeçalho do Card com logo e informações principais -->
+                      <div class="conquistas--card-header">
+                        <div class="conquistas--card-info">
+                          <h2>A Jornada da Conquista</h2>
+                          <p>Bolsa 100% ProUni - FACENS</p>
+                        </div>
+                      </div>
+
+                      <!-- Detalhes do curso -->
+                      <div class="conquistas--card-details">
+                        <div class="conquistas--card-testimonial">
+                          <p>
+                            Desde os 14 anos, sonhava em estudar na FACENS. Com
+                            dedicação e apoio da minha família, conquistei a tão
+                            sonhada vaga com bolsa 100% pelo ProUni. Cada
+                            desafio superado foi uma lição e, ao olhar para
+                            trás, vejo que todo esforço fez essa vitória ainda
+                            mais especial.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                  <div class="card__front">
+                    <img
+                      src="img/conquistas/conquistasOnebitcode.jpg"
+                      alt="OneBitCode"
+                    />
+                  </div>
+
+                  <div class="card__back">
+                    <article class="conquistas-card">
+                      <!-- Cabeçalho do Card com logo e informações principais -->
+                      <div class="conquistas--card-header">
+                        <div class="conquistas--card-info">
+                          <h2>Minha Jornada até a OneBitCode</h2>
+                          <p>
+                            Desenvolvendo habilidades para o futuro da
+                            tecnologia
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Detalhes do curso -->
+                      <div class="conquistas--card-details">
+                        <div class="conquistas--card-testimonial">
+                          <p>
+                            Ingressar na OneBitCode foi uma decisão estratégica
+                            para minha evolução em tecnologia. Com uma abordagem
+                            prática e foco em conteúdo atualizado, estou
+                            construindo uma base sólida para minha carreira. O
+                            ambiente dinâmico e a troca com a comunidade fazem
+                            essa jornada ainda mais enriquecedora.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                  <div class="card__front">
+                    <img src="img/conquistas/conquistasONE.jpg" alt="ONE" />
+                  </div>
+
+                  <div class="card__back">
+                    <article class="conquistas-card">
+                      <!-- Cabeçalho do Card com logo e informações principais -->
+                      <div class="conquistas--card-header">
+                        <div class="conquistas--card-info">
+                          <h2>Transformando o Futuro na ONE</h2>
+                          <p>Acelerando o aprendizado em programação</p>
+                        </div>
+                      </div>
+
+                      <!-- Detalhes do curso -->
+                      <div class="conquistas--card-details">
+                        <div class="conquistas--card-testimonial">
+                          <p>
+                            Ao ingressar na ONE, encontrei um ambiente
+                            estimulante para minha evolução em programação. A
+                            metodologia prática e os desafios propostos são
+                            fundamentais para consolidar meus conhecimentos.
+                            Essa experiência tem sido essencial para meu
+                            crescimento profissional e minha preparação para o
+                            mercado de tecnologia.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card">
+                  <div class="card__front">
+                    <img src="img/conquistas/conquistasETEC.jpg" alt="ETEC" />
+                  </div>
+
+                  <div class="card__back">
+                    <article class="conquistas-card">
+                      <!-- Cabeçalho do Card com logo e informações principais -->
+                      <div class="conquistas--card-header">
+                        <div class="conquistas--card-info">
+                          <h2>A Base da Minha Formação na ETEC</h2>
+                          <p>
+                            Construindo o alicerce para a carreira em tecnologia
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Detalhes do curso -->
+                      <div class="conquistas--card-details">
+                        <div class="conquistas--card-testimonial">
+                          <p>
+                            A ETEC foi o ponto de partida para minha jornada na
+                            tecnologia. Com uma formação sólida e prática, pude
+                            desenvolver habilidades essenciais para minha
+                            carreira. A experiência adquirida nesse período me
+                            preparou para os desafios futuros e fortaleceu meu
+                            desejo de seguir nessa área.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card">
+                  <div class="card__front">
+                    <img
+                      src="img/conquistas/conquistasMentoria.jpg"
+                      alt="Mentor Acadêmico"
+                    />
+                  </div>
+
+                  <div class="card__back">
+                    <article class="conquistas-card">
+                      <!-- Cabeçalho do Card com logo e informações principais -->
+                      <div class="conquistas--card-header">
+                        <div class="conquistas--card-info">
+                          <h2>Iniciando como Mentor Acadêmico</h2>
+                          <p>
+                            Uma nova experiência em Construção de Algoritmos
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Detalhes do curso -->
+                      <div class="conquistas--card-details">
+                        <div class="conquistas--card-testimonial">
+                          <p>
+                            Estou prestes a começar como mentor acadêmico em
+                            Construção de Algoritmos na FACENS. Essa
+                            oportunidade me permitirá compartilhar meu
+                            conhecimento e apoiar outros alunos no aprendizado.
+                            Ansioso para essa nova experiência, buscarei tornar
+                            cada aula uma troca enriquecedora de saberes.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controles do Carrossel -->
+              <div class="carousel-controls-container">
+                <button class="conquistas-carousel-control prev" type="button">
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="conquistas-carousel-control next" type="button">
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="formations">
+        <div class="formations__header">
+          <h2 class="formations__text-title">Formações</h2>
+        </div>
+        <div class="formations-content">
+          <!-- Suas formações visíveis -->
+          <article class="formacao-card fade-in">
+            <div class="card-header">
+              <img src="img/formacoes/facens.svg" alt="Facens" class="icon" />
+              <div class="card-info">
+                <h3>Bacharelando em ADS</h3>
+                <p>Centro Universitário Facens</p>
+              </div>
+            </div>
+            <div class="card-details">
+              <p><strong>Status:</strong> Cursando</p>
+              <p><strong>Previsão de conclusão:</strong> 31/12/2026</p>
+            </div>
+          </article>
+
+          <article class="formacao-card fade-in">
+            <div class="card-header">
+              <img src="img/formacoes/etec.svg" alt="ETEC" class="icon" />
+              <div class="card-info">
+                <h3>Técnico em ADS</h3>
+                <p>Escola Técnica Estadual - ETEC</p>
+              </div>
+            </div>
+            <div class="card-details">
+              <p><strong>Status:</strong> Concluído</p>
+              <p><strong>Conclusão:</strong> 31/12/2022</p>
+            </div>
+          </article>
+
+          <article class="formacao-card fade-in">
+            <div class="card-header">
+              <img
+                src="img/formacoes/one.svg"
+                alt="Oracle Next Education"
+                class="icon"
+              />
+              <div class="card-info">
+                <h3>Turma 8 ONE - Back-End</h3>
+                <p>Oracle Next Education - Alura + Oracle</p>
+              </div>
+            </div>
+            <div class="card-details">
+              <p><strong>Status:</strong> Cursando</p>
+              <p><strong>Previsão de conclusão:</strong> 01/08/2025</p>
+            </div>
+          </article>
+
+          <article class="formacao-card fade-in">
+            <div class="card-header">
+              <img
+                src="img/formacoes/oneBitCode.svg"
+                alt="OneBitCode"
+                class="icon"
+              />
+              <div class="card-info">
+                <h3>Full Stack JavaScript</h3>
+                <p>OneBitCode</p>
+              </div>
+            </div>
+            <div class="card-details">
+              <p><strong>Status:</strong> Cursando</p>
+              <p><strong>Conclusão:</strong> 01/08/2025</p>
+            </div>
+          </article>
+
+          <article class="formacao-card fade-in">
+            <div class="card-header">
+              <img
+                src="img/formacoes/oneBitCode.svg"
+                alt="OneBitCode"
+                class="icon"
+              />
+              <div class="card-info">
+                <h3>Full Stack JavaScript</h3>
+                <p>OneBitCode</p>
+              </div>
+            </div>
+            <div class="card-details">
+              <p><strong>Status:</strong> Cursando</p>
+              <p><strong>Conclusão:</strong> 01/08/2025</p>
+            </div>
+          </article>
+
+          <article class="formacao-card fade-in">
+            <div class="card-header">
+              <img
+                src="img/formacoes/oneBitCode.svg"
+                alt="OneBitCode"
+                class="icon"
+              />
+              <div class="card-info">
+                <h3>Full Stack JavaScript</h3>
+                <p>OneBitCode</p>
+              </div>
+            </div>
+            <div class="card-details">
+              <p><strong>Status:</strong> Cursando</p>
+              <p><strong>Conclusão:</strong> 01/08/2025</p>
+            </div>
+          </article>
+
+          <!-- Formação oculta inicialmente -->
+          <article class="formacao-card hidden fade-in">
+            <div class="card-header">
+              <img
+                src="img/formacoes/oneBitCode.svg"
+                alt="OneBitCode"
+                class="icon"
+              />
+              <div class="card-info">
+                <h3>Full Stack JavaScript</h3>
+                <p>OneBitCode</p>
+              </div>
+            </div>
+            <div class="card-details">
+              <p><strong>Status:</strong> Cursando</p>
+              <p><strong>Conclusão:</strong> 01/08/2025</p>
+            </div>
+          </article>
+
+          <article class="formacao-card hidden fade-in">
+            <div class="card-header">
+              <img
+                src="img/formacoes/oneBitCode.svg"
+                alt="OneBitCode"
+                class="icon"
+              />
+              <div class="card-info">
+                <h3>Full Stack JavaScript</h3>
+                <p>OneBitCode</p>
+              </div>
+            </div>
+            <div class="card-details">
+              <p><strong>Status:</strong> Cursando</p>
+              <p><strong>Conclusão:</strong> 01/08/2025</p>
+            </div>
+          </article>
+
+          <article class="formacao-card hidden fade-in">
+            <div class="card-header">
+              <img
+                src="img/formacoes/oneBitCode.svg"
+                alt="OneBitCode"
+                class="icon"
+              />
+              <div class="card-info">
+                <h3>Full Stack JavaScript</h3>
+                <p>OneBitCode</p>
+              </div>
+            </div>
+            <div class="card-details">
+              <p><strong>Status:</strong> Cursando</p>
+              <p><strong>Conclusão:</strong> 01/08/2025</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="fade-in">
+          <footer class="formations-footer fade-in">
+            <button id="formationsMostrarMaisFormationsBtn">
+              <span id="formationsTextoBotaoFormations"
+                >Ver mais formações</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="arrow-icon"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+          </footer>
+        </div>
+      </section>
+
+      <section id="project">
+        <div class="project__header">
+          <h2 class="project__text-title">Projetos</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!--visivel-->
+
+          <!-- Projeto 1-->
+          <div class="project-item">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal1">
+              <img
+                class="project-image fade-in"
+                src="img/project/imagemProjetos/petLife.svg"
+                alt="Clone da Netflix"
+              />
+              <div class="project-overlay">
+                <h3 class="project-title">Clone da Netflix Web</h3>
+                <h2>02/12/2025</h2>
+                <div class="project-icons">
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                </div>
+                <h4>Clique para mais informações</h4>
+              </div>
+            </a>
+          </div>
+
+          <!-- Modal 1-->
+          <div
+            class="modal fade"
+            id="exampleModal1"
+            tabindex="-1"
+            aria-labelledby="exampleModal1Label"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog modal-xl"
+            >
+              <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <section class="sessao-modal">
+                    <div class="sessao-video">
+                      <video
+                        src="img/imagemSite/netflixSite.jpg"
+                        class="projeto-video"
+                        controls
+                        autoplay
+                      ></video>
+                    </div>
+                    <div>
+                      <h1 class="titulo-sessao-modal">
+                        PetLife
+                        <div class="project-icons-header">
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                        </div>
+                      </h1>
+                      <p class="paragrafos-sessao-modal">
+                        O site PetLife foi desenvolvido como parte de um projeto
+                        introdutório na OneBitCode, utilizando HTML, CSS,
+                        JavaScript, Figma e Visual Studio Code. O objetivo
+                        principal era aprender os conceitos fundamentais dessas
+                        ferramentas de forma prática e introdutória na área de
+                        desenvolvimento web. <br /><br />O projeto consiste em
+                        um site simples para um pet shop, contendo algumas
+                        seções com informações sobre o comércio, organizadas de
+                        forma clara e acessível. Esse trabalho proporcionou uma
+                        base sólida para entender o processo de criação e
+                        estruturação de um site, desde o design inicial no Figma
+                        até a implementação com código.
+                      </p>
+                      <h1 class="data-sessao-modal">18/01/2025</h1>
+                    </div>
+                  </section>
+                </div>
+                <!-- footer -->
+                <div class="footer-modal">
+                  <div>
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar projeto
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar repertório GitHub
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 2-->
+          <div class="project-item">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              <img
+                class="project-image fade-in"
+                src="img/project/imagemProjetos/amigoSecreto.svg"
+                alt="Clone da Netflix"
+              />
+              <div class="project-overlay">
+                <h3 class="project-title">Clone da Netflix Web</h3>
+                <h2>02/12/2025</h2>
+                <div class="project-icons">
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                </div>
+                <h4>Clique para mais informações</h4>
+              </div>
+            </a>
+          </div>
+
+          <!-- Modal 2-->
+          <div
+            class="modal fade"
+            id="exampleModal2"
+            tabindex="-1"
+            aria-labelledby="exampleModal2Label"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog modal-xl"
+            >
+              <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <section class="sessao-modal">
+                    <div class="sessao-video">
+                      <video
+                        src="img/imagemSite/netflixSite.jpg"
+                        class="projeto-video"
+                        controls
+                        autoplay
+                      ></video>
+                    </div>
+                    <div>
+                      <h1 class="titulo-sessao-modal">
+                        PetLife
+                        <div class="project-icons-header">
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                        </div>
+                      </h1>
+                      <p class="paragrafos-sessao-modal">
+                        O site PetLife foi desenvolvido como parte de um projeto
+                        introdutório na OneBitCode, utilizando HTML, CSS,
+                        JavaScript, Figma e Visual Studio Code. O objetivo
+                        principal era aprender os conceitos fundamentais dessas
+                        ferramentas de forma prática e introdutória na área de
+                        desenvolvimento web. <br /><br />O projeto consiste em
+                        um site simples para um pet shop, contendo algumas
+                        seções com informações sobre o comércio, organizadas de
+                        forma clara e acessível. Esse trabalho proporcionou uma
+                        base sólida para entender o processo de criação e
+                        estruturação de um site, desde o design inicial no Figma
+                        até a implementação com código.
+                      </p>
+                      <h1 class="data-sessao-modal">18/01/2025</h1>
+                    </div>
+                  </section>
+                </div>
+                <!-- footer -->
+                <div class="footer-modal">
+                  <div>
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar projeto
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar repertório GitHub
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 3-->
+          <div class="project-item">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal3">
+              <img
+                class="project-image fade-in"
+                src="img/project/imagemProjetos/ticTacToeGame.svg"
+                alt="Clone da Netflix"
+              />
+              <div class="project-overlay">
+                <h3 class="project-title">Clone da Netflix Web</h3>
+                <h2>02/12/2025</h2>
+                <div class="project-icons">
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                </div>
+                <h4>Clique para mais informações</h4>
+              </div>
+            </a>
+          </div>
+
+          <!-- Modal 3-->
+          <div
+            class="modal fade"
+            id="exampleModal3"
+            tabindex="-1"
+            aria-labelledby="exampleModal3Label"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog modal-xl"
+            >
+              <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <section class="sessao-modal">
+                    <div class="sessao-video">
+                      <video
+                        src="img/imagemSite/netflixSite.jpg"
+                        class="projeto-video"
+                        controls
+                        autoplay
+                      ></video>
+                    </div>
+                    <div>
+                      <h1 class="titulo-sessao-modal">
+                        PetLife
+                        <div class="project-icons-header">
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                        </div>
+                      </h1>
+                      <p class="paragrafos-sessao-modal">
+                        O site PetLife foi desenvolvido como parte de um projeto
+                        introdutório na OneBitCode, utilizando HTML, CSS,
+                        JavaScript, Figma e Visual Studio Code. O objetivo
+                        principal era aprender os conceitos fundamentais dessas
+                        ferramentas de forma prática e introdutória na área de
+                        desenvolvimento web. <br /><br />O projeto consiste em
+                        um site simples para um pet shop, contendo algumas
+                        seções com informações sobre o comércio, organizadas de
+                        forma clara e acessível. Esse trabalho proporcionou uma
+                        base sólida para entender o processo de criação e
+                        estruturação de um site, desde o design inicial no Figma
+                        até a implementação com código.
+                      </p>
+                      <h1 class="data-sessao-modal">18/01/2025</h1>
+                    </div>
+                  </section>
+                </div>
+                <!-- footer -->
+                <div class="footer-modal">
+                  <div>
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar projeto
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar repertório GitHub
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 4-->
+          <div class="project-item">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal4">
+              <img
+                class="project-image fade-in"
+                src="img/project/imagemProjetos/sealWorld.svg"
+                alt="Clone da Netflix"
+              />
+              <div class="project-overlay">
+                <h3 class="project-title">Clone da Netflix Web</h3>
+                <h2>02/12/2025</h2>
+                <div class="project-icons">
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                </div>
+                <h4>Clique para mais informações</h4>
+              </div>
+            </a>
+          </div>
+
+          <!-- Modal 4-->
+          <div
+            class="modal fade"
+            id="exampleModal4"
+            tabindex="-1"
+            aria-labelledby="exampleModal4Label"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog modal-xl"
+            >
+              <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <section class="sessao-modal">
+                    <div class="sessao-video">
+                      <video
+                        src="img/imagemSite/netflixSite.jpg"
+                        class="projeto-video"
+                        controls
+                        autoplay
+                      ></video>
+                    </div>
+                    <div>
+                      <h1 class="titulo-sessao-modal">
+                        PetLife
+                        <div class="project-icons-header">
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                        </div>
+                      </h1>
+                      <p class="paragrafos-sessao-modal">
+                        O site PetLife foi desenvolvido como parte de um projeto
+                        introdutório na OneBitCode, utilizando HTML, CSS,
+                        JavaScript, Figma e Visual Studio Code. O objetivo
+                        principal era aprender os conceitos fundamentais dessas
+                        ferramentas de forma prática e introdutória na área de
+                        desenvolvimento web. <br /><br />O projeto consiste em
+                        um site simples para um pet shop, contendo algumas
+                        seções com informações sobre o comércio, organizadas de
+                        forma clara e acessível. Esse trabalho proporcionou uma
+                        base sólida para entender o processo de criação e
+                        estruturação de um site, desde o design inicial no Figma
+                        até a implementação com código.
+                      </p>
+                      <h1 class="data-sessao-modal">18/01/2025</h1>
+                    </div>
+                  </section>
+                </div>
+                <!-- footer -->
+                <div class="footer-modal">
+                  <div>
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar projeto
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar repertório GitHub
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 5-->
+          <div class="project-item">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal5">
+              <img
+                class="project-image fade-in"
+                src="img/project/imagemProjetos/meuPortfolio.svg"
+                alt="Clone da Netflix"
+              />
+              <div class="project-overlay">
+                <h3 class="project-title">Clone da Netflix Web</h3>
+                <h2>02/12/2025</h2>
+                <div class="project-icons">
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                </div>
+                <h4>Clique para mais informações</h4>
+              </div>
+            </a>
+          </div>
+
+          <!-- Modal 5-->
+          <div
+            class="modal fade"
+            id="exampleModal5"
+            tabindex="-1"
+            aria-labelledby="exampleModal5Label"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog modal-xl"
+            >
+              <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <section class="sessao-modal">
+                    <div class="sessao-video">
+                      <video
+                        src="img/imagemSite/netflixSite.jpg"
+                        class="projeto-video"
+                        controls
+                        autoplay
+                      ></video>
+                    </div>
+                    <div>
+                      <h1 class="titulo-sessao-modal">
+                        PetLife
+                        <div class="project-icons-header">
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                        </div>
+                      </h1>
+                      <p class="paragrafos-sessao-modal">
+                        O site PetLife foi desenvolvido como parte de um projeto
+                        introdutório na OneBitCode, utilizando HTML, CSS,
+                        JavaScript, Figma e Visual Studio Code. O objetivo
+                        principal era aprender os conceitos fundamentais dessas
+                        ferramentas de forma prática e introdutória na área de
+                        desenvolvimento web. <br /><br />O projeto consiste em
+                        um site simples para um pet shop, contendo algumas
+                        seções com informações sobre o comércio, organizadas de
+                        forma clara e acessível. Esse trabalho proporcionou uma
+                        base sólida para entender o processo de criação e
+                        estruturação de um site, desde o design inicial no Figma
+                        até a implementação com código.
+                      </p>
+                      <h1 class="data-sessao-modal">18/01/2025</h1>
+                    </div>
+                  </section>
+                </div>
+                <!-- footer -->
+                <div class="footer-modal">
+                  <div>
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar projeto
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar repertório GitHub
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 6-->
+          <div class="project-item">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal6">
+              <img
+                class="project-image fade-in"
+                src="img/project/imagemProjetos/mobiSeg.svg"
+                alt="Clone da Netflix"
+              />
+              <div class="project-overlay">
+                <h3 class="project-title">Clone da Netflix Web</h3>
+                <h2>02/12/2025</h2>
+                <div class="project-icons">
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                </div>
+                <h4>Clique para mais informações</h4>
+              </div>
+            </a>
+          </div>
+
+          <!-- Modal 6-->
+          <div
+            class="modal fade"
+            id="exampleModal6"
+            tabindex="-1"
+            aria-labelledby="exampleModal6Label"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog modal-xl"
+            >
+              <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <section class="sessao-modal">
+                    <div class="sessao-video">
+                      <video
+                        src="img/imagemSite/netflixSite.jpg"
+                        class="projeto-video"
+                        controls
+                        autoplay
+                      ></video>
+                    </div>
+                    <div>
+                      <h1 class="titulo-sessao-modal">
+                        PetLife
+                        <div class="project-icons-header">
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                        </div>
+                      </h1>
+                      <p class="paragrafos-sessao-modal">
+                        O site PetLife foi desenvolvido como parte de um projeto
+                        introdutório na OneBitCode, utilizando HTML, CSS,
+                        JavaScript, Figma e Visual Studio Code. O objetivo
+                        principal era aprender os conceitos fundamentais dessas
+                        ferramentas de forma prática e introdutória na área de
+                        desenvolvimento web. <br /><br />O projeto consiste em
+                        um site simples para um pet shop, contendo algumas
+                        seções com informações sobre o comércio, organizadas de
+                        forma clara e acessível. Esse trabalho proporcionou uma
+                        base sólida para entender o processo de criação e
+                        estruturação de um site, desde o design inicial no Figma
+                        até a implementação com código.
+                      </p>
+                      <h1 class="data-sessao-modal">18/01/2025</h1>
+                    </div>
+                  </section>
+                </div>
+                <!-- footer -->
+                <div class="footer-modal">
+                  <div>
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar projeto
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar repertório GitHub
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--nao visivel-->
+
+          <!-- Projeto 7-->
+          <div class="project-item hidden">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal7">
+              <img
+                class="project-image fade-in"
+                src="img/project/imagemProjetos/alessio'sPizzaria.svg"
+                alt="Clone da Netflix"
+              />
+              <div class="project-overlay">
+                <h3 class="project-title">Clone da Netflix Web</h3>
+                <h2>02/12/2025</h2>
+                <div class="project-icons">
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                </div>
+                <h4>Clique para mais informações</h4>
+              </div>
+            </a>
+          </div>
+
+          <!-- Modal 7-->
+          <div
+            class="modal fade"
+            id="exampleModal7"
+            tabindex="-1"
+            aria-labelledby="exampleModal7Label"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog modal-xl"
+            >
+              <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <section class="sessao-modal">
+                    <div class="sessao-video">
+                      <video
+                        src="img/imagemSite/netflixSite.jpg"
+                        class="projeto-video"
+                        controls
+                        autoplay
+                      ></video>
+                    </div>
+                    <div>
+                      <h1 class="titulo-sessao-modal">
+                        PetLife
+                        <div class="project-icons-header">
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                        </div>
+                      </h1>
+                      <p class="paragrafos-sessao-modal">
+                        O site PetLife foi desenvolvido como parte de um projeto
+                        introdutório na OneBitCode, utilizando HTML, CSS,
+                        JavaScript, Figma e Visual Studio Code. O objetivo
+                        principal era aprender os conceitos fundamentais dessas
+                        ferramentas de forma prática e introdutória na área de
+                        desenvolvimento web. <br /><br />O projeto consiste em
+                        um site simples para um pet shop, contendo algumas
+                        seções com informações sobre o comércio, organizadas de
+                        forma clara e acessível. Esse trabalho proporcionou uma
+                        base sólida para entender o processo de criação e
+                        estruturação de um site, desde o design inicial no Figma
+                        até a implementação com código.
+                      </p>
+                      <h1 class="data-sessao-modal">18/01/2025</h1>
+                    </div>
+                  </section>
+                </div>
+                <!-- footer -->
+                <div class="footer-modal">
+                  <div>
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar projeto
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar repertório GitHub
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 8-->
+          <div class="project-item hidden">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal8">
+              <img
+                class="project-image fade-in"
+                src="img/project/imagemProjetos/petLife.svg"
+                alt="Clone da Netflix"
+              />
+              <div class="project-overlay">
+                <h3 class="project-title">Clone da Netflix Web</h3>
+                <h2>02/12/2025</h2>
+                <div class="project-icons">
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                </div>
+                <h4>Clique para mais informações</h4>
+              </div>
+            </a>
+          </div>
+
+          <!-- Modal 8-->
+          <div
+            class="modal fade"
+            id="exampleModal8"
+            tabindex="-1"
+            aria-labelledby="exampleModal8Label"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog modal-xl"
+            >
+              <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <section class="sessao-modal">
+                    <div class="sessao-video">
+                      <video
+                        src="img/imagemSite/netflixSite.jpg"
+                        class="projeto-video"
+                        controls
+                        autoplay
+                      ></video>
+                    </div>
+                    <div>
+                      <h1 class="titulo-sessao-modal">
+                        PetLife
+                        <div class="project-icons-header">
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                        </div>
+                      </h1>
+                      <p class="paragrafos-sessao-modal">
+                        O site PetLife foi desenvolvido como parte de um projeto
+                        introdutório na OneBitCode, utilizando HTML, CSS,
+                        JavaScript, Figma e Visual Studio Code. O objetivo
+                        principal era aprender os conceitos fundamentais dessas
+                        ferramentas de forma prática e introdutória na área de
+                        desenvolvimento web. <br /><br />O projeto consiste em
+                        um site simples para um pet shop, contendo algumas
+                        seções com informações sobre o comércio, organizadas de
+                        forma clara e acessível. Esse trabalho proporcionou uma
+                        base sólida para entender o processo de criação e
+                        estruturação de um site, desde o design inicial no Figma
+                        até a implementação com código.
+                      </p>
+                      <h1 class="data-sessao-modal">18/01/2025</h1>
+                    </div>
+                  </section>
+                </div>
+                <!-- footer -->
+                <div class="footer-modal">
+                  <div>
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar projeto
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar repertório GitHub
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 9-->
+          <div class="project-item hidden">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal9">
+              <img
+                class="project-image fade-in"
+                src="img/project/imagemProjetos/petLife.svg"
+                alt="Clone da Netflix"
+              />
+              <div class="project-overlay">
+                <h3 class="project-title">Clone da Netflix Web</h3>
+                <h2>02/12/2025</h2>
+                <div class="project-icons">
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                  <img src="img/skills/html.svg" alt="HTML" />
+                </div>
+                <h4>Clique para mais informações</h4>
+              </div>
+            </a>
+          </div>
+
+          <!-- Modal 9-->
+          <div
+            class="modal fade"
+            id="exampleModal9"
+            tabindex="-1"
+            aria-labelledby="exampleModal9Label"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog modal-xl"
+            >
+              <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <section class="sessao-modal">
+                    <div class="sessao-video">
+                      <video
+                        src="img/imagemSite/netflixSite.jpg"
+                        class="projeto-video"
+                        controls
+                        autoplay
+                      ></video>
+                    </div>
+                    <div>
+                      <h1 class="titulo-sessao-modal">
+                        PetLife
+                        <div class="project-icons-header">
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                          <img
+                            src="img/imgSVG/linguagens/html.svg"
+                            alt="HTML"
+                          />
+                        </div>
+                      </h1>
+                      <p class="paragrafos-sessao-modal">
+                        O site PetLife foi desenvolvido como parte de um projeto
+                        introdutório na OneBitCode, utilizando HTML, CSS,
+                        JavaScript, Figma e Visual Studio Code. O objetivo
+                        principal era aprender os conceitos fundamentais dessas
+                        ferramentas de forma prática e introdutória na área de
+                        desenvolvimento web. <br /><br />O projeto consiste em
+                        um site simples para um pet shop, contendo algumas
+                        seções com informações sobre o comércio, organizadas de
+                        forma clara e acessível. Esse trabalho proporcionou uma
+                        base sólida para entender o processo de criação e
+                        estruturação de um site, desde o design inicial no Figma
+                        até a implementação com código.
+                      </p>
+                      <h1 class="data-sessao-modal">18/01/2025</h1>
+                    </div>
+                  </section>
+                </div>
+                <!-- footer -->
+                <div class="footer-modal">
+                  <div>
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar projeto
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button class="botao-footer-modal" target="_blank">
+                        Acessar repertório GitHub
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-in">
+          <footer class="project-footer fade-in">
+            <button id="ProjectMostrarMaisProjetosBtn">
+              <span id="ProjectTextoBotaoProjetos">Ver mais projetos</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+          </footer>
+
+          <a
+            href="https://github.com/iuricode?tab=repositories"
+            rel="noopener"
+            target="_blank"
+            class="projects--github"
+          >
+            Ver todos os repositórios no GitHub
+          </a>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="skills__header">
+          <h2 class="skills__text-title">Habilidades</h2>
+        </div>
+        <div class="skills__container">
+          <!-- Botões para filtrar as habilidades -->
+          <div class="skills__filter fade-in">
+            <button onclick="filterSkills('all', event)">Todas</button>
+            <button onclick="filterSkills('linguagens', event)">
+              Linguagens
+            </button>
+            <button onclick="filterSkills('ferramentas', event)">
+              Ferramentas
+            </button>
+            <button onclick="filterSkills('ides', event)">IDEs</button>
+            <button onclick="filterSkills('metodologias', event)">
+              Metodologias
+            </button>
+            <button onclick="filterSkills('frameworks', event)">
+              Frameworks
+            </button>
+            <button onclick="filterSkills('banco-dados', event)">
+              Banco de Dados
+            </button>
+          </div>
+
+          <!-- Cards de habilidades -->
+          <div class="skills__flex fade-in">
+            <!-- Linguagens de Programação -->
+            <div class="skill__card fade-in linguagens">
+              <img src="img/skills/html.svg" alt="HTML" />
+              <h1>HTML5</h1>
+            </div>
+            <div class="skill__card fade-in linguagens">
+              <img src="img/skills/css.svg" alt="CSS" />
+              <h1>CSS3</h1>
+            </div>
+            <div class="skill__card fade-in linguagens">
+              <img src="img/skills/javascript.svg" alt="JavaScript" />
+              <h1>JavaScript</h1>
+            </div>
+            <div class="skill__card fade-in linguagens">
+              <img src="img/skills/java.svg" alt="Java" />
+              <h1>Java</h1>
+            </div>
+
+            <!-- Ferramentas -->
+            <div class="skill__card fade-in ferramentas">
+              <img src="img/skills/git.svg" alt="Git" />
+              <h1>Git</h1>
+            </div>
+            <div class="skill__card fade-in ferramentas">
+              <img src="img/skills/figma.svg" alt="Figma" />
+              <h1>Figma</h1>
+            </div>
+            <div class="skill__card fade-in ferramentas">
+              <img src="img/skills/trello.svg" alt="Trello" />
+              <h1>Trello</h1>
+            </div>
+            <div class="skill__card fade-in ferramentas">
+              <img src="img/skills/jira.svg" alt="Jira" />
+              <h1>Jira</h1>
+            </div>
+            <div class="skill__card fade-in ferramentas">
+              <img src="img/skills/office.svg" alt="Office" />
+              <h1>Pacote Office</h1>
+            </div>
+            <div class="skill__card fade-in ferramentas">
+              <img src="img/skills/canva.svg" alt="Canva" />
+              <h1>Canva</h1>
+            </div>
+
+            <!-- Metodologias -->
+            <div class="skill__card fade-in metodologias">
+              <img src="img/skills/agil.svg" alt="Agil" />
+              <h1>Scrum e Kanban</h1>
+            </div>
+
+            <!-- Frameworks -->
+            <div class="skill__card fade-in frameworks">
+              <img src="img/skills/bootstrap.svg" alt="BootStrap" />
+              <h1>BootStrap</h1>
+            </div>
+
+            <!-- Banco de Dados -->
+            <div class="skill__card fade-in banco-dados">
+              <img src="img/skills/sql.svg" alt="SQL" />
+              <h1>Banco SQL</h1>
+            </div>
+
+            <!-- IDEs -->
+            <div class="skill__card fade-in ides">
+              <img src="img/skills/VScode.svg" alt="VScode" />
+              <h1>VScode</h1>
+            </div>
+            <div class="skill__card fade-in ides">
+              <img src="img/skills/visualstudy.svg" alt="VisualStudio" />
+              <h1>Visual Studio</h1>
+            </div>
+            <div class="skill__card fade-in ides">
+              <img src="img/skills/eclipse.svg" alt="Eclipse" />
+              <h1>Visual Studio</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact__header">
+          <h2 class="contact__text-title">Contato</h2>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Informações de Contato</h3>
+
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>São Paulo, Brasil</span>
+            </div>
+
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>contato@andresodeslev.com</span>
+            </div>
+
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <span>Seg - Sex: 9:00 - 18:00</span>
+            </div>
+
+            <div class="contact__social-links">
+              <div class="contact__social-card">
+                <a
+                  href="https://linkedin.com/in/andrecodedev"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                >
+                  <img src="img/redes/linkedin.svg" alt="LinkedIn" />
+                  <span class="contact__tooltip">LinkedIn</span>
+                </a>
+              </div>
+
+              <div class="contact__social-card">
+                <a
+                  href="https://github.com/AndreCodeDev"
+                  target="_blank"
+                  aria-label="GitHub"
+                >
+                  <img src="img/redes/github.svg" alt="GitHub" />
+                  <span class="contact__tooltip">GitHub</span>
+                </a>
+              </div>
+
+              <div class="contact__social-card">
+                <a
+                  href="mailto:contato@andresodeslev.com"
+                  target="_blank"
+                  aria-label="E-mail"
+                >
+                  <img src="img/redes/email.svg" alt="E-mail" />
+                  <span class="contact__tooltip">E-mail</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Envie uma Mensagem</h3>
+
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Nome:"
+                    oninvalid="this.setCustomValidity('')"
+                  />
+                  <span class="form-tooltip">Digite seu nome completo</span>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="E-mail:"
+                    oninvalid="this.setCustomValidity('')"
+                  />
+                  <span class="form-tooltip"
+                    >Exemplo: usuario@provedor.com</span
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  placeholder="Assunto:"
+                  oninvalid="this.setCustomValidity('')"
+                />
+                <span class="form-tooltip">Sobre o que é sua mensagem?</span>
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Mensagem:"
+                  oninvalid="this.setCustomValidity('')"
+                ></textarea>
+                <span class="form-tooltip"
+                  >Escreva sua mensagem detalhadamente</span
+                >
+              </div>
+
+              <div class="contact__cta-wrapper" class="form-group">
+                <a type="submit" class="contact__cta-button">
+                  Enviar Mensagem <img src="img/redes/entar.svg" alt="" />
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="toast">✅ Mensagem enviada com sucesso!</div>
+      </section>
+    </main>
+
+    <footer id="footer--grid-layout">
+      <div class="footer-group">
+        <p>
+          Copyright © 2025
+          <a href="index.html" rel="noopener">andrecode.dev.br</a>
+          <br />
+          Todos os direitos reservados.
+        </p>
+      </div>
+
+      <div class="footer-group">
+        <p>
+          Construído com
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="#6e6e6e"
+            stroke="#6e6e6e"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+            ></path>
+          </svg>
+          por André Vitor
+        </p>
+        <img src="img/logo.svg" alt="Logo" />
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/loading.js"></script>
+    <script src="/js/themeToggles.js"></script>
+    <script src="/js/headerScroll.js"></script>
+    <script src="/js/heroTextAnimation.js"></script>
+    <script src="/js/heroScroll.js"></script>
+    <script src="/js/highlights.js"></script>
+    <script src="/js/formationButton.js"></script>
+    <script src="/js/projectButton.js"></script>
+    <script src="/js/skill.js"></script>
+    <script src="/js/forms.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
