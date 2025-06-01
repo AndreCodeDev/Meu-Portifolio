@@ -3,9 +3,8 @@
 
 /* Seção de conquistas */
 #highlight {
-  scroll-margin-top: clamp(2rem, 4vh, 4rem);
-    padding-top: clamp(3rem, 5vh, 4rem);
-    padding-bottom: clamp(3rem, 5vh, 4rem);
+  scroll-margin-top: clamp(.5rem, .5vh, .5rem);
+  padding-top: clamp(4.5rem, 6.5vh, 5.5rem);
   text-align: center;
   position: relative;
   z-index: 10;
@@ -17,6 +16,19 @@
   text-align: center;
   display: flex;
   justify-content: center;
+}
+
+.highlights__text-title {
+    font-size: var(--font-3xl-5);
+    margin: 0 0 var(--space-sm) 0;
+    font-weight: 800;
+    line-height: 1.2;
+    background: linear-gradient(to right, var(--primary-linear-gradient), var(--text-gray-linear-gradient));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
 }
 
 .highlights__text-content {
@@ -285,7 +297,7 @@
 .conquistas-carousel-control {
   width: var(--space-xl);
   height: var(--space-lg);
-  background-color: var(--accent);
+  background: var(--primary);
   border-radius: var(--border-radius-md);
   border: solid 1px var(--border);
   cursor: pointer;
@@ -300,7 +312,7 @@
 }
 
 .conquistas-carousel-control:hover {
-  background-color: var(--text-gray);
+  background: var(--card-bg);
 }
 
 /* Efeito ao clicar */

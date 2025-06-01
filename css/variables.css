@@ -2,7 +2,7 @@
 
 :root {
   /* Color */
-  --primary: #353535;
+  --primary: #373737;
   --accent: #6e6e6e;
   --color-warning: #ffc107;
   --color-error: #ff4d4f;
@@ -19,9 +19,9 @@
   --bg: #111111;
   --bg-grid: #2b2b2b94;
   --card-bg: #1a1a1a;
-  --bg-box: #151515ab;
+  --bg-box: #15151592;
   --bg-button: #3e3e3e1a;
-  --bg-header: #111111f1;
+  --bg-header: #111111fb;
   --bg-transparent: transparent;
 
   /* Filter */
@@ -62,6 +62,9 @@
   --font-3xl-5: clamp(2.85rem, 4.5vw, 3.5rem);
   --font-4xl: clamp(3.2rem, 5.1vw, 3.85rem);
   --font-5xl: clamp(3.9rem, 6.1vw, 5.1rem);
+
+  --font-primary: 'Inter', sans-serif;
+  --font-mono: 'Fira Code', monospace;
 
   /* Espaços */
   --space-xxs: clamp(0.125rem, 0.8vw, 0.25rem);
@@ -107,16 +110,16 @@
   --primary-linear-gradient: #282828;
 
   /* Text Color */
-  --text-white: #000000;
+  --text-white: #2c2c2c;
   --text-gray: #696969;
-  --text-dark: #1a1a1a;
+  --text-dark: #323232;
   --text-gray-linear-gradient: #c0c0c0;
 
   /* Background */
   --bg: #ffffff;
   --bg-grid: #c3c3c3;
   --card-bg: #efefef;
-  --bg-box: #f0f0f0b1;
+  --bg-box: #f0f0f094;
   --bg-button: #e0e0e01a;
   --bg-header: #fffffff0;
   --bg-transparent: transparent;
@@ -129,10 +132,10 @@
   /* Efeitos Visuais */
   --effect-glass-dark: rgba(255, 255, 255, 0.85);
   --effect-glass-light: rgba(0, 0, 0, 0.05);
-  --effect-highlight-neutral: rgba(0, 0, 0, 0.03);
+  --effect-highlight-neutral: rgba(0, 0, 0, 0.099);
   --effect-border-neutral: rgba(0, 0, 0, 0.1);
   --effect-glass-bg-project: rgba(200, 200, 200, 0.3);
-  --effect-selection-neutral: rgba(0, 0, 0, 0.1);
+  --effect-selection-neutral: rgba(0, 0, 0, 0.199);
   --effect-overlay: #ffffff;
 
   /* Gradientes */
@@ -141,6 +144,6 @@
   --gradient-card: linear-gradient(to bottom right, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.01));
 
   /* Border */
-  --border: #bbbbbb6d;
+  --border: #81818183;
   --border-invert: #c4c4c4;
 }

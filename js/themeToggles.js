@@ -2,40 +2,34 @@ document.addEventListener('DOMContentLoaded', function() {
   const themeToggle = document.getElementById('themeToggle');
   const rootElement = document.documentElement;
   
-  // Função para aplicar o tema
   function applyTheme(theme) {
     rootElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
-    updateToggleUI(theme);
-    console.log('Tema aplicado:', theme); // Debug
+    themeToggle.setAttribute('aria-pressed', theme === 'dark');
+    updateTooltipText(theme);
   }
-  
-  // Atualiza a UI do toggle
-  function updateToggleUI(theme) {
-    const tooltip = document.querySelector('.theme-toggle__tooltip');
+
+  function updateTooltipText(theme) {
+    const tooltip = themeToggle.querySelector('.theme-toggle__tooltip');
     if (tooltip) {
-      tooltip.textContent = theme === 'light' ? 'Tema Escuro' : 'Tema Claro';
+      tooltip.textContent = theme === 'dark' ? 'Tema Claro' : 'Tema Escuro';
     }
   }
+
+  // Inicialização correta
+  const savedTheme = localStorage.getItem('theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
   
-  // Verifica o tema salvo ou preferência do sistema
-  function getPreferredTheme() {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) return savedTheme;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
-  
-  // Aplica o tema inicial
-  //const preferredTheme = getPreferredTheme();
-  //applyTheme(preferredTheme);
-  
-  // Alternar tema ao clicar
+  applyTheme(initialTheme);
+
+  // Evento de clique
   themeToggle.addEventListener('click', () => {
     const currentTheme = rootElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     applyTheme(newTheme);
   });
-  
+
   // Observar mudanças no tema do sistema
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
     if (!localStorage.getItem('theme')) {

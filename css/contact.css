@@ -2,10 +2,33 @@
 
 /* Estilos da seção de contato */
 #contact {
-  scroll-margin-top: clamp(4rem, 8vh, 6rem);
-  padding-bottom: clamp(3rem, 5vh, 5rem);
+  scroll-margin-top: clamp(2rem, 4vh, 4rem);
+  padding-top: clamp(4.5rem, 6.5vh, 5.5rem);
+  padding-bottom: clamp(2rem, 4vh, 3rem);
   text-align: center;
 }
+
+.contact__header {
+  margin-bottom: var(--space-lg);
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__text-title {
+    font-size: var(--font-3xl-5);
+    margin: 0 0 var(--space-sm) 0;
+    font-weight: 800;
+    line-height: 1.2;
+    background: linear-gradient(to right, var(--primary-linear-gradient), var(--text-gray-linear-gradient));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
 
 .contact-container {
   display: grid;

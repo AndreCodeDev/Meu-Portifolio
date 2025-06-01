@@ -1,0 +1,424 @@
+@import url('style.css');
+
+/* Projetos */
+#project {
+    scroll-margin-top: clamp(2rem, 4vh, 4rem);
+    padding-top: clamp(4.5rem, 6.5vh, 5.5rem);
+    text-align: center;
+}
+
+.project__header {
+  margin-bottom: var(--space-lg);
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.project__text-title {
+    font-size: var(--font-3xl-5);
+    margin: 0 0 var(--space-sm) 0;
+    font-weight: 800;
+    line-height: 1.2;
+    background: linear-gradient(to right, var(--primary-linear-gradient), var(--text-gray-linear-gradient));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-md);
+    justify-content: center;
+    padding: 0 var(--space-4xl);
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: transform var(--transition-speed-normal) var(--transition-easing);
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    border: solid 1px var(--bg);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--border-radius-sm);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--effect-overlay);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity var(--transition-speed-slow) var(--transition-easing);
+}
+
+.project-item:hover .project-overlay {
+    opacity: .8;
+    border: solid 1px var(--bg);
+}
+
+.project-title {
+    color: var(--text-white);
+    font-size: var(--font-xl);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: var(--space-base);
+}
+
+.project-overlay h4 {
+    color: var(--text-gray);
+    font-size: var(--font-base);
+    font-weight: 400;
+    margin-top: var(--space-base);
+    transition: color var(--transition-speed-normal) var(--transition-easing);
+    position: relative;
+}
+
+.project-overlay h2 {
+    color: var(--text-white);
+    font-size: var(--font-sm);
+    font-weight: 400;
+    margin-top: var(--space-xxs);
+    margin-bottom: var(--space-xxs);
+}
+
+.project-overlay h4::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: .15rem;
+    bottom: -8px;
+    background: linear-gradient(270deg, var(--text-gray) 0%, var(--bg) 100%);
+    transform: scaleX(0);
+    transition: transform var(--transition-speed-slow) cubic-bezier(0.86, 0, 0.07, 1);
+    position: absolute;
+    height: .15rem;
+    bottom: -8px;
+    left: 0;
+    transform-origin: bottom right;
+}
+
+.project-overlay h4:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.project-icons {
+    display: flex;
+    gap: var(--space-base);
+    margin-top: var(--space-base);
+}
+
+.project-icons img {
+    width: 30px;
+    height: 30px;
+    opacity: 100%;
+    user-select: none;
+    object-fit: contain;
+    transition: transform var(--transition-speed-normal) var(--transition-easing);
+}
+
+.project-icons img:hover {
+    transform: scale(1.1);
+}
+
+.projects--github {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    transition: color var(--transition-speed-normal) var(--transition-easing);
+    font-size: var(--font-md);
+    color: var(--primary);
+    font-weight: 400;
+    margin-top: var(--space-3xl);
+    padding: 0 0 var(--space-sm);
+    text-decoration: none;
+}
+
+.projects--github::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.9px;
+    bottom: -1px;
+    left: 0;
+    background: linear-gradient(270deg, var(--primary) 0%, var(--bg) 100%);
+    transform-origin: bottom right;
+    transition: transform var(--transition-speed-slow) cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.projects--github:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Botão de Certificação */
+.project--verCertificacao {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-md);
+    background-color: rgba(0, 162, 255, 0.1);
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-xs);
+    transition: all var(--transition-speed-normal) var(--transition-easing);
+    text-align: center;
+    width: 100%;
+    border: 1px solid var(--primary);
+}
+
+.project--verCertificacao:hover {
+    background-color: rgba(0, 162, 255, 0.2);
+    border-color: var(--primary);
+    color: var(--text-white);
+}
+
+/* Footer e Botão "Ver Mais" */
+.project-footer {
+    text-align: center;
+    margin-top: var(--space-xl);
+    background-color: var(--bg-transparent);
+    padding: 0;
+}
+
+#ProjectMostrarMaisProjetosBtn {
+    background-color: var(--bg-transparent);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-sm);
+    cursor: pointer;
+    transition: all var(--transition-speed-normal) var(--transition-easing);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin: 0 auto;
+}
+
+#ProjectMostrarMaisProjetosBtn:hover {
+    background-color: var(--accent);
+    border-color: var(--primary);
+    color: var(--text-white);
+}
+
+#ProjectMostrarMaisProjetosBtn svg {
+    width: 18px;
+    height: 18px;
+    transition: transform var(--transition-speed-normal) var(--transition-easing);
+}
+
+#ProjectMostrarMaisProjetosBtn.rotated svg {
+    transform: rotate(180deg);
+}
+
+/* Cards Ocultos */
+.hidden {
+    display: none;
+}
+
+/*modal*/
+.modal .modal-content {
+    background-color: var(--bg-transparent);
+    border: none;
+}
+
+/* Estilo para o cabeçalho do modal */
+.modal-content .modal-header {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--accent);
+    padding: var(--space-md);
+    border-top-left-radius: var(--border-radius-xl);
+    border-top-right-radius: var(--border-radius-xl);
+}
+
+.btn-close {
+    filter: invert(1);
+    opacity: 1;
+    font-size: var(--font-md);
+    transition: opacity var(--transition-speed-normal) var(--transition-easing), transform var(--transition-speed-normal) var(--transition-easing);
+}
+
+.btn-close:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+/* Estilo para o corpo do modal */
+.modal-body {
+    background-color: var(--card-bg);
+    padding: 0 var(--space-md) 0;
+}
+
+.footer-modal {
+    background-color: var(--card-bg);
+    padding: 0 var(--space-md) var(--space-md) 0;
+    border-bottom-right-radius: var(--border-radius-xl);
+    border-bottom-left-radius: var(--border-radius-xl);
+}
+
+.sessao-video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-transparent);
+}
+
+.sessao-video video {
+    min-width: 50%;
+    width: 100%;
+}
+
+.sessao-modal {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--bg-transparent);
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-md) 0;
+}
+
+.titulo-sessao-modal {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-primary);
+    font-size: var(--font-xl);
+    text-align: left;
+    padding: 0 var(--space-base) var(--space-md-base);
+    margin-bottom: 0;
+    color: var(--primary);
+    background-color: var(--card-bg);
+}
+
+.project-icons-header {
+    display: flex;
+    gap: var(--space-base);
+    background-color: var(--bg-transparent);
+}
+
+.project-icons-header img {
+    width: 29px;
+    height: 29px;
+    object-fit: contain;
+    background-color: var(--bg-transparent);
+}
+
+.project-icons-header img:hover {
+    transform: scale(1.10);
+}
+
+.paragrafos-sessao-modal {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: var(--font-sm);
+    color: var(--text-gray);
+    line-height: 140%;
+    padding: 0 var(--space-base) 0 var(--space-base);
+    text-align: justify;
+    margin-bottom: 0;
+    background-color: var(--card-bg);
+}
+
+.data-sessao-modal {
+    font-family: var(--font-primary);
+    font-size: var(--font-sm);
+    font-weight: 500;
+    color: var(--primary);
+    line-height: 140%;
+    padding: var(--space-md-base) var(--space-base) 0 var(--space-base);
+    text-align: justify;
+    margin-bottom: 0;
+    background-color: var(--card-bg);
+}
+
+.img-projeto-sessao-modal {
+    width: 2rem;
+}
+
+.img-projeto-sessao-modal:hover {
+    transform: scale3d(1.090, 1.090, 1);
+}
+
+/* Container do footer */
+.footer-modal div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 var(--space-md);
+    background-color: var(--bg-transparent);
+    gap: var(--space-md);
+}
+
+/* Links dentro do footer */
+.footer-modal div a {
+    background-color: var(--bg-transparent);
+}
+
+/* Estilo base do botão */
+.botao-footer-modal {
+    background-color: var(--accent);
+    color: var(--text-white);
+    font-size: var(--font-sm);
+    border-radius: var(--border-radius-sm);
+    border: none;
+    cursor: pointer;
+    padding: var(--space-sm) var(--space-md);
+    transition: background-color var(--transition-speed-normal) var(--transition-easing), color var(--transition-speed-normal) var(--transition-easing);
+}
+
+/* Efeito hover para os botões */
+.botao-footer-modal:hover {
+    background-color: var(--primary-linear-gradient);
+    color: var(--text-white);
+}
+
+/* Container da imagem do projeto */
+.conteiner-img-projeto {
+    display: flex;
+    align-items: center;
+}
+
+/* Container de texto do projeto */
+.text-container-projeto {
+    padding: var(--space-xs);
+    margin: 0;
+    text-align: center;
+    font-size: var(--font-base);
+    color: var(--text-white);
+    font-family: var(--font-primary);
+    word-break: break-word;
+}
+
+.img-projeto {
+    width: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-right: .21em;
+    margin-left: .21em;
+}
+
+.img-projeto:hover {
+    transform: scale3d(1.090, 1.090, 1);
+}
