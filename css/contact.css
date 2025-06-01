@@ -17,16 +17,16 @@
 }
 
 .contact__text-title {
-    font-size: var(--font-3xl-5);
-    margin: 0 0 var(--space-sm) 0;
-    font-weight: 800;
-    line-height: 1.2;
-    background: linear-gradient(to right, var(--primary-linear-gradient), var(--text-gray-linear-gradient));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    position: relative;
-    display: inline-block;
+  font-size: var(--font-3xl-5);
+  margin: 0 0 var(--space-sm) 0;
+  font-weight: 800;
+  line-height: 1.2;
+  background: linear-gradient(to right, var(--primary-linear-gradient), var(--text-gray-linear-gradient));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  display: inline-block;
 }
 
 
@@ -79,8 +79,8 @@
 }
 
 .contact__cta-button:hover {
-    background: var(--card-bg);
-    color: var(--text-gray);
+  background: var(--card-bg);
+  color: var(--text-gray);
 }
 
 .contact__cta-button:focus {
@@ -100,7 +100,7 @@
 }
 
 .contact__cta-button:hover img {
-    filter: var(--filter-button-gray);
+  filter: var(--filter-button-gray);
 }
 
 .contact__social-links {
@@ -128,17 +128,17 @@
 
 .contact__social-card:hover {
   background-color: var(--primary);
-  color: var(--text);
+  color: var(--text-button);
   transform: translateY(-2px);
 }
 
 .contact__social-card a {
-  color: var(--muted);
+  color: var(--text-button);
   transition: color 0.3s ease;
 }
 
 .contact__social-card a:hover {
-  color: var(--text);
+  color: var(--text-button);
 }
 
 .contact__social-card img {
@@ -159,7 +159,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--primary);
-  color: var(--text-white);
+  color: var(--text-button);
   padding: var(--space-xs);
   border-radius: var(--border-radius-sm);
   font-size: var(--font-xs);
@@ -232,7 +232,7 @@
   border: 1px solid var(--effect-glass-light);
   border-radius: var(--border-radius-md);
   font-size: var(--font-xs);
-    background-color: var(--card-bg);
+  background-color: var(--card-bg);
   color: var(--text-gray);
   outline: none;
 }

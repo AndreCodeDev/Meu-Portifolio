@@ -164,7 +164,7 @@
 
 .hero__social-card:hover {
     background-color: var(--primary);
-    color: var(--text);
+    color: var(--text-button);
     transform: translateY(-2px);
 }
 
@@ -174,7 +174,7 @@
 }
 
 .hero__social-card a:hover {
-    color: var(--text);
+    color: var(--text-button);
 }
 
 .hero__social-card img {
@@ -195,7 +195,7 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--primary);
-    color: var(--text);
+    color: var(--text-button);
     padding: var(--space-xs);
     border-radius: var(--border-radius-sm);
     font-size: var(--font-xs);
