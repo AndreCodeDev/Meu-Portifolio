@@ -89,3 +89,33 @@ svg {
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary);
 }
+
+.balao-construcao {
+  position: fixed;
+  bottom: var(--space-base);
+  right: var(--space-base);
+  background-color: var(--effect-glass-dark);
+  color: var(--text-gray);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--border-radius-fll);
+  font-size: var(--font-xxs);
+  font-family: var(--font-primary);
+  font-weight: 600;
+  box-shadow: 0 0 10px var(--effect-highlight-neutral);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--effect-border-neutral);
+  z-index: 1000;
+  animation: flutuar 2s ease-in-out infinite;
+  transition: all var(--transition-speed-normal) var(--transition-easing);
+  pointer-events: none;
+  user-select: none;
+}
+
+@keyframes flutuar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
