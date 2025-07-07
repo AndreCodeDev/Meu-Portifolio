@@ -300,3 +300,37 @@
       transform: rotate(45deg) translate(0, 0);
     }
   }
+
+
+  @media (max-width: 768px) {
+  .hero__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__visual-element {
+    order: -1; /* coloca a imagem antes do texto */
+  }
+
+  .hero__visual-element-image {
+    max-width: 80%;
+  }
+
+  .hero__text-content {
+    max-width: 90%;
+    padding: var(--space-md);
+  }
+
+
+    .hero__cta-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+  }
+
+  .hero__social-links {
+    margin-top: var(--space-md);
+    order: 1; /* aparece depois dos botões */
+  }
+}
