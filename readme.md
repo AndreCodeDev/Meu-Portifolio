@@ -4,7 +4,7 @@
 
 ![Resultado final do projeto](img/portfolio.png)
 
-<h4 align="center"><a href="https://www.andrecodedev.com/">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="https://andrecode.dev.br/">Clique para visitar o projeto</a></h4>
 
 ## 📚 Seções
 
